@@ -8,7 +8,7 @@
   --ifm-color-content: #fff;
   --ifm-navbar-background-color: #000;
   --ifm-navbar-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  --ifm-color-primary: #3498db;
+  --ifm-color-primary: #dc2626;
   --ifm-footer-background-color: #18181b;
 }
 
@@ -42,7 +42,7 @@ body {
   bottom: -6px;
   height: 2px;
   width: 100%;
-  background: #3498db;
+  background: #dc2626;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 180ms ease;

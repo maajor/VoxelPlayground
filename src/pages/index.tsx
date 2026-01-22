@@ -84,6 +84,8 @@ function trackSocialClick(platform: SocialLink['platform']) {
 }
 
 export default function Home(): React.ReactElement {
+  const [isHeroVideoLoaded, setIsHeroVideoLoaded] = useState(false);
+
   useEffect(() => {
     document.body.classList.add('loaded');
 
@@ -93,6 +95,24 @@ export default function Home(): React.ReactElement {
 
     window.addEventListener('error', onError);
     return () => window.removeEventListener('error', onError);
+  }, []);
+
+  const heroVideoSrc = useMemo(() => {
+    const videoId = 'I_iUPpiW8VA';
+    const params = new URLSearchParams({
+      autoplay: '1',
+      controls: '0',
+      disablekb: '1',
+      fs: '0',
+      iv_load_policy: '3',
+      loop: '1',
+      modestbranding: '1',
+      mute: '1',
+      playsinline: '1',
+      rel: '0',
+      playlist: videoId,
+    });
+    return `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`;
   }, []);
 
   const socialLinks = useMemo<SocialLink[]>(
@@ -143,29 +163,88 @@ export default function Home(): React.ReactElement {
 
   const features = useMemo(
     () => [
-      {title: 'Physics Sandbox', description: 'Play with physics-driven voxel interactions in VR.'},
-      {title: 'Voxel Building', description: 'Build, break, and experiment with voxel structures.'},
-      {title: 'VR First', description: 'Designed for immersive VR gameplay and comfort.'},
-      {title: 'Community', description: 'Stay connected for updates, content, and events.'},
+      {title: 'Touch-First Destruction', description: 'Grab it, rip it, smash it—destruction feels physical because you do it by hand.'},
+      {title: 'Micro‑Voxel Chaos', description: 'Small pieces, big reactions: collapse, debris, and chain‑reactions you can feel in VR.'},
+      {title: 'Survive the Waves', description: 'Craft gear, fortify your base, and hold out against relentless zombie attacks.'},
+      {title: 'Pure Playground', description: 'Spawn tools, tweak settings, and experiment with ridiculous physics moments—your rules.'},
     ],
     [],
   );
 
   return (
-    <Layout title="Voxel Playground" description="Voxel Playground is a physics-based voxel sandbox VR game.">
+    <Layout title="Voxel Playground" description="Grab-and-rip micro-voxel destruction in VR—build, break, and survive on Meta Quest.">
       <main className="bg-black text-white">
-        <section id="home" className="relative scroll-mt-[var(--ifm-navbar-height)]">
-          <div className="relative">
+        <section
+          id="home"
+          className="relative flex min-h-[calc(100vh-var(--ifm-navbar-height))] scroll-mt-[var(--ifm-navbar-height)] items-center overflow-hidden"
+        >
+          <div className="absolute inset-0">
             <img
               src="/img/vlcsnap-2025-09-03-15h39m23s266.png"
-              alt="Tag before Dawn Game Screenshot - Cartoon mouse character in wooden cabin"
-              className="block h-auto w-full opacity-70 transition-transform duration-300 hover:scale-[1.02]"
+              alt="Voxel Playground key art"
+              className="h-full w-full object-cover opacity-70"
               loading="lazy"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="mx-auto w-full max-w-3xl px-5 py-10 text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-white drop-shadow-md md:text-6xl">Voxel Playground</h1>
-                <p className="mt-4 text-lg font-normal text-gray-300 drop-shadow-md md:text-xl">physics-based voxel sandbox VR game</p>
+            <div className={clsx('absolute inset-0 transition-opacity duration-700', isHeroVideoLoaded ? 'opacity-100' : 'opacity-0')}>
+              <div className="absolute inset-0 overflow-hidden">
+                <iframe
+                  title="Voxel Playground trailer background"
+                  src={heroVideoSrc}
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  className="pointer-events-none absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2"
+                  style={{width: '177.78vh', height: '56.25vw'}}
+                  onLoad={() => setIsHeroVideoLoaded(true)}
+                />
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50" />
+            <div
+              className="pointer-events-none absolute inset-0 opacity-25 mix-blend-overlay"
+              style={{
+                backgroundImage:
+                  'repeating-linear-gradient(to bottom, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 2px, transparent 6px)',
+              }}
+            />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(56,189,248,0.20),transparent_55%)]" />
+          </div>
+
+          <div className="relative mx-auto w-full max-w-5xl px-5 py-16 text-center">
+            <h1 className="sr-only">Voxel Playground</h1>
+            <div className="mx-auto flex max-w-4xl flex-col items-center">
+              <div className="relative">
+                <div className="absolute inset-0 -z-10 rounded-[2.75rem] bg-gradient-to-r from-sky-500/25 via-white/10 to-fuchsia-500/25 blur-3xl" />
+                <div className="absolute inset-0 -z-10 rounded-[2.75rem] bg-black/40 blur-xl" />
+                <img
+                  src="/img/Logo.png"
+                  alt="Voxel Playground logo"
+                  className="w-[min(640px,80vw)] select-none drop-shadow-[0_28px_60px_rgba(0,0,0,0.75)]"
+                  loading="eager"
+                  draggable={false}
+                />
+              </div>
+              <p className="mt-4 text-lg font-normal text-gray-200 drop-shadow-md md:text-xl">
+                Grab. Break. Build. Survive. Micro‑voxel mayhem you can touch in VR.
+              </p>
+              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <a
+                  href="https://www.meta.com/experiences/voxel-playground/9926748747373800/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center justify-center overflow-hidden bg-red-900 px-8 py-4 text-sm font-bold uppercase tracking-widest text-red-50 shadow-[0_0_30px_-5px_rgba(220,38,38,0.6)] transition-all duration-300 hover:scale-105 hover:bg-red-800 hover:shadow-[0_0_50px_-5px_rgba(220,38,38,0.8)] border border-red-500/50"
+                >
+                  <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(220,38,38,0.8),transparent_70%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <span className="relative flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
+                    Get it on Meta Quest
+                  </span>
+                </a>
+                <a
+                  href="/doc/index.html"
+                  className="inline-flex items-center justify-center border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white backdrop-blur transition-colors hover:border-white/50 hover:bg-white/15"
+                >
+                  Read the Modding Docs
+                </a>
               </div>
             </div>
           </div>
@@ -174,11 +253,15 @@ export default function Home(): React.ReactElement {
         <section id="about" className="scroll-mt-[var(--ifm-navbar-height)] bg-zinc-900 py-20">
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-center text-4xl font-semibold">About</h2>
+            <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-gray-300">
+              Voxel Playground is a hands‑on VR sandbox where anything you build can be torn apart—brick by brick, chunk by chunk,
+              moment by moment.
+            </p>
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {features.map((feature, i) => (
                 <InView
                   key={feature.title}
-                  className="rounded-2xl border border-zinc-700 bg-zinc-800 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
+                  className="border border-zinc-700 bg-zinc-800 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
                   delayMs={i * 100}
                 >
                   <h3 className="text-xl font-semibold">{feature.title}</h3>
@@ -206,11 +289,11 @@ export default function Home(): React.ReactElement {
                   onClick={() => trackSocialClick(link.platform)}
                   delayMs={i * 100}
                   className={clsx(
-                    'group social-btn flex w-full max-w-sm flex-col items-center rounded-2xl border-2 border-white/20 bg-white/10 px-8 py-6 text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/40 hover:bg-white/20 md:w-auto md:min-w-[160px]',
-                    link.kind === 'discord' && 'hover:border-[#7289da] hover:bg-[#7289da]/20',
+                    'group social-btn flex w-full max-w-sm flex-col items-center border-2 border-white/20 bg-white/10 px-8 py-6 text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/40 hover:bg-white/20 md:w-auto md:min-w-[160px]',
+                    link.kind === 'discord' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
                     link.kind === 'youtube' && 'hover:border-[#ff0000] hover:bg-[#ff0000]/20',
-                    link.kind === 'tiktok' && 'hover:border-white hover:bg-white/20',
-                    link.kind === 'quest' && 'hover:border-[#007bff] hover:bg-[#007bff]/20',
+                    link.kind === 'tiktok' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
+                    link.kind === 'quest' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
                   )}
                 >
                   {link.icon}
