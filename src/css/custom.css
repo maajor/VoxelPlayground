@@ -9,6 +9,7 @@
   --ifm-navbar-background-color: #000;
   --ifm-navbar-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   --ifm-color-primary: #3498db;
+  --ifm-footer-background-color: #18181b;
 }
 
 html {
@@ -23,3 +24,6 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.footer--dark {
+  background-color: #18181b;
+}

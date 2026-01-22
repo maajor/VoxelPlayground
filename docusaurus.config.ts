@@ -55,6 +55,28 @@ const config: Config = {
         {to: '/privacy', label: 'Privacy Policy', position: 'right'},
       ],
     },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Voxel Playground',
+          items: [{label: 'Physics-based voxel sandbox VR game', to: '/'}],
+        },
+        {
+          title: 'Links',
+          items: [
+            {label: 'Home', to: '/#home'},
+            {label: 'About', to: '/#about'},
+            {label: 'Privacy Policy', to: '/privacy'},
+          ],
+        },
+        {
+          title: 'Contact Us',
+          items: [{label: 'Contact us through Discord', href: 'https://discord.com/invite/CrYCjTudCH'}],
+        },
+      ],
+      copyright: '© 2025 Voxel Playground. All rights reserved.',
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,

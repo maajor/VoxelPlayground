@@ -220,43 +220,6 @@ export default function Home(): React.ReactElement {
             </div>
           </div>
         </section>
-
-        <footer className="bg-zinc-900 py-16 text-white">
-          <div className="mx-auto max-w-6xl px-5">
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-              <div>
-                <h3 className="text-xl font-semibold">Voxel Playground</h3>
-                <p className="mt-3 text-gray-300">Physics-based voxel sandbox VR game</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold">Links</h4>
-                <ul className="mt-3 space-y-2 text-gray-300">
-                  <li>
-                    <a className="hover:text-sky-400" href="/#home">
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:text-sky-400" href="/#about">
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:text-sky-400" href="/privacy">
-                      Privacy Policy
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold">Contact Us</h4>
-                <p className="mt-3 text-gray-300">Have any questions or suggestions?</p>
-                <p className="mt-1 text-gray-300">Contact us through Discord</p>
-              </div>
-            </div>
-            <div className="mt-12 border-t border-zinc-700 pt-8 text-center text-gray-300">&copy; 2025 Voxel Playground. All rights reserved.</div>
-          </div>
-        </footer>
       </main>
     </Layout>
   );
