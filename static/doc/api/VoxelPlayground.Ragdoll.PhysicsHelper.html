@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PhysicsHelper | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PhysicsHelper | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Ragdoll.PhysicsHelper">
+
+
+
+  <h1 id="VoxelPlayground_Ragdoll_PhysicsHelper" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper" class="text-break">
+Class PhysicsHelper  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Ragdoll.html">Ragdoll</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PhysicsHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">PhysicsHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_CheckMask" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.CheckMask">
+  CheckMask
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CheckMask</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_DEFAULT_GRAVITY" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.DEFAULT_GRAVITY">
+  DEFAULT_GRAVITY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float DEFAULT_GRAVITY = 0.98</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_DefaultTimeScale" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.DefaultTimeScale">
+  DefaultTimeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DefaultTimeScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS01Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS01Sec">
+  FPS01Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS01Sec = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS02Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS02Sec">
+  FPS02Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS02Sec = 0.5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS03Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS03Sec">
+  FPS03Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS03Sec = 0.33333334</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS04Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS04Sec">
+  FPS04Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS04Sec = 0.25</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS05Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS05Sec">
+  FPS05Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS05Sec = 0.2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS06Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS06Sec">
+  FPS06Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS06Sec = 0.16666667</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS07Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS07Sec">
+  FPS07Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS07Sec = 0.14285715</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS08Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS08Sec">
+  FPS08Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS08Sec = 0.125</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS09Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS09Sec">
+  FPS09Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS09Sec = 0.11111111</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS10Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS10Sec">
+  FPS10Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS10Sec = 0.1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS20Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS20Sec">
+  FPS20Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS20Sec = 0.05</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS25Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS25Sec">
+  FPS25Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS25Sec = 0.04</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS30Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS30Sec">
+  FPS30Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS30Sec = 0.033333335</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS35Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS35Sec">
+  FPS35Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS35Sec = 0.028571429</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS45Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS45Sec">
+  FPS45Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS45Sec = 0.022222223</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS50Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS50Sec">
+  FPS50Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS50Sec = 0.02</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS60Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS60Sec">
+  FPS60Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS60Sec = 0.016666668</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS75Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS75Sec">
+  FPS75Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS75Sec = 0.013333334</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_FPS90Sec" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.FPS90Sec">
+  FPS90Sec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FPS90Sec = 0.011111111</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LogicTimeScale" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LogicTimeScale">
+  LogicTimeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>for fast access timescale, faster than Time.timescale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LogicTimeScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LogicTimeScaleLerpOne" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LogicTimeScaleLerpOne">
+  LogicTimeScaleLerpOne
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LogicTimeScaleLerpOne</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LogicTimeScaleReciprocal" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LogicTimeScaleReciprocal">
+  LogicTimeScaleReciprocal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LogicTimeScaleReciprocal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LogicTimeScaleReciprocalSqr" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LogicTimeScaleReciprocalSqr">
+  LogicTimeScaleReciprocalSqr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LogicTimeScaleReciprocalSqr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_OriginalFixedDeltaTime" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.OriginalFixedDeltaTime">
+  OriginalFixedDeltaTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float OriginalFixedDeltaTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_OriginalMaximumDeltaTime" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.OriginalMaximumDeltaTime">
+  OriginalMaximumDeltaTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float OriginalMaximumDeltaTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_raycastHitsArray" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.raycastHitsArray">
+  raycastHitsArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RaycastHit[] raycastHitsArray</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RaycastHit.html">RaycastHit</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_shareOverlapColArray" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.shareOverlapColArray">
+  shareOverlapColArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collider[] shareOverlapColArray</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_SlowTimeScale" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SlowTimeScale">
+  SlowTimeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SlowTimeScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_AddForceLimit_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.AddForceLimit*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_AddForceLimit_UnityEngine_Rigidbody_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.AddForceLimit(UnityEngine.Rigidbody,UnityEngine.Vector3,System.Single)">
+  AddForceLimit(Rigidbody, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddForceLimit(this Rigidbody rb, Vector3 force, float limit = 350)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>force</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>limit</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_CheckRaycast_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.CheckRaycast*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_CheckRaycast_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.CheckRaycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  CheckRaycast(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckRaycast(Vector3 pos, Vector3 dir, float dis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dis</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_CheckShortRaycast_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.CheckShortRaycast*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_CheckShortRaycast_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.CheckShortRaycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  CheckShortRaycast(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckShortRaycast(Vector3 pos, Vector3 dir, float dis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dis</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_GetLatestHitResults_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.GetLatestHitResults*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_GetLatestHitResults" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.GetLatestHitResults">
+  GetLatestHitResults()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>replacement for lua version, please call PhysicsHelper.RaycastAll first</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RaycastHit[] GetLatestHitResults()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RaycastHit.html">RaycastHit</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_IgnoreCollisions_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IgnoreCollisions*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_IgnoreCollisions_UnityEngine_Collider_UnityEngine_Collider___System_Boolean_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IgnoreCollisions(UnityEngine.Collider,UnityEngine.Collider[],System.Boolean)">
+  IgnoreCollisions(Collider, Collider[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreCollisions(Collider col1, Collider[] cols2, bool ig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>col1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>cols2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+    <dt><code>ig</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_IgnoreCollisions_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IgnoreCollisions*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_IgnoreCollisions_UnityEngine_Collider___UnityEngine_Collider___System_Boolean_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IgnoreCollisions(UnityEngine.Collider[],UnityEngine.Collider[],System.Boolean)">
+  IgnoreCollisions(Collider[], Collider[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreCollisions(Collider[] cols1, Collider[] cols2, bool ig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cols1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+    <dt><code>cols2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+    <dt><code>ig</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_InitRaycast_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.InitRaycast*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_InitRaycast_System_Int32_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.InitRaycast(System.Int32)">
+  InitRaycast(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitRaycast(int mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mask</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_IsSlowMo_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IsSlowMo*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_IsSlowMo" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.IsSlowMo">
+  IsSlowMo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSlowMo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_LimitVelocityForce_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LimitVelocityForce*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LimitVelocityForce_UnityEngine_Vector3_System_Single_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LimitVelocityForce(UnityEngine.Vector3,System.Single,System.Single)">
+  LimitVelocityForce(Vector3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 LimitVelocityForce(Vector3 force, float min, float max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>force</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_LimitVelocityForce_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LimitVelocityForce*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_LimitVelocityForce_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.LimitVelocityForce(UnityEngine.Vector3,System.Single)">
+  LimitVelocityForce(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 LimitVelocityForce(Vector3 force, float limit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>force</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>limit</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_Pin_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.Pin*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_Pin_UnityEngine_Transform_UnityEngine_Rigidbody_UnityEngine_Vector3_System_Single_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.Pin(UnityEngine.Transform,UnityEngine.Rigidbody,UnityEngine.Vector3,System.Single,System.Single)">
+  Pin(Transform, Rigidbody, Vector3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pin(Transform target, Rigidbody follow, Vector3 localFollowPoint, float deltaTime, float forceMlp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>follow</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>localFollowPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>forceMlp</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_Raycast_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.Raycast*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_Raycast_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_RaycastHit__System_Single_UnityEngine_LayerMask_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit@,System.Single,UnityEngine.LayerMask)">
+  Raycast(Vector3, Vector3, out RaycastHit, float, LayerMask)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>replacement for lua version</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Raycast(Vector3 pos, Vector3 dir, out RaycastHit hitInfo, float dis, LayerMask mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>hitInfo</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RaycastHit.html">RaycastHit</a></dt>
+    <dd></dd>
+    <dt><code>dis</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>mask</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_RaycastAll_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.RaycastAll*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_RaycastAll_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_UnityEngine_LayerMask_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.LayerMask)">
+  RaycastAll(Vector3, Vector3, float, LayerMask)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>replacement for lua version ,please call GetLatestHitResults() to get the array
+this function will not cause gc, because we're reusing the same array
+so don't reference the array when you out of scope</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RaycastAll(Vector3 pos, Vector3 dir, float dis, LayerMask mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>dis</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>mask</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_RecoverGravity_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.RecoverGravity*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_RecoverGravity" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.RecoverGravity">
+  RecoverGravity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecoverGravity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_SetGravity_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetGravity*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_SetGravity_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetGravity(System.Single)">
+  SetGravity(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetGravity(float g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_SetPhysicsTime_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetPhysicsTime*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_SetPhysicsTime_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetPhysicsTime(System.Single)">
+  SetPhysicsTime(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPhysicsTime(float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PhysicsHelper_SetTimeScale_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetTimeScale*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PhysicsHelper_SetTimeScale_System_Single_" data-uid="VoxelPlayground.Ragdoll.PhysicsHelper.SetTimeScale(System.Single)">
+  SetTimeScale(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTimeScale(float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

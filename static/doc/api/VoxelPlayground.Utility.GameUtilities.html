@@ -1,0 +1,3921 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameUtilities | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameUtilities | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Utility.GameUtilities">
+
+
+
+  <h1 id="VoxelPlayground_Utility_GameUtilities" data-uid="VoxelPlayground.Utility.GameUtilities" class="text-break">
+Class GameUtilities  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GameUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">GameUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ASSUMED_ONE_SECOND_FRAME_COUNT" data-uid="VoxelPlayground.Utility.GameUtilities.ASSUMED_ONE_SECOND_FRAME_COUNT">
+  ASSUMED_ONE_SECOND_FRAME_COUNT
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ASSUMED_ONE_SECOND_FRAME_COUNT = 72</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AXES" data-uid="VoxelPlayground.Utility.GameUtilities.AXES">
+  AXES
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3[] AXES</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CubeVertices" data-uid="VoxelPlayground.Utility.GameUtilities.CubeVertices">
+  CubeVertices
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3[] CubeVertices</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_USE_PX5" data-uid="VoxelPlayground.Utility.GameUtilities.USE_PX5">
+  USE_PX5
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool USE_PX5 = false</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CollidersPool_" data-uid="VoxelPlayground.Utility.GameUtilities.CollidersPool*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CollidersPool" data-uid="VoxelPlayground.Utility.GameUtilities.CollidersPool">
+  CollidersPool
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collider[] CollidersPool { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_abs_" data-uid="VoxelPlayground.Utility.GameUtilities.abs*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_abs_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.abs(System.Single)">
+  abs(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float abs(this float v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_AddClonedComponent_" data-uid="VoxelPlayground.Utility.GameUtilities.AddClonedComponent*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AddClonedComponent__1_UnityEngine_GameObject___0_" data-uid="VoxelPlayground.Utility.GameUtilities.AddClonedComponent``1(UnityEngine.GameObject,``0)">
+  AddClonedComponent&lt;T&gt;(GameObject, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AddClonedComponent&lt;T&gt;(this GameObject uo, T comp) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uo</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>comp</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_AddComponentIfNull_" data-uid="VoxelPlayground.Utility.GameUtilities.AddComponentIfNull*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AddComponentIfNull__1_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.GameUtilities.AddComponentIfNull``1(UnityEngine.GameObject)">
+  AddComponentIfNull&lt;T&gt;(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T AddComponentIfNull&lt;T&gt;(this GameObject gameObject) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_AsRect_" data-uid="VoxelPlayground.Utility.GameUtilities.AsRect*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AsRect_UnityEngine_Transform_" data-uid="VoxelPlayground.Utility.GameUtilities.AsRect(UnityEngine.Transform)">
+  AsRect(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RectTransform AsRect(this Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_AtFrameInterval_" data-uid="VoxelPlayground.Utility.GameUtilities.AtFrameInterval*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AtFrameInterval_System_Int32_" data-uid="VoxelPlayground.Utility.GameUtilities.AtFrameInterval(System.Int32)">
+  AtFrameInterval(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AtFrameInterval(int interval)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interval</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_AtInterval_" data-uid="VoxelPlayground.Utility.GameUtilities.AtInterval*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_AtInterval_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.AtInterval(System.Single)">
+  AtInterval(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AtInterval(float interval)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interval</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CalcCurrentDesiredTargetPosition_" data-uid="VoxelPlayground.Utility.GameUtilities.CalcCurrentDesiredTargetPosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CalcCurrentDesiredTargetPosition_UnityEngine_ConfigurableJoint_" data-uid="VoxelPlayground.Utility.GameUtilities.CalcCurrentDesiredTargetPosition(UnityEngine.ConfigurableJoint)">
+  CalcCurrentDesiredTargetPosition(ConfigurableJoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 CalcCurrentDesiredTargetPosition(this ConfigurableJoint joint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CalculateMass_" data-uid="VoxelPlayground.Utility.GameUtilities.CalculateMass*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CalculateMass_VoxelPlayground_Engine_VoxelVolume_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.CalculateMass(VoxelPlayground.Engine.VoxelVolume,System.Single)">
+  CalculateMass(VoxelVolume, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CalculateMass(VoxelVolume voxelColume, float density = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelColume</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+    <dt><code>density</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CastDownFloorLocation_" data-uid="VoxelPlayground.Utility.GameUtilities.CastDownFloorLocation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CastDownFloorLocation_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.CastDownFloorLocation(UnityEngine.Vector3)">
+  CastDownFloorLocation(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 CastDownFloorLocation(Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Entity_EntityCharacter_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight(UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Entity.EntityCharacter,VoxelPlayground.Entity.EntityCharacter)">
+  CheckDirectLineOfSight(Vector3, Vector3, EntityCharacter, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckDirectLineOfSight(Vector3 from, Vector3 to, EntityCharacter fromEntity, EntityCharacter toEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>fromEntity</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+    <dt><code>toEntity</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_UnityEngine_Vector3_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight(UnityEngine.Vector3,VoxelPlayground.Entity.EntityCharacter)">
+  CheckDirectLineOfSight(Vector3, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckDirectLineOfSight(Vector3 from, EntityCharacter targetEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>targetEntity</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CheckDirectLineOfSight_VoxelPlayground_Entity_EntityCharacter_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Utility.GameUtilities.CheckDirectLineOfSight(VoxelPlayground.Entity.EntityCharacter,VoxelPlayground.Entity.Entity)">
+  CheckDirectLineOfSight(EntityCharacter, Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckDirectLineOfSight(EntityCharacter fromEntity, Entity toEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromEntity</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+    <dt><code>toEntity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CopyAllProperties_" data-uid="VoxelPlayground.Utility.GameUtilities.CopyAllProperties*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_" data-uid="VoxelPlayground.Utility.GameUtilities.CopyAllProperties``1(``0,``0)">
+  CopyAllProperties&lt;T&gt;(T, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CopyAllProperties&lt;T&gt;(this T comp, T other) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comp</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>other</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CreateCollisionEffect_" data-uid="VoxelPlayground.Utility.GameUtilities.CreateCollisionEffect*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CreateCollisionEffect_VoxelPlayground_VFX_CollisionHitType_UnityEngine_Transform_UnityEngine_Vector3_System_Single_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.CreateCollisionEffect(VoxelPlayground.VFX.CollisionHitType,UnityEngine.Transform,UnityEngine.Vector3,System.Single,System.Boolean)">
+  CreateCollisionEffect(CollisionHitType, Transform, Vector3, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateCollisionEffect(CollisionHitType hitType, Transform hitTransform, Vector3 position, float duration = -1, bool checkCooldown = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitType</code> <a class="xref" href="VoxelPlayground.VFX.CollisionHitType.html">CollisionHitType</a></dt>
+    <dd></dd>
+    <dt><code>hitTransform</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>checkCooldown</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CreateCollisionEffect_" data-uid="VoxelPlayground.Utility.GameUtilities.CreateCollisionEffect*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CreateCollisionEffect_VoxelPlayground_VFX_CollisionHitType_VoxelPlayground_VFX_CollisionMatType_UnityEngine_Vector3_System_Single_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.CreateCollisionEffect(VoxelPlayground.VFX.CollisionHitType,VoxelPlayground.VFX.CollisionMatType,UnityEngine.Vector3,System.Single,System.Boolean)">
+  CreateCollisionEffect(CollisionHitType, CollisionMatType, Vector3, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateCollisionEffect(CollisionHitType hitType, CollisionMatType matType, Vector3 position, float duration = -1, bool checkCooldown = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitType</code> <a class="xref" href="VoxelPlayground.VFX.CollisionHitType.html">CollisionHitType</a></dt>
+    <dd></dd>
+    <dt><code>matType</code> <a class="xref" href="VoxelPlayground.VFX.CollisionMatType.html">CollisionMatType</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>checkCooldown</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_CurveCast_" data-uid="VoxelPlayground.Utility.GameUtilities.CurveCast*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_CurveCast_UnityEngine_Vector3_UnityEngine_Vector3_System_Int32_System_Single_System_Collections_Generic_List_UnityEngine_Vector3__UnityEngine_RaycastHit__System_Boolean__System_Func_UnityEngine_Collider_System_Boolean__System_Int32_" data-uid="VoxelPlayground.Utility.GameUtilities.CurveCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Int32,System.Single,System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.RaycastHit@,System.Boolean@,System.Func{UnityEngine.Collider,System.Boolean},System.Int32)">
+  CurveCast(Vector3, Vector3, int, float, List&lt;Vector3&gt;, out RaycastHit, out bool, Func&lt;Collider, bool&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CurveCast(Vector3 startPos, Vector3 direction, int num, float velocity, List&lt;Vector3&gt; curveVecs, out RaycastHit hit, out bool outIsRaycast, Func&lt;Collider, bool&gt; filter, int layerMask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>velocity</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>curveVecs</code> <span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>hit</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RaycastHit.html">RaycastHit</a></dt>
+    <dd></dd>
+    <dt><code>outIsRaycast</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">Func</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>layerMask</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DebugDrawCube_" data-uid="VoxelPlayground.Utility.GameUtilities.DebugDrawCube*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DebugDrawCube_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Vector3_UnityEngine_Color_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.DebugDrawCube(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Color,System.Single)">
+  DebugDrawCube(Vector3, Quaternion, Vector3, Color, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DebugDrawCube(Vector3 position, Quaternion rotation, Vector3 scale, Color color, float duration = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DebugObject_" data-uid="VoxelPlayground.Utility.GameUtilities.DebugObject*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DebugObject_System_String_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.DebugObject(System.String,UnityEngine.Vector3)">
+  DebugObject(string, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DebugObject(string name, Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DestoryAllEntities_" data-uid="VoxelPlayground.Utility.GameUtilities.DestoryAllEntities*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DestoryAllEntities" data-uid="VoxelPlayground.Utility.GameUtilities.DestoryAllEntities">
+  DestoryAllEntities()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DestoryAllEntities()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DestroyChildren_" data-uid="VoxelPlayground.Utility.GameUtilities.DestroyChildren*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DestroyChildren_UnityEngine_Transform_System_Boolean_System_Func_UnityEngine_Transform_System_Boolean__System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.DestroyChildren(UnityEngine.Transform,System.Boolean,System.Func{UnityEngine.Transform,System.Boolean},System.Boolean)">
+  DestroyChildren(Transform, bool, Func&lt;Transform, bool&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DestroyChildren(this Transform obj, bool immediately = false, Func&lt;Transform, bool&gt; delIf = null, bool includeSelf = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>immediately</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>delIf</code> <span class="xref">Func</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>includeSelf</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Distance_" data-uid="VoxelPlayground.Utility.GameUtilities.Distance*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Distance_UnityEngine_Collider_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.Distance(UnityEngine.Collider,UnityEngine.Vector3)">
+  Distance(Collider, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Distance(this Collider collider, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DrawLine_" data-uid="VoxelPlayground.Utility.GameUtilities.DrawLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DrawLine_System_String_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.DrawLine(System.String,UnityEngine.Vector3,UnityEngine.Vector3)">
+  DrawLine(string, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(string name, Vector3 startPoint, Vector3 endPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>startPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>endPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_DrawSkeleton_" data-uid="VoxelPlayground.Utility.GameUtilities.DrawSkeleton*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_DrawSkeleton_UnityEngine_Transform_UnityEngine_Color_System_Predicate_UnityEngine_Transform__" data-uid="VoxelPlayground.Utility.GameUtilities.DrawSkeleton(UnityEngine.Transform,UnityEngine.Color,System.Predicate{UnityEngine.Transform})">
+  DrawSkeleton(Transform, Color, Predicate&lt;Transform&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSkeleton(this Transform bone, Color color, Predicate&lt;Transform&gt; isSkeletonBone = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+    <dt><code>isSkeletonBone</code> <span class="xref">Predicate</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FindClosestTypedEntity_" data-uid="VoxelPlayground.Utility.GameUtilities.FindClosestTypedEntity*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FindClosestTypedEntity__1_UnityEngine_Vector3_System_Single_System_Func___0_System_Boolean__" data-uid="VoxelPlayground.Utility.GameUtilities.FindClosestTypedEntity``1(UnityEngine.Vector3,System.Single,System.Func{``0,System.Boolean})">
+  FindClosestTypedEntity&lt;T&gt;(Vector3, float, Func&lt;T, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FindClosestTypedEntity&lt;T&gt;(Vector3 center, float radius, Func&lt;T, bool&gt; filter = null) where T : Entity</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">Func</span>&lt;T, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FindFreePlaceForCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.FindFreePlaceForCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FindFreePlaceForCharacter_UnityEngine_Vector3_System_Boolean_System_Int32_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.FindFreePlaceForCharacter(UnityEngine.Vector3,System.Boolean,System.Int32,System.Single,System.Single)">
+  FindFreePlaceForCharacter(Vector3, bool, int, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 FindFreePlaceForCharacter(Vector3 center, bool toGroundPos = true, int maxTries = 40, float maxRadius = 6, float freeRadius = 0.35)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>toGroundPos</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>maxTries</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>maxRadius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>freeRadius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FindFreeSpace_" data-uid="VoxelPlayground.Utility.GameUtilities.FindFreeSpace*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FindFreeSpace_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.FindFreeSpace(UnityEngine.Vector3,System.Single)">
+  FindFreeSpace(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 FindFreeSpace(Vector3 centerPos, float circleDistanceFactor = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>centerPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>circleDistanceFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FindMonoFromParent_" data-uid="VoxelPlayground.Utility.GameUtilities.FindMonoFromParent*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FindMonoFromParent__1_UnityEngine_Transform_" data-uid="VoxelPlayground.Utility.GameUtilities.FindMonoFromParent``1(UnityEngine.Transform)">
+  FindMonoFromParent&lt;T&gt;(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FindMonoFromParent&lt;T&gt;(Transform self) where T : MonoBehaviour</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Floor_" data-uid="VoxelPlayground.Utility.GameUtilities.Floor*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Floor_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.Floor(System.Single,System.Single)">
+  Floor(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Floor(this float v, float unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>unit</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Floor_" data-uid="VoxelPlayground.Utility.GameUtilities.Floor*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Floor_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.Floor(UnityEngine.Vector3)">
+  Floor(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Floor(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FollowPosition_" data-uid="VoxelPlayground.Utility.GameUtilities.FollowPosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FollowPosition_UnityEngine_Rigidbody_UnityEngine_Vector3_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.FollowPosition(UnityEngine.Rigidbody,UnityEngine.Vector3,System.Single,System.Single)">
+  FollowPosition(Rigidbody, Vector3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FollowPosition(Rigidbody follower, Vector3 targetPos, float speed = 1, float maxVelocityDelta = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>follower</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>targetPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxVelocityDelta</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FollowRotation_" data-uid="VoxelPlayground.Utility.GameUtilities.FollowRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FollowRotation_UnityEngine_Rigidbody_UnityEngine_Quaternion_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.FollowRotation(UnityEngine.Rigidbody,UnityEngine.Quaternion,System.Single,System.Single)">
+  FollowRotation(Rigidbody, Quaternion, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FollowRotation(Rigidbody follower, Quaternion targetRot, float speed = 1, float maxVelocityDelta = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>follower</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>targetRot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxVelocityDelta</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_ForChildren_" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildren*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ForChildren_UnityEngine_Transform_System_Action_UnityEngine_Transform__" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildren(UnityEngine.Transform,System.Action{UnityEngine.Transform})">
+  ForChildren(Transform, Action&lt;Transform&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForChildren(this Transform obj, Action&lt;Transform&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_ForChildrenRecursive_" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildrenRecursive*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ForChildrenRecursive_UnityEngine_Transform_System_Action_UnityEngine_Transform__" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildrenRecursive(UnityEngine.Transform,System.Action{UnityEngine.Transform})">
+  ForChildrenRecursive(Transform, Action&lt;Transform&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForChildrenRecursive(this Transform obj, Action&lt;Transform&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_ForChildrenRev_" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildrenRev*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ForChildrenRev_UnityEngine_Transform_System_Action_UnityEngine_Transform__" data-uid="VoxelPlayground.Utility.GameUtilities.ForChildrenRev(UnityEngine.Transform,System.Action{UnityEngine.Transform})">
+  ForChildrenRev(Transform, Action&lt;Transform&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForChildrenRev(this Transform obj, Action&lt;Transform&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_FrametimeIntervals_" data-uid="VoxelPlayground.Utility.GameUtilities.FrametimeIntervals*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_FrametimeIntervals_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.FrametimeIntervals(System.Single)">
+  FrametimeIntervals(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FrametimeIntervals(float interval)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interval</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GenerateRandomPointsAroundEntity_" data-uid="VoxelPlayground.Utility.GameUtilities.GenerateRandomPointsAroundEntity*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GenerateRandomPointsAroundEntity_UnityEngine_Transform_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.GenerateRandomPointsAroundEntity(UnityEngine.Transform,System.Single)">
+  GenerateRandomPointsAroundEntity(Transform, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; GenerateRandomPointsAroundEntity(Transform bodyTrans, float searchRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyTrans</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>searchRadius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetClosest_" data-uid="VoxelPlayground.Utility.GameUtilities.GetClosest*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetClosest__1_UnityEngine_Vector3_System_Collections_Generic_IEnumerable___0__System_Func___0_UnityEngine_Vector3__System_Func___0_System_Boolean__" data-uid="VoxelPlayground.Utility.GameUtilities.GetClosest``1(UnityEngine.Vector3,System.Collections.Generic.IEnumerable{``0},System.Func{``0,UnityEngine.Vector3},System.Func{``0,System.Boolean})">
+  GetClosest&lt;T&gt;(Vector3, IEnumerable&lt;T&gt;, Func&lt;T, Vector3&gt;, Func&lt;T, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetClosest&lt;T&gt;(Vector3 p, IEnumerable&lt;T&gt; ls, Func&lt;T, Vector3&gt; fnPos, Func&lt;T, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>ls</code> <span class="xref">IEnumerable</span>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>fnPos</code> <span class="xref">Func</span>&lt;T, <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">Func</span>&lt;T, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetClosestRigidbodyEntity_" data-uid="VoxelPlayground.Utility.GameUtilities.GetClosestRigidbodyEntity*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetClosestRigidbodyEntity_UnityEngine_Vector3_System_Single_VoxelPlayground_Entity_Entity__UnityEngine_Rigidbody__UnityEngine_Collider__System_Func_UnityEngine_Collider_UnityEngine_Rigidbody_VoxelPlayground_Entity_Entity_System_Boolean__" data-uid="VoxelPlayground.Utility.GameUtilities.GetClosestRigidbodyEntity(UnityEngine.Vector3,System.Single,VoxelPlayground.Entity.Entity@,UnityEngine.Rigidbody@,UnityEngine.Collider@,System.Func{UnityEngine.Collider,UnityEngine.Rigidbody,VoxelPlayground.Entity.Entity,System.Boolean})">
+  GetClosestRigidbodyEntity(Vector3, float, out Entity, out Rigidbody, out Collider, Func&lt;Collider, Rigidbody, Entity, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetClosestRigidbodyEntity(Vector3 center, float radius, out Entity outClosestEntity, out Rigidbody outClosestRigidbody, out Collider outCollider, Func&lt;Collider, Rigidbody, Entity, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>outClosestEntity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>outClosestRigidbody</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>outCollider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">Func</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>, <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a>, <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetComponentIfNull_" data-uid="VoxelPlayground.Utility.GameUtilities.GetComponentIfNull*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetComponentIfNull__1_UnityEngine_GameObject___0__" data-uid="VoxelPlayground.Utility.GameUtilities.GetComponentIfNull``1(UnityEngine.GameObject,``0@)">
+  GetComponentIfNull&lt;T&gt;(GameObject, ref T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetComponentIfNull&lt;T&gt;(this GameObject gameObject, ref T component) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>component</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetDirectories_" data-uid="VoxelPlayground.Utility.GameUtilities.GetDirectories*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetDirectories_System_String_" data-uid="VoxelPlayground.Utility.GameUtilities.GetDirectories(System.String)">
+  GetDirectories(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetDirectories(this string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_UnityEngine_Rigidbody_VoxelPlayground_Entity_EntityCharacter__VoxelPlayground_Destruction_VoxelDestructor__" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter(UnityEngine.Rigidbody,VoxelPlayground.Entity.EntityCharacter@,VoxelPlayground.Destruction.VoxelDestructor@)">
+  GetEntityCharacter(Rigidbody, out EntityCharacter, out VoxelDestructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetEntityCharacter(Rigidbody rb, out EntityCharacter entityCharacter, out VoxelDestructor voxelCollider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+    <dt><code>voxelCollider</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_UnityEngine_Rigidbody_VoxelPlayground_Entity_EntityCharacter__" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter(UnityEngine.Rigidbody,VoxelPlayground.Entity.EntityCharacter@)">
+  GetEntityCharacter(Rigidbody, out EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetEntityCharacter(Rigidbody rb, out EntityCharacter entityCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetEntityCharacter_VoxelPlayground_Destruction_VoxelDestructor_VoxelPlayground_Entity_EntityCharacter__" data-uid="VoxelPlayground.Utility.GameUtilities.GetEntityCharacter(VoxelPlayground.Destruction.VoxelDestructor,VoxelPlayground.Entity.EntityCharacter@)">
+  GetEntityCharacter(VoxelDestructor, out EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetEntityCharacter(VoxelDestructor voxelCollider, out EntityCharacter entityCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelCollider</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetHierarchyPath_" data-uid="VoxelPlayground.Utility.GameUtilities.GetHierarchyPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetHierarchyPath_UnityEngine_Transform_System_Func_UnityEngine_Transform_System_Boolean__" data-uid="VoxelPlayground.Utility.GameUtilities.GetHierarchyPath(UnityEngine.Transform,System.Func{UnityEngine.Transform,System.Boolean})">
+  GetHierarchyPath(Transform, Func&lt;Transform, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetHierarchyPath(Transform from, Func&lt;Transform, bool&gt; cond = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>cond</code> <span class="xref">Func</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetOrAddComponent_" data-uid="VoxelPlayground.Utility.GameUtilities.GetOrAddComponent*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetOrAddComponent__1_UnityEngine_Transform_" data-uid="VoxelPlayground.Utility.GameUtilities.GetOrAddComponent``1(UnityEngine.Transform)">
+  GetOrAddComponent&lt;T&gt;(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetOrAddComponent&lt;T&gt;(this Transform uo) where T : Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uo</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetPointVelocity_" data-uid="VoxelPlayground.Utility.GameUtilities.GetPointVelocity*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetPointVelocity_UnityEngine_Rigidbody_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.GetPointVelocity(UnityEngine.Rigidbody,UnityEngine.Vector3)">
+  GetPointVelocity(Rigidbody, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetPointVelocity(this Rigidbody rb, Vector3 worldPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>worldPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetPrimaryVolumeCollider_" data-uid="VoxelPlayground.Utility.GameUtilities.GetPrimaryVolumeCollider*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetPrimaryVolumeCollider_UnityEngine_Rigidbody_" data-uid="VoxelPlayground.Utility.GameUtilities.GetPrimaryVolumeCollider(UnityEngine.Rigidbody)">
+  GetPrimaryVolumeCollider(Rigidbody)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Collider GetPrimaryVolumeCollider(Rigidbody rb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetVoxelCollider_" data-uid="VoxelPlayground.Utility.GameUtilities.GetVoxelCollider*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetVoxelCollider_UnityEngine_Rigidbody_VoxelPlayground_Destruction_VoxelDestructor__" data-uid="VoxelPlayground.Utility.GameUtilities.GetVoxelCollider(UnityEngine.Rigidbody,VoxelPlayground.Destruction.VoxelDestructor@)">
+  GetVoxelCollider(Rigidbody, out VoxelDestructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetVoxelCollider(Rigidbody rb, out VoxelDestructor voxelCollider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>voxelCollider</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_GetVoxelData_" data-uid="VoxelPlayground.Utility.GameUtilities.GetVoxelData*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_GetVoxelData_UnityEngine_Rigidbody_VoxelPlayground_Engine_VoxelVolume__" data-uid="VoxelPlayground.Utility.GameUtilities.GetVoxelData(UnityEngine.Rigidbody,VoxelPlayground.Engine.VoxelVolume@)">
+  GetVoxelData(Rigidbody, out VoxelVolume)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetVoxelData(Rigidbody rb, out VoxelVolume vdat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>vdat</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_HideLine_" data-uid="VoxelPlayground.Utility.GameUtilities.HideLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_HideLine_System_String_" data-uid="VoxelPlayground.Utility.GameUtilities.HideLine(System.String)">
+  HideLine(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HideLine(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IgnoreChildrenCollisions_" data-uid="VoxelPlayground.Utility.GameUtilities.IgnoreChildrenCollisions*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IgnoreChildrenCollisions_UnityEngine_GameObject_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.IgnoreChildrenCollisions(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)">
+  IgnoreChildrenCollisions(GameObject, GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreChildrenCollisions(GameObject rbA, GameObject rbB, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rbA</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>rbB</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IgnoreCollision_" data-uid="VoxelPlayground.Utility.GameUtilities.IgnoreCollision*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IgnoreCollision_UnityEngine_Rigidbody_UnityEngine_Rigidbody_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.IgnoreCollision(UnityEngine.Rigidbody,UnityEngine.Rigidbody,System.Boolean)">
+  IgnoreCollision(Rigidbody, Rigidbody, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IgnoreCollision(Rigidbody rbA, Rigidbody rbB, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rbA</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>rbB</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_InDistance_" data-uid="VoxelPlayground.Utility.GameUtilities.InDistance*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_InDistance_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.InDistance(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  InDistance(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool InDistance(this Vector3 a, Vector3 b, float distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsFreePlaceForCharacter_" data-uid="VoxelPlayground.Utility.GameUtilities.IsFreePlaceForCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsFreePlaceForCharacter_UnityEngine_Vector3_UnityEngine_Vector3__System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.IsFreePlaceForCharacter(UnityEngine.Vector3,UnityEngine.Vector3@,System.Single)">
+  IsFreePlaceForCharacter(Vector3, out Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFreePlaceForCharacter(Vector3 p, out Vector3 floorPoint, float rad = 0.2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>floorPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rad</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsPointInFrustum_" data-uid="VoxelPlayground.Utility.GameUtilities.IsPointInFrustum*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsPointInFrustum_UnityEngine_Camera_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.IsPointInFrustum(UnityEngine.Camera,UnityEngine.Vector3)">
+  IsPointInFrustum(Camera, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointInFrustum(this Camera camera, Vector3 worldPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>camera</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Camera.html">Camera</a></dt>
+    <dd></dd>
+    <dt><code>worldPosition</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsPointInside_" data-uid="VoxelPlayground.Utility.GameUtilities.IsPointInside*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsPointInside_UnityEngine_Collider_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.IsPointInside(UnityEngine.Collider,UnityEngine.Vector3,System.Single)">
+  IsPointInside(Collider, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPointInside(this Collider collider, Vector3 point, float tolerance = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsTagFloor_" data-uid="VoxelPlayground.Utility.GameUtilities.IsTagFloor*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsTagFloor_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.GameUtilities.IsTagFloor(UnityEngine.GameObject)">
+  IsTagFloor(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTagFloor(this GameObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsVertical_" data-uid="VoxelPlayground.Utility.GameUtilities.IsVertical*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsVertical_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.IsVertical(UnityEngine.Vector3)">
+  IsVertical(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVertical(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IsVoxelDataReady_" data-uid="VoxelPlayground.Utility.GameUtilities.IsVoxelDataReady*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IsVoxelDataReady_VoxelPlayground_Engine_VoxelVolume_" data-uid="VoxelPlayground.Utility.GameUtilities.IsVoxelDataReady(VoxelPlayground.Engine.VoxelVolume)">
+  IsVoxelDataReady(VoxelVolume)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVoxelDataReady(this VoxelVolume voxeldata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxeldata</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IterateVoxels_" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxels*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IterateVoxels_System_Int32_System_Action_Unity_Mathematics_int3__" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxels(System.Int32,System.Action{Unity.Mathematics.int3})">
+  IterateVoxels(int, Action&lt;int3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IterateVoxels(int radiusCubical, Action&lt;int3&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radiusCubical</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<span class="xref">int3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IterateVoxels_" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxels*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IterateVoxels_Unity_Mathematics_int3_Unity_Mathematics_int3_System_Action_Unity_Mathematics_int3__" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxels(Unity.Mathematics.int3,Unity.Mathematics.int3,System.Action{Unity.Mathematics.int3})">
+  IterateVoxels(int3, int3, Action&lt;int3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IterateVoxels(int3 min, int3 max, Action&lt;int3&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>min</code> <span class="xref">int3</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">int3</span></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<span class="xref">int3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_IterateVoxelsSpherical_" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxelsSpherical*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_IterateVoxelsSpherical_System_Int32_System_Action_Unity_Mathematics_int3_System_Single__" data-uid="VoxelPlayground.Utility.GameUtilities.IterateVoxelsSpherical(System.Int32,System.Action{Unity.Mathematics.int3,System.Single})">
+  IterateVoxelsSpherical(int, Action&lt;int3, float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IterateVoxelsSpherical(int rad, Action&lt;int3, float&gt; visitor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rad</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<span class="xref">int3</span>, <span class="xref">float</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_LoadSceneAdditive_" data-uid="VoxelPlayground.Utility.GameUtilities.LoadSceneAdditive*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_LoadSceneAdditive_System_String_" data-uid="VoxelPlayground.Utility.GameUtilities.LoadSceneAdditive(System.String)">
+  LoadSceneAdditive(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadSceneAdditive(string sceneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_MatchToNearestValidPathfindingNode_" data-uid="VoxelPlayground.Utility.GameUtilities.MatchToNearestValidPathfindingNode*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_MatchToNearestValidPathfindingNode_UnityEngine_Vector3_VoxelPlayground_AI_PathFinderGrid_" data-uid="VoxelPlayground.Utility.GameUtilities.MatchToNearestValidPathfindingNode(UnityEngine.Vector3,VoxelPlayground.AI.PathFinderGrid)">
+  MatchToNearestValidPathfindingNode(Vector3, PathFinderGrid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 MatchToNearestValidPathfindingNode(Vector3 worldPos, PathFinderGrid pathFinderGrid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>pathFinderGrid</code> <a class="xref" href="VoxelPlayground.AI.PathFinderGrid.html">PathFinderGrid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_MirrorRotationAlongZ_" data-uid="VoxelPlayground.Utility.GameUtilities.MirrorRotationAlongZ*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_MirrorRotationAlongZ_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Utility.GameUtilities.MirrorRotationAlongZ(UnityEngine.Quaternion)">
+  MirrorRotationAlongZ(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion MirrorRotationAlongZ(Quaternion original)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>original</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_OrNull_" data-uid="VoxelPlayground.Utility.GameUtilities.OrNull*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_OrNull__1___0_" data-uid="VoxelPlayground.Utility.GameUtilities.OrNull``1(``0)">
+  OrNull&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T OrNull&lt;T&gt;(this T obj) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_OverlapSphere_" data-uid="VoxelPlayground.Utility.GameUtilities.OverlapSphere*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_OverlapSphere_Unity_Mathematics_float3_System_Single_System_Action_UnityEngine_Collider__System_Int32_UnityEngine_QueryTriggerInteraction_" data-uid="VoxelPlayground.Utility.GameUtilities.OverlapSphere(Unity.Mathematics.float3,System.Single,System.Action{UnityEngine.Collider},System.Int32,UnityEngine.QueryTriggerInteraction)">
+  OverlapSphere(float3, float, Action&lt;Collider&gt;, int, QueryTriggerInteraction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OverlapSphere(float3 position, float radius, Action&lt;Collider&gt; visitor, int layerMask = -5, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>visitor</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>layerMask</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>queryTriggerInteraction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/QueryTriggerInteraction.html">QueryTriggerInteraction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_PlaySound_" data-uid="VoxelPlayground.Utility.GameUtilities.PlaySound*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_PlaySound_Sonity_SoundEvent_UnityEngine_Vector3_System_Single_VoxelPlayground_Sound_SoundManager_SoundMixerType_" data-uid="VoxelPlayground.Utility.GameUtilities.PlaySound(Sonity.SoundEvent,UnityEngine.Vector3,System.Single,VoxelPlayground.Sound.SoundManager.SoundMixerType)">
+  PlaySound(SoundEvent, Vector3, float, SoundMixerType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlaySound(this SoundEvent soundEvent, Vector3 position, float volumeFactor = 1, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_ReleaseJointRestrains_" data-uid="VoxelPlayground.Utility.GameUtilities.ReleaseJointRestrains*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ReleaseJointRestrains_UnityEngine_ConfigurableJoint_" data-uid="VoxelPlayground.Utility.GameUtilities.ReleaseJointRestrains(UnityEngine.ConfigurableJoint)">
+  ReleaseJointRestrains(ConfigurableJoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReleaseJointRestrains(ConfigurableJoint cJoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cJoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull_" data-uid="VoxelPlayground.Utility.GameUtilities.RequiresActiveOrNull*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_" data-uid="VoxelPlayground.Utility.GameUtilities.RequiresActiveOrNull``1(``0)">
+  RequiresActiveOrNull&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T RequiresActiveOrNull&lt;T&gt;(this T obj) where T : MonoBehaviour</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_RotY_" data-uid="VoxelPlayground.Utility.GameUtilities.RotY*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_RotY_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Utility.GameUtilities.RotY(UnityEngine.Quaternion)">
+  RotY(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion RotY(this Quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetCullingLayerEnable_" data-uid="VoxelPlayground.Utility.GameUtilities.SetCullingLayerEnable*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetCullingLayerEnable_UnityEngine_Camera_System_Int32_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.SetCullingLayerEnable(UnityEngine.Camera,System.Int32,System.Boolean)">
+  SetCullingLayerEnable(Camera, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCullingLayerEnable(Camera camera, int layer, bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>camera</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Camera.html">Camera</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetIgnoreCollisionsBetweenGroups_" data-uid="VoxelPlayground.Utility.GameUtilities.SetIgnoreCollisionsBetweenGroups*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetIgnoreCollisionsBetweenGroups_UnityEngine_Collider___UnityEngine_Collider___System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.SetIgnoreCollisionsBetweenGroups(UnityEngine.Collider[],UnityEngine.Collider[],System.Boolean)">
+  SetIgnoreCollisionsBetweenGroups(Collider[], Collider[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetIgnoreCollisionsBetweenGroups(Collider[] group1, Collider[] group2, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>group1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+    <dt><code>group2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetJointAngularMotion_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointAngularMotion*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetJointAngularMotion_UnityEngine_ConfigurableJoint_UnityEngine_ConfigurableJointMotion_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointAngularMotion(UnityEngine.ConfigurableJoint,UnityEngine.ConfigurableJointMotion)">
+  SetJointAngularMotion(ConfigurableJoint, ConfigurableJointMotion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetJointAngularMotion(this ConfigurableJoint joint, ConfigurableJointMotion motion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+    <dt><code>motion</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJointMotion.html">ConfigurableJointMotion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetJointLinearMotion_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointLinearMotion*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetJointLinearMotion_UnityEngine_ConfigurableJoint_UnityEngine_ConfigurableJointMotion_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointLinearMotion(UnityEngine.ConfigurableJoint,UnityEngine.ConfigurableJointMotion)">
+  SetJointLinearMotion(ConfigurableJoint, ConfigurableJointMotion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetJointLinearMotion(this ConfigurableJoint joint, ConfigurableJointMotion motion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+    <dt><code>motion</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJointMotion.html">ConfigurableJointMotion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetJointMotionFree_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointMotionFree*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetJointMotionFree_UnityEngine_ConfigurableJoint_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointMotionFree(UnityEngine.ConfigurableJoint)">
+  SetJointMotionFree(ConfigurableJoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetJointMotionFree(ConfigurableJoint joint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetJointMotionLimited_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointMotionLimited*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetJointMotionLimited_UnityEngine_ConfigurableJoint_" data-uid="VoxelPlayground.Utility.GameUtilities.SetJointMotionLimited(UnityEngine.ConfigurableJoint)">
+  SetJointMotionLimited(ConfigurableJoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetJointMotionLimited(ConfigurableJoint joint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetLayerRecursively_" data-uid="VoxelPlayground.Utility.GameUtilities.SetLayerRecursively*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetLayerRecursively_UnityEngine_GameObject_System_Int32_" data-uid="VoxelPlayground.Utility.GameUtilities.SetLayerRecursively(UnityEngine.GameObject,System.Int32)">
+  SetLayerRecursively(GameObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLayerRecursively(GameObject go, int layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>go</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetRigidbodiesDetectCollision_" data-uid="VoxelPlayground.Utility.GameUtilities.SetRigidbodiesDetectCollision*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetRigidbodiesDetectCollision_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.SetRigidbodiesDetectCollision(UnityEngine.GameObject,System.Boolean)">
+  SetRigidbodiesDetectCollision(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRigidbodiesDetectCollision(GameObject obj, bool detect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>detect</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiHeight_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiHeight*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiHeight_UnityEngine_RectTransform_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiHeight(UnityEngine.RectTransform,System.Single)">
+  SetUiHeight(RectTransform, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiHeight(this RectTransform rect, float w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+    <dt><code>w</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiNormalColor_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiNormalColor*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiNormalColor_UnityEngine_UI_Selectable_UnityEngine_Color_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiNormalColor(UnityEngine.UI.Selectable,UnityEngine.Color)">
+  SetUiNormalColor(Selectable, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiNormalColor(this Selectable ui, Color normalColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ui</code> <span class="xref">Selectable</span></dt>
+    <dd></dd>
+    <dt><code>normalColor</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiNormalSelectedColor_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiNormalSelectedColor*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiNormalSelectedColor_UnityEngine_UI_Selectable_UnityEngine_Color_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiNormalSelectedColor(UnityEngine.UI.Selectable,UnityEngine.Color)">
+  SetUiNormalSelectedColor(Selectable, Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiNormalSelectedColor(this Selectable ui, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ui</code> <span class="xref">Selectable</span></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiSize_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiSize_UnityEngine_RectTransform_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize(UnityEngine.RectTransform,System.Single,System.Single)">
+  SetUiSize(RectTransform, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiSize(RectTransform rect, float size, float sizeY = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>sizeY</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiSize_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiSize_UnityEngine_RectTransform_UnityEngine_Vector2_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize(UnityEngine.RectTransform,UnityEngine.Vector2)">
+  SetUiSize(RectTransform, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiSize(this RectTransform rect, Vector2 size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiSize_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiSize_UnityEngine_Transform_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiSize(UnityEngine.Transform,System.Single,System.Single)">
+  SetUiSize(Transform, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiSize(Transform rect, float size, float sizeY = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>sizeY</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiWidth_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiWidth*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiWidth_UnityEngine_RectTransform_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiWidth(UnityEngine.RectTransform,System.Single)">
+  SetUiWidth(RectTransform, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiWidth(this RectTransform rect, float w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+    <dt><code>w</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SetUiWidthToParentPercentage_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiWidthToParentPercentage*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SetUiWidthToParentPercentage_UnityEngine_RectTransform_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SetUiWidthToParentPercentage(UnityEngine.RectTransform,System.Single)">
+  SetUiWidthToParentPercentage(RectTransform, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUiWidthToParentPercentage(this RectTransform rect, float percentage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RectTransform.html">RectTransform</a></dt>
+    <dd></dd>
+    <dt><code>percentage</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Snap_" data-uid="VoxelPlayground.Utility.GameUtilities.Snap*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Snap_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.Snap(System.Single,System.Single)">
+  Snap(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Snap(this float val, float unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>unit</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SnapPosition_" data-uid="VoxelPlayground.Utility.GameUtilities.SnapPosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SnapPosition_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SnapPosition(UnityEngine.Vector3,System.Single)">
+  SnapPosition(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 SnapPosition(this Vector3 pos, float unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_SnapRotation_" data-uid="VoxelPlayground.Utility.GameUtilities.SnapRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_SnapRotation_UnityEngine_Quaternion_System_Single_" data-uid="VoxelPlayground.Utility.GameUtilities.SnapRotation(UnityEngine.Quaternion,System.Single)">
+  SnapRotation(Quaternion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion SnapRotation(this Quaternion rotation, float deg = 90)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>deg</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_StopSound_" data-uid="VoxelPlayground.Utility.GameUtilities.StopSound*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_StopSound_Sonity_SoundEvent_UnityEngine_Transform_" data-uid="VoxelPlayground.Utility.GameUtilities.StopSound(Sonity.SoundEvent,UnityEngine.Transform)">
+  StopSound(SoundEvent, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopSound(this SoundEvent soundEvent, Transform owner = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Toggle_" data-uid="VoxelPlayground.Utility.GameUtilities.Toggle*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Toggle_System_Boolean__" data-uid="VoxelPlayground.Utility.GameUtilities.Toggle(System.Boolean@)">
+  Toggle(ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Toggle(this ref bool val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_ToVec3_" data-uid="VoxelPlayground.Utility.GameUtilities.ToVec3*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_ToVec3_Unity_Mathematics_int3_" data-uid="VoxelPlayground.Utility.GameUtilities.ToVec3(Unity.Mathematics.int3)">
+  ToVec3(int3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ToVec3(this int3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">int3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_TrackEvent_" data-uid="VoxelPlayground.Utility.GameUtilities.TrackEvent*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_TrackEvent_System_String_UnityEngine_GameObject_System_Object_System_Collections_Generic_Dictionary_System_String_System_Object__System_Nullable_System_Boolean__UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.GameUtilities.TrackEvent(System.String,UnityEngine.GameObject,System.Object,System.Collections.Generic.Dictionary{System.String,System.Object},System.Nullable{System.Boolean},UnityEngine.GameObject,System.String)">
+  TrackEvent(string, GameObject, object, Dictionary&lt;string, object&gt;, bool?, GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrackEvent(string eventName, GameObject obj = null, object value = null, Dictionary&lt;string, object&gt; props = null, bool? active = null, GameObject targetObj = null, string valueKey = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">object</span></dt>
+    <dd></dd>
+    <dt><code>props</code> <span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <span class="xref">object</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>active</code> <span class="xref">bool</span>?</dt>
+    <dd></dd>
+    <dt><code>targetObj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>valueKey</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_TransformPointYawUnscaled_" data-uid="VoxelPlayground.Utility.GameUtilities.TransformPointYawUnscaled*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_TransformPointYawUnscaled_UnityEngine_Transform_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.TransformPointYawUnscaled(UnityEngine.Transform,UnityEngine.Vector3)">
+  TransformPointYawUnscaled(Transform, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 TransformPointYawUnscaled(this Transform trans, Vector3 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trans</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_TryDestroy_" data-uid="VoxelPlayground.Utility.GameUtilities.TryDestroy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_" data-uid="VoxelPlayground.Utility.GameUtilities.TryDestroy(UnityEngine.Object)">
+  TryDestroy(Object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryDestroy(this Object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_TrySetActive_" data-uid="VoxelPlayground.Utility.GameUtilities.TrySetActive*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_TrySetActive_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.GameUtilities.TrySetActive(UnityEngine.GameObject,System.Boolean)">
+  TrySetActive(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TrySetActive(this GameObject obj, bool to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_GameUtilities_Volume_" data-uid="VoxelPlayground.Utility.GameUtilities.Volume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_GameUtilities_Volume_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.GameUtilities.Volume(UnityEngine.Vector3)">
+  Volume(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Volume(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

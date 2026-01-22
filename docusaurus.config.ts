@@ -52,6 +52,7 @@ const config: Config = {
       items: [
         {to: '/#home', label: 'Home', position: 'right'},
         {to: '/#about', label: 'About', position: 'right'},
+        {to: '/doc', label: 'Docs', position: 'right'},
         {to: '/privacy', label: 'Privacy Policy', position: 'right'},
       ],
     },

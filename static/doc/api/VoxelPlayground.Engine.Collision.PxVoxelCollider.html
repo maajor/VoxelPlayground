@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PxVoxelCollider | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PxVoxelCollider | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider">
+
+
+
+  <h1 id="VoxelPlayground_Engine_Collision_PxVoxelCollider" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider" class="text-break">
+Class PxVoxelCollider  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Engine.html">Engine</a>.<a class="xref" href="VoxelPlayground.Engine.Collision.html">Collision</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VoxEngine.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PxVoxelCollider : PxCollider</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">PxComponent</span></div>
+      <div><span class="xref">PxCollider</span></div>
+      <div><span class="xref">PxVoxelCollider</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_HasData" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.HasData">
+  HasData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Create_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Create*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Create_Px5_Unity_PxRigidBody_VoxelPlayground_Engine_VoxelVolume_VoxelPlayground_Engine_VoxelChunk_System_Single_System_Boolean___System_Int32___System_Int32_System_Boolean_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Create(Px5.Unity.PxRigidBody,VoxelPlayground.Engine.VoxelVolume,VoxelPlayground.Engine.VoxelChunk,System.Single,System.Boolean[],System.Int32[],System.Int32,System.Boolean)">
+  Create(PxRigidBody, VoxelVolume, VoxelChunk, float, bool[], int[], int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Create(PxRigidBody _actor, VoxelVolume _marchingCube, VoxelChunk _chunk, float _massDensity, bool[] _infiniteSide, int[] _infiniteIndex, int _paddingSize = 1, bool indestructiable = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_actor</code> <span class="xref">PxRigidBody</span></dt>
+    <dd></dd>
+    <dt><code>_marchingCube</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+    <dt><code>_chunk</code> <a class="xref" href="VoxelPlayground.Engine.VoxelChunk.html">VoxelChunk</a></dt>
+    <dd></dd>
+    <dt><code>_massDensity</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>_infiniteSide</code> <span class="xref">bool</span>[]</dt>
+    <dd></dd>
+    <dt><code>_infiniteIndex</code> <span class="xref">int</span>[]</dt>
+    <dd></dd>
+    <dt><code>_paddingSize</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>indestructiable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Disable_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Disable*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Disable" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Disable">
+  Disable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Dispose_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Dispose*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Dispose" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Enable_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Enable*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_Enable_Px5_Unity_PxRigidBody_VoxelPlayground_Engine_VoxelVolume_VoxelPlayground_Engine_VoxelChunk_System_Single_System_Boolean___System_Int32___System_Int32_System_Boolean_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.Enable(Px5.Unity.PxRigidBody,VoxelPlayground.Engine.VoxelVolume,VoxelPlayground.Engine.VoxelChunk,System.Single,System.Boolean[],System.Int32[],System.Int32,System.Boolean)">
+  Enable(PxRigidBody, VoxelVolume, VoxelChunk, float, bool[], int[], int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enable(PxRigidBody _actor, VoxelVolume _marchingCube, VoxelChunk _chunk, float _massDensity, bool[] _infiniteSide, int[] _infiniteIndex, int _paddingSize = 1, bool indestructiable = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_actor</code> <span class="xref">PxRigidBody</span></dt>
+    <dd></dd>
+    <dt><code>_marchingCube</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+    <dt><code>_chunk</code> <a class="xref" href="VoxelPlayground.Engine.VoxelChunk.html">VoxelChunk</a></dt>
+    <dd></dd>
+    <dt><code>_massDensity</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>_infiniteSide</code> <span class="xref">bool</span>[]</dt>
+    <dd></dd>
+    <dt><code>_infiniteIndex</code> <span class="xref">int</span>[]</dt>
+    <dd></dd>
+    <dt><code>_paddingSize</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>indestructiable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_GetLocalBound_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.GetLocalBound*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_GetLocalBound" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.GetLocalBound">
+  GetLocalBound()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PxBounds3 GetLocalBound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PxBounds3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_GetNormal_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.GetNormal*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_GetNormal_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.GetNormal(UnityEngine.Vector3)">
+  GetNormal(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetNormal(Vector3 worldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_OnDestroy_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.OnDestroy*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_OnDestroy" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_OnDrawGizmosSelected_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.OnDrawGizmosSelected*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_OnDrawGizmosSelected" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.OnDrawGizmosSelected">
+  OnDrawGizmosSelected()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDrawGizmosSelected()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_SetExtraBound_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.SetExtraBound*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_SetExtraBound_Px5_PxBounds3_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.SetExtraBound(Px5.PxBounds3)">
+  SetExtraBound(PxBounds3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExtraBound(PxBounds3 bound)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bound</code> <span class="xref">PxBounds3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_UpdateCollider_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.UpdateCollider*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_UpdateCollider" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.UpdateCollider">
+  UpdateCollider()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCollider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_Collision_PxVoxelCollider_UpdatePose_" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.UpdatePose*"></a>
+
+  <h3 id="VoxelPlayground_Engine_Collision_PxVoxelCollider_UpdatePose" data-uid="VoxelPlayground.Engine.Collision.PxVoxelCollider.UpdatePose">
+  UpdatePose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdatePose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

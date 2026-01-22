@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VoxelDestructor | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VoxelDestructor | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Destruction.VoxelDestructor">
+
+
+
+  <h1 id="VoxelPlayground_Destruction_VoxelDestructor" data-uid="VoxelPlayground.Destruction.VoxelDestructor" class="text-break">
+Class VoxelDestructor  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Destruction.html">Destruction</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VoxelDestructor : MonoBehaviour, IVoxelDestructible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">VoxelDestructor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Engine.IVoxelDestructible.html">IVoxelDestructible</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_bindPosBone_deprecated" data-uid="VoxelPlayground.Destruction.VoxelDestructor.bindPosBone_deprecated">
+  bindPosBone_deprecated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public Transform bindPosBone_deprecated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_blackList" data-uid="VoxelPlayground.Destruction.VoxelDestructor.blackList">
+  blackList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Collider&gt; blackList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_EnableCreateFragmentObjects" data-uid="VoxelPlayground.Destruction.VoxelDestructor.EnableCreateFragmentObjects">
+  EnableCreateFragmentObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnableCreateFragmentObjects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_entityConnectors" data-uid="VoxelPlayground.Destruction.VoxelDestructor.entityConnectors">
+  entityConnectors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public List&lt;EntityConnector&gt; entityConnectors</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityConnector.html">EntityConnector</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_indestructiable" data-uid="VoxelPlayground.Destruction.VoxelDestructor.indestructiable">
+  indestructiable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool indestructiable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_invincibleCollision" data-uid="VoxelPlayground.Destruction.VoxelDestructor.invincibleCollision">
+  invincibleCollision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+public bool invincibleCollision</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_isFireImmune" data-uid="VoxelPlayground.Destruction.VoxelDestructor.isFireImmune">
+  isFireImmune
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isFireImmune</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_isFortified" data-uid="VoxelPlayground.Destruction.VoxelDestructor.isFortified">
+  isFortified
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isFortified</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_isPoisonImmune" data-uid="VoxelPlayground.Destruction.VoxelDestructor.isPoisonImmune">
+  isPoisonImmune
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPoisonImmune</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_massDensity" data-uid="VoxelPlayground.Destruction.VoxelDestructor.massDensity">
+  massDensity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float massDensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_onCollisionEnterAction" data-uid="VoxelPlayground.Destruction.VoxelDestructor.onCollisionEnterAction">
+  onCollisionEnterAction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Collision&gt; onCollisionEnterAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collision.html">Collision</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_OnExplodeToParts" data-uid="VoxelPlayground.Destruction.VoxelDestructor.OnExplodeToParts">
+  OnExplodeToParts
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnExplodeToParts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_OnFragmentCreated" data-uid="VoxelPlayground.Destruction.VoxelDestructor.OnFragmentCreated">
+  OnFragmentCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;VoxelDestructor, VoxelDestructor, NativeSlice&lt;int&gt;&gt; OnFragmentCreated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a>, <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a>, <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeSlice_1.html">NativeSlice</a>&lt;<span class="xref">int</span>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ownerEntity" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ownerEntity">
+  ownerEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity ownerEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_prefabName" data-uid="VoxelPlayground.Destruction.VoxelDestructor.prefabName">
+  prefabName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string prefabName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_preventsImpactDestructOther" data-uid="VoxelPlayground.Destruction.VoxelDestructor.preventsImpactDestructOther">
+  preventsImpactDestructOther
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool preventsImpactDestructOther</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_protector" data-uid="VoxelPlayground.Destruction.VoxelDestructor.protector">
+  protector
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoxelDestructor protector</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_rb" data-uid="VoxelPlayground.Destruction.VoxelDestructor.rb">
+  rb
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody rb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_registerFragmentEvents" data-uid="VoxelPlayground.Destruction.VoxelDestructor.registerFragmentEvents">
+  registerFragmentEvents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;registerFragmentEvents让碎裂产生碎块，大物体使用&quot;, InfoMessageType.Info, null)]
+public bool registerFragmentEvents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_unyielding" data-uid="VoxelPlayground.Destruction.VoxelDestructor.unyielding">
+  unyielding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool unyielding</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_voxelData" data-uid="VoxelPlayground.Destruction.VoxelDestructor.voxelData">
+  voxelData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;voxelData,ownerEntity,rigidBody会自己找到引用&quot;, InfoMessageType.Info, null)]
+public VoxelVolume voxelData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_IsHeatDissolved_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsHeatDissolved*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_IsHeatDissolved" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsHeatDissolved">
+  IsHeatDissolved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHeatDissolved { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_IsIndestructible_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsIndestructible*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_IsIndestructible" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsIndestructible">
+  IsIndestructible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIndestructible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_VoxelData_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.VoxelData*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_VoxelData" data-uid="VoxelPlayground.Destruction.VoxelDestructor.VoxelData">
+  VoxelData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoxelVolume VoxelData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_BoxSweepClear_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.BoxSweepClear*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_BoxSweepClear_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Matrix4x4_VoxelPlayground_Engine_VoxelChunk_System_Boolean_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.BoxSweepClear(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Matrix4x4,VoxelPlayground.Engine.VoxelChunk,System.Boolean,System.Single)">
+  BoxSweepClear(Vector3, Vector3, Vector3, Matrix4x4, VoxelChunk, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears voxels within a box-shaped area that sweeps between two points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BoxSweepClear(Vector3 end1, Vector3 end2, Vector3 halfBox, Matrix4x4 boxLocalToWorld, VoxelChunk voxelChunkToClears, bool isByEasyKinematicPenetration = false, float hardnessCap = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>World space position of the first endpoint of the sweep</p>
+</dd>
+    <dt><code>end2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>World space position of the second endpoint of the sweep</p>
+</dd>
+    <dt><code>halfBox</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Half-extents of the box in local box space</p>
+</dd>
+    <dt><code>boxLocalToWorld</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Matrix4x4.html">Matrix4x4</a></dt>
+    <dd><p>Matrix that transforms from box local space to world space</p>
+</dd>
+    <dt><code>voxelChunkToClears</code> <a class="xref" href="VoxelPlayground.Engine.VoxelChunk.html">VoxelChunk</a></dt>
+    <dd><p>The specific voxel chunk to clear</p>
+</dd>
+    <dt><code>isByEasyKinematicPenetration</code> <span class="xref">bool</span></dt>
+    <dd><p>if true (i.e. damager is e.g. Mech, GiantZombie), then creates lesser Fragments since these kind of damage always produce too much frags that make phys slow</p>
+</dd>
+    <dt><code>hardnessCap</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ControlledTick_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ControlledTick*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ControlledTick" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ControlledTick">
+  ControlledTick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ControlledTick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_CylinderClear_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.CylinderClear*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_CylinderClear_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.CylinderClear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  CylinderClear(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CylinderClear(Vector3 end1, Vector3 end2, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>end2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_DemolishAreaSphere_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DemolishAreaSphere*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_DemolishAreaSphere_UnityEngine_Vector3_System_Single_System_Single_UnityEngine_Vector3_System_Single_System_Int32_System_Single_System_Action_System_Int32__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DemolishAreaSphere(UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Vector3,System.Single,System.Int32,System.Single,System.Action{System.Int32})">
+  DemolishAreaSphere(Vector3, float, float, Vector3, float, int, float, Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Demolishes a spherical area of the voxel object, create fragments from demolished area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DemolishAreaSphere(Vector3 center, float radius, float force = 0, Vector3 explodeDirection = default, float spreadAngle = 3.14159, int maxFragments = 30, float hardnessCap = 8, Action&lt;int&gt; onModified = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>World space position of the sphere center</p>
+</dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd><p>Radius of the sphere in world space</p>
+</dd>
+    <dt><code>force</code> <span class="xref">float</span></dt>
+    <dd><p>Optional force to apply to created fragments</p>
+</dd>
+    <dt><code>explodeDirection</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Optional direction for the explosion force</p>
+</dd>
+    <dt><code>spreadAngle</code> <span class="xref">float</span></dt>
+    <dd><p>Optional angle to spread the explosion force, in radians. Default is PI (180 degrees). If spreadAngle is PI, the force will be applied in a random direction. If spreadAngle is 0, the force will be applied in the direction of the explosion.</p>
+</dd>
+    <dt><code>maxFragments</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>hardnessCap</code> <span class="xref">float</span></dt>
+    <dd><p>won't modify if the voxel's hardness &gt;= hardnessCap (fac=0), easier modify if voxel's hardness is lesser than hardnessCap</p>
+</dd>
+    <dt><code>onModified</code> <span class="xref">Action</span>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_DemolishAtRandomPoint_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DemolishAtRandomPoint*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_DemolishAtRandomPoint_System_Single_VoxelPlayground_Engine_VoxelVolume_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DemolishAtRandomPoint(System.Single,VoxelPlayground.Engine.VoxelVolume)">
+  DemolishAtRandomPoint(float, VoxelVolume)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 DemolishAtRandomPoint(float radius, VoxelVolume _voxelData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>_voxelData</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_DissolveContactPlane_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DissolveContactPlane*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_DissolveContactPlane_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.DissolveContactPlane(UnityEngine.Vector3,UnityEngine.Vector3)">
+  DissolveContactPlane(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construct a plane, center at hitPoint and face normal;
+empty everything under this plane</p>
+<p>This should only be used for COLLAPSE TO GROUND, but not for other usecases like hand hit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DissolveContactPlane(Vector3 hitPoint, Vector3 normal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>hit point</p>
+</dd>
+    <dt><code>normal</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>hit impulse direction</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ExplodeToPartsAndDestroy_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ExplodeToPartsAndDestroy*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ExplodeToPartsAndDestroy_VoxelPlayground_Engine_VoxelVolume_UnityEngine_MonoBehaviour_System_Boolean_System_Boolean_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ExplodeToPartsAndDestroy(VoxelPlayground.Engine.VoxelVolume,UnityEngine.MonoBehaviour,System.Boolean,System.Boolean)">
+  ExplodeToPartsAndDestroy(VoxelVolume, MonoBehaviour, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ExplodeToPartsAndDestroy(VoxelVolume mc, MonoBehaviour coroutineCarrier, bool specialEffect = false, bool randomRemoval = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mc</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+    <dt><code>coroutineCarrier</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></dt>
+    <dd></dd>
+    <dt><code>specialEffect</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>randomRemoval</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ExplodeToPartsAndDestroySelf_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ExplodeToPartsAndDestroySelf*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ExplodeToPartsAndDestroySelf_System_Boolean_System_Boolean_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ExplodeToPartsAndDestroySelf(System.Boolean,System.Boolean)">
+  ExplodeToPartsAndDestroySelf(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button(&quot;Test ExplodeToParts&quot;)]
+public void ExplodeToPartsAndDestroySelf(bool specialEffect = false, bool randomRemoval = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>specialEffect</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>randomRemoval</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_IncrementalHeatDissolve_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IncrementalHeatDissolve*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_IncrementalHeatDissolve" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IncrementalHeatDissolve">
+  IncrementalHeatDissolve()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncrementalHeatDissolve()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_Init_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.Init*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_Init_VoxelPlayground_Engine_VoxelVolume_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.Init(VoxelPlayground.Engine.VoxelVolume,VoxelPlayground.Entity.Entity)">
+  Init(VoxelVolume, Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(VoxelVolume voxelData, Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelData</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+    <dt><code>entity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_IOnFragmentCreated_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IOnFragmentCreated*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_IOnFragmentCreated_VoxelPlayground_Engine_IVoxelDestructible_VoxelPlayground_Engine_IVoxelDestructible_Unity_Collections_NativeSlice_System_Int32__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IOnFragmentCreated(VoxelPlayground.Engine.IVoxelDestructible,VoxelPlayground.Engine.IVoxelDestructible,Unity.Collections.NativeSlice{System.Int32})">
+  IOnFragmentCreated(IVoxelDestructible, IVoxelDestructible, NativeSlice&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IOnFragmentCreated(IVoxelDestructible source, IVoxelDestructible target, NativeSlice&lt;int&gt; fragmentIndices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="VoxelPlayground.Engine.IVoxelDestructible.html">IVoxelDestructible</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="VoxelPlayground.Engine.IVoxelDestructible.html">IVoxelDestructible</a></dt>
+    <dd></dd>
+    <dt><code>fragmentIndices</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeSlice_1.html">NativeSlice</a>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_IsCharacter_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_IsCharacter" data-uid="VoxelPlayground.Destruction.VoxelDestructor.IsCharacter">
+  IsCharacter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCharacter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtPos_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtPos*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtPos_UnityEngine_Vector3_System_Single_System_Action_System_Int32__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtPos(UnityEngine.Vector3,System.Single,System.Action{System.Int32})">
+  ModifyAtPos(Vector3, float, Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyAtPos(Vector3 center_worldSpace, float radius, Action&lt;int&gt; onModified = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center_worldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onModified</code> <span class="xref">Action</span>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtPos_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtPos*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtPos_UnityEngine_Vector3_System_Single_System_Single_UnityEngine_Vector3_System_Single_System_Int32_System_Single_System_Action_System_Int32__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtPos(UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Vector3,System.Single,System.Int32,System.Single,System.Action{System.Int32})">
+  ModifyAtPos(Vector3, float, float, Vector3, float, int, float, Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyAtPos(Vector3 center_worldSpace, float radius, float force = 0, Vector3 explodeDirection = default, float spreadAngle = 3.14159, int maxFragments = 20, float hardnessCap = -1, Action&lt;int&gt; onModified = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center_worldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>force</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>explodeDirection</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>spreadAngle</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxFragments</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>hardnessCap</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>onModified</code> <span class="xref">Action</span>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtRandomPoint_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtRandomPoint*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ModifyAtRandomPoint_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyAtRandomPoint(System.Single)">
+  ModifyAtRandomPoint(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ModifyAtRandomPoint(float radius = 0.13)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ModifyPropertyAtPos_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyPropertyAtPos*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ModifyPropertyAtPos_UnityEngine_Vector3_System_Single_VoxelPlayground_Engine_PointDataV2_Property_System_Int32_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyPropertyAtPos(UnityEngine.Vector3,System.Single,VoxelPlayground.Engine.PointDataV2.Property,System.Int32)">
+  ModifyPropertyAtPos(Vector3, float, Property, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyPropertyAtPos(Vector3 center_worldSpace, float radius, PointDataV2.Property property = Property.Water, int step = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center_worldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>property</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.<a class="xref" href="VoxelPlayground.Engine.PointDataV2.Property.html">Property</a></dt>
+    <dd></dd>
+    <dt><code>step</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ModifyToBulletHoleColor_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyToBulletHoleColor*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ModifyToBulletHoleColor_Unity_Mathematics_float3_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ModifyToBulletHoleColor(Unity.Mathematics.float3,System.Single)">
+  ModifyToBulletHoleColor(float3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 ModifyToBulletHoleColor(float3 center_WS, float radius_WS = 0.01875)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center_WS</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+    <dt><code>radius_WS</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_OnFragmentDetected_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.OnFragmentDetected*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_OnFragmentDetected_Unity_Collections_NativeList_VoxelPlayground_Engine_PointDataV2__Unity_Collections_NativeList_Unity_Mathematics_int3__Unity_Collections_NativeList_System_Int32__Unity_Collections_NativeSlice_System_Int32__System_Collections_Generic_List_Unity_Collections_NativeSlice_System_Int32___Unity_Collections_NativeArray_System_Boolean__System_Boolean_VoxelPlayground_Engine_VoxelVolume_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.OnFragmentDetected(Unity.Collections.NativeList{VoxelPlayground.Engine.PointDataV2},Unity.Collections.NativeList{Unity.Mathematics.int3},Unity.Collections.NativeList{System.Int32},Unity.Collections.NativeSlice{System.Int32},System.Collections.Generic.List{Unity.Collections.NativeSlice{System.Int32}},Unity.Collections.NativeArray{System.Boolean},System.Boolean,VoxelPlayground.Engine.VoxelVolume)">
+  OnFragmentDetected(NativeList&lt;PointDataV2&gt;, NativeList&lt;int3&gt;, NativeList&lt;int&gt;, NativeSlice&lt;int&gt;, List&lt;NativeSlice&lt;int&gt;&gt;, NativeArray&lt;bool&gt;, bool, VoxelVolume)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFragmentDetected(NativeList&lt;PointDataV2&gt; fragsSource, NativeList&lt;int3&gt; boundsSource, NativeList&lt;int&gt; solidCountsSource, NativeSlice&lt;int&gt; mainIslandIdSource, List&lt;NativeSlice&lt;int&gt;&gt; islandsSource, NativeArray&lt;bool&gt; unyieldingFragSource, bool unyieldingMainland, VoxelVolume mc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragsSource</code> <span class="xref">NativeList</span>&lt;<a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>boundsSource</code> <span class="xref">NativeList</span>&lt;<span class="xref">int3</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>solidCountsSource</code> <span class="xref">NativeList</span>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>mainIslandIdSource</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeSlice_1.html">NativeSlice</a>&lt;<span class="xref">int</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>islandsSource</code> <span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeSlice_1.html">NativeSlice</a>&lt;<span class="xref">int</span>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unyieldingFragSource</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeArray_1.html">NativeArray</a>&lt;<span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>unyieldingMainland</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>mc</code> <a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_PlaneCut_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.PlaneCut*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_PlaneCut_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.PlaneCut(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+  PlaneCut(Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>plane cut a voxel</p>
+<p>YEnd
+++++++++
+++++++++
+++++++++
+++++++++
+++++++++
+O       XEnd</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaneCut(Vector3 originWorldSpace, Vector3 xDirectionWorldSpace, Vector3 yDirectionWorldSpace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>originWorldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Above O point in world space</p>
+</dd>
+    <dt><code>xDirectionWorldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Above XEnd-O vector in worldspace</p>
+</dd>
+    <dt><code>yDirectionWorldSpace</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Above YEnd-O vector in worldspace</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ProjectTexture_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ProjectTexture*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ProjectTexture_UnityEngine_Vector3_System_Single_Unity_Collections_NativeArray_UnityEngine_Color32__System_Int32_UnityEngine_Vector3_System_Single_VoxelPlayground_Engine_Destruction_SplatType_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ProjectTexture(UnityEngine.Vector3,System.Single,Unity.Collections.NativeArray{UnityEngine.Color32},System.Int32,UnityEngine.Vector3,System.Single,VoxelPlayground.Engine.Destruction.SplatType,System.Single)">
+  ProjectTexture(Vector3, float, NativeArray&lt;Color32&gt;, int, Vector3, float, SplatType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProjectTexture(Vector3 center, float radius, NativeArray&lt;Color32&gt; projectTexture, int textureDim, Vector3 projectDirection, float projectDepth, SplatType splatType = SplatType.Blood, float opacity = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>projectTexture</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeArray_1.html">NativeArray</a>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color32.html">Color32</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>textureDim</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>projectDirection</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>projectDepth</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>splatType</code> <span class="xref">SplatType</span></dt>
+    <dd></dd>
+    <dt><code>opacity</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_RaycastWithProtector_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.RaycastWithProtector*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_RaycastWithProtector_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Engine_RaycastHitVoxel__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.RaycastWithProtector(UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Engine.RaycastHitVoxel@)">
+  RaycastWithProtector(Vector3, Vector3, ref RaycastHitVoxel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RaycastWithProtector(Vector3 origin, Vector3 direction, ref RaycastHitVoxel raycastHitVoxel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>raycastHitVoxel</code> <a class="xref" href="VoxelPlayground.Engine.RaycastHitVoxel.html">RaycastHitVoxel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_RestoreColorStep_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.RestoreColorStep*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_RestoreColorStep" data-uid="VoxelPlayground.Destruction.VoxelDestructor.RestoreColorStep">
+  RestoreColorStep()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreColorStep()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ScreenSpaceLineClear_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ScreenSpaceLineClear*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ScreenSpaceLineClear_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Matrix4x4_VoxelPlayground_Engine_VoxelChunk_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ScreenSpaceLineClear(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Matrix4x4,VoxelPlayground.Engine.VoxelChunk,System.Single)">
+  ScreenSpaceLineClear(Vector2, Vector2, Matrix4x4, VoxelChunk, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScreenSpaceLineClear(Vector2 screenSpacePos1, Vector2 screenSpacePos2, Matrix4x4 worldToScreen, VoxelChunk chunkToClear, float thicknessInPixel = 8)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenSpacePos1</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>screenSpacePos2</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>worldToScreen</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Matrix4x4.html">Matrix4x4</a></dt>
+    <dd></dd>
+    <dt><code>chunkToClear</code> <a class="xref" href="VoxelPlayground.Engine.VoxelChunk.html">VoxelChunk</a></dt>
+    <dd></dd>
+    <dt><code>thicknessInPixel</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_SetColliderIgnore_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SetColliderIgnore*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_SetColliderIgnore_UnityEngine_Collider_System_Boolean_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SetColliderIgnore(UnityEngine.Collider,System.Boolean)">
+  SetColliderIgnore(Collider, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColliderIgnore(Collider collider, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_SetUnyieldingAndIskinematic_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SetUnyieldingAndIskinematic*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_SetUnyieldingAndIskinematic_System_Boolean_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SetUnyieldingAndIskinematic(System.Boolean)">
+  SetUnyieldingAndIskinematic(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUnyieldingAndIskinematic(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ShockWaveCrack_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ShockWaveCrack*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ShockWaveCrack_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_VoxelPlayground_Destruction_VoxelDestructor_CrackType_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ShockWaveCrack(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,VoxelPlayground.Destruction.VoxelDestructor.CrackType)">
+  ShockWaveCrack(Vector3, Vector3, float, CrackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate cracks inside voxels
+There are two types of cracks, depends on crackType param</p>
+<ul>
+<li>CrackType.SurfaceShatter, generate a spider web like crack, on hit point surface,
+image you throw a pebble onto glass window, it generate crack on surface</li>
+<li>CrackType.VerticalCrack, generate a vertical crack on side of hit plane,
+image you throw a rock onto ground, crack does not appear on contact plane, but on its side</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShockWaveCrack(Vector3 hitPoint, Vector3 hitDirection, float radiusWorldSpace, VoxelDestructor.CrackType crackType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>collision point</p>
+</dd>
+    <dt><code>hitDirection</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>collision impulse direction. for CrackType.SurfaceShatter, it is the plane normal. for CrackType.VerticalCrack, it is where crack grows</p>
+</dd>
+    <dt><code>radiusWorldSpace</code> <span class="xref">float</span></dt>
+    <dd><p>crack affected size in world space unit</p>
+</dd>
+    <dt><code>crackType</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a>.<a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.CrackType.html">CrackType</a></dt>
+    <dd><p>see above explanation and CrackType enum docs</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_ShockWavePeelOffPiece_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ShockWavePeelOffPiece*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_ShockWavePeelOffPiece_System_Single_System_Int32_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.ShockWavePeelOffPiece(System.Single,System.Int32)">
+  ShockWavePeelOffPiece(float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generate some random holes all around the volume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShockWavePeelOffPiece(float pieceRadiusWorldSpace, int pieceCounts = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pieceRadiusWorldSpace</code> <span class="xref">float</span></dt>
+    <dd><p>max radius of piece in world space, actual piece will range in half of this radius to radius</p>
+</dd>
+    <dt><code>pieceCounts</code> <span class="xref">int</span></dt>
+    <dd><p>num of holes to remove</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_SmashPartInsideVolume_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SmashPartInsideVolume*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_SmashPartInsideVolume_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Matrix4x4_UnityEngine_GameObject__" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SmashPartInsideVolume(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Matrix4x4,UnityEngine.GameObject@)">
+  SmashPartInsideVolume(Vector3, Vector3, Matrix4x4, out GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>For smasher,
+voxels inside a volume of the original marching cube will be emptied, and flatte to make an new object</p>
+<p>+Z   +Y
+|  /
+| /
+|/
+C--------  +X</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SmashPartInsideVolume(Vector3 smashVolumeStartWorld, Vector3 smashVolumeWorldSize, Matrix4x4 smashVolumeLocalToWorld, out GameObject smashedFragment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>smashVolumeStartWorld</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Above C position, volume bottom center</p>
+</dd>
+    <dt><code>smashVolumeWorldSize</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>x, y, z: in above illustration</p>
+</dd>
+    <dt><code>smashVolumeLocalToWorld</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Matrix4x4.html">Matrix4x4</a></dt>
+    <dd><p>x, y, z: in above illustration</p>
+</dd>
+    <dt><code>smashedFragment</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Destruction_VoxelDestructor_SphereSweepClear_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SphereSweepClear*"></a>
+
+  <h3 id="VoxelPlayground_Destruction_VoxelDestructor_SphereSweepClear_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Destruction.VoxelDestructor.SphereSweepClear(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  SphereSweepClear(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SphereSweepClear(Vector3 end1World, Vector3 end2World, float radiusWorld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end1World</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>end2World</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radiusWorld</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
