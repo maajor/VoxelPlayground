@@ -163,7 +163,7 @@ export default function Home(): React.ReactElement {
 
   const features = useMemo(
     () => [
-      {title: 'Touch-First Destruction', description: 'Grab it, rip it, smash it—destruction feels physical because you do it by hand.'},
+      {title: 'Physical VR Destruction', description: 'Grab it, rip it, smash it—destruction feels physical because you do it by hand.'},
       {title: 'Micro‑Voxel Chaos', description: 'Small pieces, big reactions: collapse, debris, and chain‑reactions you can feel in VR.'},
       {title: 'Survive the Waves', description: 'Craft gear, fortify your base, and hold out against relentless zombie attacks.'},
       {title: 'Pure Playground', description: 'Spawn tools, tweak settings, and experiment with ridiculous physics moments—your rules.'},
