@@ -50,9 +50,9 @@ const config: Config = {
       title: 'Voxel Playground',
       hideOnScroll: true,
       items: [
-        {to: '/#home', label: 'Home', position: 'right'},
-        {to: '/#about', label: 'About', position: 'right'},
-        {to: '/doc', label: 'Docs', position: 'right'},
+        {href: '/#home', label: 'Home', position: 'right'},
+        {href: '/#about', label: 'About', position: 'right'},
+        {href: '/d/', label: 'Docs', position: 'right'},
         {to: '/privacy', label: 'Privacy Policy', position: 'right'},
       ],
     },

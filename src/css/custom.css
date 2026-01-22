@@ -24,6 +24,40 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.navbar__inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navbar__items--right .navbar__link {
+  position: relative;
+  color: #fff;
+}
+
+.navbar__items--right .navbar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.navbar__items--right .navbar__link:hover::after,
+.navbar__items--right .navbar__link:focus-visible::after,
+.navbar__items--right .navbar__link--active::after {
+  transform: scaleX(1);
+}
+
+.navbar__items--right .navbar__link--active {
+  color: #fff;
+}
+
 .footer--dark {
   background-color: #18181b;
 }

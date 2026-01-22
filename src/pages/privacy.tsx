@@ -180,8 +180,8 @@ export default function Privacy(): React.ReactElement {
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-300">
               <li>Discord: Through our Discord server</li>
-              <li>Email: privacy@tagbeforedawn.com</li>
-              <li>Data Protection Officer: dpo@tagbeforedawn.com</li>
+              <li>Email: privacy@voxelplaygorund.com</li>
+              <li>Data Protection Officer: dpo@voxelplaygorund.com</li>
             </ul>
             <p className="mt-4 text-gray-300">We will respond to your request within 30 days of receipt.</p>
           </section>
