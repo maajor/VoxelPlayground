@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EntityPhysicBullet | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EntityPhysicBullet | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Entity.EntityPhysicBullet">
+
+
+
+  <h1 id="VoxelPlayground_Entity_EntityPhysicBullet" data-uid="VoxelPlayground.Entity.EntityPhysicBullet" class="text-break">
+Class EntityPhysicBullet  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Entity.html">Entity</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntityPhysicBullet : RecyclableEntity, IRecyclable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html">RecyclableEntity</a></div>
+      <div><span class="xref">EntityPhysicBullet</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Engine.IRecyclable.html">IRecyclable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityArrow.html">EntityArrow</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityExplosive.html">EntityExplosive</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_lifeTime">RecyclableEntity.lifeTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_LifeTime">RecyclableEntity.LifeTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_Awake">RecyclableEntity.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_SetLifeTime_System_Single_">RecyclableEntity.SetLifeTime(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_Activate">RecyclableEntity.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html#VoxelPlayground_Entity_RecyclableEntity_GetTransform">RecyclableEntity.GetTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_IsPlayerFaction">Entity.IsPlayerFaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_IsEnemyFaction">Entity.IsEnemyFaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_freezeState">Entity.freezeState</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_enableFreeze">Entity.enableFreeze</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_needUseGravity">Entity.needUseGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_isPin">Entity.isPin</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_entityId">Entity.entityId</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_registryId">Entity.registryId</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_soundTag">Entity.soundTag</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_teamFlag">Entity.teamFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_PositionIterationOnGrab">Entity.PositionIterationOnGrab</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_VelocityIterationOnGrab">Entity.VelocityIterationOnGrab</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_itemName">Entity.itemName</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_IsGrabbed">Entity.IsGrabbed</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_isGrabbedIndirect">Entity.isGrabbedIndirect</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_stillTimer">Entity.stillTimer</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_FixedUpdateSleepingTime_System_Single_">Entity.FixedUpdateSleepingTime(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_ControlledUpdate_System_Single_">Entity.ControlledUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_dontDestroyOnSceneClear">Entity.dontDestroyOnSceneClear</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_disableVoxelDestructionUntil">Entity.disableVoxelDestructionUntil</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_voxelDestructor">Entity.voxelDestructor</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetVoxelDestructor">Entity.GetVoxelDestructor()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_voxelData">Entity.voxelData</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetVoxelData">Entity.GetVoxelData()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_trans">Entity.trans</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_ModifyLocalScale_System_Single_">Entity.ModifyLocalScale(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_RecoverLocalScale">Entity.RecoverLocalScale()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_gripPoint">Entity.gripPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GRIP_POINT_STR">Entity.GRIP_POINT_STR</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Start">Entity.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_sfxGain">Entity.sfxGain</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetScaledSize">Entity.GetScaledSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetSolidBlockCount">Entity.GetSolidBlockCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity__rigidbodies">Entity._rigidbodies</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Rigidbodies">Entity.Rigidbodies</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_MainRigidbody">Entity.MainRigidbody</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_RefreshRigidbodiesRefs">Entity.RefreshRigidbodiesRefs()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetGravityEnable_System_Boolean_">Entity.SetGravityEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetIsKinematic_System_Boolean_">Entity.SetIsKinematic(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_UpdatePhysGravityKinematic">Entity.UpdatePhysGravityKinematic()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_RestoreRigidbodiesDrags">Entity.RestoreRigidbodiesDrags()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetTotalMass">Entity.GetTotalMass()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_TryRemoveVelocity">Entity.TryRemoveVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Freeze_System_Boolean_">Entity.Freeze(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_CancelFreeze">Entity.CancelFreeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_RemoveUnFreezeSchedule">Entity.RemoveUnFreezeSchedule()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetRigidbodiesDragsFreeze">Entity.SetRigidbodiesDragsFreeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_TogglePin">Entity.TogglePin()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Pin">Entity.Pin()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_UnPin">Entity.UnPin()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_isActivated">Entity.isActivated</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_ToggleActivate">Entity.ToggleActivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Deactivate">Entity.Deactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetActivate_System_Boolean_">Entity.SetActivate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetActivateForConnected_System_Boolean_">Entity.SetActivateForConnected(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_IsActivated">Entity.IsActivated()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_connectedEntity">Entity.connectedEntity</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetConnectedEntity">Entity.GetConnectedEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_OnBeStabbed_VoxelPlayground_Entity_Entity_System_Boolean_">Entity.OnBeStabbed(Entity, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetVoxelDataCenterPoint">Entity.GetVoxelDataCenterPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetPinchCenterPoint_UnityEngine_Rigidbody_">Entity.GetPinchCenterPoint(Rigidbody)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_AddVoxelDestructor_VoxelPlayground_Destruction_VoxelDestructor_">Entity.AddVoxelDestructor(VoxelDestructor)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_RemoveVoxelDestructors_VoxelPlayground_Destruction_VoxelDestructor___">Entity.RemoveVoxelDestructors(VoxelDestructor[])</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetVoxelColliderIgnore_UnityEngine_Collider_System_Boolean_">Entity.SetVoxelColliderIgnore(Collider, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetTargetColliderAndNeighborsIgnore_UnityEngine_Collider_UnityEngine_Collider_System_Boolean_">Entity.SetTargetColliderAndNeighborsIgnore(Collider, Collider, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetNeighborJoints_UnityEngine_Rigidbody_">Entity.GetNeighborJoints(Rigidbody)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_notifier">Entity.notifier</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Initialize_EntityNotifier_EntityManager_">Entity.Initialize(EntityNotifier, EntityManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Notify_VoxelEvent_System_Int32_System_Object___">Entity.Notify(VoxelEvent, int, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_OnIgnite_UnityEngine_Vector3_System_Single_">Entity.OnIgnite(Vector3, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_OnDestroy">Entity.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_OnReset">Entity.OnReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_IgnoreEntityCollision_VoxelPlayground_Entity_Entity_System_Boolean_System_Collections_Generic_List_UnityEngine_Collider__">Entity.IgnoreEntityCollision(Entity, bool, List&lt;Collider&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_dysfunctional">Entity.dysfunctional</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Dysfunctional">Entity.Dysfunctional</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_CanHighlight">Entity.CanHighlight</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetHighlight_System_Boolean_">Entity.SetHighlight(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Equals_System_Object_">Entity.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Equals_VoxelPlayground_Entity_Entity_">Entity.Equals(Entity)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_GetHashCode">Entity.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_SetVisible_System_Boolean_">Entity.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="VoxelPlayground.Entity.Entity.html#VoxelPlayground_Entity_Entity_Teleport_UnityEngine_Vector3_UnityEngine_Quaternion_">Entity.Teleport(Vector3, Quaternion)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_bulletCollider" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.bulletCollider">
+  bulletCollider
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Collider bulletCollider</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_chemical" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.chemical">
+  chemical
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChemicalPropety chemical</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.ChemicalPropety.html">ChemicalPropety</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_customHitGfxDuration" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.customHitGfxDuration">
+  customHitGfxDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float customHitGfxDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_customHitGfxName" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.customHitGfxName">
+  customHitGfxName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;可空, 否则覆盖默认碰撞FX系统&quot;, InfoMessageType.Info, null)]
+public string customHitGfxName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_direction" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.direction">
+  direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 direction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_dmgScale" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.dmgScale">
+  dmgScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dmgScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_hardnessCap" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.hardnessCap">
+  hardnessCap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int hardnessCap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_hasHit" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.hasHit">
+  hasHit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool hasHit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_hitFxOffset" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.hitFxOffset">
+  hitFxOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float hitFxOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_hitPointOffsetAlongNormal" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.hitPointOffsetAlongNormal">
+  hitPointOffsetAlongNormal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float hitPointOffsetAlongNormal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_rb" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.rb">
+  rb
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rigidbody rb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_shoter" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.shoter">
+  shoter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityAttachmentItem shoter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_speed" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.speed">
+  speed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float speed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_trailRenewedLifetime" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.trailRenewedLifetime">
+  trailRenewedLifetime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float trailRenewedLifetime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_useVoxRayHitPos" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.useVoxRayHitPos">
+  useVoxRayHitPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static bool useVoxRayHitPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_trail_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.trail*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_trail" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.trail">
+  trail
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecyclableEntity trail { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html">RecyclableEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_AddForceToJiont_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.AddForceToJiont*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_AddForceToJiont_UnityEngine_Rigidbody_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.AddForceToJiont(UnityEngine.Rigidbody,UnityEngine.Vector3,UnityEngine.Vector3)">
+  AddForceToJiont(Rigidbody, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddForceToJiont(Rigidbody jointRB, Vector3 force, Vector3 hitPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jointRB</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>force</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>hitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_DetachTrail_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.DetachTrail*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_DetachTrail_UnityEngine_Vector3_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.DetachTrail(UnityEngine.Vector3)">
+  DetachTrail(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DetachTrail(Vector3 hitPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_OnCollisionEnter_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnCollisionEnter*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_OnCollisionEnter_UnityEngine_Collision_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnCollisionEnter(UnityEngine.Collision)">
+  OnCollisionEnter(Collision)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCollisionEnter(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collision.html">Collision</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_OnHit_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnHit*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_OnHit_UnityEngine_Collision_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnHit(UnityEngine.Collision)">
+  OnHit(Collision)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnHit(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collision.html">Collision</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_OnRecycle_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnRecycle*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_OnRecycle" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnRecycle">
+  OnRecycle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnRecycle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_OnSpawn_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnSpawn*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_OnSpawn_VoxelPlayground_Entity_EntityItem_System_Single_UnityEngine_Vector3_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.OnSpawn(VoxelPlayground.Entity.EntityItem,System.Single,UnityEngine.Vector3)">
+  OnSpawn(EntityItem, float, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSpawn(EntityItem owner, float _speed, Vector3 _direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="VoxelPlayground.Entity.EntityItem.html">EntityItem</a></dt>
+    <dd></dd>
+    <dt><code>_speed</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>_direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_PlayGFX_BulletCollisionHit_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.PlayGFX_BulletCollisionHit*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_PlayGFX_BulletCollisionHit_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Destruction_VoxelDestructor_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.PlayGFX_BulletCollisionHit(UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Destruction.VoxelDestructor)">
+  PlayGFX_BulletCollisionHit(Vector3, Vector3, VoxelDestructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayGFX_BulletCollisionHit(Vector3 point, Vector3 normal, VoxelDestructor hitVoxelCollider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>normal</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>hitVoxelCollider</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_EntityPhysicBullet_ProduceBulletDamage_" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.ProduceBulletDamage*"></a>
+
+  <h3 id="VoxelPlayground_Entity_EntityPhysicBullet_ProduceBulletDamage_UnityEngine_Collision_UnityEngine_Vector3__UnityEngine_Vector3__VoxelPlayground_Destruction_VoxelDestructor__" data-uid="VoxelPlayground.Entity.EntityPhysicBullet.ProduceBulletDamage(UnityEngine.Collision,UnityEngine.Vector3@,UnityEngine.Vector3@,VoxelPlayground.Destruction.VoxelDestructor@)">
+  ProduceBulletDamage(Collision, out Vector3, out Vector3, out VoxelDestructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool ProduceBulletDamage(Collision collision, out Vector3 outHitPoint, out Vector3 outHitNormal, out VoxelDestructor outHitVoxelCollider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collision.html">Collision</a></dt>
+    <dd></dd>
+    <dt><code>outHitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>outHitNormal</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>outHitVoxelCollider</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

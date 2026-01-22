@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EntityManager | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EntityManager | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Gaming.EntityManager">
+
+
+
+  <h1 id="VoxelPlayground_Gaming_EntityManager" data-uid="VoxelPlayground.Gaming.EntityManager" class="text-break">
+Class EntityManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Gaming.html">Gaming</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntityManager : Singleton&lt;EntityManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><a class="xref" href="VoxelPlayground.Utility.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="VoxelPlayground.Gaming.EntityManager.html">EntityManager</a>&gt;</div>
+      <div><span class="xref">EntityManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VoxelPlayground.Utility.Singleton-1.html#VoxelPlayground_Utility_Singleton_1_Instance">Singleton&lt;EntityManager&gt;.Instance</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_aimRedPoint" data-uid="VoxelPlayground.Gaming.EntityManager.aimRedPoint">
+  aimRedPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject aimRedPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_clearCharacters" data-uid="VoxelPlayground.Gaming.EntityManager.clearCharacters">
+  clearCharacters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Waiting to be Clear&quot;)]
+[NonSerialized]
+[ShowInInspector]
+public List&lt;EntityCharacter&gt; clearCharacters</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_clearCharactersRange" data-uid="VoxelPlayground.Gaming.EntityManager.clearCharactersRange">
+  clearCharactersRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;清理列队 数量小于x的不被清理 大于y的直接清理 介于xy之间的静止8s后清理&quot;, InfoMessageType.Info, null)]
+public Vector2Int clearCharactersRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2Int.html">Vector2Int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_clearWeapons" data-uid="VoxelPlayground.Gaming.EntityManager.clearWeapons">
+  clearWeapons
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+public List&lt;EntityAttachmentItem&gt; clearWeapons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_clearWeaponsRange" data-uid="VoxelPlayground.Gaming.EntityManager.clearWeaponsRange">
+  clearWeaponsRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int clearWeaponsRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2Int.html">Vector2Int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_entityNotifier" data-uid="VoxelPlayground.Gaming.EntityManager.entityNotifier">
+  entityNotifier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityNotifier entityNotifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Gaming.EntityNotifier.html">EntityNotifier</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_onPlayerSpanwed" data-uid="VoxelPlayground.Gaming.EntityManager.onPlayerSpanwed">
+  onPlayerSpanwed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;EntityCharacter&gt; onPlayerSpanwed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_overlapExclusionColliderPrefab" data-uid="VoxelPlayground.Gaming.EntityManager.overlapExclusionColliderPrefab">
+  overlapExclusionColliderPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject overlapExclusionColliderPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_pingObj" data-uid="VoxelPlayground.Gaming.EntityManager.pingObj">
+  pingObj
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PingObj pingObj</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Gaming.PingObj.html">PingObj</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_entities_" data-uid="VoxelPlayground.Gaming.EntityManager.entities*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_entities" data-uid="VoxelPlayground.Gaming.EntityManager.entities">
+  entities
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Entity&gt; entities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_AddEffectInRange_" data-uid="VoxelPlayground.Gaming.EntityManager.AddEffectInRange*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_AddEffectInRange_UnityEngine_Vector3_System_Single_VoxelPlayground_Entity_ChemicalPropety_System_Boolean_" data-uid="VoxelPlayground.Gaming.EntityManager.AddEffectInRange(UnityEngine.Vector3,System.Single,VoxelPlayground.Entity.ChemicalPropety,System.Boolean)">
+  AddEffectInRange(Vector3, float, ChemicalPropety, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEffectInRange(Vector3 center, float radius, ChemicalPropety chemical, bool exceptExplosive = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>chemical</code> <a class="xref" href="VoxelPlayground.Entity.ChemicalPropety.html">ChemicalPropety</a></dt>
+    <dd></dd>
+    <dt><code>exceptExplosive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_AddEntities_" data-uid="VoxelPlayground.Gaming.EntityManager.AddEntities*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_AddEntities_VoxelPlayground_Entity_Entity___" data-uid="VoxelPlayground.Gaming.EntityManager.AddEntities(VoxelPlayground.Entity.Entity[])">
+  AddEntities(Entity[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEntities(Entity[] entities)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entities</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_AddEntity_" data-uid="VoxelPlayground.Gaming.EntityManager.AddEntity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_AddEntity_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.AddEntity(VoxelPlayground.Entity.Entity)">
+  AddEntity(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEntity(Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_Awake_" data-uid="VoxelPlayground.Gaming.EntityManager.Awake*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_Awake" data-uid="VoxelPlayground.Gaming.EntityManager.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Awake is called when the script instance is being loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_ClearAll_" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAll*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_ClearAll" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAll">
+  ClearAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_ClearAllEntityCharacter_" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAllEntityCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_ClearAllEntityCharacter_System_Collections_Generic_List_VoxelPlayground_Entity_EntityCharacter__" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAllEntityCharacter(System.Collections.Generic.List{VoxelPlayground.Entity.EntityCharacter})">
+  ClearAllEntityCharacter(List&lt;EntityCharacter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllEntityCharacter(List&lt;EntityCharacter&gt; whiteList = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>whiteList</code> <span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_ClearAllWithAnimation_" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAllWithAnimation*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_ClearAllWithAnimation" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAllWithAnimation">
+  ClearAllWithAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllWithAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_ClearAndReset_" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAndReset*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_ClearAndReset" data-uid="VoxelPlayground.Gaming.EntityManager.ClearAndReset">
+  ClearAndReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAndReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_DestroyEntity_" data-uid="VoxelPlayground.Gaming.EntityManager.DestroyEntity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_DestroyEntity_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.DestroyEntity(VoxelPlayground.Entity.Entity)">
+  DestroyEntity(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyEntity(Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_DuplicateItem_" data-uid="VoxelPlayground.Gaming.EntityManager.DuplicateItem*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_DuplicateItem_VoxelPlayground_Entity_EntityItem_" data-uid="VoxelPlayground.Gaming.EntityManager.DuplicateItem(VoxelPlayground.Entity.EntityItem)">
+  DuplicateItem(EntityItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DuplicateItem(EntityItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="VoxelPlayground.Entity.EntityItem.html">EntityItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_FindClosestCharacter_" data-uid="VoxelPlayground.Gaming.EntityManager.FindClosestCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_FindClosestCharacter_UnityEngine_Vector3_System_Predicate_VoxelPlayground_Entity_EntityCharacter__" data-uid="VoxelPlayground.Gaming.EntityManager.FindClosestCharacter(UnityEngine.Vector3,System.Predicate{VoxelPlayground.Entity.EntityCharacter})">
+  FindClosestCharacter(Vector3, Predicate&lt;EntityCharacter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityCharacter FindClosestCharacter(Vector3 center, Predicate&lt;EntityCharacter&gt; predicate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>predicate</code> <span class="xref">Predicate</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetCharactersInRange_" data-uid="VoxelPlayground.Gaming.EntityManager.GetCharactersInRange*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetCharactersInRange_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.EntityManager.GetCharactersInRange(UnityEngine.Vector3,System.Single)">
+  GetCharactersInRange(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityCharacter&gt; GetCharactersInRange(Vector3 center, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetClosestAvailableWeaponInRange_" data-uid="VoxelPlayground.Gaming.EntityManager.GetClosestAvailableWeaponInRange*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetClosestAvailableWeaponInRange_UnityEngine_Vector3_VoxelPlayground_Entity_EntityAttachmentItem_System_Single__System_Single_" data-uid="VoxelPlayground.Gaming.EntityManager.GetClosestAvailableWeaponInRange(UnityEngine.Vector3,VoxelPlayground.Entity.EntityAttachmentItem,System.Single@,System.Single)">
+  GetClosestAvailableWeaponInRange(Vector3, EntityAttachmentItem, out float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityAttachmentItem GetClosestAvailableWeaponInRange(Vector3 centerPos, EntityAttachmentItem ignoreWeapon, out float dist, float radius = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>centerPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>ignoreWeapon</code> <a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a></dt>
+    <dd></dd>
+    <dt><code>dist</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetCurrentUserCount_" data-uid="VoxelPlayground.Gaming.EntityManager.GetCurrentUserCount*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetCurrentUserCount_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.GetCurrentUserCount(VoxelPlayground.Entity.Entity)">
+  GetCurrentUserCount(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentUserCount(Entity coverObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coverObject</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetEquippableItemsInRange_" data-uid="VoxelPlayground.Gaming.EntityManager.GetEquippableItemsInRange*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetEquippableItemsInRange_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.EntityManager.GetEquippableItemsInRange(UnityEngine.Vector3,System.Single)">
+  GetEquippableItemsInRange(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityAttachmentItem&gt; GetEquippableItemsInRange(Vector3 center, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetItemsInRange_" data-uid="VoxelPlayground.Gaming.EntityManager.GetItemsInRange*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetItemsInRange_UnityEngine_Vector3_System_Single_VoxelPlayground_Entity_GripPose_VoxelPlayground_Entity_EntityAttachmentItem_" data-uid="VoxelPlayground.Gaming.EntityManager.GetItemsInRange(UnityEngine.Vector3,System.Single,VoxelPlayground.Entity.GripPose,VoxelPlayground.Entity.EntityAttachmentItem)">
+  GetItemsInRange(Vector3, float, GripPose, EntityAttachmentItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityAttachmentItem&gt; GetItemsInRange(Vector3 center, float radius, GripPose gripPose = GripPose.All, EntityAttachmentItem ignore = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>gripPose</code> <a class="xref" href="VoxelPlayground.Entity.GripPose.html">GripPose</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetNearestBuildingElement_" data-uid="VoxelPlayground.Gaming.EntityManager.GetNearestBuildingElement*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetNearestBuildingElement_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.EntityManager.GetNearestBuildingElement(UnityEngine.Vector3,System.Single)">
+  GetNearestBuildingElement(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityAttachmentItem GetNearestBuildingElement(Vector3 position, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetRemainingCapacity_" data-uid="VoxelPlayground.Gaming.EntityManager.GetRemainingCapacity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetRemainingCapacity_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.GetRemainingCapacity(VoxelPlayground.Entity.Entity)">
+  GetRemainingCapacity(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRemainingCapacity(Entity coverObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coverObject</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_GetWalkableEntityVoxel_" data-uid="VoxelPlayground.Gaming.EntityManager.GetWalkableEntityVoxel*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_GetWalkableEntityVoxel_UnityEngine_Vector3_System_Single_System_Int32_" data-uid="VoxelPlayground.Gaming.EntityManager.GetWalkableEntityVoxel(UnityEngine.Vector3,System.Single,System.Int32)">
+  GetWalkableEntityVoxel(Vector3, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VoxelVolume&gt; GetWalkableEntityVoxel(Vector3 center, float radius, int minimalObjectVoxelCount = 50)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>minimalObjectVoxelCount</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_IsCoverAtCapacity_" data-uid="VoxelPlayground.Gaming.EntityManager.IsCoverAtCapacity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_IsCoverAtCapacity_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.IsCoverAtCapacity(VoxelPlayground.Entity.Entity)">
+  IsCoverAtCapacity(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCoverAtCapacity(Entity coverObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coverObject</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_KillAllEnemies_" data-uid="VoxelPlayground.Gaming.EntityManager.KillAllEnemies*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_KillAllEnemies" data-uid="VoxelPlayground.Gaming.EntityManager.KillAllEnemies">
+  KillAllEnemies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void KillAllEnemies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_RegisterCoverObject_" data-uid="VoxelPlayground.Gaming.EntityManager.RegisterCoverObject*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_RegisterCoverObject_VoxelPlayground_Entity_Entity_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Gaming.EntityManager.RegisterCoverObject(VoxelPlayground.Entity.Entity,VoxelPlayground.Entity.EntityCharacter)">
+  RegisterCoverObject(Entity, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterCoverObject(Entity coverObject, EntityCharacter entityCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coverObject</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_RemoveEntity_" data-uid="VoxelPlayground.Gaming.EntityManager.RemoveEntity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_RemoveEntity_System_String_" data-uid="VoxelPlayground.Gaming.EntityManager.RemoveEntity(System.String)">
+  RemoveEntity(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveEntity(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_RemoveEntity_" data-uid="VoxelPlayground.Gaming.EntityManager.RemoveEntity*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_RemoveEntity_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Gaming.EntityManager.RemoveEntity(VoxelPlayground.Entity.Entity)">
+  RemoveEntity(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEntity(Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_ResetBuildings_" data-uid="VoxelPlayground.Gaming.EntityManager.ResetBuildings*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_ResetBuildings" data-uid="VoxelPlayground.Gaming.EntityManager.ResetBuildings">
+  ResetBuildings()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetBuildings()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_Spawn_" data-uid="VoxelPlayground.Gaming.EntityManager.Spawn*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_Spawn_UnityEngine_GameObject_UnityEngine_Vector3_System_Action_UnityEngine_GameObject__UnityEngine_Quaternion_" data-uid="VoxelPlayground.Gaming.EntityManager.Spawn(UnityEngine.GameObject,UnityEngine.Vector3,System.Action{UnityEngine.GameObject},UnityEngine.Quaternion)">
+  Spawn(GameObject, Vector3, Action&lt;GameObject&gt;, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject Spawn(GameObject prefab, Vector3 position, Action&lt;GameObject&gt; onBeforeInit = null, Quaternion rotation = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>onBeforeInit</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnBlueprint_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnBlueprint*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnBlueprint_VoxelPlayground_Gaming_BlueprintData_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnBlueprint(VoxelPlayground.Gaming.BlueprintData,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  SpawnBlueprint(BlueprintData, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnBlueprint(BlueprintData data, Vector3 targetPos, Quaternion targetRot = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Gaming.BlueprintData.html">BlueprintData</a></dt>
+    <dd></dd>
+    <dt><code>targetPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>targetRot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnCharacter_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnCharacter_VoxelPlayground_Mod_CharacterData_UnityEngine_Vector3_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacter(VoxelPlayground.Mod.CharacterData,UnityEngine.Vector3)">
+  SpawnCharacter(CharacterData, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnCharacter(CharacterData data, Vector3 spawnPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Mod.CharacterData.html">CharacterData</a></dt>
+    <dd></dd>
+    <dt><code>spawnPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnCharacterAsync_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacterAsync*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnCharacterAsync_VoxelPlayground_Mod_CharacterData_UnityEngine_Vector3_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacterAsync(VoxelPlayground.Mod.CharacterData,UnityEngine.Vector3)">
+  SpawnCharacterAsync(CharacterData, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;EntityCharacter&gt; SpawnCharacterAsync(CharacterData data, Vector3 spawnPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Mod.CharacterData.html">CharacterData</a></dt>
+    <dd></dd>
+    <dt><code>spawnPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnCharacterAtLocation_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacterAtLocation*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnCharacterAtLocation_VoxelPlayground_Mod_CharacterData_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnCharacterAtLocation(VoxelPlayground.Mod.CharacterData,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  SpawnCharacterAtLocation(CharacterData, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;EntityCharacter&gt; SpawnCharacterAtLocation(CharacterData data, Vector3 worldPos, Quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Mod.CharacterData.html">CharacterData</a></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItem_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItem*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItem_VoxelPlayground_Mod_ItemData_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItem(VoxelPlayground.Mod.ItemData)">
+  SpawnItem(ItemData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItem(ItemData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Mod.ItemData.html">ItemData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemAtLocation_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemAtLocation*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemAtLocation_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_System_Action_UnityEngine_GameObject__" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemAtLocation(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{UnityEngine.GameObject})">
+  SpawnItemAtLocation(GameObject, Vector3, Quaternion, Action&lt;GameObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItemAtLocation(GameObject prefab, Vector3 worldPos, Quaternion rotation, Action&lt;GameObject&gt; objBeforeInit = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>objBeforeInit</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemAtLocation_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemAtLocation*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemAtLocation_VoxelPlayground_Mod_ItemData_UnityEngine_Vector3_UnityEngine_Quaternion_System_Action_UnityEngine_GameObject__" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemAtLocation(VoxelPlayground.Mod.ItemData,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{UnityEngine.GameObject})">
+  SpawnItemAtLocation(ItemData, Vector3, Quaternion, Action&lt;GameObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItemAtLocation(ItemData data, Vector3 worldPos, Quaternion rotation, Action&lt;GameObject&gt; objBeforeInit = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Mod.ItemData.html">ItemData</a></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>objBeforeInit</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemByKey_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByKey*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemByKey_System_String_UnityEngine_Vector3_UnityEngine_Quaternion_System_Action_UnityEngine_GameObject__" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByKey(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{UnityEngine.GameObject})">
+  SpawnItemByKey(string, Vector3, Quaternion, Action&lt;GameObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItemByKey(string key, Vector3 worldPos, Quaternion rotation, Action&lt;GameObject&gt; objBeforeInit = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>objBeforeInit</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemByKey_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByKey*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemByKey_System_String_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByKey(System.String)">
+  SpawnItemByKey(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public GameObject SpawnItemByKey(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemByName_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByName*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemByName_System_String_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByName(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  SpawnItemByName(string, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItemByName(string itemName, Vector3 pos, Quaternion rot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_SpawnItemByType_" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByType*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_SpawnItemByType_VoxelPlayground_Mod_BuiltinEntityType_UnityEngine_Vector3_UnityEngine_Quaternion_System_Action_UnityEngine_GameObject__" data-uid="VoxelPlayground.Gaming.EntityManager.SpawnItemByType(VoxelPlayground.Mod.BuiltinEntityType,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{UnityEngine.GameObject})">
+  SpawnItemByType(BuiltinEntityType, Vector3, Quaternion, Action&lt;GameObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnItemByType(BuiltinEntityType entityType, Vector3 worldPos, Quaternion rotation, Action&lt;GameObject&gt; objBeforeInit = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityType</code> <a class="xref" href="VoxelPlayground.Mod.BuiltinEntityType.html">BuiltinEntityType</a></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>objBeforeInit</code> <span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_EntityManager_UnregisterCoverObject_" data-uid="VoxelPlayground.Gaming.EntityManager.UnregisterCoverObject*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_EntityManager_UnregisterCoverObject_VoxelPlayground_Entity_Entity_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Gaming.EntityManager.UnregisterCoverObject(VoxelPlayground.Entity.Entity,VoxelPlayground.Entity.EntityCharacter)">
+  UnregisterCoverObject(Entity, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterCoverObject(Entity coverObject, EntityCharacter entityCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coverObject</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

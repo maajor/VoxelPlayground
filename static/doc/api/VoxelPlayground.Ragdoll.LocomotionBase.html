@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LocomotionBase | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LocomotionBase | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Ragdoll.LocomotionBase">
+
+
+
+  <h1 id="VoxelPlayground_Ragdoll_LocomotionBase" data-uid="VoxelPlayground.Ragdoll.LocomotionBase" class="text-break">
+Class LocomotionBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Ragdoll.html">Ragdoll</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocomotionBase : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">LocomotionBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Ragdoll.LocomotionHexaBody.html">LocomotionHexaBody</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_cols" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.cols">
+  cols
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collider[] cols</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_groundCheckDist" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.groundCheckDist">
+  groundCheckDist
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float groundCheckDist</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_groundHitInfo" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.groundHitInfo">
+  groundHitInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RaycastHit groundHitInfo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/RaycastHit.html">RaycastHit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_groundLayer" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.groundLayer">
+  groundLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask groundLayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_height" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.height">
+  height
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float height</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_isGhostMove" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.isGhostMove">
+  isGhostMove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isGhostMove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_isGrounded" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.isGrounded">
+  isGrounded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isGrounded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_lastJumpTime" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.lastJumpTime">
+  lastJumpTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float lastJumpTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_moveVelocity" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.moveVelocity">
+  moveVelocity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 moveVelocity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_pelvisRbGO" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.pelvisRbGO">
+  pelvisRbGO
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pelvisRbGO</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_rbs" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.rbs">
+  rbs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody[] rbs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_groundHitObject_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.groundHitObject*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_groundHitObject" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.groundHitObject">
+  groundHitObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject groundHitObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_JustLandedOnGround_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.JustLandedOnGround*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_JustLandedOnGround" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.JustLandedOnGround">
+  JustLandedOnGround
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool JustLandedOnGround { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_pelvisRB_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.pelvisRB*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_pelvisRB" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.pelvisRB">
+  pelvisRB
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody pelvisRB { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_shouldGroundCheck_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.shouldGroundCheck*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_shouldGroundCheck" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.shouldGroundCheck">
+  shouldGroundCheck
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public bool shouldGroundCheck { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_CheckGround_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.CheckGround*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_CheckGround" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.CheckGround">
+  CheckGround()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CheckGround()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_CheckGround_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.CheckGround*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_CheckGround_UnityEngine_Vector3_System_Single_System_Single_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.CheckGround(UnityEngine.Vector3,System.Single,System.Single)">
+  CheckGround(Vector3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckGround(Vector3 checkPos, float radius, float checkDis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>checkPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>checkDis</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_FixedUpdate_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.FixedUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_FixedUpdate" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.FixedUpdate">
+  FixedUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_Forward_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.Forward*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_Forward" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.Forward">
+  Forward()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 Forward()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_GetCenterPos_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetCenterPos*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GetCenterPos" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetCenterPos">
+  GetCenterPos()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 GetCenterPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_GetFeetCenterPos_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetFeetCenterPos*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GetFeetCenterPos" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetFeetCenterPos">
+  GetFeetCenterPos()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetFeetCenterPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_GetHeight_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetHeight*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GetHeight" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetHeight">
+  GetHeight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_GetMoveVelocity_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetMoveVelocity*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GetMoveVelocity" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetMoveVelocity">
+  GetMoveVelocity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 GetMoveVelocity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_GetTransform_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetTransform*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GetTransform" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GetTransform">
+  GetTransform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Transform GetTransform()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_IsGhostMove_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsGhostMove*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_IsGhostMove" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsGhostMove">
+  IsGhostMove()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsGhostMove()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_IsGrounded_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsGrounded*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_IsGrounded" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsGrounded">
+  IsGrounded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsGrounded()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_IsJumping_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsJumping*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_IsJumping" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.IsJumping">
+  IsJumping()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsJumping()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_Jump_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.Jump*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_Jump_System_Single_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.Jump(System.Single)">
+  Jump(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Jump(float force)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>force</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_RotateToDirection_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.RotateToDirection*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_RotateToDirection_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.RotateToDirection(UnityEngine.Vector3)">
+  RotateToDirection(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RotateToDirection(Vector3 dir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_RotateToDirectionSlerp_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.RotateToDirectionSlerp*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_RotateToDirectionSlerp_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.RotateToDirectionSlerp(UnityEngine.Vector3,System.Single)">
+  RotateToDirectionSlerp(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RotateToDirectionSlerp(Vector3 dir, float rate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rate</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_SetCollidersEnable_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetCollidersEnable*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_SetCollidersEnable_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetCollidersEnable(System.Boolean)">
+  SetCollidersEnable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCollidersEnable(bool e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_SetGhostProgress_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetGhostProgress*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_SetGhostProgress_System_Single_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetGhostProgress(System.Single,System.Boolean)">
+  SetGhostProgress(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGhostProgress(float progress, bool trackback = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>trackback</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_SetHeight_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetHeight*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_SetHeight_System_Single_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetHeight(System.Single)">
+  SetHeight(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetHeight(float h)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>h</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_SetMoveVelocity_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetMoveVelocity*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_SetMoveVelocity_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetMoveVelocity(UnityEngine.Vector3)">
+  SetMoveVelocity(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetMoveVelocity(Vector3 vel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vel</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_SetRebalanceEnable_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetRebalanceEnable*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_SetRebalanceEnable_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.SetRebalanceEnable(System.Boolean)">
+  SetRebalanceEnable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void SetRebalanceEnable(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_LocomotionBase_ToggleKinematic_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.ToggleKinematic*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_ToggleKinematic_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.ToggleKinematic(System.Boolean)">
+  ToggleKinematic(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ToggleKinematic(bool t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_LocomotionBase_GroundEvent" data-uid="VoxelPlayground.Ragdoll.LocomotionBase.GroundEvent">
+  GroundEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;LocomotionBase, bool&gt; GroundEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Ragdoll.LocomotionBase.html">LocomotionBase</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

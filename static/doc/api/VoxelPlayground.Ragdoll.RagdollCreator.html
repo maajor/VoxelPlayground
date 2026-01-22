@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RagdollCreator | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RagdollCreator | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Ragdoll.RagdollCreator">
+
+
+
+  <h1 id="VoxelPlayground_Ragdoll_RagdollCreator" data-uid="VoxelPlayground.Ragdoll.RagdollCreator" class="text-break">
+Class RagdollCreator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Ragdoll.html">Ragdoll</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RagdollCreator : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">RagdollCreator</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Ragdoll.HumanoidRagdollCreator.html">HumanoidRagdollCreator</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_boneData" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.boneData">
+  boneData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoneInfoDataSet boneData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoDataSet.html">BoneInfoDataSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_boneMap" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.boneMap">
+  boneMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RagdollCreator.BoneMapping[] boneMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.BoneMapping.html">BoneMapping</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_boneMapDict" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.boneMapDict">
+  boneMapDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, RagdollCreator.BoneMapping&gt; boneMapDict</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.html">RagdollCreator</a>.<a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.BoneMapping.html">BoneMapping</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_lastBoneDis" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.lastBoneDis">
+  lastBoneDis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float lastBoneDis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_rawAvatarPrefab" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.rawAvatarPrefab">
+  rawAvatarPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object rawAvatarPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_Abs_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.Abs*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_Abs_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.Abs(UnityEngine.Vector3)">
+  Abs(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Vector3 Abs(Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_BuildBoneJoint_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildBoneJoint*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_BuildBoneJoint_VoxelPlayground_Ragdoll_BoneInfoBasic_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildBoneJoint(VoxelPlayground.Ragdoll.BoneInfoBasic)">
+  BuildBoneJoint(BoneInfoBasic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BuildBoneJoint(BoneInfoBasic boneInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneInfo</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoBasic.html">BoneInfoBasic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_BuildPhysicsBonesFromRoot_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildPhysicsBonesFromRoot*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_BuildPhysicsBonesFromRoot_VoxelPlayground_Ragdoll_BoneInfoBasic_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildPhysicsBonesFromRoot(VoxelPlayground.Ragdoll.BoneInfoBasic)">
+  BuildPhysicsBonesFromRoot(BoneInfoBasic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BuildPhysicsBonesFromRoot(BoneInfoBasic boneInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneInfo</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoBasic.html">BoneInfoBasic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_BuildRagdoll_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildRagdoll*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_BuildRagdoll" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildRagdoll">
+  BuildRagdoll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void BuildRagdoll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_BuildRootJoint_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildRootJoint*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_BuildRootJoint_VoxelPlayground_Ragdoll_BoneInfoBasic_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.BuildRootJoint(VoxelPlayground.Ragdoll.BoneInfoBasic)">
+  BuildRootJoint(BoneInfoBasic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BuildRootJoint(BoneInfoBasic boneInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneInfo</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoBasic.html">BoneInfoBasic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_ClearAll_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearAll*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_ClearAll" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearAll">
+  ClearAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void ClearAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_ClearBoneMap_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearBoneMap*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_ClearBoneMap" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearBoneMap">
+  ClearBoneMap()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void ClearBoneMap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_ClearRagdoll_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearRagdoll*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_ClearRagdoll" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearRagdoll">
+  ClearRagdoll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void ClearRagdoll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_ClearTransform_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearTransform*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_ClearTransform_UnityEngine_Transform_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.ClearTransform(UnityEngine.Transform)">
+  ClearTransform(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ClearTransform(Transform transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_CreateCollider_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.CreateCollider*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_CreateCollider_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Ragdoll_BoneShape_System_Single_System_Single_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.CreateCollider(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Ragdoll.BoneShape,System.Single,System.Single,UnityEngine.Vector3)">
+  CreateCollider(Transform, Vector3, Vector3, BoneShape, float, float, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void CreateCollider(Transform t, Vector3 startPoint, Vector3 endPoint, BoneShape colliderType, float width, float depth, Vector3 widthDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>startPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>endPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>colliderType</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneShape.html">BoneShape</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>depth</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>widthDirection</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_CreateCollider_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.CreateCollider*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_CreateCollider_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Ragdoll_BoneShape_System_Single_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.CreateCollider(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Ragdoll.BoneShape,System.Single)">
+  CreateCollider(Transform, Vector3, Vector3, BoneShape, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void CreateCollider(Transform t, Vector3 startPoint, Vector3 endPoint, BoneShape colliderType, float width)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>startPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>endPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>colliderType</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneShape.html">BoneShape</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionIntToVector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionIntToVector3*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionIntToVector3_System_Int32_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionIntToVector3(System.Int32)">
+  DirectionIntToVector3(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Vector3 DirectionIntToVector3(int dir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionToVector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionToVector3*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionToVector3_VoxelPlayground_Ragdoll_RagdollCreator_Direction_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionToVector3(VoxelPlayground.Ragdoll.RagdollCreator.Direction)">
+  DirectionToVector3(Direction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Vector3 DirectionToVector3(RagdollCreator.Direction dir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.html">RagdollCreator</a>.<a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.Direction.html">Direction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionVector3ToInt_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionVector3ToInt*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_DirectionVector3ToInt_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.DirectionVector3ToInt(UnityEngine.Vector3)">
+  DirectionVector3ToInt(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int DirectionVector3ToInt(Vector3 dir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_FillBoneInEntry_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.FillBoneInEntry*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_FillBoneInEntry" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.FillBoneInEntry">
+  FillBoneInEntry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FillBoneInEntry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_FillLimes_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.FillLimes*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_FillLimes_System_String_System_String___" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.FillLimes(System.String,System.String[])">
+  FillLimes(string, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillLimes(string rootMirrorName, string[] animBoneMirrorName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rootMirrorName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>animBoneMirrorName</code> <span class="xref">string</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GenAll_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GenAll*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GenAll" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GenAll">
+  GenAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void GenAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GenBoneMap_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GenBoneMap*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GenBoneMap" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GenBoneMap">
+  GenBoneMap()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void GenBoneMap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GetBoneMap_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetBoneMap*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GetBoneMap_System_String_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetBoneMap(System.String)">
+  GetBoneMap(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RagdollCreator.BoneMapping GetBoneMap(string boneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.html">RagdollCreator</a>.<a class="xref" href="VoxelPlayground.Ragdoll.RagdollCreator.BoneMapping.html">BoneMapping</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GetConnectedBody_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetConnectedBody*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GetConnectedBody_UnityEngine_Transform_UnityEngine_Transform____" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetConnectedBody(UnityEngine.Transform,UnityEngine.Transform[]@)">
+  GetConnectedBody(Transform, ref Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Rigidbody GetConnectedBody(Transform bone, ref Transform[] bones)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>bones</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GetLocalOrthoDirection_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetLocalOrthoDirection*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GetLocalOrthoDirection_UnityEngine_Transform_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetLocalOrthoDirection(UnityEngine.Transform,UnityEngine.Vector3)">
+  GetLocalOrthoDirection(Transform, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Vector3 GetLocalOrthoDirection(Transform transform, Vector3 worldDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>worldDir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_GetScaleF_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetScaleF*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_GetScaleF_UnityEngine_Transform_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.GetScaleF(UnityEngine.Transform)">
+  GetScaleF(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float GetScaleF(Transform t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_PrepareEntryFromDataSet_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.PrepareEntryFromDataSet*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_PrepareEntryFromDataSet" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.PrepareEntryFromDataSet">
+  PrepareEntryFromDataSet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrepareEntryFromDataSet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_StartEditingColliderAndJoint_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.StartEditingColliderAndJoint*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_StartEditingColliderAndJoint" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.StartEditingColliderAndJoint">
+  StartEditingColliderAndJoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void StartEditingColliderAndJoint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateJointAxis_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateJointAxis*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateJointAxis" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateJointAxis">
+  UpdateJointAxis()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateJointAxis()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateLimeJointAxis_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateLimeJointAxis*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateLimeJointAxis" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateLimeJointAxis">
+  UpdateLimeJointAxis()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLimeJointAxis()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateLimeJointAxis_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateLimeJointAxis*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateLimeJointAxis_VoxelPlayground_Ragdoll_BoneInfoQueryData_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateLimeJointAxis(VoxelPlayground.Ragdoll.BoneInfoQueryData)">
+  UpdateLimeJointAxis(BoneInfoQueryData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLimeJointAxis(BoneInfoQueryData endBoneQueryData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endBoneQueryData</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoQueryData.html">BoneInfoQueryData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateMassDistrubution_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateMassDistrubution*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateMassDistrubution" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateMassDistrubution">
+  UpdateMassDistrubution()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateMassDistrubution()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateMassDistrubutionWith_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateMassDistrubutionWith*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateMassDistrubutionWith_System_Single_System_Single_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateMassDistrubutionWith(System.Single,System.Single)">
+  UpdateMassDistrubutionWith(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMassDistrubutionWith(float rootMass = 24, float downscalePercent = 0.88)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rootMass</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>downscalePercent</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateNonLimeJointAxis_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateNonLimeJointAxis*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_UpdateNonLimeJointAxis_VoxelPlayground_Ragdoll_BoneInfoQueryData_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.UpdateNonLimeJointAxis(VoxelPlayground.Ragdoll.BoneInfoQueryData)">
+  UpdateNonLimeJointAxis(BoneInfoQueryData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateNonLimeJointAxis(BoneInfoQueryData queryData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>queryData</code> <a class="xref" href="VoxelPlayground.Ragdoll.BoneInfoQueryData.html">BoneInfoQueryData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_RagdollCreator_Vector3Abs_" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.Vector3Abs*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_RagdollCreator_Vector3Abs_UnityEngine_Vector3__" data-uid="VoxelPlayground.Ragdoll.RagdollCreator.Vector3Abs(UnityEngine.Vector3@)">
+  Vector3Abs(ref Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void Vector3Abs(ref Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class XRCamera | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class XRCamera | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Gaming.XRCamera">
+
+
+
+  <h1 id="VoxelPlayground_Gaming_XRCamera" data-uid="VoxelPlayground.Gaming.XRCamera" class="text-break">
+Class XRCamera  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Gaming.html">Gaming</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XRCamera : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">XRCamera</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_cameraFollowInitialOffset" data-uid="VoxelPlayground.Gaming.XRCamera.cameraFollowInitialOffset">
+  cameraFollowInitialOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 cameraFollowInitialOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_cameraFollowOffsetDist" data-uid="VoxelPlayground.Gaming.XRCamera.cameraFollowOffsetDist">
+  cameraFollowOffsetDist
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cameraFollowOffsetDist</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_cameraFollowScaleCar" data-uid="VoxelPlayground.Gaming.XRCamera.cameraFollowScaleCar">
+  cameraFollowScaleCar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cameraFollowScaleCar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_cameraFollowScaleChar" data-uid="VoxelPlayground.Gaming.XRCamera.cameraFollowScaleChar">
+  cameraFollowScaleChar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cameraFollowScaleChar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_cameraFollowSmoothness" data-uid="VoxelPlayground.Gaming.XRCamera.cameraFollowSmoothness">
+  cameraFollowSmoothness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cameraFollowSmoothness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_camToHip" data-uid="VoxelPlayground.Gaming.XRCamera.camToHip">
+  camToHip
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Temp Debug&quot;)]
+[ShowInInspector]
+public static Vector3 camToHip</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_camToRightShoulder" data-uid="VoxelPlayground.Gaming.XRCamera.camToRightShoulder">
+  camToRightShoulder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 camToRightShoulder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgContinuousPlacingCooldown" data-uid="VoxelPlayground.Gaming.XRCamera.dbgContinuousPlacingCooldown">
+  dbgContinuousPlacingCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float dbgContinuousPlacingCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgDurabilityDmgHardnessCapAdd" data-uid="VoxelPlayground.Gaming.XRCamera.dbgDurabilityDmgHardnessCapAdd">
+  dbgDurabilityDmgHardnessCapAdd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static int dbgDurabilityDmgHardnessCapAdd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgDurabilityDmgRange" data-uid="VoxelPlayground.Gaming.XRCamera.dbgDurabilityDmgRange">
+  dbgDurabilityDmgRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector2 dbgDurabilityDmgRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgPlacingAttachRange" data-uid="VoxelPlayground.Gaming.XRCamera.dbgPlacingAttachRange">
+  dbgPlacingAttachRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float dbgPlacingAttachRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgPlacingKernelExpand" data-uid="VoxelPlayground.Gaming.XRCamera.dbgPlacingKernelExpand">
+  dbgPlacingKernelExpand
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 dbgPlacingKernelExpand</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgPlacingKernelMinAxis" data-uid="VoxelPlayground.Gaming.XRCamera.dbgPlacingKernelMinAxis">
+  dbgPlacingKernelMinAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 dbgPlacingKernelMinAxis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgPlacingOffsetRatio" data-uid="VoxelPlayground.Gaming.XRCamera.dbgPlacingOffsetRatio">
+  dbgPlacingOffsetRatio
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 dbgPlacingOffsetRatio</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgPlacingOverlapAttachExpand" data-uid="VoxelPlayground.Gaming.XRCamera.dbgPlacingOverlapAttachExpand">
+  dbgPlacingOverlapAttachExpand
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float dbgPlacingOverlapAttachExpand</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_dbgTpCeilingOffsetY" data-uid="VoxelPlayground.Gaming.XRCamera.dbgTpCeilingOffsetY">
+  dbgTpCeilingOffsetY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float dbgTpCeilingOffsetY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_eyeAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.eyeAnchor">
+  eyeAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Fast Travel&quot;)]
+public Transform eyeAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fastTravelSpeedHorizontal" data-uid="VoxelPlayground.Gaming.XRCamera.fastTravelSpeedHorizontal">
+  fastTravelSpeedHorizontal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fastTravelSpeedHorizontal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fastTravelSpeedVertical" data-uid="VoxelPlayground.Gaming.XRCamera.fastTravelSpeedVertical">
+  fastTravelSpeedVertical
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fastTravelSpeedVertical</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_flyDrag" data-uid="VoxelPlayground.Gaming.XRCamera.flyDrag">
+  flyDrag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float flyDrag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_flySpeed" data-uid="VoxelPlayground.Gaming.XRCamera.flySpeed">
+  flySpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float flySpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsAngLimit" data-uid="VoxelPlayground.Gaming.XRCamera.fpsAngLimit">
+  fpsAngLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsAngLimit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsAutoMoveToHeadsetDirThreshold" data-uid="VoxelPlayground.Gaming.XRCamera.fpsAutoMoveToHeadsetDirThreshold">
+  fpsAutoMoveToHeadsetDirThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsAutoMoveToHeadsetDirThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsBackpackCamBackward" data-uid="VoxelPlayground.Gaming.XRCamera.fpsBackpackCamBackward">
+  fpsBackpackCamBackward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsBackpackCamBackward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsClimbAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.fpsClimbAnchor">
+  fpsClimbAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 fpsClimbAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsClimbingAnchorPullThreshold" data-uid="VoxelPlayground.Gaming.XRCamera.fpsClimbingAnchorPullThreshold">
+  fpsClimbingAnchorPullThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsClimbingAnchorPullThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsContinuousTryGrabDuration" data-uid="VoxelPlayground.Gaming.XRCamera.fpsContinuousTryGrabDuration">
+  fpsContinuousTryGrabDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsContinuousTryGrabDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsDirectHandRayLen" data-uid="VoxelPlayground.Gaming.XRCamera.fpsDirectHandRayLen">
+  fpsDirectHandRayLen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsDirectHandRayLen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsDriveCarHeadErrorRadius" data-uid="VoxelPlayground.Gaming.XRCamera.fpsDriveCarHeadErrorRadius">
+  fpsDriveCarHeadErrorRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsDriveCarHeadErrorRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsDriveCarLocoballToHipOffset" data-uid="VoxelPlayground.Gaming.XRCamera.fpsDriveCarLocoballToHipOffset">
+  fpsDriveCarLocoballToHipOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;FirstPerson: Car&quot;)]
+[ShowInInspector]
+public static Vector3 fpsDriveCarLocoballToHipOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsDriveCarYawFollowSpeed" data-uid="VoxelPlayground.Gaming.XRCamera.fpsDriveCarYawFollowSpeed">
+  fpsDriveCarYawFollowSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsDriveCarYawFollowSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsFindNearbyItemCooldown" data-uid="VoxelPlayground.Gaming.XRCamera.fpsFindNearbyItemCooldown">
+  fpsFindNearbyItemCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsFindNearbyItemCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsHandGrabDistance" data-uid="VoxelPlayground.Gaming.XRCamera.fpsHandGrabDistance">
+  fpsHandGrabDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsHandGrabDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsHandGrabGizmoSize" data-uid="VoxelPlayground.Gaming.XRCamera.fpsHandGrabGizmoSize">
+  fpsHandGrabGizmoSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsHandGrabGizmoSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsHoldingItemScale" data-uid="VoxelPlayground.Gaming.XRCamera.fpsHoldingItemScale">
+  fpsHoldingItemScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsHoldingItemScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsJumpCooldown" data-uid="VoxelPlayground.Gaming.XRCamera.fpsJumpCooldown">
+  fpsJumpCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsJumpCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsMoveDeadzone" data-uid="VoxelPlayground.Gaming.XRCamera.fpsMoveDeadzone">
+  fpsMoveDeadzone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector2 fpsMoveDeadzone</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsMoveSpeed" data-uid="VoxelPlayground.Gaming.XRCamera.fpsMoveSpeed">
+  fpsMoveSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;FirstPerson&quot;)]
+[ShowInInspector]
+public static float fpsMoveSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsMoveSpeedCurve" data-uid="VoxelPlayground.Gaming.XRCamera.fpsMoveSpeedCurve">
+  fpsMoveSpeedCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public AnimationCurve fpsMoveSpeedCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AnimationCurve.html">AnimationCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsPickNearbyItemForwardAngleLimit" data-uid="VoxelPlayground.Gaming.XRCamera.fpsPickNearbyItemForwardAngleLimit">
+  fpsPickNearbyItemForwardAngleLimit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsPickNearbyItemForwardAngleLimit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsPickNearbyItemRadius" data-uid="VoxelPlayground.Gaming.XRCamera.fpsPickNearbyItemRadius">
+  fpsPickNearbyItemRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsPickNearbyItemRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsRayForward" data-uid="VoxelPlayground.Gaming.XRCamera.fpsRayForward">
+  fpsRayForward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsRayForward</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsSnapTurningAngle" data-uid="VoxelPlayground.Gaming.XRCamera.fpsSnapTurningAngle">
+  fpsSnapTurningAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsSnapTurningAngle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsSnapTurningCooldown" data-uid="VoxelPlayground.Gaming.XRCamera.fpsSnapTurningCooldown">
+  fpsSnapTurningCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsSnapTurningCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsSnapTurningScale" data-uid="VoxelPlayground.Gaming.XRCamera.fpsSnapTurningScale">
+  fpsSnapTurningScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsSnapTurningScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_fpsSwingSpeed" data-uid="VoxelPlayground.Gaming.XRCamera.fpsSwingSpeed">
+  fpsSwingSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static float fpsSwingSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handFollowers" data-uid="VoxelPlayground.Gaming.XRCamera.handFollowers">
+  handFollowers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] handFollowers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handIKsFollowTargets" data-uid="VoxelPlayground.Gaming.XRCamera.handIKsFollowTargets">
+  handIKsFollowTargets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] handIKsFollowTargets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handIKsFollowTargetsPos" data-uid="VoxelPlayground.Gaming.XRCamera.handIKsFollowTargetsPos">
+  handIKsFollowTargetsPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;0:Lcontroller,1:Rcontroller,/n 2:LhandTracking,3:RhandTracking&quot;, InfoMessageType.Info, null)]
+public Vector3[] handIKsFollowTargetsPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handIKsFollowTargetsRot" data-uid="VoxelPlayground.Gaming.XRCamera.handIKsFollowTargetsRot">
+  handIKsFollowTargetsRot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3[] handIKsFollowTargetsRot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handThumbstickMaxRadius" data-uid="VoxelPlayground.Gaming.XRCamera.handThumbstickMaxRadius">
+  handThumbstickMaxRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float handThumbstickMaxRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_handThumbstickYRange" data-uid="VoxelPlayground.Gaming.XRCamera.handThumbstickYRange">
+  handThumbstickYRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 handThumbstickYRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_inFastTravelMode" data-uid="VoxelPlayground.Gaming.XRCamera.inFastTravelMode">
+  inFastTravelMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool inFastTravelMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_initialHeadHeight" data-uid="VoxelPlayground.Gaming.XRCamera.initialHeadHeight">
+  initialHeadHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float initialHeadHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_inSlowMode" data-uid="VoxelPlayground.Gaming.XRCamera.inSlowMode">
+  inSlowMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool inSlowMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_isPlayerhandToCursorUseCharacterSpace" data-uid="VoxelPlayground.Gaming.XRCamera.isPlayerhandToCursorUseCharacterSpace">
+  isPlayerhandToCursorUseCharacterSpace
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+[NonSerialized]
+public bool isPlayerhandToCursorUseCharacterSpace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_isPlayerhandToCursorUseMirror" data-uid="VoxelPlayground.Gaming.XRCamera.isPlayerhandToCursorUseMirror">
+  isPlayerhandToCursorUseMirror
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+[NonSerialized]
+public bool isPlayerhandToCursorUseMirror</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_leftControllerTransform" data-uid="VoxelPlayground.Gaming.XRCamera.leftControllerTransform">
+  leftControllerTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform leftControllerTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_leftHandIndexDistalAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.leftHandIndexDistalAnchor">
+  leftHandIndexDistalAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;HandTracking Thumbstick&quot;)]
+public Transform leftHandIndexDistalAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_leftHandThumbTipAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.leftHandThumbTipAnchor">
+  leftHandThumbTipAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform leftHandThumbTipAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_leftHandTransform" data-uid="VoxelPlayground.Gaming.XRCamera.leftHandTransform">
+  leftHandTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform leftHandTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_lhandThumbstick" data-uid="VoxelPlayground.Gaming.XRCamera.lhandThumbstick">
+  lhandThumbstick
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 lhandThumbstick</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_playerhandRotToIk" data-uid="VoxelPlayground.Gaming.XRCamera.playerhandRotToIk">
+  playerhandRotToIk
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Quaternion playerhandRotToIk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_playerhandRotToIkRanged" data-uid="VoxelPlayground.Gaming.XRCamera.playerhandRotToIkRanged">
+  playerhandRotToIkRanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Quaternion playerhandRotToIkRanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_puppetModeCameraScale" data-uid="VoxelPlayground.Gaming.XRCamera.puppetModeCameraScale">
+  puppetModeCameraScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float puppetModeCameraScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_rhandThumbstick" data-uid="VoxelPlayground.Gaming.XRCamera.rhandThumbstick">
+  rhandThumbstick
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public static Vector3 rhandThumbstick</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_rightControllerTransform" data-uid="VoxelPlayground.Gaming.XRCamera.rightControllerTransform">
+  rightControllerTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform rightControllerTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_rightHandIndexDistalAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.rightHandIndexDistalAnchor">
+  rightHandIndexDistalAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform rightHandIndexDistalAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_rightHandThumbTipAnchor" data-uid="VoxelPlayground.Gaming.XRCamera.rightHandThumbTipAnchor">
+  rightHandThumbTipAnchor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform rightHandThumbTipAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_rightHandTransform" data-uid="VoxelPlayground.Gaming.XRCamera.rightHandTransform">
+  rightHandTransform
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform rightHandTransform</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_scalePlayerhandToCursor" data-uid="VoxelPlayground.Gaming.XRCamera.scalePlayerhandToCursor">
+  scalePlayerhandToCursor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scalePlayerhandToCursor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_slowModeTimeScaleMlp" data-uid="VoxelPlayground.Gaming.XRCamera.slowModeTimeScaleMlp">
+  slowModeTimeScaleMlp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float slowModeTimeScaleMlp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_testLineRenderer" data-uid="VoxelPlayground.Gaming.XRCamera.testLineRenderer">
+  testLineRenderer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineRenderer testLineRenderer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/LineRenderer.html">LineRenderer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_testLineRendererInHandR" data-uid="VoxelPlayground.Gaming.XRCamera.testLineRendererInHandR">
+  testLineRendererInHandR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineRenderer testLineRendererInHandR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/LineRenderer.html">LineRenderer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_trackingSpace" data-uid="VoxelPlayground.Gaming.XRCamera.trackingSpace">
+  trackingSpace
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;References&quot;)]
+[SerializeField]
+public Transform trackingSpace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_IsCurHeadPosValid_" data-uid="VoxelPlayground.Gaming.XRCamera.IsCurHeadPosValid*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_IsCurHeadPosValid" data-uid="VoxelPlayground.Gaming.XRCamera.IsCurHeadPosValid">
+  IsCurHeadPosValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCurHeadPosValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_AddLocalRotationAlongY_" data-uid="VoxelPlayground.Gaming.XRCamera.AddLocalRotationAlongY*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_AddLocalRotationAlongY_System_Single_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.AddLocalRotationAlongY(System.Single,System.Single)">
+  AddLocalRotationAlongY(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void AddLocalRotationAlongY(float change, float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>change</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_AutoCalibrate_" data-uid="VoxelPlayground.Gaming.XRCamera.AutoCalibrate*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_AutoCalibrate" data-uid="VoxelPlayground.Gaming.XRCamera.AutoCalibrate">
+  AutoCalibrate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AutoCalibrate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_ChangeToFirstPersonView_" data-uid="VoxelPlayground.Gaming.XRCamera.ChangeToFirstPersonView*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_ChangeToFirstPersonView_UnityEngine_Rigidbody_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Gaming.XRCamera.ChangeToFirstPersonView(UnityEngine.Rigidbody,VoxelPlayground.Entity.EntityCharacter)">
+  ChangeToFirstPersonView(Rigidbody, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeToFirstPersonView(Rigidbody headRb, EntityCharacter entityCharacter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>headRb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+    <dt><code>entityCharacter</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_ChangeToGodView_" data-uid="VoxelPlayground.Gaming.XRCamera.ChangeToGodView*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_ChangeToGodView" data-uid="VoxelPlayground.Gaming.XRCamera.ChangeToGodView">
+  ChangeToGodView()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeToGodView()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_DrawJoystick_" data-uid="VoxelPlayground.Gaming.XRCamera.DrawJoystick*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_DrawJoystick_UnityEngine_Transform_UnityEngine_Vector2_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.DrawJoystick(UnityEngine.Transform,UnityEngine.Vector2,System.Single,System.Single,System.Single)">
+  DrawJoystick(Transform, Vector2, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawJoystick(Transform handT, Vector2 joystick, float grip, float trigger, float lenMul = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handT</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>joystick</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>grip</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>trigger</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>lenMul</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_GetFPSEntityCharacter_" data-uid="VoxelPlayground.Gaming.XRCamera.GetFPSEntityCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_GetFPSEntityCharacter" data-uid="VoxelPlayground.Gaming.XRCamera.GetFPSEntityCharacter">
+  GetFPSEntityCharacter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityCharacter GetFPSEntityCharacter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_GetHeadsetPhysicalHeight_" data-uid="VoxelPlayground.Gaming.XRCamera.GetHeadsetPhysicalHeight*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_GetHeadsetPhysicalHeight" data-uid="VoxelPlayground.Gaming.XRCamera.GetHeadsetPhysicalHeight">
+  GetHeadsetPhysicalHeight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetHeadsetPhysicalHeight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_IsValidCameraDirection_" data-uid="VoxelPlayground.Gaming.XRCamera.IsValidCameraDirection*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_IsValidCameraDirection_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.IsValidCameraDirection(UnityEngine.Vector3,System.Single)">
+  IsValidCameraDirection(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidCameraDirection(Vector3 dir, float stepScale = 0.25)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>stepScale</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_MoveTrackingSpace_" data-uid="VoxelPlayground.Gaming.XRCamera.MoveTrackingSpace*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_MoveTrackingSpace_UnityEngine_Vector2_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.MoveTrackingSpace(UnityEngine.Vector2,System.Single)">
+  MoveTrackingSpace(Vector2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTrackingSpace(Vector2 inputValue, float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_RecenterTrackingSpace_" data-uid="VoxelPlayground.Gaming.XRCamera.RecenterTrackingSpace*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_RecenterTrackingSpace" data-uid="VoxelPlayground.Gaming.XRCamera.RecenterTrackingSpace">
+  RecenterTrackingSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public static void RecenterTrackingSpace()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_RecordValidHeadPosition_" data-uid="VoxelPlayground.Gaming.XRCamera.RecordValidHeadPosition*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_RecordValidHeadPosition" data-uid="VoxelPlayground.Gaming.XRCamera.RecordValidHeadPosition">
+  RecordValidHeadPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecordValidHeadPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_ResetTrackingSpaceOffset_" data-uid="VoxelPlayground.Gaming.XRCamera.ResetTrackingSpaceOffset*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_ResetTrackingSpaceOffset" data-uid="VoxelPlayground.Gaming.XRCamera.ResetTrackingSpaceOffset">
+  ResetTrackingSpaceOffset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTrackingSpaceOffset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_ResolveHeadBodyOffset_" data-uid="VoxelPlayground.Gaming.XRCamera.ResolveHeadBodyOffset*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_ResolveHeadBodyOffset_System_Boolean_" data-uid="VoxelPlayground.Gaming.XRCamera.ResolveHeadBodyOffset(System.Boolean)">
+  ResolveHeadBodyOffset(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResolveHeadBodyOffset(bool instantResolve = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instantResolve</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_RotateTrackingSpaceOffset_" data-uid="VoxelPlayground.Gaming.XRCamera.RotateTrackingSpaceOffset*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_RotateTrackingSpaceOffset_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Gaming.XRCamera.RotateTrackingSpaceOffset(UnityEngine.Quaternion)">
+  RotateTrackingSpaceOffset(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RotateTrackingSpaceOffset(Quaternion rotationDelta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotationDelta</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_SetControllerLineVisible_" data-uid="VoxelPlayground.Gaming.XRCamera.SetControllerLineVisible*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_SetControllerLineVisible_System_Boolean_System_Boolean_System_Int32_" data-uid="VoxelPlayground.Gaming.XRCamera.SetControllerLineVisible(System.Boolean,System.Boolean,System.Int32)">
+  SetControllerLineVisible(bool, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables or disables the controller far-cast line (ray) for the specified hand, with optional usage-based reference counting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetControllerLineVisible(bool isLeft, bool visible, int channelBit = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isLeft</code> <span class="xref">bool</span></dt>
+    <dd><p>True for left controller; false for right controller.</p>
+</dd>
+    <dt><code>visible</code> <span class="xref">bool</span></dt>
+    <dd><p>Whether this caller wants the controller line to be visible.</p>
+</dd>
+    <dt><code>channelBit</code> <span class="xref">int</span></dt>
+    <dd><p>Channel index used as a bit in an internal mask; the line remains enabled while any channel bit is set.
+current usage
+1: LCK tablet
+0: hand menu, god view</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_SetControllerVisualShow_" data-uid="VoxelPlayground.Gaming.XRCamera.SetControllerVisualShow*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_SetControllerVisualShow_System_Boolean_" data-uid="VoxelPlayground.Gaming.XRCamera.SetControllerVisualShow(System.Boolean)">
+  SetControllerVisualShow(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetControllerVisualShow(bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>active</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_SetHeightCorrection_" data-uid="VoxelPlayground.Gaming.XRCamera.SetHeightCorrection*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_SetHeightCorrection_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.SetHeightCorrection(System.Single)">
+  SetHeightCorrection(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeightCorrection(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_UpdateCameraInVRMode_" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateCameraInVRMode*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_UpdateCameraInVRMode" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateCameraInVRMode">
+  UpdateCameraInVRMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCameraInVRMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_UpdateForceTurnTowards_" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateForceTurnTowards*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_UpdateForceTurnTowards_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateForceTurnTowards(UnityEngine.Vector3,System.Single)">
+  UpdateForceTurnTowards(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateForceTurnTowards(Vector3 direction, float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_UpdateSlowMode_" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateSlowMode*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_UpdateSlowMode" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateSlowMode">
+  UpdateSlowMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSlowMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

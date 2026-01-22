@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerInfo | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerInfo | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Gaming.PlayerInfo">
+
+
+
+  <h1 id="VoxelPlayground_Gaming_PlayerInfo" data-uid="VoxelPlayground.Gaming.PlayerInfo" class="text-break">
+Class PlayerInfo  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Gaming.html">Gaming</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerInfo : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">PlayerInfo</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_autoHealAmount" data-uid="VoxelPlayground.Gaming.PlayerInfo.autoHealAmount">
+  autoHealAmount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int autoHealAmount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_autoHealBeginCooldown" data-uid="VoxelPlayground.Gaming.PlayerInfo.autoHealBeginCooldown">
+  autoHealBeginCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float autoHealBeginCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_autoHealIntervalCooldown" data-uid="VoxelPlayground.Gaming.PlayerInfo.autoHealIntervalCooldown">
+  autoHealIntervalCooldown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float autoHealIntervalCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_autoPickupRadius" data-uid="VoxelPlayground.Gaming.PlayerInfo.autoPickupRadius">
+  autoPickupRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float autoPickupRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_CameraWallPenetration" data-uid="VoxelPlayground.Gaming.PlayerInfo.CameraWallPenetration">
+  CameraWallPenetration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Volume CameraWallPenetration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Volume</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_droppedResourcePrefab" data-uid="VoxelPlayground.Gaming.PlayerInfo.droppedResourcePrefab">
+  droppedResourcePrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DroppedResource droppedResourcePrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Level.DroppedResource.html">DroppedResource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_fireVolume" data-uid="VoxelPlayground.Gaming.PlayerInfo.fireVolume">
+  fireVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Volume fireVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Volume</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_heartbeatSoundVolume" data-uid="VoxelPlayground.Gaming.PlayerInfo.heartbeatSoundVolume">
+  heartbeatSoundVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public SoundParameterVolumeRatio heartbeatSoundVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SoundParameterVolumeRatio</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_instance" data-uid="VoxelPlayground.Gaming.PlayerInfo.instance">
+  instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayerInfo instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Gaming.PlayerInfo.html">PlayerInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_inventory" data-uid="VoxelPlayground.Gaming.PlayerInfo.inventory">
+  inventory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public List&lt;EntityAttachmentItem&gt; inventory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_isCheatedInThisScene" data-uid="VoxelPlayground.Gaming.PlayerInfo.isCheatedInThisScene">
+  isCheatedInThisScene
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Is Cheated During this Battle&quot;)]
+[NonSerialized]
+[ShowInInspector]
+[SuffixLabel(&quot;Debug&quot;, false)]
+public bool isCheatedInThisScene</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_isInvulnerable" data-uid="VoxelPlayground.Gaming.PlayerInfo.isInvulnerable">
+  isInvulnerable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isInvulnerable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_lowHealthVolume" data-uid="VoxelPlayground.Gaming.PlayerInfo.lowHealthVolume">
+  lowHealthVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Volume lowHealthVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Volume</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_maxHealth" data-uid="VoxelPlayground.Gaming.PlayerInfo.maxHealth">
+  maxHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int maxHealth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnceItemPlaced" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnceItemPlaced">
+  OnceItemPlaced
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;EntityAttachmentItem, bool&gt; OnceItemPlaced</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Func</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityAttachmentItem.html">EntityAttachmentItem</a>, <span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnPlayerInfoUpdated" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnPlayerInfoUpdated">
+  OnPlayerInfoUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnPlayerInfoUpdated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnPlayerResInfoUpdated" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnPlayerResInfoUpdated">
+  OnPlayerResInfoUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnPlayerResInfoUpdated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_playHeartbeatSfxOnHealthPercentageUnder" data-uid="VoxelPlayground.Gaming.PlayerInfo.playHeartbeatSfxOnHealthPercentageUnder">
+  playHeartbeatSfxOnHealthPercentageUnder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Low Health FX&quot;)]
+public float playHeartbeatSfxOnHealthPercentageUnder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_poisonVolume" data-uid="VoxelPlayground.Gaming.PlayerInfo.poisonVolume">
+  poisonVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Volume poisonVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Volume</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_resKindIcons" data-uid="VoxelPlayground.Gaming.PlayerInfo.resKindIcons">
+  resKindIcons
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite[] resKindIcons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Sprite.html">Sprite</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_resKindMats" data-uid="VoxelPlayground.Gaming.PlayerInfo.resKindMats">
+  resKindMats
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material[] resKindMats</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Material.html">Material</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_restrainedBy" data-uid="VoxelPlayground.Gaming.PlayerInfo.restrainedBy">
+  restrainedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityCharacter restrainedBy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_blueprintDraft_" data-uid="VoxelPlayground.Gaming.PlayerInfo.blueprintDraft*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_blueprintDraft" data-uid="VoxelPlayground.Gaming.PlayerInfo.blueprintDraft">
+  blueprintDraft
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current blueprint draft for saving. Set to new instance to enter save mode, set to null to exit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlueprintDraft blueprintDraft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Gaming.BlueprintDraft.html">BlueprintDraft</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_fire_" data-uid="VoxelPlayground.Gaming.PlayerInfo.fire*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_fire" data-uid="VoxelPlayground.Gaming.PlayerInfo.fire">
+  fire
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fire { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_health_" data-uid="VoxelPlayground.Gaming.PlayerInfo.health*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_health" data-uid="VoxelPlayground.Gaming.PlayerInfo.health">
+  health
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int health { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_healthPercentage_" data-uid="VoxelPlayground.Gaming.PlayerInfo.healthPercentage*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_healthPercentage" data-uid="VoxelPlayground.Gaming.PlayerInfo.healthPercentage">
+  healthPercentage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float healthPercentage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_inRecycleMode_" data-uid="VoxelPlayground.Gaming.PlayerInfo.inRecycleMode*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_inRecycleMode" data-uid="VoxelPlayground.Gaming.PlayerInfo.inRecycleMode">
+  inRecycleMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool inRecycleMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_inRepairMode_" data-uid="VoxelPlayground.Gaming.PlayerInfo.inRepairMode*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_inRepairMode" data-uid="VoxelPlayground.Gaming.PlayerInfo.inRepairMode">
+  inRepairMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool inRepairMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_placingBlueprintData_" data-uid="VoxelPlayground.Gaming.PlayerInfo.placingBlueprintData*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_placingBlueprintData" data-uid="VoxelPlayground.Gaming.PlayerInfo.placingBlueprintData">
+  placingBlueprintData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blueprint data to place. Set to enter placing mode, set to null to exit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlueprintData placingBlueprintData { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Gaming.BlueprintData.html">BlueprintData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_placingItemPrefab_" data-uid="VoxelPlayground.Gaming.PlayerInfo.placingItemPrefab*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_placingItemPrefab" data-uid="VoxelPlayground.Gaming.PlayerInfo.placingItemPrefab">
+  placingItemPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject placingItemPrefab { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_poison_" data-uid="VoxelPlayground.Gaming.PlayerInfo.poison*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_poison" data-uid="VoxelPlayground.Gaming.PlayerInfo.poison">
+  poison
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float poison { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_resMetal_" data-uid="VoxelPlayground.Gaming.PlayerInfo.resMetal*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_resMetal" data-uid="VoxelPlayground.Gaming.PlayerInfo.resMetal">
+  resMetal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int resMetal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_resStone_" data-uid="VoxelPlayground.Gaming.PlayerInfo.resStone*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_resStone" data-uid="VoxelPlayground.Gaming.PlayerInfo.resStone">
+  resStone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int resStone { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_restraint_" data-uid="VoxelPlayground.Gaming.PlayerInfo.restraint*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_restraint" data-uid="VoxelPlayground.Gaming.PlayerInfo.restraint">
+  restraint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float restraint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_resWood_" data-uid="VoxelPlayground.Gaming.PlayerInfo.resWood*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_resWood" data-uid="VoxelPlayground.Gaming.PlayerInfo.resWood">
+  resWood
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int resWood { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_CanBuy_" data-uid="VoxelPlayground.Gaming.PlayerInfo.CanBuy*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_CanBuy_VoxelPlayground_Gaming_CraftingRecipe_" data-uid="VoxelPlayground.Gaming.PlayerInfo.CanBuy(VoxelPlayground.Gaming.CraftingRecipe)">
+  CanBuy(CraftingRecipe)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBuy(CraftingRecipe c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="VoxelPlayground.Gaming.CraftingRecipe.html">CraftingRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_Cost_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Cost*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_Cost_VoxelPlayground_Gaming_CraftingRecipe_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Cost(VoxelPlayground.Gaming.CraftingRecipe)">
+  Cost(CraftingRecipe)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cost(CraftingRecipe c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="VoxelPlayground.Gaming.CraftingRecipe.html">CraftingRecipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_DamageHealth_" data-uid="VoxelPlayground.Gaming.PlayerInfo.DamageHealth*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_DamageHealth_System_Int32_" data-uid="VoxelPlayground.Gaming.PlayerInfo.DamageHealth(System.Int32)">
+  DamageHealth(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DamageHealth(int damage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>damage</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_Earn_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Earn*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_Earn_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Earn(System.Int32,System.Int32,System.Int32)">
+  Earn(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Earn(int wood = 0, int stone = 0, int metal = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wood</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>stone</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>metal</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_Earn_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Earn*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_Earn_VoxelPlayground_Gaming_PlayerInfo_ResKind_System_Int32_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Earn(VoxelPlayground.Gaming.PlayerInfo.ResKind,System.Int32)">
+  Earn(ResKind, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Earn(PlayerInfo.ResKind kind, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>kind</code> <a class="xref" href="VoxelPlayground.Gaming.PlayerInfo.html">PlayerInfo</a>.<a class="xref" href="VoxelPlayground.Gaming.PlayerInfo.ResKind.html">ResKind</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_Heal_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Heal*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_Heal_System_Int32_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Heal(System.Int32)">
+  Heal(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Heal(int heal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>heal</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_Reset_" data-uid="VoxelPlayground.Gaming.PlayerInfo.Reset*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_Reset" data-uid="VoxelPlayground.Gaming.PlayerInfo.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_SpawnDroppedResource_" data-uid="VoxelPlayground.Gaming.PlayerInfo.SpawnDroppedResource*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_SpawnDroppedResource_UnityEngine_Vector3_VoxelPlayground_Gaming_PlayerInfo_ResKind_System_Int32_VoxelPlayground_Entity_EntityCharacter_" data-uid="VoxelPlayground.Gaming.PlayerInfo.SpawnDroppedResource(UnityEngine.Vector3,VoxelPlayground.Gaming.PlayerInfo.ResKind,System.Int32,VoxelPlayground.Entity.EntityCharacter)">
+  SpawnDroppedResource(Vector3, ResKind, int, EntityCharacter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnDroppedResource(Vector3 worldpos, PlayerInfo.ResKind kind, int count, EntityCharacter ignoreCollisionChar = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldpos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>kind</code> <a class="xref" href="VoxelPlayground.Gaming.PlayerInfo.html">PlayerInfo</a>.<a class="xref" href="VoxelPlayground.Gaming.PlayerInfo.ResKind.html">ResKind</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>ignoreCollisionChar</code> <a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_PlayerInfo_UpdateCameraWallPenetrationVolume_" data-uid="VoxelPlayground.Gaming.PlayerInfo.UpdateCameraWallPenetrationVolume*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_UpdateCameraWallPenetrationVolume_System_Single_" data-uid="VoxelPlayground.Gaming.PlayerInfo.UpdateCameraWallPenetrationVolume(System.Single)">
+  UpdateCameraWallPenetrationVolume(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCameraWallPenetrationVolume(float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnBlueprintDraftChanged" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnBlueprintDraftChanged">
+  OnBlueprintDraftChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;BlueprintDraft&gt; OnBlueprintDraftChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Gaming.BlueprintDraft.html">BlueprintDraft</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnPlacingBlueprintDataChanged" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnPlacingBlueprintDataChanged">
+  OnPlacingBlueprintDataChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;BlueprintData&gt; OnPlacingBlueprintDataChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Gaming.BlueprintData.html">BlueprintData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_PlayerInfo_OnPlacingItemPrefabChanged" data-uid="VoxelPlayground.Gaming.PlayerInfo.OnPlacingItemPrefabChanged">
+  OnPlacingItemPrefabChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;GameObject&gt; OnPlacingItemPrefabChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

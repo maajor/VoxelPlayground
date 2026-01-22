@@ -1,0 +1,5263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class iTween | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class iTween | Voxel Playground Mod API Reference ">
+      
+      <meta name="description" content="Version: 2.0.8	  Author: Bob Berkebile (http://pixelplacement.com) Support: http://itween.pixelplacement.com">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Utility.iTween">
+
+
+
+  <h1 id="VoxelPlayground_Utility_iTween" data-uid="VoxelPlayground.Utility.iTween" class="text-break">
+Class iTween  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Version: 2.0.8</p>	 
+<p>Author: Bob Berkebile (http://pixelplacement.com)</p>
+<p>Support: http://itween.pixelplacement.com</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class iTween : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">iTween</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween__name" data-uid="VoxelPlayground.Utility.iTween._name">
+  _name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _name</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_delay" data-uid="VoxelPlayground.Utility.iTween.delay">
+  delay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float delay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_easeType" data-uid="VoxelPlayground.Utility.iTween.easeType">
+  easeType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public iTween.EaseType easeType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Utility.iTween.html">iTween</a>.<a class="xref" href="VoxelPlayground.Utility.iTween.EaseType.html">EaseType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_id" data-uid="VoxelPlayground.Utility.iTween.id">
+  id
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string id</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_isPaused" data-uid="VoxelPlayground.Utility.iTween.isPaused">
+  isPaused
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPaused</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_isRunning" data-uid="VoxelPlayground.Utility.iTween.isRunning">
+  isRunning
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isRunning</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_loopType" data-uid="VoxelPlayground.Utility.iTween.loopType">
+  loopType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public iTween.LoopType loopType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Utility.iTween.html">iTween</a>.<a class="xref" href="VoxelPlayground.Utility.iTween.LoopType.html">LoopType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_method" data-uid="VoxelPlayground.Utility.iTween.method">
+  method
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string method</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_time" data-uid="VoxelPlayground.Utility.iTween.time">
+  time
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float time</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_tweens" data-uid="VoxelPlayground.Utility.iTween.tweens">
+  tweens
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Hashtable&gt; tweens</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<span class="xref">Hashtable</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Utility_iTween_type" data-uid="VoxelPlayground.Utility.iTween.type">
+  type
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string type</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioFrom_" data-uid="VoxelPlayground.Utility.iTween.AudioFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.AudioFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  AudioFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes an AudioSource's volume and pitch then returns it to it's starting volume and pitch over time with FULL customization options. Default AudioSource attached to GameObject will be used (if one exists) if not supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioFrom_" data-uid="VoxelPlayground.Utility.iTween.AudioFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioFrom_UnityEngine_GameObject_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.AudioFrom(UnityEngine.GameObject,System.Single,System.Single,System.Single)">
+  AudioFrom(GameObject, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes an AudioSource's volume and pitch then returns it to it's starting volume and pitch over time with MINIMUM customization options. Default AudioSource attached to GameObject will be used (if one exists) if not supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioFrom(GameObject target, float volume, float pitch, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation which holds the AudioSource to be changed.</p>
+</dd>
+    <dt><code>volume</code> <span class="xref">float</span></dt>
+    <dd><p>for the target level of volume.
+A <span class="xref">float</span></p>
+</dd>
+    <dt><code>pitch</code> <span class="xref">float</span></dt>
+    <dd><p>for the target pitch.
+A <span class="xref">float</span></p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioTo_" data-uid="VoxelPlayground.Utility.iTween.AudioTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.AudioTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  AudioTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades volume and pitch of an AudioSource with FULL customization options.  Default AudioSource attached to GameObject will be used (if one exists) if not supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioTo_" data-uid="VoxelPlayground.Utility.iTween.AudioTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioTo_UnityEngine_GameObject_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.AudioTo(UnityEngine.GameObject,System.Single,System.Single,System.Single)">
+  AudioTo(GameObject, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades volume and pitch of an AudioSource with MINIMUM customization options.  Default AudioSource attached to GameObject will be used (if one exists) if not supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioTo(GameObject target, float volume, float pitch, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation which holds the AudioSource to be changed.</p>
+</dd>
+    <dt><code>volume</code> <span class="xref">float</span></dt>
+    <dd><p>for the target level of volume.
+A <span class="xref">float</span></p>
+</dd>
+    <dt><code>pitch</code> <span class="xref">float</span></dt>
+    <dd><p>for the target pitch.
+A <span class="xref">float</span></p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioUpdate_" data-uid="VoxelPlayground.Utility.iTween.AudioUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.AudioUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  AudioUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to AudioTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_AudioUpdate_" data-uid="VoxelPlayground.Utility.iTween.AudioUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_AudioUpdate_UnityEngine_GameObject_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.AudioUpdate(UnityEngine.GameObject,System.Single,System.Single,System.Single)">
+  AudioUpdate(GameObject, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to AudioTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AudioUpdate(GameObject target, float volume, float pitch, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>volume</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the target level of volume.</p>
+</dd>
+    <dt><code>pitch</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the target pitch.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorFrom_" data-uid="VoxelPlayground.Utility.iTween.ColorFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ColorFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ColorFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's color values instantly then returns them to the provided properties over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorFrom_" data-uid="VoxelPlayground.Utility.iTween.ColorFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorFrom_UnityEngine_GameObject_UnityEngine_Color_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ColorFrom(UnityEngine.GameObject,UnityEngine.Color,System.Single)">
+  ColorFrom(GameObject, Color, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's color values instantly then returns them to the provided properties over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorFrom(GameObject target, Color color, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a> to change the GameObject's color to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorTo_" data-uid="VoxelPlayground.Utility.iTween.ColorTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ColorTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ColorTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's color values over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorTo_" data-uid="VoxelPlayground.Utility.iTween.ColorTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorTo_UnityEngine_GameObject_UnityEngine_Color_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ColorTo(UnityEngine.GameObject,UnityEngine.Color,System.Single)">
+  ColorTo(GameObject, Color, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's color values over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorTo(GameObject target, Color color, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a> to change the GameObject's color to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorUpdate_" data-uid="VoxelPlayground.Utility.iTween.ColorUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ColorUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ColorUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to ColorTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ColorUpdate_" data-uid="VoxelPlayground.Utility.iTween.ColorUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ColorUpdate_UnityEngine_GameObject_UnityEngine_Color_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ColorUpdate(UnityEngine.GameObject,UnityEngine.Color,System.Single)">
+  ColorUpdate(GameObject, Color, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to ColorTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ColorUpdate(GameObject target, Color color, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a> to change the GameObject's color to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Count_" data-uid="VoxelPlayground.Utility.iTween.Count*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Count" data-uid="VoxelPlayground.Utility.iTween.Count">
+  Count()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count all iTweens in current scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Count_" data-uid="VoxelPlayground.Utility.iTween.Count*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Count_System_String_" data-uid="VoxelPlayground.Utility.iTween.Count(System.String)">
+  Count(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count all iTweens in current scene of a particular type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd><p>A <span class="xref">string</span> name of the type of iTween you would like to stop.  Can be written as part of a name such as &quot;mov&quot; for all &quot;MoveTo&quot; iTweens.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Count_" data-uid="VoxelPlayground.Utility.iTween.Count*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Count_UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.iTween.Count(UnityEngine.GameObject,System.String)">
+  Count(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count all iTweens on a GameObject of a particular type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(GameObject target, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd><p>A <span class="xref">string</span> name of the type of iTween you would like to count.  Can be written as part of a name such as &quot;mov&quot; for all &quot;MoveTo&quot; iTweens.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Count_" data-uid="VoxelPlayground.Utility.iTween.Count*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Count_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.iTween.Count(UnityEngine.GameObject)">
+  Count(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Count all iTweens on a GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(GameObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLine_" data-uid="VoxelPlayground.Utility.iTween.DrawLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLine_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLine(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawLine(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a line through the provided array of Transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Transform[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLine_" data-uid="VoxelPlayground.Utility.iTween.DrawLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLine_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawLine(UnityEngine.Transform[])">
+  DrawLine(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a line through the provided array of Transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Transform[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLine_" data-uid="VoxelPlayground.Utility.iTween.DrawLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLine_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLine(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawLine(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a line through the provided array of Vector3s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Vector3[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLine_" data-uid="VoxelPlayground.Utility.iTween.DrawLine*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLine_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawLine(UnityEngine.Vector3[])">
+  DrawLine(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a line through the provided array of Vector3s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Vector3[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineGizmos_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawLineGizmos(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Transforms with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineGizmos(Transform[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineGizmos_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos(UnityEngine.Transform[])">
+  DrawLineGizmos(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Transforms with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineGizmos(Transform[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineGizmos_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawLineGizmos(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Vector3s with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineGizmos(Vector3[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineGizmos_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawLineGizmos(UnityEngine.Vector3[])">
+  DrawLineGizmos(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Vector3s with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineGizmos(Vector3[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineHandles_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawLineHandles(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Transforms with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineHandles(Transform[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineHandles_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles(UnityEngine.Transform[])">
+  DrawLineHandles(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Transforms with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineHandles(Transform[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineHandles_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawLineHandles(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Vector3s with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineHandles(Vector3[] line, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawLineHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawLineHandles_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawLineHandles(UnityEngine.Vector3[])">
+  DrawLineHandles(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line through the provided array of Vector3s with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLineHandles(Vector3[] line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPath_" data-uid="VoxelPlayground.Utility.iTween.DrawPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPath_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPath(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawPath(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a curved path through the provided array of Transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPath(Transform[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPath_" data-uid="VoxelPlayground.Utility.iTween.DrawPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPath_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawPath(UnityEngine.Transform[])">
+  DrawPath(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a curved path through the provided array of Transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPath(Transform[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPath_" data-uid="VoxelPlayground.Utility.iTween.DrawPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPath_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPath(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawPath(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a curved path through the provided array of Vector3s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPath(Vector3[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPath_" data-uid="VoxelPlayground.Utility.iTween.DrawPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPath_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawPath(UnityEngine.Vector3[])">
+  DrawPath(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When called from an OnDrawGizmos() function it will draw a curved path through the provided array of Vector3s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPath(Vector3[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathGizmos_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawPathGizmos(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Transforms with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathGizmos(Transform[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathGizmos_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos(UnityEngine.Transform[])">
+  DrawPathGizmos(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Transforms with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathGizmos(Transform[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathGizmos_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawPathGizmos(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Vector3s with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathGizmos(Vector3[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathGizmos_" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathGizmos_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawPathGizmos(UnityEngine.Vector3[])">
+  DrawPathGizmos(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Vector3s with Gizmos.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathGizmos(Vector3[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathHandles_UnityEngine_Transform___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles(UnityEngine.Transform[],UnityEngine.Color)">
+  DrawPathHandles(Transform[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Transforms with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathHandles(Transform[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathHandles_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles(UnityEngine.Transform[])">
+  DrawPathHandles(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Transforms with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathHandles(Transform[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathHandles_UnityEngine_Vector3___UnityEngine_Color_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles(UnityEngine.Vector3[],UnityEngine.Color)">
+  DrawPathHandles(Vector3[], Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Vector3s with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathHandles(Vector3[] path, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_DrawPathHandles_" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_DrawPathHandles_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.DrawPathHandles(UnityEngine.Vector3[])">
+  DrawPathHandles(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a curved path through the provided array of Vector3s with Handles.DrawLine().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPathHandles(Vector3[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <see cref="!:Vector3s[]"></see></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeFrom_" data-uid="VoxelPlayground.Utility.iTween.FadeFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.FadeFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  FadeFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's alpha value instantly then returns it to the provided alpha over time with FULL customization options. Identical to using ColorFrom and using the &quot;a&quot; parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeFrom_" data-uid="VoxelPlayground.Utility.iTween.FadeFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeFrom_UnityEngine_GameObject_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.FadeFrom(UnityEngine.GameObject,System.Single,System.Single)">
+  FadeFrom(GameObject, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's alpha value instantly then returns it to the provided alpha over time with MINIMUM customization options.  Identical to using ColorFrom and using the &quot;a&quot; parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeFrom(GameObject target, float alpha, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>alpha</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the final alpha value of the animation.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeTo_" data-uid="VoxelPlayground.Utility.iTween.FadeTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.FadeTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  FadeTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's alpha value over time with FULL customization options. Identical to using ColorTo and using the &quot;a&quot; parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeTo_" data-uid="VoxelPlayground.Utility.iTween.FadeTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeTo_UnityEngine_GameObject_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.FadeTo(UnityEngine.GameObject,System.Single,System.Single)">
+  FadeTo(GameObject, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's alpha value over time with MINIMUM customization options. Identical to using ColorTo and using the &quot;a&quot; parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeTo(GameObject target, float alpha, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>alpha</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the final alpha value of the animation.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeUpdate_" data-uid="VoxelPlayground.Utility.iTween.FadeUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.FadeUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  FadeUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to FadeTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FadeUpdate_" data-uid="VoxelPlayground.Utility.iTween.FadeUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FadeUpdate_UnityEngine_GameObject_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.FadeUpdate(UnityEngine.GameObject,System.Single,System.Single)">
+  FadeUpdate(GameObject, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to FadeTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeUpdate(GameObject target, float alpha, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>alpha</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the final alpha value of the animation.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_FloatUpdate_" data-uid="VoxelPlayground.Utility.iTween.FloatUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_FloatUpdate_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.iTween.FloatUpdate(System.Single,System.Single,System.Single)">
+  FloatUpdate(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a float that is eased between a current and target value by the supplied speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FloatUpdate(float currentValue, float targetValue, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> the starting or initial value</p>
+</dd>
+    <dt><code>targetValue</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> the target value that the current value will be eased to.</p>
+</dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> to be used as rate of speed (larger number equals faster animation)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Hash_" data-uid="VoxelPlayground.Utility.iTween.Hash*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Hash_System_Object___" data-uid="VoxelPlayground.Utility.iTween.Hash(System.Object[])">
+  Hash(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Universal interface to help in the creation of Hashtables.  Especially useful for C# users.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hashtable Hash(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">object</span>[]</dt>
+    <dd><p>A <span class="xref">object</span> of alternating name value pairs.  For example &quot;time&quot;,1,&quot;delay&quot;,2...</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Hashtable</span></dt>
+    <dd><p>A <span class="xref">System.Collections.Hashtable</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Init_" data-uid="VoxelPlayground.Utility.iTween.Init*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Init_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.iTween.Init(UnityEngine.GameObject)">
+  Init(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets up a GameObject to avoid hiccups when an initial iTween is added. It's advisable to run this on every object you intend to run iTween on in its Start or Awake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Init(GameObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target to be initialized for iTween.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookFrom_" data-uid="VoxelPlayground.Utility.iTween.LookFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.LookFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  LookFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly rotates a GameObject to look at a supplied Transform or Vector3 then returns it to it's starting rotation over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookFrom_" data-uid="VoxelPlayground.Utility.iTween.LookFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookFrom_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.LookFrom(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  LookFrom(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly rotates a GameObject to look at the supplied Vector3 then returns it to it's starting rotation over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookFrom(GameObject target, Vector3 looktarget, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>looktarget</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> to be the Vector3 that the target will look towards.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookTo_" data-uid="VoxelPlayground.Utility.iTween.LookTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.LookTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  LookTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a GameObject to look at a supplied Transform or Vector3 over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookTo_" data-uid="VoxelPlayground.Utility.iTween.LookTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookTo_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.LookTo(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  LookTo(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a GameObject to look at the supplied Vector3 over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookTo(GameObject target, Vector3 looktarget, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>looktarget</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> to be the Vector3 that the target will look towards.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookUpdate_" data-uid="VoxelPlayground.Utility.iTween.LookUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.LookUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  LookUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to LookTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_LookUpdate_" data-uid="VoxelPlayground.Utility.iTween.LookUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_LookUpdate_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.LookUpdate(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  LookUpdate(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to LookTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LookUpdate(GameObject target, Vector3 looktarget, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>looktarget</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for a target the GameObject will look at.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveAdd_" data-uid="VoxelPlayground.Utility.iTween.MoveAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveAdd_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.MoveAdd(UnityEngine.GameObject,System.Collections.Hashtable)">
+  MoveAdd(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates a GameObject's position over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveAdd(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveAdd_" data-uid="VoxelPlayground.Utility.iTween.MoveAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveAdd_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.MoveAdd(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveAdd(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates a GameObject's position over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveAdd(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount of change in position to move the GameObject.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveBy_" data-uid="VoxelPlayground.Utility.iTween.MoveBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveBy_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.MoveBy(UnityEngine.GameObject,System.Collections.Hashtable)">
+  MoveBy(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the supplied coordinates to a GameObject's position with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveBy(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveBy_" data-uid="VoxelPlayground.Utility.iTween.MoveBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveBy_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.MoveBy(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveBy(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the supplied coordinates to a GameObject's postion with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveBy(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount of change in position to move the GameObject.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveFrom_" data-uid="VoxelPlayground.Utility.iTween.MoveFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.MoveFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  MoveFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's position to a supplied destination then returns it to it's starting position over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveFrom_" data-uid="VoxelPlayground.Utility.iTween.MoveFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveFrom_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.MoveFrom(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveFrom(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's position to a supplied destination then returns it to it's starting position over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveFrom(GameObject target, Vector3 position, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the destination Vector3.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveTo_" data-uid="VoxelPlayground.Utility.iTween.MoveTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.MoveTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  MoveTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's position over time to a supplied destination with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveTo_" data-uid="VoxelPlayground.Utility.iTween.MoveTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveTo_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.MoveTo(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveTo(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's position over time to a supplied destination with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveTo(GameObject target, Vector3 position, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the destination Vector3.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveUpdate_" data-uid="VoxelPlayground.Utility.iTween.MoveUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.MoveUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  MoveUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to MoveTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_MoveUpdate_" data-uid="VoxelPlayground.Utility.iTween.MoveUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_MoveUpdate_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.MoveUpdate(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveUpdate(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to MoveTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MoveUpdate(GameObject target, Vector3 position, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for a point in space the GameObject will animate to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PathLength_" data-uid="VoxelPlayground.Utility.iTween.PathLength*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PathLength_UnityEngine_Transform___" data-uid="VoxelPlayground.Utility.iTween.PathLength(UnityEngine.Transform[])">
+  PathLength(Transform[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the length of a curved path drawn through the provided array of Transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PathLength(Transform[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PathLength_" data-uid="VoxelPlayground.Utility.iTween.PathLength*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PathLength_UnityEngine_Vector3___" data-uid="VoxelPlayground.Utility.iTween.PathLength(UnityEngine.Vector3[])">
+  PathLength(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the length of a curved path drawn through the provided array of Vector3s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PathLength(Vector3[] path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>The length.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause" data-uid="VoxelPlayground.Utility.iTween.Pause">
+  Pause()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause all iTweens in scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause_System_String_" data-uid="VoxelPlayground.Utility.iTween.Pause(System.String)">
+  Pause(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause all iTweens in scene of a particular type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd><p>A <span class="xref">string</span> name of the type of iTween you would like to pause.  Can be written as part of a name such as &quot;mov&quot; for all &quot;MoveTo&quot; iTweens.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Pause(UnityEngine.GameObject,System.Boolean)">
+  Pause(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause all iTweens on a GameObject including its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(GameObject target, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause_UnityEngine_GameObject_System_String_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Pause(UnityEngine.GameObject,System.String,System.Boolean)">
+  Pause(GameObject, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(GameObject target, string type, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause_UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.iTween.Pause(UnityEngine.GameObject,System.String)">
+  Pause(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(GameObject target, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Pause_" data-uid="VoxelPlayground.Utility.iTween.Pause*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Pause_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.iTween.Pause(UnityEngine.GameObject)">
+  Pause(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause all iTweens on a GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Pause(GameObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PointOnPath_" data-uid="VoxelPlayground.Utility.iTween.PointOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PointOnPath_UnityEngine_Transform___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PointOnPath(UnityEngine.Transform[],System.Single)">
+  PointOnPath(Transform[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a Vector3 position on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 PointOnPath(Transform[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PointOnPath_" data-uid="VoxelPlayground.Utility.iTween.PointOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PointOnPath_UnityEngine_Vector3___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PointOnPath(UnityEngine.Vector3[],System.Single)">
+  PointOnPath(Vector3[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a Vector3 position on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 PointOnPath(Vector3[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchPosition_" data-uid="VoxelPlayground.Utility.iTween.PunchPosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchPosition_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.PunchPosition(UnityEngine.GameObject,System.Collections.Hashtable)">
+  PunchPosition(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's position and wobbles it back to its initial position with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchPosition(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchPosition_" data-uid="VoxelPlayground.Utility.iTween.PunchPosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchPosition_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.PunchPosition(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  PunchPosition(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's position and wobbles it back to its initial position with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchPosition(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of the punch.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchRotation_" data-uid="VoxelPlayground.Utility.iTween.PunchRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchRotation_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.PunchRotation(UnityEngine.GameObject,System.Collections.Hashtable)">
+  PunchRotation(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's rotation and wobbles it back to its initial rotation with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchRotation(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchRotation_" data-uid="VoxelPlayground.Utility.iTween.PunchRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchRotation_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.PunchRotation(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  PunchRotation(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's rotation and wobbles it back to its initial rotation with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchRotation(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of the punch.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchScale_" data-uid="VoxelPlayground.Utility.iTween.PunchScale*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchScale_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.PunchScale(UnityEngine.GameObject,System.Collections.Hashtable)">
+  PunchScale(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's scale and wobbles it back to its initial scale with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchScale(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PunchScale_" data-uid="VoxelPlayground.Utility.iTween.PunchScale*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PunchScale_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.PunchScale(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  PunchScale(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a jolt of force to a GameObject's scale and wobbles it back to its initial scale with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PunchScale(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of the punch.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PutOnPath_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PutOnPath_UnityEngine_GameObject_UnityEngine_Transform___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath(UnityEngine.GameObject,UnityEngine.Transform[],System.Single)">
+  PutOnPath(GameObject, Transform[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puts a GameObject on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PutOnPath(GameObject target, Transform[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PutOnPath_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PutOnPath_UnityEngine_GameObject_UnityEngine_Vector3___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath(UnityEngine.GameObject,UnityEngine.Vector3[],System.Single)">
+  PutOnPath(GameObject, Vector3[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puts a GameObject on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PutOnPath(GameObject target, Vector3[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PutOnPath_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PutOnPath_UnityEngine_Transform_UnityEngine_Transform___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath(UnityEngine.Transform,UnityEngine.Transform[],System.Single)">
+  PutOnPath(Transform, Transform[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puts a GameObject on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PutOnPath(Transform target, Transform[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_PutOnPath_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_PutOnPath_UnityEngine_Transform_UnityEngine_Vector3___System_Single_" data-uid="VoxelPlayground.Utility.iTween.PutOnPath(UnityEngine.Transform,UnityEngine.Vector3[],System.Single)">
+  PutOnPath(Transform, Vector3[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Puts a GameObject on a path at the provided percentage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PutOnPath(Transform target, Vector3[] path, float percent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></p>
+</dd>
+    <dt><code>path</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+    <dt><code>percent</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RectUpdate_" data-uid="VoxelPlayground.Utility.iTween.RectUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RectUpdate_UnityEngine_Rect_UnityEngine_Rect_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RectUpdate(UnityEngine.Rect,UnityEngine.Rect,System.Single)">
+  RectUpdate(Rect, Rect, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect RectUpdate(Rect currentValue, Rect targetValue, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>targetValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume" data-uid="VoxelPlayground.Utility.iTween.Resume">
+  Resume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resume all iTweens in scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume_System_String_" data-uid="VoxelPlayground.Utility.iTween.Resume(System.String)">
+  Resume(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resume all iTweens in scene of a particular type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd><p>A <span class="xref">string</span> name of the type of iTween you would like to resume.  Can be written as part of a name such as &quot;mov&quot; for all &quot;MoveTo&quot; iTweens.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Resume(UnityEngine.GameObject,System.Boolean)">
+  Resume(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resume all iTweens on a GameObject including its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume(GameObject target, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume_UnityEngine_GameObject_System_String_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Resume(UnityEngine.GameObject,System.String,System.Boolean)">
+  Resume(GameObject, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume(GameObject target, string type, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume_UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.iTween.Resume(UnityEngine.GameObject,System.String)">
+  Resume(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume(GameObject target, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Resume_" data-uid="VoxelPlayground.Utility.iTween.Resume*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Resume_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.iTween.Resume(UnityEngine.GameObject)">
+  Resume(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resume all iTweens on a GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resume(GameObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateAdd_" data-uid="VoxelPlayground.Utility.iTween.RotateAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateAdd_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.RotateAdd(UnityEngine.GameObject,System.Collections.Hashtable)">
+  RotateAdd(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds supplied Euler angles in degrees to a GameObject's rotation over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateAdd(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateAdd_" data-uid="VoxelPlayground.Utility.iTween.RotateAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateAdd_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RotateAdd(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  RotateAdd(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds supplied Euler angles in degrees to a GameObject's rotation over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateAdd(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount of Euler angles in degrees to add to the current rotation of the GameObject.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateBy_" data-uid="VoxelPlayground.Utility.iTween.RotateBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateBy_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.RotateBy(UnityEngine.GameObject,System.Collections.Hashtable)">
+  RotateBy(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies supplied values by 360 and rotates a GameObject by calculated amount over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateBy(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateBy_" data-uid="VoxelPlayground.Utility.iTween.RotateBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateBy_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RotateBy(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  RotateBy(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies supplied values by 360 and rotates a GameObject by calculated amount over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateBy(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount to be multiplied by 360 to rotate the GameObject.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateFrom_" data-uid="VoxelPlayground.Utility.iTween.RotateFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.RotateFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  RotateFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's Euler angles in degrees then returns it to it's starting rotation over time (if allowed) with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateFrom_" data-uid="VoxelPlayground.Utility.iTween.RotateFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateFrom_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RotateFrom(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  RotateFrom(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's Euler angles in degrees then returns it to it's starting rotation over time (if allowed) with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateFrom(GameObject target, Vector3 rotation, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the target Euler angles in degrees to rotate from.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateTo_" data-uid="VoxelPlayground.Utility.iTween.RotateTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.RotateTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  RotateTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a GameObject to the supplied Euler angles in degrees over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateTo_" data-uid="VoxelPlayground.Utility.iTween.RotateTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateTo_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RotateTo(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  RotateTo(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rotates a GameObject to the supplied Euler angles in degrees over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateTo(GameObject target, Vector3 rotation, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the target Euler angles in degrees to rotate to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateUpdate_" data-uid="VoxelPlayground.Utility.iTween.RotateUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.RotateUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  RotateUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to RotateTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_RotateUpdate_" data-uid="VoxelPlayground.Utility.iTween.RotateUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_RotateUpdate_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.RotateUpdate(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  RotateUpdate(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to RotateTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options. Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateUpdate(GameObject target, Vector3 rotation, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the target Euler angles in degrees to rotate to.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleAdd_" data-uid="VoxelPlayground.Utility.iTween.ScaleAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleAdd_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ScaleAdd(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ScaleAdd(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds to a GameObject's scale over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleAdd(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleAdd_" data-uid="VoxelPlayground.Utility.iTween.ScaleAdd*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleAdd_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ScaleAdd(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ScaleAdd(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds to a GameObject's scale over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleAdd(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount of scale to be added to the GameObject's current scale.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleBy_" data-uid="VoxelPlayground.Utility.iTween.ScaleBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleBy_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ScaleBy(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ScaleBy(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies a GameObject's scale over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleBy(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleBy_" data-uid="VoxelPlayground.Utility.iTween.ScaleBy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleBy_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ScaleBy(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ScaleBy(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies a GameObject's scale over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleBy(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the amount of scale to be multiplied by the GameObject's current scale.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleFrom_" data-uid="VoxelPlayground.Utility.iTween.ScaleFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleFrom_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ScaleFrom(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ScaleFrom(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's scale then returns it to it's starting scale over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleFrom(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleFrom_" data-uid="VoxelPlayground.Utility.iTween.ScaleFrom*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleFrom_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ScaleFrom(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ScaleFrom(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instantly changes a GameObject's scale then returns it to it's starting scale over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleFrom(GameObject target, Vector3 scale, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the final scale.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleTo_" data-uid="VoxelPlayground.Utility.iTween.ScaleTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ScaleTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ScaleTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's scale over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleTo_" data-uid="VoxelPlayground.Utility.iTween.ScaleTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleTo_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ScaleTo(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ScaleTo(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a GameObject's scale over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleTo(GameObject target, Vector3 scale, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the final scale.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleUpdate_" data-uid="VoxelPlayground.Utility.iTween.ScaleUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleUpdate_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ScaleUpdate(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ScaleUpdate(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to ScaleTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with FULL customization options.  Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleUpdate(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ScaleUpdate_" data-uid="VoxelPlayground.Utility.iTween.ScaleUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ScaleUpdate_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ScaleUpdate(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ScaleUpdate(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Similar to ScaleTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a &quot;live&quot; set of changing values with MINIMUM customization options.  Does not utilize an EaseType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleUpdate(GameObject target, Vector3 scale, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the final scale.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakePosition_" data-uid="VoxelPlayground.Utility.iTween.ShakePosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakePosition_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ShakePosition(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ShakePosition(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's position by a diminishing amount over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakePosition(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakePosition_" data-uid="VoxelPlayground.Utility.iTween.ShakePosition*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakePosition_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ShakePosition(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ShakePosition(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's position by a diminishing amount over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakePosition(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of shake.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakeRotation_" data-uid="VoxelPlayground.Utility.iTween.ShakeRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakeRotation_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ShakeRotation(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ShakeRotation(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's rotation by a diminishing amount over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakeRotation(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakeRotation_" data-uid="VoxelPlayground.Utility.iTween.ShakeRotation*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakeRotation_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ShakeRotation(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ShakeRotation(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's rotation by a diminishing amount over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakeRotation(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of shake.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakeScale_" data-uid="VoxelPlayground.Utility.iTween.ShakeScale*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakeScale_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ShakeScale(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ShakeScale(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's scale by a diminishing amount over time with FULL customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakeScale(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ShakeScale_" data-uid="VoxelPlayground.Utility.iTween.ShakeScale*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ShakeScale_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.ShakeScale(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  ShakeScale(GameObject, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Randomly shakes a GameObject's scale by a diminishing amount over time with MINIMUM customization options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShakeScale(GameObject target, Vector3 amount, float time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation.</p>
+</dd>
+    <dt><code>amount</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> for the magnitude of shake.</p>
+</dd>
+    <dt><code>time</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the animation will take to complete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stab_" data-uid="VoxelPlayground.Utility.iTween.Stab*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stab_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.Stab(UnityEngine.GameObject,System.Collections.Hashtable)">
+  Stab(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays an AudioClip once based on supplied volume and pitch and following any delay with FULL customization options. AudioSource is optional as iTween will provide one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stab(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stab_" data-uid="VoxelPlayground.Utility.iTween.Stab*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stab_UnityEngine_GameObject_UnityEngine_AudioClip_System_Single_" data-uid="VoxelPlayground.Utility.iTween.Stab(UnityEngine.GameObject,UnityEngine.AudioClip,System.Single)">
+  Stab(GameObject, AudioClip, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays an AudioClip once based on supplied volume and pitch and following any delay with MINIMUM customization options. AudioSource is optional as iTween will provide one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stab(GameObject target, AudioClip audioclip, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a> to be the target of the animation which holds the AudioSource to be utilized.</p>
+</dd>
+    <dt><code>audioclip</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioClip.html">AudioClip</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioClip.html">AudioClip</a> for a reference to the AudioClip to be played.</p>
+</dd>
+    <dt><code>delay</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> for the time in seconds the action will wait before beginning.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop" data-uid="VoxelPlayground.Utility.iTween.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop and destroy all Tweens in current scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop_System_String_" data-uid="VoxelPlayground.Utility.iTween.Stop(System.String)">
+  Stop(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop and destroy all iTweens in current scene of a particular type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd><p>A <span class="xref">string</span> name of the type of iTween you would like to stop.  Can be written as part of a name such as &quot;mov&quot; for all &quot;MoveTo&quot; iTweens.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop_UnityEngine_GameObject_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Stop(UnityEngine.GameObject,System.Boolean)">
+  Stop(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop and destroy all iTweens on a GameObject including its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(GameObject target, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop_UnityEngine_GameObject_System_String_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.Stop(UnityEngine.GameObject,System.String,System.Boolean)">
+  Stop(GameObject, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(GameObject target, string type, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop_UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.iTween.Stop(UnityEngine.GameObject,System.String)">
+  Stop(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(GameObject target, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Stop_" data-uid="VoxelPlayground.Utility.iTween.Stop*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Stop_UnityEngine_GameObject_" data-uid="VoxelPlayground.Utility.iTween.Stop(UnityEngine.GameObject)">
+  Stop(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop and destroy all iTweens on a GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stop(GameObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_StopByName_" data-uid="VoxelPlayground.Utility.iTween.StopByName*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_StopByName_System_String_" data-uid="VoxelPlayground.Utility.iTween.StopByName(System.String)">
+  StopByName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop and destroy all iTweens in current scene of a particular name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopByName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd><p>The <span class="xref">string</span> name of iTween you would like to stop.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_StopByName_" data-uid="VoxelPlayground.Utility.iTween.StopByName*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_StopByName_UnityEngine_GameObject_System_String_System_Boolean_" data-uid="VoxelPlayground.Utility.iTween.StopByName(UnityEngine.GameObject,System.String,System.Boolean)">
+  StopByName(GameObject, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopByName(GameObject target, string name, bool includechildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>includechildren</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_StopByName_" data-uid="VoxelPlayground.Utility.iTween.StopByName*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_StopByName_UnityEngine_GameObject_System_String_" data-uid="VoxelPlayground.Utility.iTween.StopByName(UnityEngine.GameObject,System.String)">
+  StopByName(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopByName(GameObject target, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_ValueTo_" data-uid="VoxelPlayground.Utility.iTween.ValueTo*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_ValueTo_UnityEngine_GameObject_System_Collections_Hashtable_" data-uid="VoxelPlayground.Utility.iTween.ValueTo(UnityEngine.GameObject,System.Collections.Hashtable)">
+  ValueTo(GameObject, Hashtable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a value to an 'oncallback' method interpolated between the supplied 'from' and 'to' values for application as desired.  Requires an 'onupdate' callback that accepts the same type as the supplied 'from' and 'to' properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValueTo(GameObject target, Hashtable args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">Hashtable</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Vector2Update_" data-uid="VoxelPlayground.Utility.iTween.Vector2Update*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Vector2Update_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_" data-uid="VoxelPlayground.Utility.iTween.Vector2Update(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+  Vector2Update(Vector2, Vector2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a Vector2 that is eased between a current and target value by the supplied speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 Vector2Update(Vector2 currentValue, Vector2 targetValue, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a> the starting or initial value</p>
+</dd>
+    <dt><code>targetValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a> the target value that the current value will be eased to.</p>
+</dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> to be used as rate of speed (larger number equals faster animation)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_iTween_Vector3Update_" data-uid="VoxelPlayground.Utility.iTween.Vector3Update*"></a>
+
+  <h3 id="VoxelPlayground_Utility_iTween_Vector3Update_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.iTween.Vector3Update(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+  Vector3Update(Vector3, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a Vector3 that is eased between a current and target value by the supplied speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Vector3Update(Vector3 currentValue, Vector3 targetValue, float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> the starting or initial value</p>
+</dd>
+    <dt><code>targetValue</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a> the target value that the current value will be eased to.</p>
+</dd>
+    <dt><code>speed</code> <span class="xref">float</span></dt>
+    <dd><p>A <span class="xref">float</span> to be used as rate of speed (larger number equals faster animation)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>A <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
