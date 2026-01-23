@@ -7,7 +7,7 @@
       <meta name="title" content="Builtin Physics vs Px5 | Voxel Playground Mod API Reference ">
       
       
-      <link rel="icon" href="../../../favicon.ico">
+      <link rel="icon" href="../../../resources/logo.svg">
       <link rel="stylesheet" href="../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../public/main.css">
       <meta name="docfx:navrel" content="../../../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,27 +195,7 @@ public class DummyClass: Monobehavior
 
 </code></pre>
 <h2 id="4-voxel-object-collision">4. Voxel Object Collision</h2>
-<p>For voxel-based objects, collision handling depends on the level of control you need:</p>
-<h3 id="automatic-handling-simple">Automatic Handling (Simple)</h3>
-<p>For most voxel objects, you should use the <a href="file:///d:/Repo/vr/Ragdoll/Assets/Scripts/Mod/ModData/VoxelObjectProxy.cs">VoxelObjectProxy</a> component.</p>
-<ul>
-<li>It automatically handles mesh generation and collision setup.</li>
-<li>You do <strong>not</strong> need to manually add collision components; <code>VoxelObjectProxy</code> takes care of it.</li>
-</ul>
-<h3 id="manual-control-advanced">Manual Control (Advanced)</h3>
-<p>If you need finer control over the collision behavior (e.g., specific layers, mass density, or destructibility settings), you should decouple the components:</p>
-<ol>
-<li>Use <code>VoxelVolume</code> for the voxel data and mesh.</li>
-<li>Add <code>PxVoxelColliderGenerator</code> to handle the collision generation.</li>
-<li>Remove <code>VoxelObjectProxy</code>.</li>
-</ol>
-<p>This manual approach allows you to tweak settings on <code>PxVoxelColliderGenerator</code> such as:</p>
-<ul>
-<li><code>massDensity</code></li>
-<li><code>useMassFromActor</code></li>
-<li><code>includeLayers</code> / <code>excludeLayers</code></li>
-<li><code>ManualAttach</code> (for attaching to specific rigidbodies)</li>
-</ul>
+<p>Please refer to <a href="voxel-collision.html">Voxel Collision</a> for detailed information on voxel object collision setup and configuration.</p>
 
 </article>
 

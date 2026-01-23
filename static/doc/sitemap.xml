@@ -2,3607 +2,3529 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIActionGroup.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIBrain.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AICarController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIConsideration.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIController.BlockState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIController.MeleeAttackType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AIController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AISubState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AmmoCountCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ArmBreakCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AttackAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.AttackAction_Zombie.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ClearObstacleAction_Zombie.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ClearTimerAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.CompareType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ConditionType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.Context.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.CoverObjectInRangeCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.CrippledCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.DashAttackAction_Zombie.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.DebugCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.DetourDistanceCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.Difficulty.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.DirectLineOfSightCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.EmptyHandCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.EscapeAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.FindingDistance.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.GiantFeetDmgDetection.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.InjuryCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.IsOnVehicleCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ItemToPickCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.MoveController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.MoveToItemNDPickAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.MoveToTargetAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.MoveToTargetActionDebug.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.NavigationMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.OBB.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ObstacleInTheWayCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.OnVehicleAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathFinder.PathFindingObstacle.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathFinder.VoxelNode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathFinder.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathFinderGrid.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathFinderGridType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathfindingJob.PathNode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathfindingJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.PathfindingManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ProjectileAttackAction_Zombie.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.RandomTimerCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ReloadAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.RestraintCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.TakeCoverAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.TargetInRangeCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.TimerCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.WeaponInHandCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.WeaponTypeCon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.ZombieAttackType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.AI.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.CollisionInfoType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.CollisionManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.VoxelCollisionInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.VoxelDestructor.CrackType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.VoxelDestructor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Destruction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.BlockInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.BlockInfoData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.BlockMaterialInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.ChunkState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Collision.ExtraChunkIgnoreOverride.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Collision.IColliderGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Collision.PxVoxelCollider.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Collision.PxVoxelColliderGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Collision.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.CustomRenderQueue.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.HideSide.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.IRecyclable.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.IVoxelDestructible.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.IVoxelVolumeSaveData.Version.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.IVoxelVolumeSaveData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.LayerMasksHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.MaterialPair.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.PointDataV2.Id.IdName.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.PointDataV2.Id.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.PointDataV2.Property.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.PointDataV2.SpecialEffectID.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.PointDataV2.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.RaycastHitVoxel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.SoundEffect.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.SoundEffectType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.Utils.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VisualEffect.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VisualEffectType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VolumeLoadingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxEngineUtilities.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelChunk.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelFixedAttachment.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelModifier.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolume.IterateVoxelsInRadiusAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolume.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeBase.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeLoader.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeSaveData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeSaveDataV2.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelVolumeSaveSystem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.VoxelizeGridLargeVoxelJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Engine.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.AcidCollision.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.AttachObj.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.AttachmentItemGroup.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.AttachmentPoint.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.BladeTrigger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.BurnAreaJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.BurnColorType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CarryHand.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ChemicalPropety.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CircularSawTrigger.CleanCircleJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CircularSawTrigger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CleanAreaJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ConveyorRotate.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CrippleState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.CriticalBodyPart.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.DeathCause.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.DestroyCallback.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Door.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.DysfunctionEvent.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Entity.FreezeState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Entity.TeamFlag.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Entity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityAcidBarrel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityArmor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityArrow.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityAttachmentItem.TargetAttachmentPreviewData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityAttachmentItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBalloon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBuilding.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBuildingElement.PlacementOverlapResult.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBuildingElement.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBullet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityBulletSawblade.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCalibration.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCar.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCharacter.FeetEnvIgnoreMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCharacter.GrabSubState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCharacter.GripType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCharacter.State.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCharacter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityCircularSaw.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityConnector.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityConveyor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityDestructibleItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityEnvironment.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityExplosive.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityFirableWeapon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityFireGunItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityGatlingItem.IterateVoxelsInRadiusAction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityGatlingItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityGravityGun.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityGunItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityHoldWeapon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLandmine.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLaserItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLaserPierceBullet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLaserRifle.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLavaBucket.BlurTextureJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLavaBucket.DilateTextureJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLavaBucket.GetContactTextureJob.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLavaBucket.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLightSaber.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityLinkerGun.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityOilBarrel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityPhysicBullet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityPlasmaBullet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityPowerFist.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityPropeller.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityRope.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntitySawbladeBowItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntitySelfExplodeOnDie.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityShotgunItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntitySmgItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntitySpawnPoint.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityThrustLauncherEntity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityTitle.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityToggleWeapon.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityTwinShaftShredder.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityWaterGunItem.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityWheel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.EntityWind.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ExplodeEvent.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Explosive.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.GripPose.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.HandSide.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.HitInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.HydraulicPressTrigger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ICombustible.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.IVehicle.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.LightSaberTrigger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.MineralClusterGen.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.PhysLink.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.RecyclableEntity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ScrapGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Seat.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.ShotBlockSoundType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Terrain.HeightmapScatter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Terrain.HeightmapVoxels.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.Terrain.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.TwoAttachPoint.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.WaterCollision.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Entity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.Achievement.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.AchievementData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.AchievementDatas.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.AchievementSaveData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.Achievement_DismemeberingExpert.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.Achievement_RipApartRagdoll.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.Achievement_WeaponMaster.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.AnimationProfile.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.AttachmentHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.BlueprintData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.BlueprintDraft.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.BlueprintEntityData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CalibrationMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CameraViewType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.ChallengeMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CharacterHitAnimationLookupTable.HitAnimationEntry.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CharacterHitAnimationLookupTable.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CharacterState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CharacterStateMachine.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CraftingRecipe.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CraftingRecipes.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.CursorController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.DeadState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.DoingNothingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.DustEffectDetector.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.ElectricShockState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.EnemyInfoExtension.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.EntityManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.EntityNotifier.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.EventManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.EyeRaycaster.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.FallingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.FlatscreenViewControllingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.FollowTarget.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.GameDataManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.GameInputManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.GameManager.TurnMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.GameManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.HandNubPanel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.HandTrackingAdator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.HitStunState.StunType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.HitStunState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.IGameMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.IObserver.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.IPinchable.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.IdleState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.InteractionBoundsGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.Invoker.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.KnockOutState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.LaserCreator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.LevelSaveData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.LyingFlatState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.MainSceneMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.ModeData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.PingObj.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.PlatformProc.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.PlayerControllingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.PlayerInfo.ResKind.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.PlayerInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.SandBoxMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.ScoreBoard.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.ScoreCounter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.SitState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.StatisticsData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.TipsPageData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.UnyieldingArea.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.VRViewControllingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.VoxelAttachment.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.VoxelEvent.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.VoxelSceneTips.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.VoxelSceneTipsDatas.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.WalkingState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.WeatherManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.XRCamera.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.XRManager.RigType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.XRManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.XRTracker.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Gaming.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.FlatscreenController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.FreecamPCController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.DebugActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.FlatscreenActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IDebugActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IFlatscreenActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IPlayerActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IUIActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IXRIHeadActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IXRILeftActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.IXRIRightActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.PlayerActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.UIActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.XRIHeadActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.XRILeftActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.XRIRightActions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.GameplayInputs.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.PlayerInputController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.VRController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Inputs.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.ArenaSpawner.RunningWave.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.ArenaSpawner.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.AttackerSpawner.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.BloodmoonScene.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.BuildingDestructionBuilder.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.BuildingLevel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.CalibrationVoxelStage.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.DeathPlane.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.DroppedResource.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.EmptyRoomControl.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.FactoryControl.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.LabControl.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.LaserAimer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.Level1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.LevelObserver.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.LevelsOfABuilding.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.RacingManager.RacingCarInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.RacingManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.SpawnerCharacterPool.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.SpawnerWave.PickMode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.SpawnerWave.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.SpawnerWavePool.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.VoxelScene.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.VoxelSceneEmbedding.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.VoxelSceneRacingGame.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.VoxelStage.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.WayPoint.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Level.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.AutoRotator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.BillboardRotator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.BoundsExtensions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.CameraAdjustment.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.Conveyor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.DesktopControl.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.DragGetNameAttribute.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.HandRayGrab.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.MarkWaterFloater.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.OrbitCamera.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.PhysicalHandActivator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.PortalPeriodicActivator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.RigidbodyCenterOfMassInit.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.SkinnedMeshRendererBoneHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.Timer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.Tool_CopyComponnetToAllRigidbodies.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.WaterPhysProcessor.WaterContactRigidbodyData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.WaterPhysProcessor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Misc.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.BuiltinEntityInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.BuiltinEntityProxy.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.BuiltinEntityType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CharacterAIBehaviorPreset.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CharacterData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CharacterDatas.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CharacterPresetProxy.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CharacterSizePreset.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.Const.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.CustomModioRootPathProvider.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.EnemyInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.EquipmentsData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.IModManifest.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ItemData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ItemDataExtension.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ItemDataList.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ItemDatas.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ItemType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.JointInfoData.JointType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.JointInfoData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ModInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ModManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ModManifest.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.ProjectileType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.RigidbodyProxy.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.SceneRenderingSettings.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.VoxelObjectProxy.ValidateError.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.VoxelObjectProxy.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.VoxelObjectProxyType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.VoxelSceneData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.VoxelSceneDatas.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Mod.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.AnimationBase.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.Axis.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.AxisTools.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BipedRagdollReferences.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BitmaskHandler.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BlendSet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BlendShapeController.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BlendShapeSubObj.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BlendValue.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneInfoBasic.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneInfoDataSet.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneInfoHumanoid.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneInfoQueryData.LimeState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneInfoQueryData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BonePosition.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneShape.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneVisualizer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.BoneVoxelPair.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.CharacterPresetFactory.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.ColorIDBodyPart.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.Connectivity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.CreatureCreator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.CurveAnim.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.DebugDraw.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.FistCollisionHandler.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.Geometry.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.HumanoidRagdollCreator.HumanoidSlotPair.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.HumanoidRagdollCreator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.IgnorePair.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.IntBounds.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.JointConverter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.LocomotionBase.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.LocomotionHexaBody.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.MotionDetector.KnockoutData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.MotionDetector.StandState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.MotionDetector.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PartialAnim.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PartialAnimClip.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PartialNode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PartialNodeAnim.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PhysicsFollow.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PhysicsHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.PrefabHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.MirrorMuscleDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.MuscleChildrenDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.MuscleList.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.MuscleParentDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.StringMuscleDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.TransMuscleDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.TransTransDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnim.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollAnimProfileAssigner.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollBoneInfo.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.Axis.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.AxisTools.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.BoneMapping.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.ColliderSize.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.Direction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.JointConfig.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollCreator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollEditor.Mode.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollEditor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollMuscle.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollMuscleCollision.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollMuscleData.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollMuscleState.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollProfile.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollTicker.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.RagdollVoxelMaterialReplacer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.TransformHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.TransformLog.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.TransformTransfer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollColorIDBodyPartConfig.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollColorIDBodyPartTransfer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollDismember.IndicesVoxelPair.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollDismember.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollGenerator.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollPreset.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.VoxelRagdollVirtualJoint.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Ragdoll.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.AudioSourcePool.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.BgmEvent.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.BgmPriority.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.FireBurnAreaSoundManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundEffect_old.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundManager.SoundMixerType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundNames.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundTag.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.SoundsCollection.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.VoxelFragmentSound.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.WooshSound.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Sound.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.App.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.BenchMark.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.BenchmarkTimer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.BoundsOctree-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.BoundsOctreeNode-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.CollectionUtility.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.ConfigurableJointExtensions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.DebugUtils.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.GameUtilities.Const.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.GameUtilities.Input.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.GameUtilities.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.LayerHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.LogCategory.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Maths.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.FractalNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.INoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.Noise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.PerlinNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.SimplexNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.VORONOI_COMBINATION.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.VORONOI_DISTANCE.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.ValueNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.VoronoiNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.WorleyNoise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Noise.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.OnEnableListener.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.ParticleSystemHelper.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.PlatformSpecificGameobject.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.PointOctree-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.PointOctreeNode-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.QuaternionExtensions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.RagdollMassScaler.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.ScaleChanger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Scheduler.UpdateChannel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Scheduler.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionary-2.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionary-3.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionary.Storage-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionary.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionaryBase.Dictionary-2.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionaryBase.Storage.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionaryBase.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SerializableDictionaryTemplate-3.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.Singleton-1.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.SmartLogger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.State.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.StateMachine.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.StringUtility.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.TransformExtensions.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.VirtualBounds.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.iTween.Defaults.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.iTween.EaseType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.iTween.LoopType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.iTween.NamedValueColor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.Utility.iTween.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.AcidSplatter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.BloodSpatter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.CollisionEffect.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.CollisionEffectSetting.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.CollisionHitType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.CollisionMatType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.GfxPlayer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.HitTypeToEffect.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.MaterialType.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.Pool.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.RecyclableVolume.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.SpecialEffectManager.FxTrsSetting.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.SpecialEffectManager.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.SpecialEffectPlayer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.VoxelSpecialEffectHandler.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/api/VoxelPlayground.VFX.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/index.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/api-reference.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/building/connect-building.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/character-ai/ai-action.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/character-ai/skeleton-type.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/character-ai/character-proxy.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/character-ai/spawner.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/entity/blade-trigger.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/custom-interaction.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/entity/firable-weapon/bullet-sfx-vfx-cooldown.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/entity/firable-weapon/interaction.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/entity/grip-type.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/entity.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/index.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/interaction/entity-builtin-interface.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/interaction/inject-custom-action.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/physics/builtin-vs-px5.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/physics/hardness-penetration.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/physics/voxel-collision.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/physics/infinite-side.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/physics/layer.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/physics/modify-voxels.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/rendering/post-processing.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/rendering/shadow.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/rendering/skybox.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/gameplay/rendering/tod-cloud-color.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/scene-rendering-settings.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/voxel/data-layout-property.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/voxel/heightmap-voxel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/gameplay/voxel/material-id-visual.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://voxelplayground.com/docs/manual/gameplay/voxel/modify-voxels.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/avatar/tutorial-spiderman.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/character/tutorial-giant.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/index.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/item/tutorial-asteroid-wand.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/item/tutorial-katana.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://voxelplayground.com/docs/manual/modding/item/tutorial-spear.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/scene/tutorial-homelander.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/scene/tutorial-nyc.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/scene/tutorial-sample-building.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/scene/tutorial-track.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/vehicle/tutorial-at-at.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/modding/vehicle/tutorial-helicopter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/quick-start/create-mod.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/quick-start/index.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/quick-start/publish-mod.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://voxelplayground.com/docs/manual/quick-start/test-mod/flatscreen.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/quick-start/test-mod/index.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/quick-start/test-mod/ingame-console.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://voxelplayground.com/docs/manual/quick-start/test-mod/install-mod.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <loc>https://voxelplayground.com/docs/manual/quick-start/test-mod.html</loc>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/tools/builtin-entity.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/tools/mod-exporter.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/tools/voxel-authoring/magica-voxel.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://voxelplayground.com/docs/manual/tools/voxel-authoring/voxel-data-editor.html</loc>
-    <lastmod>2026-01-22T09:18:14+08:00</lastmod>
+    <lastmod>2026-01-23T01:01:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

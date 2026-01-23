@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Test Mod | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Test Mod | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../resources/logo.svg">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="test-mod">Test Mod</h1>
+
+<p>This guide explains how to install and test your mod in <em>Voxel Playground</em>.</p>
+<h2 id="1-install-the-mod">1. Install the Mod</h2>
+<h3 id="option-a-automatic-installation-recommended">Option A: Automatic Installation (Recommended)</h3>
+<p>The easiest way to install your mod is using the <strong>Mod Exporter</strong> tool included in the SDK.</p>
+<p><img src="../../../resources/ModExporter.jpg" alt="Mod Exporter"></p>
+<ol>
+<li>In Unity, go to <strong>Vox Mod Tools &gt; Mod Exporter</strong>.</li>
+<li>Select your mod from the list.</li>
+<li>Click <strong>Build Mods for Windows</strong> (or Android).</li>
+<li>Click <strong>Install Mods on Windows</strong> (or Android).
+<ul>
+<li>This automatically copies the built mod to the game's Mods directory.</li>
+</ul>
+</li>
+</ol>
+<h3 id="option-b-manual-installation">Option B: Manual Installation</h3>
+<p>If you need to install manually (e.g., for testing a build on a different machine):</p>
+<ol>
+<li><strong>Build the Mod</strong>:
+<ul>
+<li>Use the Mod Exporter to build your mod.</li>
+<li>Find the built files in the project's <code>Export</code> directory:
+<ul>
+<li><strong>Windows Build</strong>: <code>ProjectRoot\Export\StandaloneWindows\&lt;Creator&gt;_&lt;ModName&gt;\</code></li>
+<li><strong>Android Build</strong>: <code>ProjectRoot\Export\Android\&lt;Creator&gt;_&lt;ModName&gt;\</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Locate Game Mods Directory</strong>:
+<ul>
+<li><strong>Windows</strong>: <code>%userprofile%\AppData\LocalLow\Cydream\Voxel Playground\Mods\</code></li>
+</ul>
+</li>
+<li><strong>Copy Files</strong>:
+<ul>
+<li>Copy the entire build folder (e.g., <code>&lt;Creator&gt;_&lt;ModName&gt;</code>) into the <code>Mods</code> directory.</li>
+<li>The structure should look like: <code>...\Voxel Playground\Mods\&lt;Creator&gt;_&lt;ModName&gt;\...</code></li>
+</ul>
+</li>
+</ol>
+<p>The game will automatically load valid mods from this directory upon startup.</p>
+<h2 id="2-open-in-game-console">2. Open In-Game Console</h2>
+<p>The in-game console is useful for viewing logs and debugging errors.</p>
+<h3 id="in-vr-mode">In VR Mode</h3>
+<p>To view the console in VR:</p>
+<ol>
+<li>Start the game.</li>
+<li>Look at your <strong>Left Hand</strong> (rotate your wrist so the palm or back is visible to you).</li>
+<li>Open <strong>Settings</strong> -&gt; <strong>Dev</strong> -&gt; <strong>Console</strong>.</li>
+<li>The console window is attached to your left hand and will display logs.</li>
+<li>Debug statistics are attached to your <strong>Both Hand</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>: The in-game console is currently only available in Development builds.</p>
+</blockquote>
+<h3 id="in-flatscreen-mode">In Flatscreen Mode</h3>
+<p>The VR in-game console is not available in Flatscreen mode. Instead, you can view the logs in the Unity Player Log file:</p>
+<ul>
+<li><strong>Log File Path</strong>: <code>%userprofile%\AppData\LocalLow\Cydream\Voxel Playground\Player.log</code></li>
+</ul>
+<p>You can open this file with any text editor (e.g., Notepad, VS Code) to view logs and errors in real-time (if the editor supports auto-refresh) or after closing the game.</p>
+<h2 id="3-use-flatscreen-mode">3. Use Flatscreen Mode</h2>
+<p>For faster iteration without using a VR headset, you can run the game in &quot;Flatscreen&quot; mode (FPS style).</p>
+<h3 id="enabling-flatscreen-mode">Enabling Flatscreen Mode</h3>
+<p>Add the command line argument <code>--flatscreen</code> when launching the game executable.</p>
+<ul>
+<li><strong>From Command Line</strong>:
+<pre><code class="lang-cmd">Voxel Playground.exe --flatscreen
+</code></pre>
+</li>
+</ul>
+<h3 id="flatscreen-controls">Flatscreen Controls</h3>
+<p>When in Flatscreen mode, the game uses standard FPS controls:</p>
+<ul>
+<li><strong>Movement</strong>: <code>W</code>, <code>A</code>, <code>S</code>, <code>D</code></li>
+<li><strong>Look</strong>: Mouse</li>
+<li><strong>Jump</strong>: <code>Space</code></li>
+<li><strong>Fire</strong>: Left Mouse Button (Left Hand), Right Mouse Button (Right Hand)</li>
+<li><strong>Abilities/Interaction</strong>:
+<ul>
+<li><code>1</code>: Left Hand Ability</li>
+<li><code>3</code>: Right Hand Ability (e.g., Drive Vehicle, Sit)</li>
+<li><code>Q</code>: Left Hand Grip</li>
+<li><code>E</code>: Right Hand Grip</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Custom Interaction | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Custom Interaction | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../resources/logo.svg">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="custom-interaction">Custom Interaction</h1>
+
+<p>Ragdoll uses the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html">Unity Input System</a> to handle inputs. Modders need to follow this convention when creating custom interactions.</p>
+<h2 id="standard-weapon-interfaces-entityfirableweapon">Standard Weapon Interfaces (EntityFirableWeapon)</h2>
+<p>For most weapon inherit EntityFirableWeapon, you should implement the existing interfaces provided by the system. These handle the common interactions automatically:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Method</th>
+<th style="text-align: left;">VR Controller</th>
+<th style="text-align: left;">Flatscreen (Mouse/Keyboard)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>OnTriggerPressed</code></strong></td>
+<td style="text-align: left;">Trigger Button</td>
+<td style="text-align: left;">Left Mouse Button</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>OnTriggerReleased</code></strong></td>
+<td style="text-align: left;">Trigger Release</td>
+<td style="text-align: left;">Left Mouse Release</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>OnAbilityPressed</code></strong></td>
+<td style="text-align: left;">A/X Button</td>
+<td style="text-align: left;">R Key (Reload/Ability)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>OnAbilityLongPressed</code></strong></td>
+<td style="text-align: left;">Hold A/X</td>
+<td style="text-align: left;">Hold R</td>
+</tr>
+</tbody>
+</table>
+<p>Using these interfaces ensures your weapon works consistently with the rest of the game's input handling.</p>
+<h2 id="custom-input-handling">Custom Input Handling</h2>
+<p>If you need more complex interaction, such as handling axis inputs (e.g., for controlling distance or rotation), you can directly interface with the <code>GameplayInputs</code> class.</p>
+<p>Below is an example of how to implement custom axis binding</p>
+<h3 id="example-custom-axis-binding">Example: Custom Axis Binding</h3>
+<p>This script demonstrates how to:</p>
+<ol>
+<li>Initialize the input system.</li>
+<li>Bind to the left or right hand weapon axis based on which hand is holding the object.</li>
+<li>Process the input value.</li>
+<li>Clean up listeners when the object is destroyed or unequipped.</li>
+</ol>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class CustomInteractionSample : MonoBehaviour
+{
+    private GameplayInputs inputs;
+    private InputAction boundAxisAction;
+    
+    // Parameters to control the interaction
+    private float currentValue;
+    public float adjustSpeed = 1.0f;
+
+    // Call this when the weapon/item is equipped to a hand
+    public void BindAxis(bool isLeft)
+    {
+        // Initialize inputs if not already done
+        inputs ??= new GameplayInputs();
+
+        // Select the appropriate action based on handedness
+        var nextAction = isLeft ? inputs.Player.WeaponAxisL : inputs.Player.WeaponAxisR;
+        
+        // Avoid re-binding if already bound to the same enabled action
+        if (boundAxisAction == nextAction &amp;&amp; nextAction.enabled)
+            return;
+
+        // Clean up previous binding if it exists
+        if (boundAxisAction != null)
+        {
+            boundAxisAction.performed -= OnAxisUpdate;
+            boundAxisAction.canceled -= OnAxisUpdate;
+            boundAxisAction.Disable();
+        }
+
+        // Bind the new action
+        boundAxisAction = nextAction;
+        boundAxisAction.performed += OnAxisUpdate;
+        boundAxisAction.canceled += OnAxisUpdate;
+        boundAxisAction.Enable();
+    }
+
+    // Call this when unequipped
+    public void UnbindAxis()
+    {
+        if (boundAxisAction != null)
+        {
+            boundAxisAction.performed -= OnAxisUpdate;
+            boundAxisAction.canceled -= OnAxisUpdate;
+            boundAxisAction.Disable();
+            boundAxisAction = null;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        UnbindAxis();
+        inputs?.Dispose();
+        inputs = null;
+    }
+
+    // Callback for input events
+    private void OnAxisUpdate(InputAction.CallbackContext context)
+    {
+        // Read the float value from the axis (e.g., joystick or touchpad)
+        var value = context.ReadValue&lt;float&gt;();
+        
+        // Apply your logic here
+        // For example, adjusting a target distance like in the Gravity Gun
+        currentValue += Time.unscaledDeltaTime * adjustSpeed * value;
+        
+        Debug.Log($&quot;Input Value: {value}, Current Value: {currentValue}&quot;);
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

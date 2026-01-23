@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Publish Mod | Voxel Playground Mod API Reference </title>
+      <title>Publishing Your Mod | Voxel Playground Mod API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Publish Mod | Voxel Playground Mod API Reference ">
+      <meta name="title" content="Publishing Your Mod | Voxel Playground Mod API Reference ">
       
       
-      <link rel="icon" href="../../favicon.ico">
+      <link rel="icon" href="../../resources/logo.svg">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
       <meta name="docfx:navrel" content="../../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,9 +85,64 @@
         </div>
 
         <article data-uid="">
-<h1 id="publish-mod">Publish Mod</h1>
+<h1 id="publishing-your-mod">Publishing Your Mod</h1>
 
-<p>Placeholder documentation for Publish Mod.</p>
+<p>This guide outlines the process of publishing your mod to <a href="https://mod.io/">mod.io</a> so other players can download and play it.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you can publish, ensure you have:</p>
+<ol>
+<li>A <strong>mod.io account</strong>.</li>
+<li>Joined the <strong>Voxel Playground</strong> game page on mod.io.</li>
+</ol>
+<h2 id="step-1-package-your-mod">Step 1: Package Your Mod</h2>
+<p>First, you need to create a distributable package of your mod.</p>
+<ol>
+<li>Follow the <a href="../tools/mod-exporter.html">Mod Exporter Guide</a> to build your mod.</li>
+<li>Ensure the build was successful and the output file (usually a <code>.zip</code> or folder) is located in <code>Assets/Export</code>.</li>
+<li>Verify the mod works locally by testing it (see <a href="test-mod.html">Testing Your Mod</a>).</li>
+</ol>
+<h2 id="step-2-create-a-mod-profile">Step 2: Create a Mod Profile</h2>
+<ol>
+<li>Log in to <a href="https://mod.io/">mod.io</a>.</li>
+<li>Navigate to the <strong><a href="https://mod.io/g/voxelplayground">Voxel Playground</a></strong> game page.</li>
+<li>Click <strong>Add Mod</strong>.</li>
+<li>Fill in the required details:
+<ul>
+<li><strong>Name</strong>: The name of your mod.</li>
+<li><strong>Summary</strong>: A brief description.</li>
+<li><strong>Logo</strong>: A 512x288 (or recommended size) thumbnail image.</li>
+<li><strong>Description</strong>: Detailed instructions and features.</li>
+<li><strong>Tags</strong>: Select appropriate tags (e.g., Weapon, Map, Character).</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-3-upload-mod-files">Step 3: Upload Mod Files</h2>
+<ol>
+<li>Once the profile is created, go to the <strong>Files</strong> tab of your mod page.</li>
+<li>Click <strong>Add Build</strong> (or <strong>Upload File</strong>).</li>
+<li>Select the mod package you exported in Step 1 (from the <code>Assets/Export</code> folder).</li>
+<li>Specify the <strong>Version</strong> (e.g., <code>1.0.0</code>).</li>
+<li>Mark it as the <strong>Live</strong> release.</li>
+<li>Click <strong>Upload</strong>.</li>
+</ol>
+<h2 id="step-4-visibility-and-moderation">Step 4: Visibility and Moderation</h2>
+<ul>
+<li>Newly uploaded mods may require approval or verification.</li>
+<li>Once approved, your mod will be visible to all players in the in-game Mod Browser.</li>
+</ul>
+<h2 id="updating-your-mod">Updating Your Mod</h2>
+<p>To update an existing mod:</p>
+<ol>
+<li>Re-export the mod using the <strong>Mod Exporter</strong>.</li>
+<li>Go to your mod's page on mod.io.</li>
+<li>Upload the new file under the <strong>Files</strong> tab.</li>
+<li>Archive older versions if necessary.</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Upload Failed</strong>: Check your internet connection and file size limits.</li>
+<li><strong>Mod Not Visible</strong>: Ensure the file is set to &quot;Live&quot; and the mod visibility is &quot;Public&quot;.</li>
+</ul>
 
 </article>
 

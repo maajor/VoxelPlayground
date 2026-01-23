@@ -7791,16 +7791,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/api-reference.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-reference.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/gameplay/building/connect-building.md",
       "output": {
         ".html": {
@@ -7811,20 +7801,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/character-ai/ai-action.md",
+      "source_relative_path": "manual/gameplay/character-ai/character-proxy.md",
       "output": {
         ".html": {
-          "relative_path": "manual/gameplay/character-ai/ai-action.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/character-ai/skeleton-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/character-ai/skeleton-type.html"
+          "relative_path": "manual/gameplay/character-ai/character-proxy.html"
         }
       },
       "version": ""
@@ -7841,40 +7821,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/entity/blade-trigger.md",
+      "source_relative_path": "manual/gameplay/custom-interaction.md",
       "output": {
         ".html": {
-          "relative_path": "manual/gameplay/entity/blade-trigger.html"
+          "relative_path": "manual/gameplay/custom-interaction.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/entity/firable-weapon/bullet-sfx-vfx-cooldown.md",
+      "source_relative_path": "manual/gameplay/entity.md",
       "output": {
         ".html": {
-          "relative_path": "manual/gameplay/entity/firable-weapon/bullet-sfx-vfx-cooldown.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/entity/firable-weapon/interaction.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/entity/firable-weapon/interaction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/entity/grip-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/entity/grip-type.html"
+          "relative_path": "manual/gameplay/entity.html"
         }
       },
       "version": ""
@@ -7891,26 +7851,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/interaction/entity-builtin-interface.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/interaction/entity-builtin-interface.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/interaction/inject-custom-action.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/interaction/inject-custom-action.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/gameplay/physics/builtin-vs-px5.md",
       "output": {
         ".html": {
@@ -7921,80 +7861,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/physics/hardness-penetration.md",
+      "source_relative_path": "manual/gameplay/physics/voxel-collision.md",
       "output": {
         ".html": {
-          "relative_path": "manual/gameplay/physics/hardness-penetration.html"
+          "relative_path": "manual/gameplay/physics/voxel-collision.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/physics/infinite-side.md",
+      "source_relative_path": "manual/gameplay/scene-rendering-settings.md",
       "output": {
         ".html": {
-          "relative_path": "manual/gameplay/physics/infinite-side.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/physics/layer.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/physics/layer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/physics/modify-voxels.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/physics/modify-voxels.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/rendering/post-processing.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/rendering/post-processing.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/rendering/shadow.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/rendering/shadow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/rendering/skybox.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/rendering/skybox.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/gameplay/rendering/tod-cloud-color.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/gameplay/rendering/tod-cloud-color.html"
+          "relative_path": "manual/gameplay/scene-rendering-settings.html"
         }
       },
       "version": ""
@@ -8025,6 +7905,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/gameplay/voxel/material-id-visual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/gameplay/voxel/modify-voxels.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/gameplay/voxel/modify-voxels.html"
         }
       },
       "version": ""
@@ -8085,6 +7975,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/modding/item/tutorial-katana.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/modding/item/tutorial-spear.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/modding/item/tutorial-spear.html"
         }
       },
       "version": ""
@@ -8181,40 +8081,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/quick-start/test-mod/flatscreen.md",
+      "source_relative_path": "manual/quick-start/test-mod.md",
       "output": {
         ".html": {
-          "relative_path": "manual/quick-start/test-mod/flatscreen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/quick-start/test-mod/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/quick-start/test-mod/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/quick-start/test-mod/ingame-console.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/quick-start/test-mod/ingame-console.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/quick-start/test-mod/install-mod.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/quick-start/test-mod/install-mod.html"
+          "relative_path": "manual/quick-start/test-mod.html"
         }
       },
       "version": ""
@@ -8278,6 +8148,16 @@
       "output": {
         "resource": {
           "relative_path": "resources/AfterCreateMod.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/BulitInEntities.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/BulitInEntities.jpg"
         }
       },
       "version": ""
@@ -8354,6 +8234,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/HeightVoxel.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HeightVoxel.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/HeightVoxelSettings.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/HeightVoxelSettings.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/ImportVox.png",
       "output": {
         "resource": {
@@ -8364,10 +8264,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/MagicaVoxelId.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/MagicaVoxelId.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ModExporter.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ModExporter.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/ModManifest.png",
       "output": {
         "resource": {
           "relative_path": "resources/ModManifest.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SkeletonType.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SkeletonType.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/VoxDataEditor.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/VoxDataEditor.jpg"
         }
       },
       "version": ""

@@ -7,7 +7,7 @@
       <meta name="title" content="Mod Exporter | Voxel Playground Mod API Reference ">
       
       
-      <link rel="icon" href="../../favicon.ico">
+      <link rel="icon" href="../../resources/logo.svg">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
       <meta name="docfx:navrel" content="../../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,54 @@
         <article data-uid="">
 <h1 id="mod-exporter">Mod Exporter</h1>
 
-<p>Placeholder documentation for Mod Exporter.</p>
+<p>The <strong>Mod Exporter</strong> is a tool used to package and export your created mods so they can be loaded into the game. It handles the compilation of scripts, packaging of assets (scenes, items, characters), and generation of necessary metadata.</p>
+<p><img src="../../resources/ModExporter.jpg" alt="Mod Exporter"></p>
+<h2 id="opening-the-tool">Opening the Tool</h2>
+<p>To open the Mod Exporter window, go to the top menu bar and select:
+<strong>Vox Mod Tools &gt; Mod Exporter</strong></p>
+<h2 id="interface-overview">Interface Overview</h2>
+<h3 id="available-mod-manifests">Available Mod Manifests</h3>
+<p>The main section of the window lists all <code>ModManifest</code> assets found in your project. Each entry displays:</p>
+<ul>
+<li><strong>Mod Name &amp; Creator</strong>: Defined in the manifest.</li>
+<li><strong>Path</strong>: The file path to the manifest asset.</li>
+<li><strong>Stats</strong>: Number of Scenes, Items, and Characters included in the mod.</li>
+</ul>
+<p>Use the checkboxes next to each mod to select which ones you want to process.</p>
+<h3 id="selection-controls">Selection Controls</h3>
+<ul>
+<li><strong>Select All</strong>: Checks all available mod manifests.</li>
+<li><strong>Deselect All</strong>: Unchecks all mod manifests.</li>
+<li><strong>Invert</strong>: Toggles the selection state of all manifests.</li>
+</ul>
+<h3 id="build-actions">Build Actions</h3>
+<p>These buttons compile the selected mods into a format the game can read (usually a <code>.zip</code> file containing assets and code).</p>
+<ul>
+<li><strong>Build Mods for Windows</strong>: Builds the selected mods for the Windows platform.</li>
+<li><strong>Build Mods for Android</strong>: Builds the selected mods for Android (Quest/Pico).</li>
+<li><strong>Build Mods for ALL</strong>: Builds for both Windows and Android sequentially.</li>
+</ul>
+<h3 id="install-actions">Install Actions</h3>
+<p>These buttons automatically copy the built mods to the game's mod directory on your machine.</p>
+<ul>
+<li><strong>Install Mods on Windows</strong>: Installs the built Windows mods to your local game installation.</li>
+<li><strong>Install Mods on Android</strong>: Installs the built Android mods (requires connected device via ADB).</li>
+</ul>
+<h3 id="maintenance--utilities">Maintenance &amp; Utilities</h3>
+<ul>
+<li><strong>Remove All Installed and Export Mod</strong>: Cleans up the build output and removes installed mods.</li>
+<li><strong>Open Build Directory</strong>: Opens the folder where the raw build artifacts are generated.</li>
+<li><strong>Open Mods Directory</strong>: Opens the directory where the final <code>.zip</code> mod files are stored.</li>
+<li><strong>Refresh Manifest List</strong>: Rescans the project for <code>ModManifest</code> assets. Use this if you added a new manifest and it hasn't appeared in the list yet.</li>
+</ul>
+<h2 id="basic-workflow">Basic Workflow</h2>
+<ol>
+<li>Create your mod content and ensure you have a <code>ModManifest</code> set up.</li>
+<li>Open the <strong>Mod Exporter</strong>.</li>
+<li>Find your mod in the list and ensure it is <strong>checked</strong>.</li>
+<li>Click <strong>Build Mods for Windows</strong> (or your target platform).</li>
+<li>Once the build is complete, click <strong>Install Mods on Windows</strong> to test it in the game immediately.</li>
+</ol>
 
 </article>
 

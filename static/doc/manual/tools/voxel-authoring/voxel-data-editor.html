@@ -7,7 +7,7 @@
       <meta name="title" content="Voxel Data Editor | Voxel Playground Mod API Reference ">
       
       
-      <link rel="icon" href="../../../favicon.ico">
+      <link rel="icon" href="../../../resources/logo.svg">
       <link rel="stylesheet" href="../../../public/docfx.min.css">
       <link rel="stylesheet" href="../../../public/main.css">
       <meta name="docfx:navrel" content="../../../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,60 @@
         <article data-uid="">
 <h1 id="voxel-data-editor">Voxel Data Editor</h1>
 
-<p>Placeholder documentation for Voxel Data Editor.</p>
+<p>The <strong>Voxel Data Editor</strong> is a Unity Editor tool included in the Vox Mod Tools. It allows you to inspect, visualize, and modify the Material IDs of voxel data (<code>.txt</code> files) directly within Unity, without needing to go back to MagicaVoxel.</p>
+<p>This is particularly useful for:</p>
+<ul>
+<li>Correcting Material ID mapping mistakes.</li>
+<li>Batch replacing materials (e.g., changing all &quot;Wood&quot; to &quot;Metal&quot;).</li>
+<li>Setting up specific material configurations for character models.</li>
+</ul>
+<p><img src="../../../resources/VoxDataEditor.jpg" alt="Voxel Data Editor"></p>
+<h2 id="opening-the-tool">Opening the Tool</h2>
+<p>To open the tool, navigate to the Unity menu:
+<strong>Vox Mod Tools</strong> &gt; <strong>Voxel Data Editor</strong></p>
+<h2 id="workflow">Workflow</h2>
+<h3 id="1-load-voxel-data">1. Load Voxel Data</h3>
+<ol>
+<li>Assign your voxel data text file (generated after importing/processing <code>.vox</code> files) to the <strong>Input .txt</strong> field.</li>
+<li>Click <strong>Load</strong>.</li>
+</ol>
+<h3 id="2-inspect-and-visualize">2. Inspect and Visualize</h3>
+<p>Once loaded, the tool displays a list of <strong>Existing IDs</strong> found in the model.</p>
+<ul>
+<li><strong>List</strong>: Shows the Material ID, Material Name, and the count of voxels using that ID.</li>
+<li><strong>Draw Toggle</strong>: Check the <strong>Draw</strong> box next to an ID to visualize those specific voxels in the Scene View with red wireframe gizmos. This helps you identify which part of the model uses which material.</li>
+</ul>
+<h3 id="3-edit-material-ids">3. Edit Material IDs</h3>
+<p>You can perform batch operations to change Material IDs.</p>
+<h4 id="replace-specific-id">Replace Specific ID</h4>
+<ul>
+<li><strong>From ID</strong>: Select the ID you want to change.</li>
+<li><strong>To ID</strong>: Select the target Material ID (by name) you want to change it to.</li>
+<li><strong>Replace</strong>: Click to replace all voxels of &quot;From ID&quot; with &quot;To ID&quot;.</li>
+</ul>
+<h4 id="replace-all">Replace All</h4>
+<ul>
+<li><strong>To ID</strong>: Select the target Material ID.</li>
+<li><strong>Replace All</strong>: Changes <strong>every</strong> voxel in the model (except empty space/Air) to the selected &quot;To ID&quot;.</li>
+</ul>
+<h4 id="setup-id-for-character">Setup ID For Character</h4>
+<p>This is a specialized function for configuring humanoid character models. It automatically processes the model with the following logic:</p>
+<ul>
+<li><strong>Internal Voxels</strong>: Voxels inside the model (not on the surface) are set to <strong>Skin</strong> ID and given a &quot;flesh&quot; color.</li>
+<li><strong>Surface Voxels</strong>:
+<ul>
+<li><strong>Bone</strong>: Colors are adjusted to a skin tone.</li>
+<li><strong>Others</strong>: Most surface voxels are converted to <strong>Skin</strong> ID (preserving their color), except for specific types like <strong>Glow</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-save-changes">4. Save Changes</h3>
+<p>After making edits:</p>
+<ol>
+<li><strong>Output Name</strong>: Specify a filename for the new data.</li>
+<li><strong>Output Folder</strong>: (Optional) Specify a folder path. Defaults to the source file's location.</li>
+<li>Click <strong>Save As .txt</strong> to write the modified voxel data to disk.</li>
+</ol>
 
 </article>
 
