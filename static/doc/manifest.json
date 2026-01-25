@@ -8154,6 +8154,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/AudioEvent.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/AudioEvent.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/BulitInEntities.jpg",
       "output": {
         "resource": {
@@ -8194,30 +8204,20 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/ConvertAsteroid.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ConvertAsteroid.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/CreateMod.png",
       "output": {
         "resource": {
           "relative_path": "resources/CreateMod.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/ExampleManual.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/ExampleManual.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/ExampleScriptingApi.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/ExampleScriptingApi.png"
         }
       },
       "version": ""
@@ -8264,10 +8264,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/KatanaVox.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/KatanaVox.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/MagicaVoxelId.jpg",
       "output": {
         "resource": {
           "relative_path": "resources/MagicaVoxelId.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ModAsteroid.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ModAsteroid.jpg"
         }
       },
       "version": ""
@@ -8294,6 +8314,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/ModNYC.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ModNYC.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ModWand.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ModWand.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/PrefabNYC.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/PrefabNYC.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/SkeletonType.jpg",
       "output": {
         "resource": {
@@ -8304,10 +8354,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/TrackVox.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/TrackVox.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/VoxDataEditor.jpg",
       "output": {
         "resource": {
           "relative_path": "resources/VoxDataEditor.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/WandOutline.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/WandOutline.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/WandReplace.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/WandReplace.jpg"
         }
       },
       "version": ""

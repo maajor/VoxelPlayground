@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Tutorial: Configuring a Scene (NYC Example) | Voxel Playground Mod API Reference </title>
+      <title>Tutorial: NYC | Voxel Playground Mod API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Tutorial: Configuring a Scene (NYC Example) | Voxel Playground Mod API Reference ">
+      <meta name="title" content="Tutorial: NYC | Voxel Playground Mod API Reference ">
       
       
       <link rel="icon" href="../../../resources/logo.svg">
@@ -85,44 +85,82 @@
         </div>
 
         <article data-uid="">
-<h1 id="tutorial-configuring-a-scene-nyc-example">Tutorial: Configuring a Scene (NYC Example)</h1>
+<h1 id="tutorial-nyc">Tutorial: NYC</h1>
 
-<p>This tutorial explains how to configure a scene prefab after it has been generated from a <code>.vox</code> file. The concepts here apply to any scene, such as a city environment like &quot;NYC&quot;.</p>
-<h2 id="default-configuration">Default Configuration</h2>
-<p>When you generate a prefab for a Scene, it typically comes with <strong>VoxelObjectProxy</strong> and <strong>RigidbodyProxy</strong> components pre-attached. These proxies simplify the complex setup required for voxel physics and rendering.</p>
-<h3 id="voxelobjectproxy">VoxelObjectProxy</h3>
-<p>The <code>VoxelObjectProxy</code> acts as a high-level wrapper for the core voxel systems. It is effectively equivalent to combining:</p>
+<p>This tutorial demonstrates how to create a destructible city environment mod, similar to the <strong>NYC</strong> sample scene.</p>
+<p><strong>Path in Mod Toolkit</strong>: <code>Assets/Samples/NYC</code></p>
+<p><a href="https://mod.io/g/voxelplayground/m/nyc1#description">NYC Mod on mod.io</a></p>
+<h2 id="step-1-modeling-in-magicavoxel">Step 1: Modeling in MagicaVoxel</h2>
+<p>Create your city buildings and environment in MagicaVoxel.</p>
+<h3 id="scaling-and-limits">Scaling and Limits</h3>
+<p>MagicaVoxel has a size limit (usually 256x256x256 per object). City buildings can often exceed this size.</p>
 <ul>
-<li><code>ChunkBasedMarchingCube</code> (Rendering)</li>
-<li><code>ChunkBasedMarchingCubeSavingSystem</code> (Persistence)</li>
-<li><code>PxVoxelColliderGenerator</code> (Collision)</li>
+<li><strong>Strategy</strong>: Model your buildings at <strong>half scale (0.5x)</strong> in MagicaVoxel.</li>
+<li><strong>Naming</strong>: You can append <code>_x2</code> to the object name as a reminder to scale it back up by <strong>2x</strong> in the Unity Editor later.</li>
 </ul>
-<h4 id="proxy-types">Proxy Types</h4>
-<p>You can configure the behavior of the voxel object by setting the <code>VoxelObjectProxyType</code>. The available types are:</p>
-<pre><code class="lang-csharp">public enum VoxelObjectProxyType
-{
-    SceneStatic = 0,          // Non-moving environment parts (e.g., ground, buildings)
-    SceneDynamic,             // Moving environment parts
-    SceneStrongConnected,     // Strongly connected structures
-    SceneWeakConnected,       // Weakly connected structures
-    WeaponItem,               // For weapons
-    BuildingItem,             // For construction items
-}
-</code></pre>
-<h3 id="rigidbodyproxy">RigidbodyProxy</h3>
-<p>The <code>RigidbodyProxy</code> enables physics interactions and destruction. It is equivalent to combining:</p>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>For destructible buildings that need to stay rooted to the ground until their base is destroyed, use the <strong><code>C_</code></strong> prefix.</p>
 <ul>
-<li><code>UnityEngine.Rigidbody</code></li>
-<li><code>VoxelCollider</code></li>
-<li><code>PxConverter</code></li>
+<li><strong><code>C_</code> (Strong Connected)</strong>: Objects with this prefix are imported as destructible items but include an <code>UnyieldingArea</code> component. This component keeps the object &quot;kinematic&quot; (immovable) as long as the unyielding area overlaps with a static object (like the ground).
+<ul>
+<li><em>Example</em>: <code>C_BuildingA</code>, <code>C_Skyscraper</code></li>
 </ul>
-<p>This component allows voxel objects to have physical weight, respond to gravity/collisions, and support destruction events.</p>
-<h2 id="advanced-configuration">Advanced Configuration</h2>
-<p>If you prefer granular control and understand the underlying parameters, you can opt out of using the Proxies.</p>
+</li>
+</ul>
+<p>Refer to the <a href="../../tools/voxel-authoring/magica-voxel.html#naming-for-scene">Scene Naming Guide</a> for more details.</p>
+<img src="../../../resources/ModNYC.jpg" style="max-width: 720px;">
+<h2 id="step-2-import-and-setup">Step 2: Import and Setup</h2>
+<h3 id="1-import-voxel-models">1. Import Voxel Models</h3>
 <ol>
-<li><strong>Manual Component Setup</strong>: You can manually attach <code>ChunkBasedMarchingCube</code>, <code>PxVoxelColliderGenerator</code>, etc., instead of the Proxy.</li>
-<li><strong>Physics Components</strong>: When manually configuring physics, use standard <code>UnityEngine.Physics</code> components. Do <strong>not</strong> attach <code>Px5</code> specific components directly; the mod loader will automatically assemble the necessary <code>PxConverter</code> at runtime.</li>
+<li>Import your <code>.vox</code> file using the <strong>Asset Processor</strong>.</li>
+<li>Set the <strong>Type</strong> to <strong>Scene</strong> (if importing a full scene assembly) or <strong>Object</strong> (if assembling manually).</li>
+<li><strong>Convert</strong> to generate prefabs.</li>
 </ol>
+<h3 id="2-scene-assembly-in-unity">2. Scene Assembly in Unity</h3>
+<ol>
+<li>Place your building prefabs into the scene.</li>
+<li><strong>Rescale</strong>: If you modeled at half scale, set the <strong>Scale</strong> of your building transforms to <code>(2, 2, 2)</code>.</li>
+</ol>
+<h3 id="3-add-ground-heightmap">3. Add Ground (Heightmap)</h3>
+<p>To create a large, solid ground for the city, use the <strong>HeightmapVoxels</strong> system. This is more efficient than building a massive floor in MagicaVoxel.</p>
+<ol>
+<li>Create an empty GameObject.</li>
+<li>Add the <code>HeightmapVoxels</code> component.</li>
+<li>Assign your <strong>Heightmap</strong> and <strong>Colormap</strong> textures.
+<ul>
+<li>Ensure textures are <strong>Read/Write Enabled</strong>.</li>
+<li>See <a href="../../gameplay/voxel/heightmap-voxel.html">Heightmap Voxels</a> for detailed setup.</li>
+</ul>
+</li>
+</ol>
+<img src="../../../resources/PrefabNYC.jpg" style="max-width: 720px;">
+<h3 id="4-configure-unyielding-area">4. Configure Unyielding Area</h3>
+<p>For your <code>C_</code> buildings to stand upright:</p>
+<ol>
+<li>Select the building prefab in the scene.</li>
+<li>Locate the <code>UnyieldingArea</code> component (automatically added by the <code>C_</code> prefix).</li>
+<li>Adjust the <strong>Center</strong> and <strong>Size</strong> of the unyielding area box.</li>
+<li><strong>Crucial</strong>: Ensure this box <strong>overlaps</strong> with the ground voxels (the Heightmap terrain).
+<ul>
+<li>The system checks for voxel connectivity within this box. If it finds the static ground, the building remains stable.</li>
+<li>If the connection to the ground is severed (e.g., player destroys the bottom of the building), the building will become dynamic and collapse.</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-3-configure-mod-manifest">Step 3: Configure Mod Manifest</h2>
+<p>Register your scene in the <code>ModManifest</code>.</p>
+<ol>
+<li>Open your <code>ModManifest</code> asset.</li>
+<li>Add the Scene Prefab to the <strong>Export Prefabs</strong> list.</li>
+<li>Ensure the mod type and details are correct.</li>
+</ol>
+<p>See <a href="../../quick-start/create-mod.html#step-3-configure-mod-manifest">Configure Mod Manifest</a>.</p>
+<h2 id="step-4-test-and-publish">Step 4: Test and Publish</h2>
+<p>Build and test your city scene.</p>
+<ul>
+<li><a href="../../quick-start/test-mod.html">Testing your Mod</a></li>
+<li><a href="../../quick-start/publish-mod.html">Publishing your Mod</a></li>
+</ul>
 
 </article>
 

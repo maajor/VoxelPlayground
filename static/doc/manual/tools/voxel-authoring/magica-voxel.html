@@ -87,14 +87,14 @@
         <article data-uid="">
 <h1 id="magicavoxel">MagicaVoxel</h1>
 
-<p><strong>MagicaVoxel</strong> is a free, lightweight 8-bit voxel art editor and interactive path tracing renderer. It is the primary tool used for creating voxel models for Ragdoll.</p>
+<p><strong>MagicaVoxel</strong> is a free, lightweight 8-bit voxel art editor and interactive path tracing renderer. It is the primary tool used for creating voxel models for Voxel Playground.</p>
 <h2 id="download">Download</h2>
 <p>You can download MagicaVoxel from the official website:
 <a href="https://ephtracy.github.io/">https://ephtracy.github.io/</a></p>
 <h2 id="usage">Usage</h2>
 <p>Use MagicaVoxel to create your 3D models and save them as <code>.vox</code> files. These files are used as the source for voxel data in your mods.</p>
 <h2 id="material-id-mapping">Material ID Mapping</h2>
-<p>In Ragdoll, the physical properties of a voxel (such as hardness, flammability, and visual type) are determined by its <strong>Material ID</strong>. When you create a model in MagicaVoxel, the game uses the <strong>Color Palette Index</strong> of each voxel to assign its Material ID.</p>
+<p>In Voxel Playground, the physical properties of a voxel (such as hardness, flammability, and visual type) are determined by its <strong>Material ID</strong>. When you create a model in MagicaVoxel, the game uses the <strong>Color Palette Index</strong> of each voxel to assign its Material ID.</p>
 <h3 id="mapping-logic">Mapping Logic</h3>
 <p><img src="../../../resources/MagicaVoxelId.jpg" alt="Magica Voxel Id"></p>
 <p>The mapping divides the palette into groups of 8. Every <strong>8 colors</strong> in the MagicaVoxel palette correspond to <strong>1 Material ID</strong>.</p>
@@ -234,6 +234,67 @@
 </tr>
 </tbody>
 </table>
+<h2 id="import-into-editor">Import Into Editor</h2>
+<p>Once you have created your <code>.vox</code> models, you need to import them into the ModToolkit Editor to use them in your mods. This process involves the <strong>Asset Processor</strong>.</p>
+<ol>
+<li>Open the <strong>Asset Processor</strong>.</li>
+<li>Import your <code>.vox</code> files.</li>
+<li>Click <strong>Convert</strong> to generate the prefabs.</li>
+</ol>
+<img src="../../../resources/ImportVox.png" alt="Importing vox files via Asset Processor" style="max-width: 720px;">
+<h3 id="post-import-configuration">Post-Import Configuration</h3>
+<p>After conversion, the system generates a prefab for your model. This prefab will typically have a <strong>VoxelObjectProxy</strong> component attached, which handles rendering, physics, and persistence.</p>
+<h2 id="naming-for-scene">Naming for scene</h2>
+<p>When creating a complex scene file in MagicaVoxel that contains multiple objects, you can control how each object is imported into the game by adding specific prefixes to their names in the MagicaVoxel &quot;World&quot; editor.</p>
+<p>The importer checks these prefixes to assign the correct physical properties, collision layers, and behaviors.</p>
+<h3 id="prefix-rules">Prefix Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Prefix</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>A_</code></strong></td>
+<td style="text-align: left;"><strong>Static Environment</strong></td>
+<td style="text-align: left;">Used for the main static geometry like floors, walls, and terrain.</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Building<br>• <strong>Tag</strong>: &quot;Floor&quot;<br>• <strong>Physics</strong>: Kinematic (Immovable)<br>• <strong>Destructible</strong>: No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>B_</code></strong></td>
+<td style="text-align: left;"><strong>Dynamic Prop</strong></td>
+<td style="text-align: left;">Used for free-moving objects like crates, barrels, or debris.</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic (Affected by gravity)<br>• <strong>Destructible</strong>: Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>C_</code></strong></td>
+<td style="text-align: left;"><strong>Strong Connected</strong></td>
+<td style="text-align: left;">Used for objects that need to be firmly anchored to the world (e.g., fixtures).</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>UnyieldingArea</code> component with a large collider to stabilize connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>D_</code></strong></td>
+<td style="text-align: left;"><strong>Weak Connected</strong></td>
+<td style="text-align: left;">Used for hanging or jointed objects (e.g., lamps, signs).</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>AttachmentPoint</code> (facing down) and configures a joint.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="default-behavior">Default Behavior</h3>
+<p>If an object name does not start with any of the specific prefixes (e.g., <code>MyTable</code>, <code>Chair</code>):</p>
+<ul>
+<li><strong>Type</strong>: Static Prop</li>
+<li><strong>Layer</strong>: Item</li>
+<li><strong>Physics</strong>: Kinematic (Immovable)</li>
+<li><strong>Destructible</strong>: No</li>
+</ul>
+<blockquote>
+<p><strong>Recommendation</strong>: Always use <strong><code>A_</code></strong> for ground and structural elements to ensure they are recognized as &quot;Floor&quot; for navigation and physics interactions. Use <strong><code>B_</code></strong> for any object you want the player to interact with physically.</p>
+</blockquote>
 
 </article>
 

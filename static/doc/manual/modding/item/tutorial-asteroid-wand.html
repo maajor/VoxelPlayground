@@ -87,7 +87,132 @@
         <article data-uid="">
 <h1 id="tutorial-asteroid-wand">Tutorial: Asteroid Wand</h1>
 
-<p>Placeholder documentation for Tutorial: Asteroid Wand.</p>
+<p>This tutorial guides you through creating a custom &quot;<a href="https://mod.io/g/voxelplayground/m/asteroid-wand#description">Asteroid Wand</a>&quot; mod. This weapon will fire asteroid projectiles that can penetrate objects and explode on impact. You can find the complete source code and assets for this mod in the modding toolkit's <code>Assets/Samples/Asteroid</code> folder.</p>
+<h2 id="step-1-creating-the-voxel-models">Step 1: Creating the Voxel Models</h2>
+<p>First, we need to create the visual models for the wand and the asteroid. You can design these in a voxel editor like MagicaVoxel or convert existing 3D models using tools like <a href="https://drububu.com/miscellaneous/voxelizer/">Online Voxelizer</a>.</p>
+<h3 id="important-note-on-material-ids">Important Note on Material IDs</h3>
+<p>When importing models from external tools, the color palette indices often do not match the game's Material ID system. For example, a generic voxelizer might fill the palette arbitrarily. We will correct the material IDs in the Voxel Data Editor later.</p>
+<p><img src="../../../resources/ModWand.jpg" alt="Wand voxel model"></p>
+<p>For the asteroid, we want it to have high hardness to penetrate obstacles. Referring to the <a href="../../tools/voxel-authoring/magica-voxel.html#material-id-mapping">Material ID Mapping</a> and <a href="../../gameplay/voxel/material-id-visual.html#material-id-table">Material ID Table</a>, we choose a Color Index that corresponds to a hard material. In this example, we use <strong>ColorID 161</strong>, which maps to the <strong>PierceBullet</strong> material.</p>
+<p><img src="../../../resources/ModAsteroid.jpg" alt="Asteroid voxel model"></p>
+<h2 id="step-2-importing-and-configuring-assets">Step 2: Importing and Configuring Assets</h2>
+<p>Next, we import the <code>.vox</code> files into the game project.</p>
+<ol>
+<li>Open the <strong>Asset Processor</strong>.</li>
+<li>Import your wand and asteroid <code>.vox</code> files.</li>
+<li>Click <strong>Convert</strong> to generate the prefabs.</li>
+</ol>
+   <img src="../../../resources/ConvertAsteroid.jpg" alt="Importing vox files via Asset Processor" style="max-width: 240px;">
+<p>After conversion, we need to fine-tune the material properties of the wand using the <a href="../../tools/voxel-authoring/voxel-data-editor.html">Voxel Data Editor</a>. Since the wand should feel like wood, we replace the imported voxel IDs with the <strong>Wood</strong> material ID.</p>
+<p><img src="../../../resources/WandReplace.jpg" alt="Replacing materials in Voxel Data Editor"></p>
+<h2 id="step-3-prefab-setup">Step 3: Prefab Setup</h2>
+<p>Now we configure the prefabs.</p>
+<p>The asteroid serves as the projectile for the wand, so it does not need to be a standalone spawnable item in the game menu. We will reference it directly in the wand's logic.</p>
+<ol>
+<li>Open the <strong>Wand Prefab</strong>.</li>
+<li>Ensure the <strong>Asteroid Prefab</strong> is set up with a particle system to create a smoke trail effect.</li>
+<li>Assign the asteroid prefab to the wand's script component (which we will create in the next step).</li>
+</ol>
+<p>The final hierarchy and setup should look similar to the image below:</p>
+<p><img src="../../../resources/WandOutline.jpg" alt="Wand Prefab hierarchy and component setup"></p>
+<h2 id="step-4-scripting-the-logic">Step 4: Scripting the Logic</h2>
+<p>We need to create two custom entity classes: <code>EntityAsteroid</code> for the projectile and <code>EntityAsteroidWand</code> for the weapon.</p>
+<h3 id="the-asteroid-entity">The Asteroid Entity</h3>
+<p>The <code>EntityAsteroid</code> class handles the explosion logic. It listens for collision events and triggers an explosion effect when it hits a building or obstacle.</p>
+<p><strong>Note:</strong> We must manually register and unregister the collision callbacks (<code>RegisterOnCollisionEnter</code>) in the <code>OnEnable</code> and <code>OnDisable</code> methods. For more details, see <a href="../../gameplay/physics/builtin-vs-px5.html#33-collision-callback-registration">Collision Callback Registration</a>.</p>
+<pre><code class="lang-csharp">using Rigidbody = Px5.Unity.PxRigidBody;
+using Collision = Px5.UnityExtensions.Collision;
+
+public class EntityAsteroid : EntityExplosive
+{
+    private Rigidbody myRigidBody;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void OnEnable()
+    {
+        myRigidBody = GetComponent&lt;Rigidbody&gt;();
+        if (myRigidBody != null)
+        {
+            myRigidBody.RegisterOnCollisionEnter(OnCollisionEnter);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (myRigidBody != null)
+        {
+            myRigidBody.UnregisterOnCollisionEnter(OnCollisionEnter);
+        }
+    }
+
+    protected override void OnCollisionEnter(Collision collision)
+    {
+        var rb = collision.rigidbody;
+        if (rb == null) return;
+        if (rb.gameObject.layer != LayerMasksHelper.layerMask_Building)
+        {return;
+        }
+        base.OnCollisionEnter(collision);
+
+        SpecialEffectManager.Instance.Play(&quot;NuclearBomb_Explode&quot;, transform.position, 3.0f).transform.localScale = Vector3.one * 8;
+
+        SoundManager.Instance.PlaySoundOneShotAt(&quot;Explosion_Nuke&quot;, transform.position);
+
+        GameObject.Destroy(gameObject, 1.0f);
+    }
+}
+</code></pre>
+<h3 id="the-wand-entity">The Wand Entity</h3>
+<p>The <code>EntityAsteroidWand</code> class extends <code>EntityHoldWeapon</code> (see <a href="../../gameplay/entity.html">Entity System</a>). This base class handles the input for holding and firing weapons. When the trigger is pressed, it instantiates the asteroid prefab and applies velocity.</p>
+<p>Because we assigned the <strong>PierceBullet</strong> material (high hardness) to the asteroid earlier, it will naturally penetrate softer objects upon impact. For more on this mechanic, refer to <a href="../../gameplay/physics/voxel-collision.html#2-penetration-mechanics">Penetration Mechanics</a>.</p>
+<pre><code class="lang-csharp">using Rigidbody = Px5.Unity.PxRigidBody;
+
+public class EntityAsteroidWand : EntityHoldWeapon
+{
+    public GameObject asteroidPrefab;
+
+    public float spawnDistance = 50.0f;
+
+    public float spawnHeight = 200.0f;
+    public float spawnVelocity = 50;
+
+    private Transform mainCamTransform;
+    protected override void Start()
+    {
+        base.Start();
+        mainCamTransform = Camera.main?.transform;
+    }
+
+    public override void FireOnce()
+    {
+        if (asteroidPrefab == null || mainCamTransform == null)
+            return;
+
+        GameObject asteroid = GameObject.Instantiate(asteroidPrefab, transform.position + mainCamTransform.forward * spawnDistance + Vector3.up * spawnHeight, Quaternion.identity) as GameObject;
+        asteroid.transform.parent = null;
+        asteroid.SetActive(true);
+        var rigidbody = asteroid.GetComponent&lt;Rigidbody&gt;();
+        if (rigidbody)
+        {
+            var direction = mainCamTransform.forward * spawnVelocity * 0.1f - mainCamTransform.right * spawnVelocity * 0.1f + Vector3.down * spawnVelocity;
+            rigidbody.velocity = direction;
+        }
+
+        GameObject.Destroy(asteroid, 10.0f);
+    }
+}
+</code></pre>
+<h2 id="step-5-config-the-manifest">Step 5: Config the manifest</h2>
+<p>Locate the <code>ModManifest</code> file within your mod folder. This file is crucial for defining your mod's metadata and export settings.</p>
+<img src="../../../resources/ModManifest.png" alt="Mod Manifest Configuration" style="max-width: 480px;">
+<ul>
+<li><strong>Export Prefabs</strong>: You will need to assign the Prefabs you generate (from Vox files) to this list to ensure they are included in the final build.</li>
+</ul>
+<h2 id="step-6-test-and-publish">Step 6: Test and Publish</h2>
+<p>Finally, test your mod in the local environment to ensure the physics and effects work as expected. Once satisfied, you can publish it.</p>
+<ul>
+<li><a href="../../quick-start/test-mod.html">Testing your Mod</a></li>
+<li><a href="../../quick-start/publish-mod.html">Publishing your Mod</a></li>
+</ul>
 
 </article>
 

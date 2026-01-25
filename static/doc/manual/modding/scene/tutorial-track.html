@@ -87,7 +87,52 @@
         <article data-uid="">
 <h1 id="tutorial-track">Tutorial: Track</h1>
 
-<p>Placeholder documentation for Tutorial: Track.</p>
+<p>This tutorial demonstrates how to create a custom <strong>Track</strong> or scene mod. This approach is suitable for race tracks, parkour maps, or any custom environment for players to explore.</p>
+<p><strong>Path in Mod Toolkit</strong>: <code>Assets/Samples/TrackScene</code></p>
+<p><a href="https://mod.io/g/voxelplayground/m/track#description">Track Mod on mod.io</a></p>
+<h2 id="step-1-modeling-in-magicavoxel">Step 1: Modeling in MagicaVoxel</h2>
+<p>First, create your scene in MagicaVoxel. Since a track is a complex environment, you should use the <strong>World Editor</strong> in MagicaVoxel to organize your scene into multiple objects.</p>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>To ensure the game recognizes the different parts of your track correctly (e.g., what is the floor vs. what are obstacles), you <strong>must</strong> follow the specific naming conventions for scene objects.</p>
+<p>Refer to the <a href="../../tools/voxel-authoring/magica-voxel.html#naming-for-scene">Scene Naming Guide</a> for the complete list of prefixes.</p>
+<ul>
+<li><strong><code>A_</code> (Static Environment)</strong>: Use this prefix for the main track geometry, floors, and walls. These objects are indestructible and static.
+<ul>
+<li><em>Example</em>: <code>A_Road</code>, <code>A_Wall</code>, <code>A_StartLine</code></li>
+</ul>
+</li>
+<li><strong><code>B_</code> (Dynamic Prop)</strong>: Use this for obstacles or objects that can be moved or destroyed.
+<ul>
+<li><em>Example</em>: <code>B_Crate</code>, <code>B_Barrier</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="../../../resources/TrackVox.jpg" alt="Track Voxel Model"></p>
+<h3 id="material-ids">Material IDs</h3>
+<p>Ensure you use the correct colors in the palette to define material properties (like hardness or slippery surfaces). See <a href="../../tools/voxel-authoring/magica-voxel.html#material-id-mapping">Material ID Mapping</a>.</p>
+<h2 id="step-2-import-into-editor">Step 2: Import into Editor</h2>
+<p>Once your <code>.vox</code> file is ready:</p>
+<ol>
+<li>Open the <strong>Asset Processor</strong> in the Mod Toolkit.</li>
+<li>Drag and drop your <code>.vox</code> file into the processor.</li>
+<li><strong>Crucial Step</strong>: In the import settings for this file, select <strong>Type</strong> as <strong>Scene</strong>.</li>
+<li>Click <strong>Convert</strong> to generate the scene prefab.</li>
+</ol>
+<p>For more details on the import process, see <a href="../../tools/voxel-authoring/magica-voxel.html#import-into-editor">MagicaVoxel Import</a>.</p>
+<h2 id="step-3-configure-mod-manifest">Step 3: Configure Mod Manifest</h2>
+<p>After generating the prefab, you need to register it in your <code>ModManifest</code>.</p>
+<ol>
+<li>Locate your <code>ModManifest</code> asset.</li>
+<li>Add your new Track Prefab to the <strong>Export Prefabs</strong> list (or the specific Scene list if available in your version).</li>
+<li>Ensure the mod type is set correctly if applicable.</li>
+</ol>
+<p>See <a href="../../quick-start/create-mod.html#step-3-configure-mod-manifest">Configure Mod Manifest</a> for general instructions.</p>
+<h2 id="step-4-test-and-publish">Step 4: Test and Publish</h2>
+<p>Now you can build and test your track in the game.</p>
+<ul>
+<li><a href="../../quick-start/test-mod.html">Testing your Mod</a></li>
+<li><a href="../../quick-start/publish-mod.html">Publishing your Mod</a></li>
+</ul>
 
 </article>
 

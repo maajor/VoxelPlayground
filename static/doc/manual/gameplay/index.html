@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Voxel Playground Mod API Reference </title>
+      <title>Gameplay System | Voxel Playground Mod API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Voxel Playground Mod API Reference ">
+      <meta name="title" content="Gameplay System | Voxel Playground Mod API Reference ">
       
       
       <link rel="icon" href="../../resources/logo.svg">
@@ -85,8 +85,50 @@
         </div>
 
         <article data-uid="">
+<h1 id="gameplay-system">Gameplay System</h1>
 
-<p>general describe feature of this game</p>
+<p>The <strong>Gameplay System</strong> in <strong>Voxel Playground</strong> is built upon a custom physics engine and a highly interactive voxel environment. This section provides an overview of the core systems and guides you to detailed documentation for specific mechanics.</p>
+<h2 id="core-architecture">Core Architecture</h2>
+<h3 id="entity-system"><a href="entity.html">Entity System</a></h3>
+<p>The <code>Entity</code> class is the foundation of all interactive objects in the game. Whether it's a weapon, a vehicle, a character, or a simple destructible crate, it inherits from <code>Entity</code>.</p>
+<ul>
+<li><strong>Inheritance</strong>: Learn about <code>EntityItem</code>, <code>EntityCharacter</code>, and <code>EntityFirableWeapon</code>.</li>
+<li><strong>Lifecycle</strong>: specialized initialization and destruction flows.</li>
+</ul>
+<h3 id="physics-system"><a href="physics/builtin-vs-px5.html">Physics System</a></h3>
+<p>Voxel Playground uses <strong>Px5</strong>, a custom  physics engine, instead of standard Unity Physics.</p>
+<ul>
+<li><strong><a href="physics/builtin-vs-px5.html">Builtin vs Px5</a></strong>: Understanding the difference and how authoring works.</li>
+<li><strong><a href="physics/voxel-collision.html">Voxel Collision</a></strong>: How objects interact with the destructive voxel terrain.</li>
+</ul>
+<h3 id="voxel-system"><a href="voxel/modify-voxels.html">Voxel System</a></h3>
+<p>The world is made of voxels that can be destroyed, built, and manipulated.</p>
+<ul>
+<li><strong><a href="voxel/modify-voxels.html">Modify Voxels</a></strong>: API, Manual Loop, and Job System approaches to voxel destruction.</li>
+<li><strong><a href="voxel/data-layout-property.html">Data Layout</a></strong>: Understanding how voxel data is stored in memory.</li>
+<li><strong><a href="voxel/heightmap-voxel.html">Heightmap Voxels</a></strong>: Creating terrain from heightmaps.</li>
+<li><strong><a href="voxel/material-id-visual.html">Material IDs</a></strong>: Visual properties of voxels.</li>
+</ul>
+<h2 id="game-elements">Game Elements</h2>
+<h3 id="characters--ai"><a href="character-ai/character-proxy.html">Characters &amp; AI</a></h3>
+<p>Create custom characters with unique behaviors and appearances.</p>
+<ul>
+<li><strong><a href="character-ai/character-proxy.html">Character Proxy</a></strong>: Configuring stats, size, and visuals.</li>
+<li><strong><a href="character-ai/spawner.html">Spawner</a></strong>: How to spawn characters in the world.</li>
+</ul>
+<h3 id="building-system"><a href="building/connect-building.html">Building System</a></h3>
+<ul>
+<li><strong><a href="building/connect-building.html">Connect Building</a></strong>: How the snapping and construction system works for building parts.</li>
+</ul>
+<h3 id="interactions"><a href="custom-interaction.html">Interactions</a></h3>
+<ul>
+<li><strong><a href="custom-interaction.html">Custom Interaction</a></strong>: Defining how players interact with objects (grab, use, trigger).</li>
+</ul>
+<h2 id="graphics--rendering">Graphics &amp; Rendering</h2>
+<h3 id="scene-settings"><a href="scene-rendering-settings.html">Scene Settings</a></h3>
+<ul>
+<li><strong><a href="scene-rendering-settings.html">Rendering Settings</a></strong>: Configuring the visual look of your scene (lighting, fog, post-processing).</li>
+</ul>
 
 </article>
 
