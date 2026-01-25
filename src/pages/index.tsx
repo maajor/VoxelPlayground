@@ -172,7 +172,7 @@ export default function Home(): React.ReactElement {
   );
 
   return (
-    <Layout title="Voxel Playground" description="Grab-and-rip micro-voxel destruction in VR—build, break, and survive on Meta Quest.">
+    <Layout title="Physical Micro-Voxel Destruction in VR" description="Grab-and-rip micro-voxel destruction in VR—build, break, and survive on Meta Quest.">
       <main className="bg-black text-white">
         <section
           id="home"
