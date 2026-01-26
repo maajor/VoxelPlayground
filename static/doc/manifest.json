@@ -7941,10 +7941,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/modding/character/tutorial-giant.md",
+      "source_relative_path": "manual/modding/character/tutorial-character.md",
       "output": {
         ".html": {
-          "relative_path": "manual/modding/character/tutorial-giant.html"
+          "relative_path": "manual/modding/character/tutorial-character.html"
         }
       },
       "version": ""
@@ -8025,16 +8025,6 @@
       "output": {
         ".html": {
           "relative_path": "manual/modding/scene/tutorial-track.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/modding/vehicle/tutorial-at-at.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/modding/vehicle/tutorial-at-at.html"
         }
       },
       "version": ""
