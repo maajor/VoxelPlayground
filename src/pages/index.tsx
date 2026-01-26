@@ -83,8 +83,20 @@ function trackSocialClick(platform: SocialLink['platform']) {
   }
 }
 
+const HERO_VIDEO_ID = 'I_iUPpiW8VA';
+
+declare global {
+  interface Window {
+    YT?: {Player: new (el: HTMLElement, opts: object) => {destroy: () => void}; PlayerState: {PLAYING: number}};
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
 export default function Home(): React.ReactElement {
   const [isHeroVideoLoaded, setIsHeroVideoLoaded] = useState(false);
+  const heroPlayerRef = useRef<HTMLDivElement>(null);
+  const playerInstanceRef = useRef<{destroy: () => void} | null>(null);
+  const setHeroLoadedRef = useRef<React.Dispatch<React.SetStateAction<boolean>>>(() => {});
 
   useEffect(() => {
     document.body.classList.add('loaded');
@@ -97,22 +109,54 @@ export default function Home(): React.ReactElement {
     return () => window.removeEventListener('error', onError);
   }, []);
 
-  const heroVideoSrc = useMemo(() => {
-    const videoId = 'I_iUPpiW8VA';
-    const params = new URLSearchParams({
-      autoplay: '1',
-      controls: '0',
-      disablekb: '1',
-      fs: '0',
-      iv_load_policy: '3',
-      loop: '1',
-      modestbranding: '1',
-      mute: '1',
-      playsinline: '1',
-      rel: '0',
-      playlist: videoId,
-    });
-    return `https://www.youtube-nocookie.com/embed/${videoId}?${params.toString()}`;
+  useEffect(() => {
+    setHeroLoadedRef.current = setIsHeroVideoLoaded;
+
+    const createPlayer = (): void => {
+      const el = heroPlayerRef.current;
+      if (!el || playerInstanceRef.current) return;
+      const YT = window.YT;
+      if (!YT?.Player) return;
+
+      const player = new YT.Player(el, {
+        videoId: HERO_VIDEO_ID,
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          loop: 1,
+          playlist: HERO_VIDEO_ID,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          iv_load_policy: 3,
+          modestbranding: 1,
+          playsinline: 1,
+          rel: 0,
+        },
+        events: {
+          onStateChange: (ev: {data: number}) => {
+            if (ev.data === YT.PlayerState.PLAYING) setHeroLoadedRef.current(true);
+          },
+        },
+      });
+      playerInstanceRef.current = player;
+    };
+
+    if (window.YT?.Player) {
+      createPlayer();
+    } else {
+      window.onYouTubeIframeAPIReady = () => createPlayer();
+      if (document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) return;
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      const first = document.getElementsByTagName('script')[0];
+      first?.parentNode?.insertBefore(tag, first);
+    }
+
+    return () => {
+      if (playerInstanceRef.current?.destroy) playerInstanceRef.current.destroy();
+      playerInstanceRef.current = null;
+    };
   }, []);
 
   const socialLinks = useMemo<SocialLink[]>(
@@ -183,17 +227,15 @@ export default function Home(): React.ReactElement {
               src="/img/vlcsnap-2025-09-03-15h39m23s266.png"
               alt="Voxel Playground key art"
               className="h-full w-full object-cover opacity-70"
-              loading="lazy"
+              loading="eager"
             />
             <div className={clsx('absolute inset-0 transition-opacity duration-700', isHeroVideoLoaded ? 'opacity-100' : 'opacity-0')}>
               <div className="absolute inset-0 overflow-hidden">
-                <iframe
+                <div
+                  ref={heroPlayerRef}
                   title="Voxel Playground trailer background"
-                  src={heroVideoSrc}
-                  allow="autoplay; encrypted-media; picture-in-picture"
                   className="pointer-events-none absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2"
                   style={{width: '177.78vh', height: '56.25vw'}}
-                  onLoad={() => setIsHeroVideoLoaded(true)}
                 />
               </div>
             </div>
