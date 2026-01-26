@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Modify Voxels | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Modify Voxels | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="modify-voxels">Modify Voxels</h1>
+
+<p>There are multiple ways to modify voxels in <strong>Voxel Playground</strong>, ranging from high-level APIs to low-level direct data manipulation. This guide covers three main approaches:</p>
+<ol>
+<li><strong>Using the <code>VoxelDestructor</code> API</strong>: The easiest way, using built-in destruction methods.</li>
+<li><strong>Manual Loop</strong>: Directly modifying voxel data in a loop on the main thread.</li>
+<li><strong>Using the Job System</strong>: High-performance modification using Unity's Job System and Burst Compiler.</li>
+</ol>
+<h2 id="1-use-api">1. Use API</h2>
+<p>The <code>VoxelDestructor</code> component provides several high-level methods for destroying or modifying voxels. This is the recommended approach for standard gameplay mechanics like explosions or breaking objects.</p>
+<h3 id="demolishareasphere">DemolishAreaSphere</h3>
+<p>Destroys voxels within a spherical area and optionally creates physical fragments.</p>
+<pre><code class="lang-csharp">public unsafe void DemolishAreaSphere(
+    Vector3 center, 
+    float radius, 
+    float force = 0.0f, 
+    Vector3 explodeDirection = new Vector3(), 
+    float spreadAngle = 3.14159f, 
+    int maxFragments = 30, 
+    float hardnessCap = 8, 
+    Action&lt;int&gt; onModified = null
+)
+</code></pre>
+<h3 id="explodetopartsanddestroyself">ExplodeToPartsAndDestroySelf</h3>
+<p>Fractures the entire object into parts and destroys the original object.</p>
+<pre><code class="lang-csharp">public void ExplodeToPartsAndDestroySelf(bool specialEffect = false, bool randomRemoval = true)
+</code></pre>
+<h3 id="boxsweepclear">BoxSweepClear</h3>
+<p>Clears voxels within a swept box area (e.g., for melee attacks or wide projectiles).</p>
+<pre><code class="lang-csharp">public unsafe void BoxSweepClear(
+    Vector3 end1, 
+    Vector3 end2, 
+    Vector3 halfBox, 
+    Matrix4x4 boxLocalToWorld, 
+    VoxelChunk voxelChunkToClears, 
+    bool isByEasyKinematicPenetration = false, 
+    float hardnessCap = -1
+)
+</code></pre>
+<hr>
+<h2 id="2-manual-loop">2. Manual Loop</h2>
+<p>For custom modification logic (e.g., painting voxels, procedural generation), you can manually iterate through the voxel data. This involves:</p>
+<ol>
+<li>Updating the <code>PointData</code> of the <code>VoxelVolume</code>.</li>
+<li>Marking the affected chunks as <code>Modified</code> so the mesh updates.</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>: Direct voxel access is usually done in an <code>unsafe</code> context for performance.</p>
+</blockquote>
+<p>Here is a sample</p>
+<pre><code class="lang-csharp">public static unsafe void ModifyVoxelManual(VoxelVolume baseCube, Vector3 worldPos, float radius, Color newColor, float strength = 1.0f)
+{
+    // 1. Convert world position to local voxel coordinates
+    Vector3 centerLocalPos = baseCube.transform.InverseTransformPoint(worldPos);
+    centerLocalPos.x = Mathf.RoundToInt(centerLocalPos.x);
+    centerLocalPos.y = Mathf.RoundToInt(centerLocalPos.y);
+    centerLocalPos.z = Mathf.RoundToInt(centerLocalPos.z);
+
+    // 2. Calculate squared radius for distance checks
+    float radiusSqr = radius * radius;
+    // Calculate iteration bounds based on radius
+    int iterCount = Mathf.RoundToInt(radius / baseCube.transform.lossyScale.x);
+    
+    Vector3 voxelLocalPos = Vector3Int.zero;
+    
+    // 3. Get pointer to the raw voxel data
+    var pointDataPtr = (PointDataV2*)baseCube.GetPointDataArray().GetUnsafePtr();
+
+    // 4. Loop through the volume
+    for (int z = -iterCount; z &lt;= iterCount; z++)
+    for (int y = -iterCount; y &lt;= iterCount; y++)
+    for (int x = -iterCount; x &lt;= iterCount; x++)
+    {
+        voxelLocalPos.Set(
+            centerLocalPos.x + x,
+            centerLocalPos.y + y,
+            centerLocalPos.z + z);
+
+        // Check if the coordinate is valid
+        if (baseCube.IsInsideBoundaries_local((int)voxelLocalPos.x, (int)voxelLocalPos.y, (int)voxelLocalPos.z))
+        {
+            float distSqr = (voxelLocalPos - centerLocalPos).sqrMagnitude;
+            
+            if (distSqr &lt; radiusSqr)
+            {
+                // Get the index for the 1D array
+                int index = baseCube.IndexFromCoord((int)voxelLocalPos.x, (int)voxelLocalPos.y, (int)voxelLocalPos.z);
+                PointDataV2* data = pointDataPtr + index;
+
+                // Modify the data (e.g., change color)
+                data-&gt;Color = Color.Lerp(data-&gt;Color, newColor, strength);
+
+                // 5. Mark the chunk as modified to trigger mesh rebuild
+                Vector3Int chunkCoord = baseCube.LocalPosToChunkPos(voxelLocalPos);
+                int chunkIndex = baseCube.IndexFromChunkCoord(chunkCoord.x, chunkCoord.y, chunkCoord.z);
+                baseCube.voxelChunks[chunkIndex].chunkState = ChunkState.Modified;
+            }
+        }
+    }
+}
+</code></pre>
+<hr>
+<h2 id="3-use-a-job">3. Use a Job</h2>
+<p>For heavy modifications or when modifying a large area, it is best to use the Unity Job System. This performs the calculation in the background, avoiding main thread freezes.</p>
+<p>The workflow is:</p>
+<ol>
+<li><strong>Create a Job</strong>: Define a struct implementing <code>IJobParallelFor</code> to modify the data.</li>
+<li><strong>Schedule the Job</strong>: Run the job on worker threads.</li>
+<li><strong>Collect &amp; Update</strong>: On the main thread (usually the next frame), complete the job and mark chunks as modified.</li>
+</ol>
+<h3 id="sample-implementation">Sample Implementation</h3>
+<p><strong>1. Define the Job</strong></p>
+<pre><code class="lang-csharp">using Unity.Burst;
+using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.Jobs;
+using Unity.Mathematics;
+using UnityEngine;
+
+[BurstCompile]
+public unsafe struct VoxelModifyJob : IJobParallelFor
+{
+    // Use pointers to access global voxel data
+    [NativeDisableUnsafePtrRestriction]
+    public PointDataV2* globalPointData;
+    
+    public int numPointsX;
+    public int numPointsY;
+    public int numPointsZ;
+    
+    public float3 centerLocal;
+    public float radiusSqr;
+    public Color newColor;
+
+    public void Execute(int index)
+    {
+        // Calculate 3D coordinates from linear index
+        int x = index % numPointsX;
+        int y = (index / numPointsX) % numPointsY;
+        int z = index / (numPointsX * numPointsY);
+
+        float3 pos = new float3(x, y, z);
+        float distSqr = math.distancesq(pos, centerLocal);
+
+        if (distSqr &lt; radiusSqr)
+        {
+            // Modify the data directly
+            globalPointData[index].Color = newColor;
+        }
+    }
+}
+</code></pre>
+<p><strong>2. Schedule and Collect</strong></p>
+<pre><code class="lang-csharp">public class AsyncVoxelModifier : MonoBehaviour
+{
+    private JobHandle jobHandle;
+    private bool jobScheduled = false;
+    private VoxelVolume targetVolume;
+    private Bounds affectedBounds;
+
+    public unsafe void ScheduleModification(VoxelVolume volume, Vector3 worldPos, float radius, Color color)
+    {
+        if (jobScheduled) return; // Wait for previous job
+
+        targetVolume = volume;
+        Vector3 localPos = volume.transform.InverseTransformPoint(worldPos);
+        float localRadius = radius / volume.transform.lossyScale.x;
+        
+        // Define bounds to know which chunks to update later
+        affectedBounds = new Bounds(localPos, Vector3.one * localRadius * 2);
+
+        var job = new VoxelModifyJob
+        {
+            globalPointData = (PointDataV2*)volume.GetPointDataArray().GetUnsafePtr(),
+            numPointsX = volume.numPointsX,
+            numPointsY = volume.numPointsY,
+            numPointsZ = volume.numPointsZ,
+            centerLocal = localPos,
+            radiusSqr = localRadius * localRadius,
+            newColor = color
+        };
+
+        // Schedule the job
+        // We use the total number of points as the length of the parallel loop
+        int totalPoints = volume.numPointsX * volume.numPointsY * volume.numPointsZ;
+        jobHandle = job.Schedule(totalPoints, 256);
+        
+        jobScheduled = true;
+        
+        // Start a coroutine to wait for the job
+        StartCoroutine(WaitForJob());
+    }
+
+    private System.Collections.IEnumerator WaitForJob()
+    {
+        // Wait for end of frame or next frame
+        yield return new WaitForEndOfFrame();
+
+        // Complete the job (ensure it's finished)
+        jobHandle.Complete();
+        jobScheduled = false;
+
+        // Mark chunks as modified
+        foreach (var chunk in targetVolume.voxelChunks)
+        {
+            if (chunk.chunkState != ChunkState.Empty)
+            {
+                // Check if the chunk intersects with the modification area
+                if (chunk.GetBounds_local().Intersects(affectedBounds))
+                {
+                    chunk.chunkState = ChunkState.Modified;
+                    // Optional: force immediate update
+                    // chunk.lastTimeUpdated = 0; 
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

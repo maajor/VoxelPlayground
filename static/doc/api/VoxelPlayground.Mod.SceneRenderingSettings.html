@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SceneRenderingSettings | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SceneRenderingSettings | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Mod.SceneRenderingSettings">
+
+
+
+  <h1 id="VoxelPlayground_Mod_SceneRenderingSettings" data-uid="VoxelPlayground.Mod.SceneRenderingSettings" class="text-break">
+Class SceneRenderingSettings  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Mod.html">Mod</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ModData.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(fileName = &quot;SceneRenderingSettings&quot;, menuName = &quot;VoxelPlayground/SceneRenderingSettings&quot;)]
+public class SceneRenderingSettings : ScriptableObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ScriptableObject.html">ScriptableObject</a></div>
+      <div><span class="xref">SceneRenderingSettings</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientEquatorColor" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientEquatorColor">
+  ambientEquatorColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideIf(&quot;@this.ambientMode!=AmbientMode.Trilight&quot;, true)]
+public Color ambientEquatorColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientGroundColor" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientGroundColor">
+  ambientGroundColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideIf(&quot;@this.ambientMode!=AmbientMode.Trilight&quot;, true)]
+public Color ambientGroundColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientIntensity" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientIntensity">
+  ambientIntensity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideIf(&quot;@this.ambientMode!=AmbientMode.Skybox&quot;, true)]
+public float ambientIntensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientLight" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientLight">
+  ambientLight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideIf(&quot;@this.ambientMode!=AmbientMode.Flat&quot;, true)]
+public Color ambientLight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientMode" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientMode">
+  ambientMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AmbientMode ambientMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rendering.AmbientMode.html">AmbientMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ambientSkyColor" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ambientSkyColor">
+  ambientSkyColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideIf(&quot;@this.ambientMode!=AmbientMode.Trilight&quot;, true)]
+public Color ambientSkyColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_bloom" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.bloom">
+  bloom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Bloom&quot;)]
+public bool bloom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_bloomIntensity" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.bloomIntensity">
+  bloomIntensity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bloomIntensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_bloomScatter" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.bloomScatter">
+  bloomScatter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bloomScatter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_bloomThreshold" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.bloomThreshold">
+  bloomThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bloomThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_cascadeCount" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.cascadeCount">
+  cascadeCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int cascadeCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_cloudColor1Gradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.cloudColor1Gradient">
+  cloudColor1Gradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Cloud color throughout the day&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient cloudColor1Gradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_cloudColor2Gradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.cloudColor2Gradient">
+  cloudColor2Gradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Cloud color throughout the day&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient cloudColor2Gradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_colorAdjustments" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.colorAdjustments">
+  colorAdjustments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Color Adjustments&quot;)]
+public bool colorAdjustments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_colorAdjustmentsContrast" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.colorAdjustmentsContrast">
+  colorAdjustmentsContrast
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float colorAdjustmentsContrast</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fog" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fog">
+  fog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Fog&quot;)]
+public bool fog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fogColor" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fogColor">
+  fogColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color fogColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fogColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fogColorGradient">
+  fogColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Fog color changes throughout the day&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient fogColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fogEnd" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fogEnd">
+  fogEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fogEnd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fogMode" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fogMode">
+  fogMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FogMode fogMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/FogMode.html">FogMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_fogStart" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.fogStart">
+  fogStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fogStart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_internalSunriseTime" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.internalSunriseTime">
+  internalSunriseTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float internalSunriseTime = 6</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_internalSunsetTime" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.internalSunsetTime">
+  internalSunsetTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float internalSunsetTime = 18</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_lpvLighting" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.lpvLighting">
+  lpvLighting
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Lighting&quot;)]
+public bool lpvLighting</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_lut" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.lut">
+  lut
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;LUT&quot;)]
+public bool lut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_lutIntensity" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.lutIntensity">
+  lutIntensity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lutIntensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_lutTexture" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.lutTexture">
+  lutTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture lutTexture</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Texture.html">Texture</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_occlusionCulling" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.occlusionCulling">
+  occlusionCulling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool occlusionCulling</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_shadowCascadeSplits" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.shadowCascadeSplits">
+  shadowCascadeSplits
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;float&gt; shadowCascadeSplits</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<span class="xref">float</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_shadowDistance" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.shadowDistance">
+  shadowDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float shadowDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_skyBottomColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.skyBottomColorGradient">
+  skyBottomColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sky gradient bottom color for Stylized Sky shader&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient skyBottomColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_skybox" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.skybox">
+  skybox
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Skybox&quot;)]
+public bool skybox</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_skyboxMaterial" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.skyboxMaterial">
+  skyboxMaterial
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material skyboxMaterial</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Material.html">Material</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_skyTopColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.skyTopColorGradient">
+  skyTopColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sky gradient top color for Stylized Sky shader&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient skyTopColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunColorGradient">
+  sunColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Directional light color throughout the day&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient sunColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunDiscColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunDiscColorGradient">
+  sunDiscColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sun disc color for Stylized Sky shader&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient sunDiscColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunHaloColorGradient" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunHaloColorGradient">
+  sunHaloColorGradient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sun halo color for Stylized Sky shader&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public Gradient sunHaloColorGradient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Gradient.html">Gradient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunHaloContributionCurve" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunHaloContributionCurve">
+  sunHaloContributionCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sun halo contribution curve throughout the day (0-24 hours)&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public AnimationCurve sunHaloContributionCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AnimationCurve.html">AnimationCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunHaloExponentCurve" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunHaloExponentCurve">
+  sunHaloExponentCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sun halo exponent curve throughout the day (0-24 hours)&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public AnimationCurve sunHaloExponentCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AnimationCurve.html">AnimationCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_sunIntensityCurve" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.sunIntensityCurve">
+  sunIntensityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Sun intensity curve throughout the day (0-24 hours)&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public AnimationCurve sunIntensityCurve</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AnimationCurve.html">AnimationCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_tonemapping" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.tonemapping">
+  tonemapping
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Tonemapping&quot;)]
+public bool tonemapping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_tonemappingMode" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.tonemappingMode">
+  tonemappingMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TonemappingMode tonemappingMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TonemappingMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_topdownShadow" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.topdownShadow">
+  topdownShadow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Shadows&quot;)]
+public bool topdownShadow</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_transitionDuration" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.transitionDuration">
+  transitionDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 1)]
+[Tooltip(&quot;Transition duration in hours for sunrise/sunset&quot;)]
+[ShowIf(&quot;@this.useTimeOfDay&quot;, true)]
+public float transitionDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_useTimeOfDay" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.useTimeOfDay">
+  useTimeOfDay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Time of Day&quot;)]
+public bool useTimeOfDay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Mod_SceneRenderingSettings_ApplyTimeOfDaySettings_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ApplyTimeOfDaySettings*"></a>
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_ApplyTimeOfDaySettings_System_Single_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.ApplyTimeOfDaySettings(System.Single)">
+  ApplyTimeOfDaySettings(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button(&quot;Apply Time of Day Settings&quot;)]
+public void ApplyTimeOfDaySettings(float timeOfDay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeOfDay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Mod_SceneRenderingSettings_Default_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.Default*"></a>
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_Default" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.Default">
+  Default()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneRenderingSettings Default()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Mod.SceneRenderingSettings.html">SceneRenderingSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Mod_SceneRenderingSettings_GetSunColorAtTime_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.GetSunColorAtTime*"></a>
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_GetSunColorAtTime_System_Single_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.GetSunColorAtTime(System.Single)">
+  GetSunColorAtTime(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetSunColorAtTime(float timeOfDay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeOfDay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Mod_SceneRenderingSettings_GetSunIntensityAtTime_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.GetSunIntensityAtTime*"></a>
+
+  <h3 id="VoxelPlayground_Mod_SceneRenderingSettings_GetSunIntensityAtTime_System_Single_" data-uid="VoxelPlayground.Mod.SceneRenderingSettings.GetSunIntensityAtTime(System.Single)">
+  GetSunIntensityAtTime(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSunIntensityAtTime(float timeOfDay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeOfDay</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

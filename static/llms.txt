@@ -1,0 +1,24 @@
+# Voxel Playground
+
+Voxel Playground is a physics-based micro-voxel sandbox VR game built for Meta Quest.
+
+## Official site
+
+- Home: https://voxelplayground.com/
+- Docs: https://voxelplayground.com/doc/
+- Meta Quest store: https://www.meta.com/experiences/voxel-playground/9926748747373800/
+
+## Summary
+
+Voxel Playground focuses on physics-driven destruction and building in a micro-voxel world. Players use it as a VR sandbox for building, driving, fighting, and experimenting. It includes survival gameplay and a sandbox-style mode for freeform chaos and testing.
+
+## Keywords
+
+teardown vr, teardown quest, teardown-like vr, teardown style vr, voxel sandbox vr, physics sandbox vr, destruction sandbox vr, micro voxel physics, voxel destruction vr, voxel building vr, survival mode vr, zombie survival vr quest, meta quest sandbox, meta quest destruction game, voxel playground meta quest, voxel project meta quest, best teardown vr, better than voxel project, vr teardown alternative, quest sandbox game, quest physics game
+
+## Content map
+
+- Home: /
+- Privacy policy: /privacy
+- Docs: /doc/
+

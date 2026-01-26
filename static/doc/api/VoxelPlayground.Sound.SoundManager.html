@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SoundManager | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SoundManager | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Sound.SoundManager">
+
+
+
+  <h1 id="VoxelPlayground_Sound_SoundManager" data-uid="VoxelPlayground.Sound.SoundManager" class="text-break">
+Class SoundManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Sound.html">Sound</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SoundManager : SerializedMonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">SerializedMonoBehaviour</span></div>
+      <div><span class="xref">SoundManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager__debug_DrawGizmos_PlaySound" data-uid="VoxelPlayground.Sound.SoundManager._debug_DrawGizmos_PlaySound">
+  _debug_DrawGizmos_PlaySound
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+[SuffixLabel(&quot;Debug&quot;, false)]
+public static bool _debug_DrawGizmos_PlaySound</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_masterAMGroup" data-uid="VoxelPlayground.Sound.SoundManager.masterAMGroup">
+  masterAMGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup masterAMGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Audio.AudioMixerGroup.html">AudioMixerGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_musicAMGroup" data-uid="VoxelPlayground.Sound.SoundManager.musicAMGroup">
+  musicAMGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup musicAMGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Audio.AudioMixerGroup.html">AudioMixerGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_musicAudioSource" data-uid="VoxelPlayground.Sound.SoundManager.musicAudioSource">
+  musicAudioSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource musicAudioSource</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AudioSource.html">AudioSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_musicVolume" data-uid="VoxelPlayground.Sound.SoundManager.musicVolume">
+  musicVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public float musicVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_SFXAMGroup" data-uid="VoxelPlayground.Sound.SoundManager.SFXAMGroup">
+  SFXAMGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup SFXAMGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Audio.AudioMixerGroup.html">AudioMixerGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_soundEffectClipsDic" data-uid="VoxelPlayground.Sound.SoundManager.soundEffectClipsDic">
+  soundEffectClipsDic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, SoundEffect&gt; soundEffectClipsDic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<span class="xref">string</span>, <a class="xref" href="VoxelPlayground.Engine.SoundEffect.html">SoundEffect</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_soundEffectPairs" data-uid="VoxelPlayground.Sound.SoundManager.soundEffectPairs">
+  soundEffectPairs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockInfo soundEffectPairs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.BlockInfo.html">BlockInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_soundEffectVolume" data-uid="VoxelPlayground.Sound.SoundManager.soundEffectVolume">
+  soundEffectVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public float soundEffectVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_UIAMGroup" data-uid="VoxelPlayground.Sound.SoundManager.UIAMGroup">
+  UIAMGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup UIAMGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Audio.AudioMixerGroup.html">AudioMixerGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_Instance_" data-uid="VoxelPlayground.Sound.SoundManager.Instance*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_Instance" data-uid="VoxelPlayground.Sound.SoundManager.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SoundManager Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_Awake_" data-uid="VoxelPlayground.Sound.SoundManager.Awake*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_Awake" data-uid="VoxelPlayground.Sound.SoundManager.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_EnableFollow_" data-uid="VoxelPlayground.Sound.SoundManager.EnableFollow*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_EnableFollow_Sonity_SoundEvent_System_Boolean_" data-uid="VoxelPlayground.Sound.SoundManager.EnableFollow(Sonity.SoundEvent,System.Boolean)">
+  EnableFollow(SoundEvent, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableFollow(SoundEvent se, bool follow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>se</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>follow</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_GetSoundEffectByID_" data-uid="VoxelPlayground.Sound.SoundManager.GetSoundEffectByID*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_GetSoundEffectByID_System_UInt32_VoxelPlayground_Engine_SoundEffectType_" data-uid="VoxelPlayground.Sound.SoundManager.GetSoundEffectByID(System.UInt32,VoxelPlayground.Engine.SoundEffectType)">
+  GetSoundEffectByID(uint, SoundEffectType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundEffect GetSoundEffectByID(uint blockID, SoundEffectType soundType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockID</code> <span class="xref">uint</span></dt>
+    <dd></dd>
+    <dt><code>soundType</code> <a class="xref" href="VoxelPlayground.Engine.SoundEffectType.html">SoundEffectType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.SoundEffect.html">SoundEffect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_GetSoundEvent_" data-uid="VoxelPlayground.Sound.SoundManager.GetSoundEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_GetSoundEvent_System_String_" data-uid="VoxelPlayground.Sound.SoundManager.GetSoundEvent(System.String)">
+  GetSoundEvent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundEvent GetSoundEvent(string soundEffectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffectName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_IsPlaying_" data-uid="VoxelPlayground.Sound.SoundManager.IsPlaying*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_IsPlaying_Sonity_SoundEvent_UnityEngine_Transform_" data-uid="VoxelPlayground.Sound.SoundManager.IsPlaying(Sonity.SoundEvent,UnityEngine.Transform)">
+  IsPlaying(SoundEvent, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlaying(SoundEvent soundEvent, Transform owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_IsPlaying_" data-uid="VoxelPlayground.Sound.SoundManager.IsPlaying*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_IsPlaying_System_String_UnityEngine_Transform_" data-uid="VoxelPlayground.Sound.SoundManager.IsPlaying(System.String,UnityEngine.Transform)">
+  IsPlaying(string, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlaying(string soundEffectName, Transform owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffectName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_Mute_" data-uid="VoxelPlayground.Sound.SoundManager.Mute*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_Mute" data-uid="VoxelPlayground.Sound.SoundManager.Mute">
+  Mute()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void Mute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlayCollisionSoundEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PlayCollisionSoundEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlayCollisionSoundEvent_VoxelPlayground_Engine_SoundEffect_UnityEngine_Vector3_VoxelPlayground_Sound_SoundManager_SoundMixerType_System_Single_" data-uid="VoxelPlayground.Sound.SoundManager.PlayCollisionSoundEvent(VoxelPlayground.Engine.SoundEffect,UnityEngine.Vector3,VoxelPlayground.Sound.SoundManager.SoundMixerType,System.Single)">
+  PlayCollisionSoundEvent(SoundEffect, Vector3, SoundMixerType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayCollisionSoundEvent(SoundEffect soundEffect, Vector3 position, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX, float volumeFactor = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffect</code> <a class="xref" href="VoxelPlayground.Engine.SoundEffect.html">SoundEffect</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlayPersistentSound_" data-uid="VoxelPlayground.Sound.SoundManager.PlayPersistentSound*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlayPersistentSound_System_String_UnityEngine_Transform_UnityEngine_Vector3_VoxelPlayground_Sound_SoundManager_SoundMixerType_Sonity_SoundParameterIntensity_" data-uid="VoxelPlayground.Sound.SoundManager.PlayPersistentSound(System.String,UnityEngine.Transform,UnityEngine.Vector3,VoxelPlayground.Sound.SoundManager.SoundMixerType,Sonity.SoundParameterIntensity)">
+  PlayPersistentSound(string, Transform, Vector3, SoundMixerType, SoundParameterIntensity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayPersistentSound(string soundEffectName, Transform owner, Vector3 position, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX, SoundParameterIntensity intensity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffectName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>intensity</code> <span class="xref">SoundParameterIntensity</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySFX_BulletHit_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySFX_BulletHit*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySFX_BulletHit_System_UInt32_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySFX_BulletHit(System.UInt32,UnityEngine.Vector3,System.Single)">
+  PlaySFX_BulletHit(uint, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySFX_BulletHit(uint blockID, Vector3 pos, float volumeFactor = 0.33)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockID</code> <span class="xref">uint</span></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySound_BulletHit_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound_BulletHit*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySound_BulletHit_UnityEngine_Transform_UnityEngine_Vector3_System_Single_System_UInt32_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound_BulletHit(UnityEngine.Transform,UnityEngine.Vector3,System.Single,System.UInt32)">
+  PlaySound_BulletHit(Transform, Vector3, float, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySound_BulletHit(Transform rb, Vector3 pos, float volumeFactor = 0.33, uint blockId = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>blockId</code> <span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySound_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySound_Sonity_SoundEvent_UnityEngine_Vector3_System_Single_VoxelPlayground_Sound_SoundManager_SoundMixerType_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound(Sonity.SoundEvent,UnityEngine.Vector3,System.Single,VoxelPlayground.Sound.SoundManager.SoundMixerType)">
+  PlaySound(SoundEvent, Vector3, float, SoundMixerType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySound(SoundEvent soundEvent, Vector3 position, float volumeFactor = 1, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySound_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySound_System_UInt32_VoxelPlayground_Engine_SoundEffectType_UnityEngine_Vector3_System_Single_VoxelPlayground_Sound_SoundTag_VoxelPlayground_Engine_SoundEffectType_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySound(System.UInt32,VoxelPlayground.Engine.SoundEffectType,UnityEngine.Vector3,System.Single,VoxelPlayground.Sound.SoundTag,VoxelPlayground.Engine.SoundEffectType)">
+  PlaySound(uint, SoundEffectType, Vector3, float, SoundTag, SoundEffectType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySound(uint blockId, SoundEffectType soundType, Vector3 position, float volumeFactor = 1, SoundTag soundTag = null, SoundEffectType fallbackSoundType = SoundEffectType.Generic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockId</code> <span class="xref">uint</span></dt>
+    <dd></dd>
+    <dt><code>soundType</code> <a class="xref" href="VoxelPlayground.Engine.SoundEffectType.html">SoundEffectType</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>soundTag</code> <a class="xref" href="VoxelPlayground.Sound.SoundTag.html">SoundTag</a></dt>
+    <dd></dd>
+    <dt><code>fallbackSoundType</code> <a class="xref" href="VoxelPlayground.Engine.SoundEffectType.html">SoundEffectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySoundEffectByID_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEffectByID*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySoundEffectByID_System_UInt32_VoxelPlayground_Engine_SoundEffectType_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEffectByID(System.UInt32,VoxelPlayground.Engine.SoundEffectType,UnityEngine.Vector3,System.Single)">
+  PlaySoundEffectByID(uint, SoundEffectType, Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySoundEffectByID(uint blockID, SoundEffectType soundType, Vector3 position, float volumeFactor = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockID</code> <span class="xref">uint</span></dt>
+    <dd></dd>
+    <dt><code>soundType</code> <a class="xref" href="VoxelPlayground.Engine.SoundEffectType.html">SoundEffectType</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>volumeFactor</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySoundEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySoundEvent_Sonity_SoundEvent_UnityEngine_Transform_VoxelPlayground_Sound_SoundManager_SoundMixerType_Sonity_SoundParameterIntensity_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEvent(Sonity.SoundEvent,UnityEngine.Transform,VoxelPlayground.Sound.SoundManager.SoundMixerType,Sonity.SoundParameterIntensity)">
+  PlaySoundEvent(SoundEvent, Transform, SoundMixerType, SoundParameterIntensity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySoundEvent(SoundEvent soundEvent, Transform owner, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX, SoundParameterIntensity intensity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>intensity</code> <span class="xref">SoundParameterIntensity</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySoundEventAtPosition_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEventAtPosition*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySoundEventAtPosition_Sonity_SoundEvent_UnityEngine_Transform_UnityEngine_Vector3_VoxelPlayground_Sound_SoundManager_SoundMixerType_Sonity_SoundParameterIntensity_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundEventAtPosition(Sonity.SoundEvent,UnityEngine.Transform,UnityEngine.Vector3,VoxelPlayground.Sound.SoundManager.SoundMixerType,Sonity.SoundParameterIntensity)">
+  PlaySoundEventAtPosition(SoundEvent, Transform, Vector3, SoundMixerType, SoundParameterIntensity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySoundEventAtPosition(SoundEvent soundEvent, Transform owner, Vector3 position, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX, SoundParameterIntensity intensity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>intensity</code> <span class="xref">SoundParameterIntensity</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PlaySoundOneShotAt_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundOneShotAt*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PlaySoundOneShotAt_System_String_UnityEngine_Vector3_VoxelPlayground_Sound_SoundManager_SoundMixerType_UnityEngine_Transform_Sonity_SoundParameterIntensity_" data-uid="VoxelPlayground.Sound.SoundManager.PlaySoundOneShotAt(System.String,UnityEngine.Vector3,VoxelPlayground.Sound.SoundManager.SoundMixerType,UnityEngine.Transform,Sonity.SoundParameterIntensity)">
+  PlaySoundOneShotAt(string, Vector3, SoundMixerType, Transform, SoundParameterIntensity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySoundOneShotAt(string soundEffectName, Vector3 position, SoundManager.SoundMixerType soundMixerType = SoundMixerType.SFX, Transform follow = null, SoundParameterIntensity intensity = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffectName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>follow</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+    <dt><code>intensity</code> <span class="xref">SoundParameterIntensity</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PopAllBgmEvents_" data-uid="VoxelPlayground.Sound.SoundManager.PopAllBgmEvents*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PopAllBgmEvents" data-uid="VoxelPlayground.Sound.SoundManager.PopAllBgmEvents">
+  PopAllBgmEvents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopAllBgmEvents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PopBgmEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PopBgmEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PopBgmEvent_VoxelPlayground_Sound_BgmEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PopBgmEvent(VoxelPlayground.Sound.BgmEvent)">
+  PopBgmEvent(BgmEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopBgmEvent(BgmEvent record)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>record</code> <a class="xref" href="VoxelPlayground.Sound.BgmEvent.html">BgmEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_PushBgmEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PushBgmEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_PushBgmEvent_VoxelPlayground_Sound_BgmEvent_" data-uid="VoxelPlayground.Sound.SoundManager.PushBgmEvent(VoxelPlayground.Sound.BgmEvent)">
+  PushBgmEvent(BgmEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushBgmEvent(BgmEvent record)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>record</code> <a class="xref" href="VoxelPlayground.Sound.BgmEvent.html">BgmEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_SetMixerPitch_" data-uid="VoxelPlayground.Sound.SoundManager.SetMixerPitch*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_SetMixerPitch_System_Single_" data-uid="VoxelPlayground.Sound.SoundManager.SetMixerPitch(System.Single)">
+  SetMixerPitch(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SetMixerPitch(float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_SetVolume_" data-uid="VoxelPlayground.Sound.SoundManager.SetVolume*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_SetVolume_VoxelPlayground_Sound_SoundManager_SoundMixerType_System_Single_" data-uid="VoxelPlayground.Sound.SoundManager.SetVolume(VoxelPlayground.Sound.SoundManager.SoundMixerType,System.Single)">
+  SetVolume(SoundMixerType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SetVolume(SoundManager.SoundMixerType soundMixerType, float volume)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundMixerType</code> <a class="xref" href="VoxelPlayground.Sound.SoundManager.html">SoundManager</a>.<a class="xref" href="VoxelPlayground.Sound.SoundManager.SoundMixerType.html">SoundMixerType</a></dt>
+    <dd></dd>
+    <dt><code>volume</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_StopAllSoundEventOwner_" data-uid="VoxelPlayground.Sound.SoundManager.StopAllSoundEventOwner*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_StopAllSoundEventOwner_UnityEngine_Transform_" data-uid="VoxelPlayground.Sound.SoundManager.StopAllSoundEventOwner(UnityEngine.Transform)">
+  StopAllSoundEventOwner(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllSoundEventOwner(Transform owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_StopPersistentSound_" data-uid="VoxelPlayground.Sound.SoundManager.StopPersistentSound*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_StopPersistentSound_System_String_UnityEngine_Transform_" data-uid="VoxelPlayground.Sound.SoundManager.StopPersistentSound(System.String,UnityEngine.Transform)">
+  StopPersistentSound(string, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopPersistentSound(string soundEffectName, Transform owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEffectName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_StopSoundEvent_" data-uid="VoxelPlayground.Sound.SoundManager.StopSoundEvent*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_StopSoundEvent_Sonity_SoundEvent_UnityEngine_Transform_" data-uid="VoxelPlayground.Sound.SoundManager.StopSoundEvent(Sonity.SoundEvent,UnityEngine.Transform)">
+  StopSoundEvent(SoundEvent, Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSoundEvent(SoundEvent soundEvent, Transform owner = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundEvent</code> <span class="xref">SoundEvent</span></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Sound_SoundManager_UnMute_" data-uid="VoxelPlayground.Sound.SoundManager.UnMute*"></a>
+
+  <h3 id="VoxelPlayground_Sound_SoundManager_UnMute" data-uid="VoxelPlayground.Sound.SoundManager.UnMute">
+  UnMute()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnMute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

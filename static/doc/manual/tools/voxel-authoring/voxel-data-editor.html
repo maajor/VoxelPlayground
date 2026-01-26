@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Voxel Data Editor | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Voxel Data Editor | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="voxel-data-editor">Voxel Data Editor</h1>
+
+<p>The <strong>Voxel Data Editor</strong> is a Unity Editor tool included in the Vox Mod Tools. It allows you to inspect, visualize, and modify the Material IDs of voxel data (<code>.txt</code> files) directly within Unity, without needing to go back to MagicaVoxel.</p>
+<p>This is particularly useful for:</p>
+<ul>
+<li>Correcting Material ID mapping mistakes.</li>
+<li>Batch replacing materials (e.g., changing all &quot;Wood&quot; to &quot;Metal&quot;).</li>
+<li>Setting up specific material configurations for character models.</li>
+</ul>
+<p><img src="../../../resources/VoxDataEditor.jpg" alt="Voxel Data Editor"></p>
+<h2 id="opening-the-tool">Opening the Tool</h2>
+<p>To open the tool, navigate to the Unity menu:
+<strong>Vox Mod Tools</strong> &gt; <strong>Voxel Data Editor</strong></p>
+<h2 id="workflow">Workflow</h2>
+<h3 id="1-load-voxel-data">1. Load Voxel Data</h3>
+<ol>
+<li>Assign your voxel data text file (generated after importing/processing <code>.vox</code> files) to the <strong>Input .txt</strong> field.</li>
+<li>Click <strong>Load</strong>.</li>
+</ol>
+<h3 id="2-inspect-and-visualize">2. Inspect and Visualize</h3>
+<p>Once loaded, the tool displays a list of <strong>Existing IDs</strong> found in the model.</p>
+<ul>
+<li><strong>List</strong>: Shows the Material ID, Material Name, and the count of voxels using that ID.</li>
+<li><strong>Draw Toggle</strong>: Check the <strong>Draw</strong> box next to an ID to visualize those specific voxels in the Scene View with red wireframe gizmos. This helps you identify which part of the model uses which material.</li>
+</ul>
+<h3 id="3-edit-material-ids">3. Edit Material IDs</h3>
+<p>You can perform batch operations to change Material IDs.</p>
+<h4 id="replace-specific-id">Replace Specific ID</h4>
+<ul>
+<li><strong>From ID</strong>: Select the ID you want to change.</li>
+<li><strong>To ID</strong>: Select the target Material ID (by name) you want to change it to.</li>
+<li><strong>Replace</strong>: Click to replace all voxels of &quot;From ID&quot; with &quot;To ID&quot;.</li>
+</ul>
+<h4 id="replace-all">Replace All</h4>
+<ul>
+<li><strong>To ID</strong>: Select the target Material ID.</li>
+<li><strong>Replace All</strong>: Changes <strong>every</strong> voxel in the model (except empty space/Air) to the selected &quot;To ID&quot;.</li>
+</ul>
+<h4 id="setup-id-for-character">Setup ID For Character</h4>
+<p>This is a specialized function for configuring humanoid character models. It automatically processes the model with the following logic:</p>
+<ul>
+<li><strong>Internal Voxels</strong>: Voxels inside the model (not on the surface) are set to <strong>Skin</strong> ID and given a &quot;flesh&quot; color.</li>
+<li><strong>Surface Voxels</strong>:
+<ul>
+<li><strong>Bone</strong>: Colors are adjusted to a skin tone.</li>
+<li><strong>Others</strong>: Most surface voxels are converted to <strong>Skin</strong> ID (preserving their color), except for specific types like <strong>Glow</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-save-changes">4. Save Changes</h3>
+<p>After making edits:</p>
+<ol>
+<li><strong>Output Name</strong>: Specify a filename for the new data.</li>
+<li><strong>Output Folder</strong>: (Optional) Specify a folder path. Defaults to the source file's location.</li>
+<li>Click <strong>Save As .txt</strong> to write the modified voxel data to disk.</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

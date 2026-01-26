@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AICarController | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AICarController | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.AI.AICarController">
+
+
+
+  <h1 id="VoxelPlayground_AI_AICarController" data-uid="VoxelPlayground.AI.AICarController" class="text-break">
+Class AICarController  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.AI.html">AI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AICarController : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">AICarController</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_accelerationScale" data-uid="VoxelPlayground.AI.AICarController.accelerationScale">
+  accelerationScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float accelerationScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_curLaneIndex" data-uid="VoxelPlayground.AI.AICarController.curLaneIndex">
+  curLaneIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int curLaneIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_detectDistance" data-uid="VoxelPlayground.AI.AICarController.detectDistance">
+  detectDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float detectDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_difficulty" data-uid="VoxelPlayground.AI.AICarController.difficulty">
+  difficulty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Difficulty difficulty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.AI.Difficulty.html">Difficulty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_entityCar" data-uid="VoxelPlayground.AI.AICarController.entityCar">
+  entityCar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityCar entityCar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityCar.html">EntityCar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_maxAcceleration" data-uid="VoxelPlayground.AI.AICarController.maxAcceleration">
+  maxAcceleration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxAcceleration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_maxTorque" data-uid="VoxelPlayground.AI.AICarController.maxTorque">
+  maxTorque
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxTorque</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_minAcceleration" data-uid="VoxelPlayground.AI.AICarController.minAcceleration">
+  minAcceleration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minAcceleration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_obstacleAvoidanceScale" data-uid="VoxelPlayground.AI.AICarController.obstacleAvoidanceScale">
+  obstacleAvoidanceScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float obstacleAvoidanceScale = 5</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_raycastOffset" data-uid="VoxelPlayground.AI.AICarController.raycastOffset">
+  raycastOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 raycastOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_slowingRadius" data-uid="VoxelPlayground.AI.AICarController.slowingRadius">
+  slowingRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float slowingRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_startUpRadius" data-uid="VoxelPlayground.AI.AICarController.startUpRadius">
+  startUpRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float startUpRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_steeringSmoothFactor" data-uid="VoxelPlayground.AI.AICarController.steeringSmoothFactor">
+  steeringSmoothFactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float steeringSmoothFactor = 0.85</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_AI_AICarController_torqueScale" data-uid="VoxelPlayground.AI.AICarController.torqueScale">
+  torqueScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float torqueScale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_AI_AICarController_IsDrivingToTarget_" data-uid="VoxelPlayground.AI.AICarController.IsDrivingToTarget*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_IsDrivingToTarget" data-uid="VoxelPlayground.AI.AICarController.IsDrivingToTarget">
+  IsDrivingToTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDrivingToTarget { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_AI_AICarController_CheckAndGetUnstuck_" data-uid="VoxelPlayground.AI.AICarController.CheckAndGetUnstuck*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_CheckAndGetUnstuck" data-uid="VoxelPlayground.AI.AICarController.CheckAndGetUnstuck">
+  CheckAndGetUnstuck()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckAndGetUnstuck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_CheckValidTargetWayPoint_" data-uid="VoxelPlayground.AI.AICarController.CheckValidTargetWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_CheckValidTargetWayPoint_VoxelPlayground_Level_WayPoint_" data-uid="VoxelPlayground.AI.AICarController.CheckValidTargetWayPoint(VoxelPlayground.Level.WayPoint)">
+  CheckValidTargetWayPoint(WayPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckValidTargetWayPoint(WayPoint targetWayPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetWayPoint</code> <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_DriveToNextWayPoint_" data-uid="VoxelPlayground.AI.AICarController.DriveToNextWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_DriveToNextWayPoint" data-uid="VoxelPlayground.AI.AICarController.DriveToNextWayPoint">
+  DriveToNextWayPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DriveToNextWayPoint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_DriveToTarget_" data-uid="VoxelPlayground.AI.AICarController.DriveToTarget*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_DriveToTarget_UnityEngine_Vector3_VoxelPlayground_AI_NavigationMode_System_Action_System_Boolean_" data-uid="VoxelPlayground.AI.AICarController.DriveToTarget(UnityEngine.Vector3,VoxelPlayground.AI.NavigationMode,System.Action,System.Boolean)">
+  DriveToTarget(Vector3, NavigationMode, Action, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DriveToTarget(Vector3 targetPos, NavigationMode mode, Action callBack = null, bool clearCallBack = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="VoxelPlayground.AI.NavigationMode.html">NavigationMode</a></dt>
+    <dd></dd>
+    <dt><code>callBack</code> <span class="xref">Action</span></dt>
+    <dd></dd>
+    <dt><code>clearCallBack</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_EmptyAllSeats_" data-uid="VoxelPlayground.AI.AICarController.EmptyAllSeats*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_EmptyAllSeats" data-uid="VoxelPlayground.AI.AICarController.EmptyAllSeats">
+  EmptyAllSeats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void EmptyAllSeats()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_FollowWaypoints_" data-uid="VoxelPlayground.AI.AICarController.FollowWaypoints*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_FollowWaypoints" data-uid="VoxelPlayground.AI.AICarController.FollowWaypoints">
+  FollowWaypoints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void FollowWaypoints()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_Init_" data-uid="VoxelPlayground.AI.AICarController.Init*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_Init_VoxelPlayground_Entity_EntityCar_" data-uid="VoxelPlayground.AI.AICarController.Init(VoxelPlayground.Entity.EntityCar)">
+  Init(EntityCar)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(EntityCar entityCar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityCar</code> <a class="xref" href="VoxelPlayground.Entity.EntityCar.html">EntityCar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_SetDifficulty_" data-uid="VoxelPlayground.AI.AICarController.SetDifficulty*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_SetDifficulty_VoxelPlayground_AI_Difficulty_" data-uid="VoxelPlayground.AI.AICarController.SetDifficulty(VoxelPlayground.AI.Difficulty)">
+  SetDifficulty(Difficulty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDifficulty(Difficulty difficulty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>difficulty</code> <a class="xref" href="VoxelPlayground.AI.Difficulty.html">Difficulty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_Stop_" data-uid="VoxelPlayground.AI.AICarController.Stop*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_Stop" data-uid="VoxelPlayground.AI.AICarController.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_StopGetUnstuck_" data-uid="VoxelPlayground.AI.AICarController.StopGetUnstuck*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_StopGetUnstuck" data-uid="VoxelPlayground.AI.AICarController.StopGetUnstuck">
+  StopGetUnstuck()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopGetUnstuck()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_AI_AICarController_UpdateObstacleAvoidance_" data-uid="VoxelPlayground.AI.AICarController.UpdateObstacleAvoidance*"></a>
+
+  <h3 id="VoxelPlayground_AI_AICarController_UpdateObstacleAvoidance_System_Single_" data-uid="VoxelPlayground.AI.AICarController.UpdateObstacleAvoidance(System.Single)">
+  UpdateObstacleAvoidance(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateObstacleAvoidance(float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

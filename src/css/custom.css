@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ifm-font-family-base: 'Jersey 25', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-background-color: #000;
+  --ifm-color-content: #fff;
+  --ifm-navbar-background-color: #000;
+  --ifm-navbar-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #dc2626;
+  --ifm-footer-background-color: #18181b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  letter-spacing: 0.1em;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.navbar__inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+}
+
+.navbar__items--right .navbar__link {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar__items--right .navbar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: #dc2626;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.navbar__items--right .navbar__link:hover::after,
+.navbar__items--right .navbar__link:focus-visible::after,
+.navbar__items--right .navbar__link--active::after {
+  transform: scaleX(1);
+}
+
+.navbar__items--right .navbar__link--active {
+  color: #fff;
+}
+
+.footer--dark {
+  background-color: #18181b;
+}

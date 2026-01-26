@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>MagicaVoxel | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="MagicaVoxel | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="magicavoxel">MagicaVoxel</h1>
+
+<p><strong>MagicaVoxel</strong> is a free, lightweight 8-bit voxel art editor and interactive path tracing renderer. It is the primary tool used for creating voxel models for Voxel Playground.</p>
+<h2 id="download">Download</h2>
+<p>You can download MagicaVoxel from the official website:
+<a href="https://ephtracy.github.io/">https://ephtracy.github.io/</a></p>
+<h2 id="usage">Usage</h2>
+<p>Use MagicaVoxel to create your 3D models and save them as <code>.vox</code> files. These files are used as the source for voxel data in your mods.</p>
+<h2 id="material-id-mapping">Material ID Mapping</h2>
+<p>In Voxel Playground, the physical properties of a voxel (such as hardness, flammability, and visual type) are determined by its <strong>Material ID</strong>. When you create a model in MagicaVoxel, the game uses the <strong>Color Palette Index</strong> of each voxel to assign its Material ID.</p>
+<h3 id="mapping-logic">Mapping Logic</h3>
+<p><img src="../../../resources/MagicaVoxelId.jpg" alt="Magica Voxel Id"></p>
+<p>The mapping divides the palette into groups of 8. Every <strong>8 colors</strong> in the MagicaVoxel palette correspond to <strong>1 Material ID</strong>.</p>
+<p>The formula used by the game is:
+<code>Material ID = Ceil(Palette Index / 8)</code></p>
+<ul>
+<li><strong>Palette Indices 1-8</strong> <span class="math">\(\rightarrow\)</span> <strong>Material ID 1</strong></li>
+<li><strong>Palette Indices 9-16</strong> <span class="math">\(\rightarrow\)</span> <strong>Material ID 2</strong></li>
+<li><strong>Palette Indices 17-24</strong> <span class="math">\(\rightarrow\)</span> <strong>Material ID 3</strong></li>
+<li>...and so on.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: The maximum supported Material ID is <strong>31</strong>. Any palette index that maps to a value higher than 31 will be clamped to ID 31.</p>
+</blockquote>
+<h3 id="editing-ids-in-unity">Editing IDs in Unity</h3>
+<p>If you need to adjust Material IDs after importing—for example, to fix mapping errors or batch-replace materials—you can use the <a href="voxel-data-editor.html">Voxel Data Editor</a>. It allows you to visualize and reassign IDs directly in Unity without modifying the original MagicaVoxel file.</p>
+<h3 id="quick-reference">Quick Reference</h3>
+<p>Below is a quick reference for the first few ranges. For the complete list of Material IDs and their specific properties (Hardness, Metallic, etc.), please consult the <a href="../../gameplay/voxel/material-id-visual.html">Material ID and Visual</a> documentation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Palette Index Range</th>
+<th style="text-align: left;">Material ID</th>
+<th style="text-align: left;">Material Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 - 8</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Wood</td>
+</tr>
+<tr>
+<td style="text-align: left;">9 - 16</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Grass</td>
+</tr>
+<tr>
+<td style="text-align: left;">17 - 24</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Plastic</td>
+</tr>
+<tr>
+<td style="text-align: left;">25 - 32</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Bone</td>
+</tr>
+<tr>
+<td style="text-align: left;">33 - 40</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Skin</td>
+</tr>
+<tr>
+<td style="text-align: left;">41 - 48</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Dirt</td>
+</tr>
+<tr>
+<td style="text-align: left;">49 - 56</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Stone</td>
+</tr>
+<tr>
+<td style="text-align: left;">57 - 64</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Brick</td>
+</tr>
+<tr>
+<td style="text-align: left;">65 - 72</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">Concrete</td>
+</tr>
+<tr>
+<td style="text-align: left;">73 - 80</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Asphalt</td>
+</tr>
+<tr>
+<td style="text-align: left;">81 - 88</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Crust</td>
+</tr>
+<tr>
+<td style="text-align: left;">89 - 96</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Metal</td>
+</tr>
+<tr>
+<td style="text-align: left;">97 - 104</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Glow</td>
+</tr>
+<tr>
+<td style="text-align: left;">105 - 112</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Glass</td>
+</tr>
+<tr>
+<td style="text-align: left;">113 - 120</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">HarderSkin</td>
+</tr>
+<tr>
+<td style="text-align: left;">121 - 128</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">HardSkin</td>
+</tr>
+<tr>
+<td style="text-align: left;">129 - 136</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">FistSkin</td>
+</tr>
+<tr>
+<td style="text-align: left;">137 - 144</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;">Armor</td>
+</tr>
+<tr>
+<td style="text-align: left;">145 - 152</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;">Water</td>
+</tr>
+<tr>
+<td style="text-align: left;">153 - 160</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">EnergyShield</td>
+</tr>
+<tr>
+<td style="text-align: left;">161 - 168</td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">PierceBullet</td>
+</tr>
+<tr>
+<td style="text-align: left;">169 - 176</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">CarbonSteel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="import-into-editor">Import Into Editor</h2>
+<p>Once you have created your <code>.vox</code> models, you need to import them into the ModToolkit Editor to use them in your mods. This process involves the <strong>Asset Processor</strong>.</p>
+<ol>
+<li>Open the <strong>Asset Processor</strong>.</li>
+<li>Import your <code>.vox</code> files.</li>
+<li>Click <strong>Convert</strong> to generate the prefabs.</li>
+</ol>
+<img src="../../../resources/ImportVox.png" alt="Importing vox files via Asset Processor" style="max-width: 720px;">
+<h3 id="post-import-configuration">Post-Import Configuration</h3>
+<p>After conversion, the system generates a prefab for your model. This prefab will typically have a <strong>VoxelObjectProxy</strong> component attached, which handles rendering, physics, and persistence.</p>
+<h2 id="naming-for-scene">Naming for scene</h2>
+<p>When creating a complex scene file in MagicaVoxel that contains multiple objects, you can control how each object is imported into the game by adding specific prefixes to their names in the MagicaVoxel &quot;World&quot; editor.</p>
+<p>The importer checks these prefixes to assign the correct physical properties, collision layers, and behaviors.</p>
+<h3 id="prefix-rules">Prefix Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Prefix</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>A_</code></strong></td>
+<td style="text-align: left;"><strong>Static Environment</strong></td>
+<td style="text-align: left;">Used for the main static geometry like floors, walls, and terrain.</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Building<br>• <strong>Tag</strong>: &quot;Floor&quot;<br>• <strong>Physics</strong>: Kinematic (Immovable)<br>• <strong>Destructible</strong>: No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>B_</code></strong></td>
+<td style="text-align: left;"><strong>Dynamic Prop</strong></td>
+<td style="text-align: left;">Used for free-moving objects like crates, barrels, or debris.</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic (Affected by gravity)<br>• <strong>Destructible</strong>: Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>C_</code></strong></td>
+<td style="text-align: left;"><strong>Strong Connected</strong></td>
+<td style="text-align: left;">Used for objects that need to be firmly anchored to the world (e.g., fixtures).</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>UnyieldingArea</code> component with a large collider to stabilize connection.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>D_</code></strong></td>
+<td style="text-align: left;"><strong>Weak Connected</strong></td>
+<td style="text-align: left;">Used for hanging or jointed objects (e.g., lamps, signs).</td>
+<td style="text-align: left;">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>AttachmentPoint</code> (facing down) and configures a joint.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="default-behavior">Default Behavior</h3>
+<p>If an object name does not start with any of the specific prefixes (e.g., <code>MyTable</code>, <code>Chair</code>):</p>
+<ul>
+<li><strong>Type</strong>: Static Prop</li>
+<li><strong>Layer</strong>: Item</li>
+<li><strong>Physics</strong>: Kinematic (Immovable)</li>
+<li><strong>Destructible</strong>: No</li>
+</ul>
+<blockquote>
+<p><strong>Recommendation</strong>: Always use <strong><code>A_</code></strong> for ground and structural elements to ensure they are recognized as &quot;Floor&quot; for navigation and physics interactions. Use <strong><code>B_</code></strong> for any object you want the player to interact with physically.</p>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

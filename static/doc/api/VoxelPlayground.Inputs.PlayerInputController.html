@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerInputController | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerInputController | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Inputs.PlayerInputController">
+
+
+
+  <h1 id="VoxelPlayground_Inputs_PlayerInputController" data-uid="VoxelPlayground.Inputs.PlayerInputController" class="text-break">
+Class PlayerInputController  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Inputs.html">Inputs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerInputController : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">PlayerInputController</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Inputs.FlatscreenController.html">FlatscreenController</a></div>
+      <div><a class="xref" href="VoxelPlayground.Inputs.FreecamPCController.html">FreecamPCController</a></div>
+      <div><a class="xref" href="VoxelPlayground.Inputs.VRController.html">VRController</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_m_Inputs" data-uid="VoxelPlayground.Inputs.PlayerInputController.m_Inputs">
+  m_Inputs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameplayInputs m_Inputs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Inputs.GameplayInputs.html">GameplayInputs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_AbilityL_" data-uid="VoxelPlayground.Inputs.PlayerInputController.AbilityL*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_AbilityL" data-uid="VoxelPlayground.Inputs.PlayerInputController.AbilityL">
+  AbilityL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AbilityL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_AbilityR_" data-uid="VoxelPlayground.Inputs.PlayerInputController.AbilityR*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_AbilityR" data-uid="VoxelPlayground.Inputs.PlayerInputController.AbilityR">
+  AbilityR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AbilityR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_ControlledCharacter_" data-uid="VoxelPlayground.Inputs.PlayerInputController.ControlledCharacter*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_ControlledCharacter" data-uid="VoxelPlayground.Inputs.PlayerInputController.ControlledCharacter">
+  ControlledCharacter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntityCharacter ControlledCharacter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_ControlledVehicle_" data-uid="VoxelPlayground.Inputs.PlayerInputController.ControlledVehicle*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_ControlledVehicle" data-uid="VoxelPlayground.Inputs.PlayerInputController.ControlledVehicle">
+  ControlledVehicle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IVehicle ControlledVehicle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.IVehicle.html">IVehicle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_FireL_" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireL*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_FireL" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireL">
+  FireL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FireL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_FireLValue_" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireLValue*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_FireLValue" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireLValue">
+  FireLValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FireLValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_FireR_" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireR*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_FireR" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireR">
+  FireR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FireR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_FireRValue_" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireRValue*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_FireRValue" data-uid="VoxelPlayground.Inputs.PlayerInputController.FireRValue">
+  FireRValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FireRValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_FlyUpDownInput_" data-uid="VoxelPlayground.Inputs.PlayerInputController.FlyUpDownInput*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_FlyUpDownInput" data-uid="VoxelPlayground.Inputs.PlayerInputController.FlyUpDownInput">
+  FlyUpDownInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FlyUpDownInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_GripL_" data-uid="VoxelPlayground.Inputs.PlayerInputController.GripL*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_GripL" data-uid="VoxelPlayground.Inputs.PlayerInputController.GripL">
+  GripL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GripL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_GripR_" data-uid="VoxelPlayground.Inputs.PlayerInputController.GripR*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_GripR" data-uid="VoxelPlayground.Inputs.PlayerInputController.GripR">
+  GripR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GripR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_HandMenu_" data-uid="VoxelPlayground.Inputs.PlayerInputController.HandMenu*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_HandMenu" data-uid="VoxelPlayground.Inputs.PlayerInputController.HandMenu">
+  HandMenu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandMenu { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_Jump_" data-uid="VoxelPlayground.Inputs.PlayerInputController.Jump*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_Jump" data-uid="VoxelPlayground.Inputs.PlayerInputController.Jump">
+  Jump
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Jump { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_LookInput_" data-uid="VoxelPlayground.Inputs.PlayerInputController.LookInput*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_LookInput" data-uid="VoxelPlayground.Inputs.PlayerInputController.LookInput">
+  LookInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 LookInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_MoveInput_" data-uid="VoxelPlayground.Inputs.PlayerInputController.MoveInput*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_MoveInput" data-uid="VoxelPlayground.Inputs.PlayerInputController.MoveInput">
+  MoveInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MoveInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_PutOnBackL_" data-uid="VoxelPlayground.Inputs.PlayerInputController.PutOnBackL*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_PutOnBackL" data-uid="VoxelPlayground.Inputs.PlayerInputController.PutOnBackL">
+  PutOnBackL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PutOnBackL { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_PutOnBackR_" data-uid="VoxelPlayground.Inputs.PlayerInputController.PutOnBackR*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_PutOnBackR" data-uid="VoxelPlayground.Inputs.PlayerInputController.PutOnBackR">
+  PutOnBackR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PutOnBackR { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_SlowMotion_" data-uid="VoxelPlayground.Inputs.PlayerInputController.SlowMotion*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_SlowMotion" data-uid="VoxelPlayground.Inputs.PlayerInputController.SlowMotion">
+  SlowMotion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SlowMotion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_Sprint_" data-uid="VoxelPlayground.Inputs.PlayerInputController.Sprint*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_Sprint" data-uid="VoxelPlayground.Inputs.PlayerInputController.Sprint">
+  Sprint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Sprint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_ThrottleInput_" data-uid="VoxelPlayground.Inputs.PlayerInputController.ThrottleInput*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_ThrottleInput" data-uid="VoxelPlayground.Inputs.PlayerInputController.ThrottleInput">
+  ThrottleInput
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ThrottleInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Inputs_PlayerInputController_OnPause_" data-uid="VoxelPlayground.Inputs.PlayerInputController.OnPause*"></a>
+
+  <h3 id="VoxelPlayground_Inputs_PlayerInputController_OnPause_UnityEngine_InputSystem_InputAction_CallbackContext_" data-uid="VoxelPlayground.Inputs.PlayerInputController.OnPause(UnityEngine.InputSystem.InputAction.CallbackContext)">
+  OnPause(CallbackContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPause(InputAction.CallbackContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">InputAction</span>.<span class="xref">CallbackContext</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

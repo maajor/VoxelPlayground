@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttackerSpawner | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttackerSpawner | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Level.AttackerSpawner">
+
+
+
+  <h1 id="VoxelPlayground_Level_AttackerSpawner" data-uid="VoxelPlayground.Level.AttackerSpawner" class="text-break">
+Class AttackerSpawner  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Level.html">Level</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public class AttackerSpawner : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">AttackerSpawner</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_CarPassengersCount" data-uid="VoxelPlayground.Level.AttackerSpawner.m_CarPassengersCount">
+  m_CarPassengersCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] m_CarPassengersCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_Equipments" data-uid="VoxelPlayground.Level.AttackerSpawner.m_Equipments">
+  m_Equipments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;m_EquipedWeapons&quot;)]
+[InfoBox(&quot;根据已刷怪数(NumSpawned)来选择武器, 若NumSpawned超出本列表 则不再刷怪\n可放入车辆 届时会刷CarPassengers[NumSpawnedCar]个角色坐上车&quot;, InfoMessageType.Info, null)]
+public GameObject[] m_Equipments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_NumDeaths" data-uid="VoxelPlayground.Level.AttackerSpawner.m_NumDeaths">
+  m_NumDeaths
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+[ReadOnly]
+public int m_NumDeaths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_NumSpawned" data-uid="VoxelPlayground.Level.AttackerSpawner.m_NumSpawned">
+  m_NumSpawned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_NumSpawned</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_NumSpawnedCar" data-uid="VoxelPlayground.Level.AttackerSpawner.m_NumSpawnedCar">
+  m_NumSpawnedCar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_NumSpawnedCar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_PrefabCars" data-uid="VoxelPlayground.Level.AttackerSpawner.m_PrefabCars">
+  m_PrefabCars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;没啥用 可能稍后删掉&quot;, InfoMessageType.Info, null)]
+public GameObject[] m_PrefabCars</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_SpawnAlivesIdxDeaths" data-uid="VoxelPlayground.Level.AttackerSpawner.m_SpawnAlivesIdxDeaths">
+  m_SpawnAlivesIdxDeaths
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;同屏角色数量 (index=死亡数)&quot;, InfoMessageType.Info, null)]
+[FormerlySerializedAs(&quot;m_DeathsToExists&quot;)]
+public int[] m_SpawnAlivesIdxDeaths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_SpawnAwaitIdxDeaths" data-uid="VoxelPlayground.Level.AttackerSpawner.m_SpawnAwaitIdxDeaths">
+  m_SpawnAwaitIdxDeaths
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;刷下个怪的间隔等待时间 (index=死亡数)&quot;, InfoMessageType.Info, null)]
+public float[] m_SpawnAwaitIdxDeaths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_SpawnedAliving" data-uid="VoxelPlayground.Level.AttackerSpawner.m_SpawnedAliving">
+  m_SpawnedAliving
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+[ReadOnly]
+public List&lt;EntityCharacter&gt; m_SpawnedAliving</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_SpawnPoints" data-uid="VoxelPlayground.Level.AttackerSpawner.m_SpawnPoints">
+  m_SpawnPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;角色SpawnPoints&quot;, InfoMessageType.Info, null)]
+public Transform[] m_SpawnPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_m_TimeNextSpawnUntil" data-uid="VoxelPlayground.Level.AttackerSpawner.m_TimeNextSpawnUntil">
+  m_TimeNextSpawnUntil
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+[ReadOnly]
+public float m_TimeNextSpawnUntil</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_spawnCharacterTypeIndex" data-uid="VoxelPlayground.Level.AttackerSpawner.spawnCharacterTypeIndex">
+  spawnCharacterTypeIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;生成某个角色 主菜单角色列表[idx]&quot;, InfoMessageType.Info, null)]
+public int spawnCharacterTypeIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Level_AttackerSpawner_GetNextSpawnEquipmentPrefab_" data-uid="VoxelPlayground.Level.AttackerSpawner.GetNextSpawnEquipmentPrefab*"></a>
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_GetNextSpawnEquipmentPrefab" data-uid="VoxelPlayground.Level.AttackerSpawner.GetNextSpawnEquipmentPrefab">
+  GetNextSpawnEquipmentPrefab()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GetNextSpawnEquipmentPrefab()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_AttackerSpawner_SpawnCar_" data-uid="VoxelPlayground.Level.AttackerSpawner.SpawnCar*"></a>
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_SpawnCar_UnityEngine_GameObject_UnityEngine_Vector3_System_Int32_System_Single_UnityEngine_Quaternion_System_Boolean_" data-uid="VoxelPlayground.Level.AttackerSpawner.SpawnCar(UnityEngine.GameObject,UnityEngine.Vector3,System.Int32,System.Single,UnityEngine.Quaternion,System.Boolean)">
+  SpawnCar(GameObject, Vector3, int, float, Quaternion, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SpawnCar(GameObject prefabCar, Vector3 spawnPoint, int maxPassengers = 2, float timeIntervalSpawnPassengers = 0.2, Quaternion spawnPointRot = default, bool isTracked = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabCar</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a></dt>
+    <dd></dd>
+    <dt><code>spawnPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>maxPassengers</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>timeIntervalSpawnPassengers</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>spawnPointRot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>isTracked</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_AttackerSpawner_SpawnCharacterAdvanced_" data-uid="VoxelPlayground.Level.AttackerSpawner.SpawnCharacterAdvanced*"></a>
+
+  <h3 id="VoxelPlayground_Level_AttackerSpawner_SpawnCharacterAdvanced_UnityEngine_Vector3_System_Boolean_System_Boolean_" data-uid="VoxelPlayground.Level.AttackerSpawner.SpawnCharacterAdvanced(UnityEngine.Vector3,System.Boolean,System.Boolean)">
+  SpawnCharacterAdvanced(Vector3, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;EntityCharacter&gt; SpawnCharacterAdvanced(Vector3 spawnPoint, bool equipWeapon = false, bool isTracked = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spawnPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>equipWeapon</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>isTracked</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

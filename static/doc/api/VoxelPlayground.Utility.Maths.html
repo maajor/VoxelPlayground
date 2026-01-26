@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Maths | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Maths | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Utility.Maths">
+
+
+
+  <h1 id="VoxelPlayground_Utility_Maths" data-uid="VoxelPlayground.Utility.Maths" class="text-break">
+Class Maths  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Utility.html">Utility</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Maths</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Maths</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Utility_Maths_CalculateRotatedBounds_" data-uid="VoxelPlayground.Utility.Maths.CalculateRotatedBounds*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_CalculateRotatedBounds_UnityEngine_Bounds_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Utility.Maths.CalculateRotatedBounds(UnityEngine.Bounds,UnityEngine.Vector3,UnityEngine.Quaternion)">
+  CalculateRotatedBounds(Bounds, Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bounds CalculateRotatedBounds(this Bounds localBounds, Vector3 position, Quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localBounds</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_Clamp_" data-uid="VoxelPlayground.Utility.Maths.Clamp*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_Clamp_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.Clamp(System.Single,System.Single,System.Single)">
+  Clamp(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Clamp(this float value, float min, float max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>min</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_Clamp_" data-uid="VoxelPlayground.Utility.Maths.Clamp*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_Clamp_System_Single_UnityEngine_Vector2_" data-uid="VoxelPlayground.Utility.Maths.Clamp(System.Single,UnityEngine.Vector2)">
+  Clamp(float, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Clamp(this float value, Vector2 minMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>minMax</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampMagnitude_" data-uid="VoxelPlayground.Utility.Maths.ClampMagnitude*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampMagnitude_UnityEngine_Vector3_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ClampMagnitude(UnityEngine.Vector3,System.Single,System.Single)">
+  ClampMagnitude(Vector3, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ClampMagnitude(this Vector3 v, float radiusMin, float radiusMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radiusMin</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>radiusMax</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampMax_" data-uid="VoxelPlayground.Utility.Maths.ClampMax*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampMax_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ClampMax(System.Single,System.Single)">
+  ClampMax(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ClampMax(this float value, float max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampMaxMagnitude_" data-uid="VoxelPlayground.Utility.Maths.ClampMaxMagnitude*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampMaxMagnitude_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ClampMaxMagnitude(UnityEngine.Vector3,System.Single)">
+  ClampMaxMagnitude(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ClampMaxMagnitude(this Vector3 v, float radiusMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radiusMax</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampMin_" data-uid="VoxelPlayground.Utility.Maths.ClampMin*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampMin_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ClampMin(System.Single,System.Single)">
+  ClampMin(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ClampMin(this float value, float min)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>min</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampMinMagnitude_" data-uid="VoxelPlayground.Utility.Maths.ClampMinMagnitude*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampMinMagnitude_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ClampMinMagnitude(UnityEngine.Vector3,System.Single)">
+  ClampMinMagnitude(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ClampMinMagnitude(this Vector3 v, float radiusMin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radiusMin</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ClampToAABB_" data-uid="VoxelPlayground.Utility.Maths.ClampToAABB*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ClampToAABB_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.ClampToAABB(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+  ClampToAABB(Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ClampToAABB(Vector3 min, Vector3 max, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>min</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_FuzzyEquals_" data-uid="VoxelPlayground.Utility.Maths.FuzzyEquals*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_FuzzyEquals_System_Single_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.FuzzyEquals(System.Single,System.Single,System.Single)">
+  FuzzyEquals(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FuzzyEquals(float a, float b, float E = 0.0001)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>b</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>E</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_InRange_" data-uid="VoxelPlayground.Utility.Maths.InRange*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_InRange_System_Single_UnityEngine_Vector2_" data-uid="VoxelPlayground.Utility.Maths.InRange(System.Single,UnityEngine.Vector2)">
+  InRange(float, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool InRange(this float val, Vector2 minmax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>minmax</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_IntersectRaySphere_" data-uid="VoxelPlayground.Utility.Maths.IntersectRaySphere*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_IntersectRaySphere_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Single__System_Single__" data-uid="VoxelPlayground.Utility.Maths.IntersectRaySphere(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single@,System.Single@)">
+  IntersectRaySphere(Vector3, Vector3, Vector3, float, out float, out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IntersectRaySphere(Vector3 ro, Vector3 rd, Vector3 ce, float ra, out float tNear, out float tFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ro</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rd</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>ce</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>ra</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>tNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>tFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_IsFinitePositive_" data-uid="VoxelPlayground.Utility.Maths.IsFinitePositive*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_IsFinitePositive_System_Single_" data-uid="VoxelPlayground.Utility.Maths.IsFinitePositive(System.Single)">
+  IsFinitePositive(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFinitePositive(this float val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_IsFuzzyZero_" data-uid="VoxelPlayground.Utility.Maths.IsFuzzyZero*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_IsFuzzyZero_System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.IsFuzzyZero(System.Single,System.Single)">
+  IsFuzzyZero(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFuzzyZero(this float value, float epsilon = 1E-06)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>epsilon</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_LerpSmooth_" data-uid="VoxelPlayground.Utility.Maths.LerpSmooth*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_LerpSmooth_System_Single__System_Single_System_Single_" data-uid="VoxelPlayground.Utility.Maths.LerpSmooth(System.Single@,System.Single,System.Single)">
+  LerpSmooth(ref float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LerpSmooth(this ref float val, float target, float smoothness)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>smoothness</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_Mul_" data-uid="VoxelPlayground.Utility.Maths.Mul*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_Mul_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.Mul(UnityEngine.Vector3,UnityEngine.Vector3)">
+  Mul(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Mul(this Vector3 v, Vector3 b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_MulX_" data-uid="VoxelPlayground.Utility.Maths.MulX*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_MulX_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.MulX(UnityEngine.Vector3,System.Single)">
+  MulX(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 MulX(this Vector3 v, float mul)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>mul</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_MulXZ_" data-uid="VoxelPlayground.Utility.Maths.MulXZ*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_MulXZ_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.MulXZ(UnityEngine.Vector3,System.Single)">
+  MulXZ(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 MulXZ(this Vector3 v, float mul)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>mul</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_MulY_" data-uid="VoxelPlayground.Utility.Maths.MulY*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_MulY_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.MulY(UnityEngine.Vector3,System.Single)">
+  MulY(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 MulY(this Vector3 v, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_MulZ_" data-uid="VoxelPlayground.Utility.Maths.MulZ*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_MulZ_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.MulZ(UnityEngine.Vector3,System.Single)">
+  MulZ(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 MulZ(this Vector3 v, float mul)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>mul</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_NormalizeAngle_" data-uid="VoxelPlayground.Utility.Maths.NormalizeAngle*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_NormalizeAngle_System_Single_" data-uid="VoxelPlayground.Utility.Maths.NormalizeAngle(System.Single)">
+  NormalizeAngle(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float NormalizeAngle(this float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_RoundToInt_" data-uid="VoxelPlayground.Utility.Maths.RoundToInt*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_RoundToInt_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.RoundToInt(UnityEngine.Vector3)">
+  RoundToInt(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int3 RoundToInt(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ScaleAngle_" data-uid="VoxelPlayground.Utility.Maths.ScaleAngle*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ScaleAngle_UnityEngine_Quaternion_System_Single_" data-uid="VoxelPlayground.Utility.Maths.ScaleAngle(UnityEngine.Quaternion,System.Single)">
+  ScaleAngle(Quaternion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion ScaleAngle(this Quaternion rot, float angleScalar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rot</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>angleScalar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_SetElement_" data-uid="VoxelPlayground.Utility.Maths.SetElement*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_SetElement_UnityEngine_Vector3_System_Int32_System_Single_" data-uid="VoxelPlayground.Utility.Maths.SetElement(UnityEngine.Vector3,System.Int32,System.Single)">
+  SetElement(Vector3, int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 SetElement(this Vector3 v, int ele, float val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>ele</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>val</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_SetX_" data-uid="VoxelPlayground.Utility.Maths.SetX*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_SetX_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.SetX(UnityEngine.Vector3,System.Single)">
+  SetX(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 SetX(this Vector3 v, float x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_SetY_" data-uid="VoxelPlayground.Utility.Maths.SetY*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_SetY_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.SetY(UnityEngine.Vector3,System.Single)">
+  SetY(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 SetY(this Vector3 v, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_SetZ_" data-uid="VoxelPlayground.Utility.Maths.SetZ*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_SetZ_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Utility.Maths.SetZ(UnityEngine.Vector3,System.Single)">
+  SetZ(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 SetZ(this Vector3 v, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_sqr_" data-uid="VoxelPlayground.Utility.Maths.sqr*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_sqr_System_Single_" data-uid="VoxelPlayground.Utility.Maths.sqr(System.Single)">
+  sqr(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float sqr(this float v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ToInt_" data-uid="VoxelPlayground.Utility.Maths.ToInt*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ToInt_Unity_Mathematics_float3_" data-uid="VoxelPlayground.Utility.Maths.ToInt(Unity.Mathematics.float3)">
+  ToInt(float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int3 ToInt(this float3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">float3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_ToVec3_" data-uid="VoxelPlayground.Utility.Maths.ToVec3*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_ToVec3_UnityEngine_Vector3Int_" data-uid="VoxelPlayground.Utility.Maths.ToVec3(UnityEngine.Vector3Int)">
+  ToVec3(Vector3Int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 ToVec3(this Vector3Int v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_TryNormalize_" data-uid="VoxelPlayground.Utility.Maths.TryNormalize*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_TryNormalize_UnityEngine_Vector3__" data-uid="VoxelPlayground.Utility.Maths.TryNormalize(UnityEngine.Vector3@)">
+  TryNormalize(ref Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 TryNormalize(this ref Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_VecMul_" data-uid="VoxelPlayground.Utility.Maths.VecMul*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_VecMul_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.VecMul(UnityEngine.Vector3,UnityEngine.Vector3)">
+  VecMul(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 VecMul(this Vector3 v, Vector3 mul)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>mul</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_x0y_" data-uid="VoxelPlayground.Utility.Maths.x0y*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_x0y_UnityEngine_Vector2_" data-uid="VoxelPlayground.Utility.Maths.x0y(UnityEngine.Vector2)">
+  x0y(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 x0y(this Vector2 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_xy_" data-uid="VoxelPlayground.Utility.Maths.xy*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_xy_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.xy(UnityEngine.Vector3)">
+  xy(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 xy(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_xy0_" data-uid="VoxelPlayground.Utility.Maths.xy0*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_xy0_UnityEngine_Vector2_" data-uid="VoxelPlayground.Utility.Maths.xy0(UnityEngine.Vector2)">
+  xy0(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 xy0(this Vector2 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_xz_" data-uid="VoxelPlayground.Utility.Maths.xz*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_xz_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.xz(UnityEngine.Vector3)">
+  xz(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 xz(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
