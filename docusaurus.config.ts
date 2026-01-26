@@ -12,6 +12,10 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
   onBrokenAnchors: 'ignore',
 
+  organizationName: 'fonzieyang', // Usually your GitHub org/user name.
+  projectName: 'VoxelPlayground', // Usually your repo name.
+  trailingSlash: false, // Recommended for GitHub Pages
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
