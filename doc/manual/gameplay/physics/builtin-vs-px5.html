@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Builtin Physics vs Px5 | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Builtin Physics vs Px5 | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="builtin-physics-vs-px5">Builtin Physics vs Px5</h1>
+
+<p>This project uses a custom physics engine (<strong>Px5</strong>) instead of the standard <code>UnityEngine.Physics</code>. This allows for specialized physics behaviors tailored to the game's needs, particularly for voxel interactions and Ragdoll mechanics.</p>
+<h2 id="1-custom-physics-engine">1. Custom Physics Engine</h2>
+<p>While the project runs in Unity, the underlying physics simulation is handled by <strong>Px5</strong>. This means that standard Unity physics calls (like <code>Physics.Raycast</code> or accessing <code>UnityEngine.Rigidbody</code>) may not interact with the game world as expected unless you are specifically targeting Unity's physics layer (which is often converted or used only for authoring).</p>
+<h2 id="2-authoring-and-conversion">2. Authoring and Conversion</h2>
+<p>To make level design and character setup intuitive, we still use standard Unity components during the authoring process. You can attach:</p>
+<ul>
+<li><code>UnityEngine.Rigidbody</code></li>
+<li><code>UnityEngine.BoxCollider</code>, <code>UnityEngine.SphereCollider</code>, etc.</li>
+<li><code>UnityEngine.ConfigurableJoint</code>, etc.</li>
+</ul>
+<p>At runtime, these components are automatically converted to their Px5 counterparts by the <code>PxConverter</code> component.</p>
+<ul>
+<li><strong>How it works:</strong> <code>PxConverter</code> reads the properties from Unity's physics components and creates the corresponding Px5 objects (e.g., <code>PxRigidBody</code>, <code>PxBoxCollider</code>).</li>
+<li><strong>Best Practice:</strong> Ensure your prefabs or objects have a <code>PxConverter</code> component if they need to participate in the Px5 physics simulation.</li>
+</ul>
+<h2 id="3-scripting-with-px5">3. Scripting with Px5</h2>
+<p>When writing gameplay scripts, you must use Px5 data types and API calls instead of Unity's default physics classes.</p>
+<h3 id="31-recommended-aliases">3.1 Recommended Aliases</h3>
+<p>A common pattern is to use <code>using</code> aliases to map Px5 types to familiar names within your script.</p>
+<pre><code class="lang-csharp">// Core Types
+using Rigidbody = Px5.Unity.PxRigidBody;
+using Collider = Px5.Unity.PxCollider;
+using Physics = Px5.Unity.PxPhysics; // Important for Raycast/OverlapSphere etc.
+
+// Joint Types
+using ConfigurableJoint = Px5.Unity.PxD6Joint;
+using FixedJoint = Px5.Unity.PxFixedJoint;
+using HingeJoint = Px5.Unity.PxHingeJoint;
+using Joint = Px5.Unity.PxJoint;
+
+// Collision &amp; Query Types
+using RaycastHit = Px5.UnityExtensions.RaycastHit;
+using Collision = Px5.UnityExtensions.Collision;
+using ContactPoint = Px5.UnityExtensions.ContactPoint;
+
+// Collider Types
+using BoxCollider = Px5.Unity.PxBoxCollider;
+using SphereCollider = Px5.Unity.PxSphereCollider;
+using CapsuleCollider = Px5.Unity.PxCapsuleCollider;
+using MeshCollider = Px5.Unity.PxMeshCollider;
+</code></pre>
+<h3 id="32-scripting-examples">3.2 Scripting Examples</h3>
+<p>Using the aliases above allows you to write code that is very similar to standard Unity physics code, but ensures you are using the correct Px5 types.</p>
+<p><strong>Scene Queries (Raycasts):</strong></p>
+<pre><code class="lang-csharp">
+using Physics = Px5.Unity.PxPhysics;
+using RaycastHit = Px5.UnityExtensions.RaycastHit;
+
+void Update() {
+    Ray ray = new Ray(transform.position, transform.forward);
+    
+    RaycastHit[] hits = Physics.RaycastAll(ray); 
+    
+    foreach(var hit in hits) {
+        Debug.Log($&quot;Hit: {hit.collider.name}&quot;);
+    }
+}
+</code></pre>
+<h3 id="33-collision-callback-registration">3.3. Collision Callback Registration</h3>
+<p><strong>Important for Mod Writers:</strong>
+Unlike standard Unity <code>MonoBehaviour</code> methods (like <code>OnCollisionEnter</code>, <code>OnTriggerEnter</code>), Px5 does <strong>not</strong> automatically call magic methods on your scripts. You must manually register for these events on the <code>PxActor</code> component.</p>
+<p>You should typically register in <code>OnEnable</code> and unregister in <code>OnDisable</code>.</p>
+<p><strong>Example Pattern:</strong></p>
+<pre><code class="lang-csharp">using Collision = Px5.UnityExtensions.Collision;
+
+public class DummyClass: Monobehavior
+{
+    private Px5.Unity.PxActor pxActor;
+
+    private void OnEnable()
+    {
+        if (pxActor == null)
+        {
+            pxActor = GetComponent&lt;Px5.Unity.PxActor&gt;();
+        }
+
+        if (pxActor != null)
+        {
+            // Register Callbacks
+            pxActor.RegisterOnCollisionEnter(OnCollisionEnter);
+            pxActor.RegisterOnCollisionStay(OnCollisionStay);
+            pxActor.RegisterOnCollisionExit(OnCollisionExit);
+            
+            // Trigger Registration Example (from PxActor.cs)
+            // pxActor.RegisterOnTriggerEnter(OnTriggerEnter);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (pxActor != null)
+        {
+            // Unregister Callbacks to prevent errors or memory leaks
+            pxActor.UnregisterOnCollisionEnter(OnCollisionEnter);
+            pxActor.UnregisterOnCollisionStay(OnCollisionStay);
+            pxActor.UnregisterOnCollisionExit(OnCollisionExit);
+        }
+    }
+
+    // Your Callback Implementation
+    void OnCollisionEnter(Collision collision)
+    {
+        // Handle collision logic
+    }
+}
+
+</code></pre>
+<h2 id="4-voxel-object-collision">4. Voxel Object Collision</h2>
+<p>Please refer to <a href="voxel-collision.html">Voxel Collision</a> for detailed information on voxel object collision setup and configuration.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

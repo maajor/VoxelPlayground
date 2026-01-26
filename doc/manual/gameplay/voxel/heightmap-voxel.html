@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Heightmap Voxel | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Heightmap Voxel | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="heightmap-voxel">Heightmap Voxel</h1>
+
+<p><img src="../../../resources/HeightVoxel.jpg" alt="Heightmap Voxels"></p>
+<p>The <a href="../../../api/VoxelPlayground.Entity.Terrain.HeightmapVoxels.html"><code>HeightmapVoxels</code></a> component allows you to create voxel-based terrain using a heightmap and a colormap texture. This is useful for creating large ground surfaces that support voxel destruction and physics.</p>
+<h2 id="component-heightmapvoxels">Component: HeightmapVoxels</h2>
+<h3 id="usage-steps">Usage Steps</h3>
+<ol>
+<li><p><strong>Create GameObject</strong>: Create a new empty GameObject in your scene.</p>
+</li>
+<li><p><strong>Add Component</strong>: Add the <code>HeightmapVoxels</code> component to the GameObject.</p>
+</li>
+<li><p><strong>Prepare Textures</strong>:</p>
+<ul>
+<li>You need two textures: a <strong>Heightmap</strong> (grayscale) and a <strong>Colormap</strong> (RGB).</li>
+<li><strong>Important</strong>: Select each texture in the Project view, go to the Inspector, and check <strong>Read/Write Enabled</strong> in the Import Settings. Click <strong>Apply</strong>.</li>
+</ul>
+</li>
+<li><p><strong>Assign Textures</strong>: Drag your textures into the <code>Heightmap</code> and <code>Colormap</code> fields of the component.</p>
+</li>
+<li><p><strong>Configure Settings</strong>: Adjust the <code>Tile Size</code>, <code>Height Scale</code>, and other parameters as needed.</p>
+</li>
+<li><p><strong>Play</strong>: The terrain is generated automatically when the game starts (in the <code>Start()</code> method).</p>
+<img src="../../../resources/HeightVoxelSettings.jpg" alt="Heightmap Voxels Settings" style="max-width: 640px;">
+</li>
+</ol>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Heightmap</strong></td>
+<td style="text-align: left;">Grayscale texture defining terrain height. White is high, black is low.</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Colormap</strong></td>
+<td style="text-align: left;">Texture defining the color of the terrain surface.</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Forbid Mask</strong></td>
+<td style="text-align: left;">Optional mask texture.</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tile Size</strong></td>
+<td style="text-align: left;">Size of chunks to split the generation into. Smaller tiles may help with memory but increase object count.</td>
+<td style="text-align: left;">256</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Height Scale</strong></td>
+<td style="text-align: left;">Multiplier for the vertical height of the terrain.</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Voxel Size</strong></td>
+<td style="text-align: left;">Size of individual voxels in world units. Smaller values = more detail but heavier performance.</td>
+<td style="text-align: left;">0.25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lod Bias</strong></td>
+<td style="text-align: left;">Level of Detail bias for the mesh generation.</td>
+<td style="text-align: left;">1.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Voxel ID</strong></td>
+<td style="text-align: left;">The material type of the generated voxels (e.g., <code>Stone</code>, <code>Dirt</code>, <code>Grass</code>). Affects sound and physics.</td>
+<td style="text-align: left;"><code>Stone</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Indestructible</strong></td>
+<td style="text-align: left;">If enabled, the terrain cannot be destroyed by weapons or explosions.</td>
+<td style="text-align: left;"><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tips">Tips</h3>
+<ul>
+<li><strong>Performance</strong>: Large <code>Heightmap</code> textures can take time to generate. The script splits them into tiles to manage this.</li>
+<li><strong>Physics</strong>: The generated terrain uses <code>PxVoxelColliderGenerator</code> for physics collisions.</li>
+<li><strong>Destruction</strong>: If <code>Indestructible</code> is disabled, the ground can be dug into or destroyed like other voxel objects.</li>
+</ul>
+<h3 id="performance-considerations">Performance Considerations</h3>
+<p><strong>1. Voxel Count and Texture Resolution</strong>
+The number of voxels along the X and Z axes (the voxel grid resolution) is directly determined by the <strong>pixel resolution</strong> of your Heightmap texture.</p>
+<ul>
+<li>1 pixel in the Heightmap = 1 vertical column of voxels.</li>
+<li>For example, a 100x100 pixel texture creates a 100x100 grid of voxel columns.</li>
+<li>The physical world size of the terrain = <code>Pixel Width * Voxel Size</code>.</li>
+</ul>
+<p><strong>2. Recommended Size</strong>
+<strong>Keep it under 256x256.</strong>
+It is strongly recommended to ensure your Heightmap texture is <strong>smaller than 256 pixels</strong> on each side.</p>
+<ul>
+<li>Generating voxels is computationally expensive.</li>
+<li>A texture larger than 256x256 will produce a massive amount of geometry and collision data, which can cause significant lag during initialization (game start) and high memory usage.</li>
+<li>If you need a larger area, consider increasing the <code>Voxel Size</code> parameter instead of increasing the texture resolution, or use multiple smaller HeightmapVoxel objects.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

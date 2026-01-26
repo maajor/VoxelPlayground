@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Modding Overview | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Modding Overview | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../resources/logo.svg">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="modding-overview">Modding Overview</h1>
+
+<p>Voxel Playground supports various types of mod content, primarily driven by <code>.vox</code> assets. This section covers the fundamental workflow for importing and configuring your voxel assets.</p>
+<h2 id="importing-vox-files">Importing Vox Files</h2>
+<p>To bring your voxel creations into the game, follow these steps using the <strong>Vox Assets Processor</strong>.</p>
+<ol>
+<li><p><strong>Drag and Drop</strong>: Drag your <code>.vox</code> file into the <strong>Vox Assets Processor</strong> window.</p>
+<img src="../../resources/ImportVox.png" alt="ImportVox" style="max-width: 480px;">
+</li>
+<li><p><strong>Select Asset Type</strong>: Choose the appropriate category for your asset:</p>
+<ul>
+<li><strong>Scene</strong>: Full environments or maps. These can use A/B/C/D configurations (see Scene Tutorial).</li>
+<li><strong>Weapon</strong>: Guns, melee weapons, or other handheld items.</li>
+<li><strong>Building</strong>: Constructible architectural elements.</li>
+<li><strong>Character</strong>: Playable avatars or NPCs.</li>
+</ul>
+</li>
+<li><p><strong>Generate Prefab</strong>: Click the <strong>Generate</strong> button.</p>
+<ul>
+<li>This will create a new Unity Prefab in your mod's <code>/Prefab</code> folder.</li>
+</ul>
+</li>
+<li><p><strong>Register in Manifest</strong>: Don't forget to add this new Prefab to your <code>ModManifest</code> to ensure it gets exported.</p>
+<img src="../../resources/ConfigManifest.png" alt="Config Manifest" style="max-width: 480px;">
+</li>
+</ol>
+<h2 id="asset-configuration">Asset Configuration</h2>
+<p>Once your prefab is generated, it often requires specific configuration depending on its type.</p>
+<ul>
+<li><strong><a href="scene/tutorial-nyc.html">Scene Configuration</a></strong>: Learn how to set up static and dynamic environment objects using Proxies.</li>
+<li><strong><a href="character/tutorial-giant.md">Character Configuration</a></strong>: Learn how to rig and resize voxel characters.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

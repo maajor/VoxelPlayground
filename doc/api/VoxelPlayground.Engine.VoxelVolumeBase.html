@@ -1,0 +1,2895 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VoxelVolumeBase | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VoxelVolumeBase | Voxel Playground Mod API Reference ">
+      
+      <meta name="description" content="Base class for voxel volumes, managing voxel data, coordinates, and basic operations.">
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Engine.VoxelVolumeBase">
+
+
+
+  <h1 id="VoxelPlayground_Engine_VoxelVolumeBase" data-uid="VoxelPlayground.Engine.VoxelVolumeBase" class="text-break">
+Class VoxelVolumeBase  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VoxEngineCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for voxel volumes, managing voxel data, coordinates, and basic operations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VoxelVolumeBase : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">VoxelVolumeBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_chunkCountX" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.chunkCountX">
+  chunkCountX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Settings header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;--------------------Settings-----------------&quot;)]
+public int chunkCountX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_chunkCountY" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.chunkCountY">
+  chunkCountY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of chunks along the Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int chunkCountY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_chunkCountZ" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.chunkCountZ">
+  chunkCountZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of chunks along the Z axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int chunkCountZ</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_cubeCountsPerAxisInAChunk" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.cubeCountsPerAxisInAChunk">
+  cubeCountsPerAxisInAChunk
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of voxels per axis in a single chunk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int3 cubeCountsPerAxisInAChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_loadingState" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.loadingState">
+  loadingState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current loading state of the volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VolumeLoadingState loadingState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.VolumeLoadingState.html">VolumeLoadingState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_maxLength" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.maxLength">
+  maxLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum length among the dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int maxLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_numPointsX" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.numPointsX">
+  numPointsX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Total number of points along the X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int numPointsX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_numPointsY" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.numPointsY">
+  numPointsY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Total number of points along the Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int numPointsY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_numPointsYMX" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.numPointsYMX">
+  numPointsYMX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Precalculated value of numPointsY * numPointsX.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int numPointsYMX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_numPointsZ" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.numPointsZ">
+  numPointsZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Total number of points along the Z axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public int numPointsZ</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_originalSolidBlockCount" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.originalSolidBlockCount">
+  originalSolidBlockCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The original count of solid blocks when loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int originalSolidBlockCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_pointData" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.pointData">
+  pointData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The raw voxel data array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NativeArray&lt;PointDataV2&gt; pointData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeArray_1.html">NativeArray</a>&lt;<a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_pointDataPtr" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.pointDataPtr">
+  pointDataPtr
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pointer to the raw voxel data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PointDataV2* pointDataPtr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_solidBlockCount" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.solidBlockCount">
+  solidBlockCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current count of solid blocks in the volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int solidBlockCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_trans_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.trans*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_trans" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.trans">
+  trans
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cached Transform component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform trans { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateAccurateBounds_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateAccurateBounds*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateAccurateBounds_System_Single_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateAccurateBounds(System.Single)">
+  CalculateAccurateBounds(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the accurate bounds of the solid voxels in world space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds CalculateAccurateBounds(float extend = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extend</code> <span class="xref">float</span></dt>
+    <dd><p>Amount to extend the bounds.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd><p>The calculated bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateRadii_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateRadii*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateRadii_System_Single_System_Single__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateRadii(System.Single,System.Single@)">
+  CalculateRadii(float, out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the scaled radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateRadii(float radius, out float scaledRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd><p>The original radius.</p>
+</dd>
+    <dt><code>scaledRadius</code> <span class="xref">float</span></dt>
+    <dd><p>Output scaled radius.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateRadiiSqr_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateRadiiSqr*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_CalculateRadiiSqr_System_Single_System_Single__System_Single__System_Single__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CalculateRadiiSqr(System.Single,System.Single@,System.Single@,System.Single@)">
+  CalculateRadiiSqr(float, out float, out float, out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates squared radii for spherical operations, accounting for lossy scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateRadiiSqr(float radius, out float scaledRadiusSqr, out float innerRadiusSqr, out float diff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd><p>The radius.</p>
+</dd>
+    <dt><code>scaledRadiusSqr</code> <span class="xref">float</span></dt>
+    <dd><p>Output squared scaled radius.</p>
+</dd>
+    <dt><code>innerRadiusSqr</code> <span class="xref">float</span></dt>
+    <dd><p>Output squared inner radius.</p>
+</dd>
+    <dt><code>diff</code> <span class="xref">float</span></dt>
+    <dd><p>Output difference between squared radii.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_ClampToLocalFull_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.ClampToLocalFull*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_ClampToLocalFull_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.ClampToLocalFull(UnityEngine.Vector3)">
+  ClampToLocalFull(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clamps a local position to be within the volume boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ClampToLocalFull(Vector3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position to clamp.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The clamped local position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_ClosestPoint_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.ClosestPoint*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_ClosestPoint_UnityEngine_Vector3_UnityEngine_Vector3__UnityEngine_Vector3____" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.ClosestPoint(UnityEngine.Vector3,UnityEngine.Vector3@,UnityEngine.Vector3[]@)">
+  ClosestPoint(Vector3, out Vector3, out Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the closest point on the surface of the voxel volume to the given world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClosestPoint(Vector3 worldPos, out Vector3 closest, out Vector3[] normals)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The query world position.</p>
+</dd>
+    <dt><code>closest</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The closest point found.</p>
+</dd>
+    <dt><code>normals</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>[]</dt>
+    <dd><p>The normals at the closest point.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if a closest point was found, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_CoordFromIndex_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CoordFromIndex*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_CoordFromIndex_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.CoordFromIndex(System.Int32)">
+  CoordFromIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the local coordinates from a linear index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 CoordFromIndex(int voxelIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelIndex</code> <span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local coordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_FillVoxel_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.FillVoxel*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_FillVoxel_VoxelPlayground_Engine_PointDataV2_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.FillVoxel(VoxelPlayground.Engine.PointDataV2)">
+  FillVoxel(PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the entire volume with the specified voxel data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillVoxel(PointDataV2 data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The voxel data to fill with.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_FindAnyPointDataLocal_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.FindAnyPointDataLocal*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_FindAnyPointDataLocal_UnityEngine_Vector3_System_Int32__System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.FindAnyPointDataLocal(UnityEngine.Vector3,System.Int32@,System.Int32)">
+  FindAnyPointDataLocal(Vector3, out int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds any solid voxel near the local position within a given size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 FindAnyPointDataLocal(Vector3 localPos, out int index, int size = 4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The center local position.</p>
+</dd>
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>The index of the found voxel.</p>
+</dd>
+    <dt><code>size</code> <span class="xref">int</span></dt>
+    <dd><p>The search size.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The position of the found solid voxel, or the original position if none found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetBounds_LocalSpace_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetBounds_LocalSpace*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetBounds_LocalSpace" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetBounds_LocalSpace">
+  GetBounds_LocalSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bounds of the volume in local space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds GetBounds_LocalSpace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd><p>The local bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetBounds_WorldSpace_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetBounds_WorldSpace*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetBounds_WorldSpace" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetBounds_WorldSpace">
+  GetBounds_WorldSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bounds of the volume in world space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds GetBounds_WorldSpace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd><p>The world bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetCenterPos_WorldSpace_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetCenterPos_WorldSpace*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetCenterPos_WorldSpace" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetCenterPos_WorldSpace">
+  GetCenterPos_WorldSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the center position of the volume in world space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetCenterPos_WorldSpace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world center position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetColor_world_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetColor_world*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetColor_world_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetColor_world(UnityEngine.Vector3)">
+  GetColor_world(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the color of the voxel at the specified world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor_world(Vector3 worldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>The color of the voxel.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_local_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_local(System.Int32,System.Int32,System.Int32)">
+  GetData_local(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the voxel data at the specified local coordinates (unsafe).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 GetData_local(int lcoalx, int localy, int localz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lcoalx</code> <span class="xref">int</span></dt>
+    <dd><p>Local X coordinate.</p>
+</dd>
+    <dt><code>localy</code> <span class="xref">int</span></dt>
+    <dd><p>Local Y coordinate.</p>
+</dd>
+    <dt><code>localz</code> <span class="xref">int</span></dt>
+    <dd><p>Local Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_local_Unity_Mathematics_int3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_local(Unity.Mathematics.int3)">
+  GetData_local(int3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the voxel data at the specified local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 GetData_local(int3 localpos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localpos</code> <span class="xref">int3</span></dt>
+    <dd><p>The local coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_world_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_world*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetData_world_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetData_world(UnityEngine.Vector3)">
+  GetData_world(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the voxel data at the specified world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 GetData_world(Vector3 worldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetPointDataArray_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetPointDataArray*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetPointDataArray" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetPointDataArray">
+  GetPointDataArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the native array of point data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;PointDataV2&gt; GetPointDataArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Collections.NativeArray_1.html">NativeArray</a>&lt;<a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>&gt;</dt>
+    <dd><p>The native array of <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetPointDataArrayPtr_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetPointDataArrayPtr*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetPointDataArrayPtr" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetPointDataArrayPtr">
+  GetPointDataArrayPtr()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unsafe pointer to the point data array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2* GetPointDataArrayPtr()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>*</dt>
+    <dd><p>A pointer to <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetTopMostSolidVoxel_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetTopMostSolidVoxel*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetTopMostSolidVoxel_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetTopMostSolidVoxel(UnityEngine.Vector3)">
+  GetTopMostSolidVoxel(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the top-most solid voxel starting from a given position and searching upwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetTopMostSolidVoxel(Vector3 start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The starting world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position of the top-most solid voxel.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetTotalNumOfPoints_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetTotalNumOfPoints*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetTotalNumOfPoints" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetTotalNumOfPoints">
+  GetTotalNumOfPoints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total number of points in the volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalNumOfPoints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The total number of points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_GetVoxelDataCenter_WorldSpace_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetVoxelDataCenter_WorldSpace*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_GetVoxelDataCenter_WorldSpace" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.GetVoxelDataCenter_WorldSpace">
+  GetVoxelDataCenter_WorldSpace()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the center position of all solid voxels in world space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3? GetVoxelDataCenter_WorldSpace()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a>?</dt>
+    <dd><p>The center position, or null if no solid voxels found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromChunkCoord_boundaryCheck_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromChunkCoord_boundaryCheck*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromChunkCoord_boundaryCheck_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromChunkCoord_boundaryCheck(System.Int32,System.Int32,System.Int32)">
+  IndexFromChunkCoord_boundaryCheck(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the linear index of a chunk with boundary checking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromChunkCoord_boundaryCheck(int chunkX, int chunkY, int chunkZ)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunkX</code> <span class="xref">int</span></dt>
+    <dd><p>X coordinate of the chunk.</p>
+</dd>
+    <dt><code>chunkY</code> <span class="xref">int</span></dt>
+    <dd><p>Y coordinate of the chunk.</p>
+</dd>
+    <dt><code>chunkZ</code> <span class="xref">int</span></dt>
+    <dd><p>Z coordinate of the chunk.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index, or -1 if out of bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromChunkCoord_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromChunkCoord*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromChunkCoord_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromChunkCoord(System.Int32,System.Int32,System.Int32)">
+  IndexFromChunkCoord(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the linear index of a chunk from its 3D coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromChunkCoord(int chunkX, int chunkY, int chunkZ)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunkX</code> <span class="xref">int</span></dt>
+    <dd><p>X coordinate of the chunk.</p>
+</dd>
+    <dt><code>chunkY</code> <span class="xref">int</span></dt>
+    <dd><p>Y coordinate of the chunk.</p>
+</dd>
+    <dt><code>chunkZ</code> <span class="xref">int</span></dt>
+    <dd><p>Z coordinate of the chunk.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_WithBoundaryCheck_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord_WithBoundaryCheck*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_WithBoundaryCheck_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord_WithBoundaryCheck(System.Int32,System.Int32,System.Int32)">
+  IndexFromCoord_WithBoundaryCheck(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the linear index from coordinates with boundary checking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromCoord_WithBoundaryCheck(int x, int y, int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <span class="xref">int</span></dt>
+    <dd><p>X coordinate.</p>
+</dd>
+    <dt><code>y</code> <span class="xref">int</span></dt>
+    <dd><p>Y coordinate.</p>
+</dd>
+    <dt><code>z</code> <span class="xref">int</span></dt>
+    <dd><p>Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index, or -1 if out of bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord(System.Int32,System.Int32,System.Int32)">
+  IndexFromCoord(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the linear index from integer coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromCoord(int x, int y, int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <span class="xref">int</span></dt>
+    <dd><p>X coordinate.</p>
+</dd>
+    <dt><code>y</code> <span class="xref">int</span></dt>
+    <dd><p>Y coordinate.</p>
+</dd>
+    <dt><code>z</code> <span class="xref">int</span></dt>
+    <dd><p>Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_Unity_Mathematics_int3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord(Unity.Mathematics.int3)">
+  IndexFromCoord(int3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the linear index from integer local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromCoord(int3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <span class="xref">int3</span></dt>
+    <dd><p>The local coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IndexFromCoord_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IndexFromCoord(UnityEngine.Vector3)">
+  IndexFromCoord(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the linear index from a local position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexFromCoord(Vector3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full(System.Int32,System.Int32,System.Int32)">
+  IsInsideBoundaries_local_full(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if integer local coordinates are inside the volume boundaries (full check).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local_full(int localx, int localy, int localz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localx</code> <span class="xref">int</span></dt>
+    <dd><p>Local X coordinate.</p>
+</dd>
+    <dt><code>localy</code> <span class="xref">int</span></dt>
+    <dd><p>Local Y coordinate.</p>
+</dd>
+    <dt><code>localz</code> <span class="xref">int</span></dt>
+    <dd><p>Local Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_Unity_Mathematics_int3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full(Unity.Mathematics.int3)">
+  IsInsideBoundaries_local_full(int3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if integer local coordinates are inside the volume boundaries (full check).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local_full(int3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <span class="xref">int3</span></dt>
+    <dd><p>The local coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_full_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local_full(UnityEngine.Vector3)">
+  IsInsideBoundaries_local_full(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a local position is inside the volume boundaries (full check).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local_full(Vector3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local(System.Int32,System.Int32,System.Int32)">
+  IsInsideBoundaries_local(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if integer local coordinates are inside the volume boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local(int localx, int localy, int localz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localx</code> <span class="xref">int</span></dt>
+    <dd><p>Local X coordinate.</p>
+</dd>
+    <dt><code>localy</code> <span class="xref">int</span></dt>
+    <dd><p>Local Y coordinate.</p>
+</dd>
+    <dt><code>localz</code> <span class="xref">int</span></dt>
+    <dd><p>Local Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_Unity_Mathematics_int3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local(Unity.Mathematics.int3)">
+  IsInsideBoundaries_local(int3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if integer local coordinates are inside the volume boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local(int3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <span class="xref">int3</span></dt>
+    <dd><p>The local coordinates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_local_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries_local(UnityEngine.Vector3)">
+  IsInsideBoundaries_local(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a local position is inside the volume boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries_local(Vector3 local)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>local</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBoundaries_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBoundaries(UnityEngine.Vector3)">
+  IsInsideBoundaries(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a world position is inside the volume boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBoundaries(Vector3 worldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if inside, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBounds_chunk_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBounds_chunk*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsInsideBounds_chunk_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsInsideBounds_chunk(System.Int32,System.Int32,System.Int32)">
+  IsInsideBounds_chunk(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if chunk coordinates are within the valid range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInsideBounds_chunk(int chunkx, int chunky, int chunkz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunkx</code> <span class="xref">int</span></dt>
+    <dd><p>Chunk X coordinate.</p>
+</dd>
+    <dt><code>chunky</code> <span class="xref">int</span></dt>
+    <dd><p>Chunk Y coordinate.</p>
+</dd>
+    <dt><code>chunkz</code> <span class="xref">int</span></dt>
+    <dd><p>Chunk Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if valid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsSurfaceVoxel_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsSurfaceVoxel*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsSurfaceVoxel_UnityEngine_Vector3_System_Boolean_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsSurfaceVoxel(UnityEngine.Vector3,System.Boolean)">
+  IsSurfaceVoxel(Vector3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a voxel at the given local position is a surface voxel (has at least one empty neighbor).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSurfaceVoxel(Vector3 voxelLocalPos, bool checkAllDir = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelLocalPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position of the voxel.</p>
+</dd>
+    <dt><code>checkAllDir</code> <span class="xref">bool</span></dt>
+    <dd><p>If true, checks all 6 directions; otherwise checks only +Y.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if it is a surface voxel, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsVoxelSolid_WorldSpace_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsVoxelSolid_WorldSpace*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsVoxelSolid_WorldSpace_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsVoxelSolid_WorldSpace(UnityEngine.Vector3)">
+  IsVoxelSolid_WorldSpace(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the voxel at the specified world position is solid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVoxelSolid_WorldSpace(Vector3 WorldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>WorldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if solid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_IsVoxelSolid_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsVoxelSolid*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_IsVoxelSolid_System_Int32_System_Int32_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.IsVoxelSolid(System.Int32,System.Int32,System.Int32)">
+  IsVoxelSolid(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the voxel at the specified local coordinates is solid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVoxelSolid(int lcoalx, int localy, int localz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lcoalx</code> <span class="xref">int</span></dt>
+    <dd><p>Local X coordinate.</p>
+</dd>
+    <dt><code>localy</code> <span class="xref">int</span></dt>
+    <dd><p>Local Y coordinate.</p>
+</dd>
+    <dt><code>localz</code> <span class="xref">int</span></dt>
+    <dd><p>Local Z coordinate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if solid, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_LoadDataOnly_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LoadDataOnly*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_LoadDataOnly_VoxelPlayground_Engine_IVoxelVolumeSaveData_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LoadDataOnly(VoxelPlayground.Engine.IVoxelVolumeSaveData)">
+  LoadDataOnly(IVoxelVolumeSaveData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads only the data from the provided save data, without generating meshes immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadDataOnly(IVoxelVolumeSaveData cubeData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cubeData</code> <a class="xref" href="VoxelPlayground.Engine.IVoxelVolumeSaveData.html">IVoxelVolumeSaveData</a></dt>
+    <dd><p>The save data interface.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_LocalPosToChunkPos_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LocalPosToChunkPos*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_LocalPosToChunkPos_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LocalPosToChunkPos(UnityEngine.Vector3)">
+  LocalPosToChunkPos(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the chunk coordinates from a local position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int LocalPosToChunkPos(Vector3 localPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd><p>The chunk coordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_LocalPosToChunkPos_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LocalPosToChunkPos*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_LocalPosToChunkPos_UnityEngine_Vector3Int_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.LocalPosToChunkPos(UnityEngine.Vector3Int)">
+  LocalPosToChunkPos(Vector3Int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the chunk coordinates from an integer local position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int LocalPosToChunkPos(Vector3Int localPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd><p>The integer local position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd><p>The chunk coordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_OnDataModified_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.OnDataModified*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_OnDataModified_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.OnDataModified(UnityEngine.Vector3)">
+  OnDataModified(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when data is modified at a local position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDataModified(Vector3 localPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position where data was modified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_VoxelPlayground_Engine_RaycastHitVoxel__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,VoxelPlayground.Engine.RaycastHitVoxel@)">
+  RaycastVoxels(Vector3, Vector3, float, out RaycastHitVoxel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a detailed raycast against the voxel volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RaycastVoxels(Vector3 origin, Vector3 direction, float distance, out RaycastHitVoxel raycastHitVoxel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray origin in world space.</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray direction in world space.</p>
+</dd>
+    <dt><code>distance</code> <span class="xref">float</span></dt>
+    <dd><p>Maximum raycast distance.</p>
+</dd>
+    <dt><code>raycastHitVoxel</code> <a class="xref" href="VoxelPlayground.Engine.RaycastHitVoxel.html">RaycastHitVoxel</a></dt>
+    <dd><p>Output detailed hit information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if a voxel was hit, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3__UnityEngine_Vector3__System_Single_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3@,UnityEngine.Vector3@,System.Single)">
+  RaycastVoxels(Vector3, Vector3, out Vector3, out Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a raycast against the voxel volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RaycastVoxels(Vector3 origin, Vector3 direction, out Vector3 hitPoint, out Vector3 hitNormal, float maxDistance = 10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray origin in world space.</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray direction in world space.</p>
+</dd>
+    <dt><code>hitPoint</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Output hit point.</p>
+</dd>
+    <dt><code>hitNormal</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>Output hit normal.</p>
+</dd>
+    <dt><code>maxDistance</code> <span class="xref">float</span></dt>
+    <dd><p>Maximum raycast distance.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if a voxel was hit, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_RaycastVoxels_UnityEngine_Vector3_UnityEngine_Vector3_VoxelPlayground_Engine_RaycastHitVoxel__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.RaycastVoxels(UnityEngine.Vector3,UnityEngine.Vector3,VoxelPlayground.Engine.RaycastHitVoxel@)">
+  RaycastVoxels(Vector3, Vector3, out RaycastHitVoxel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a raycast against the voxel volume using the maximum length as distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RaycastVoxels(Vector3 origin, Vector3 direction, out RaycastHitVoxel raycastHitVoxel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray origin in world space.</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The ray direction in world space.</p>
+</dd>
+    <dt><code>raycastHitVoxel</code> <a class="xref" href="VoxelPlayground.Engine.RaycastHitVoxel.html">RaycastHitVoxel</a></dt>
+    <dd><p>Output detailed hit information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if a voxel was hit, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_Reset_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.Reset*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_Reset" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the volume, disposing of data and resetting state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SampleMainPointData_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SampleMainPointData*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SampleMainPointData_UnityEngine_Vector3_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SampleMainPointData(UnityEngine.Vector3,System.Int32)">
+  SampleMainPointData(Vector3, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Samples the main point data near a world position within a given size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 SampleMainPointData(Vector3 worldPos, int size = 4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position to sample around.</p>
+</dd>
+    <dt><code>size</code> <span class="xref">int</span></dt>
+    <dd><p>The search size.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The point data of the found solid voxel.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SampleMainPointDataLocal_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SampleMainPointDataLocal*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SampleMainPointDataLocal_UnityEngine_Vector3_System_Int32__System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SampleMainPointDataLocal(UnityEngine.Vector3,System.Int32@,System.Int32)">
+  SampleMainPointDataLocal(Vector3, out int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Samples the main point data near a local position within a given size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2 SampleMainPointDataLocal(Vector3 localPos, out int index, int size = 4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position to sample around.</p>
+</dd>
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>The index of the found voxel.</p>
+</dd>
+    <dt><code>size</code> <span class="xref">int</span></dt>
+    <dd><p>The search size.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The point data of the found solid voxel, or empty if none found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SamplePoint_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SamplePoint*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SamplePoint_UnityEngine_Vector3_System_Int32_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SamplePoint(UnityEngine.Vector3,System.Int32)">
+  SamplePoint(Vector3, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Samples a solid point position near a world position within a given size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 SamplePoint(Vector3 worldPos, int size = 4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position to sample around.</p>
+</dd>
+    <dt><code>size</code> <span class="xref">int</span></dt>
+    <dd><p>The search size.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position of a nearby solid voxel, or the transformed result of FindAnyPointDataLocal.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetCenterPos_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetCenterPos*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetCenterPos_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetCenterPos(UnityEngine.Vector3)">
+  SetCenterPos(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the position of the volume such that the center of the voxel grid aligns with the given world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCenterPos(Vector3 worldPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The target world position for the center.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_System_Int32_System_Int32_System_Int32_VoxelPlayground_Engine_PointDataV2__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local(System.Int32,System.Int32,System.Int32,VoxelPlayground.Engine.PointDataV2@)">
+  SetData_local(int, int, int, ref PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the voxel data at specific local coordinates with boundary checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData_local(int localx, int localy, int localz, ref PointDataV2 data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localx</code> <span class="xref">int</span></dt>
+    <dd><p>Local X coordinate.</p>
+</dd>
+    <dt><code>localy</code> <span class="xref">int</span></dt>
+    <dd><p>Local Y coordinate.</p>
+</dd>
+    <dt><code>localz</code> <span class="xref">int</span></dt>
+    <dd><p>Local Z coordinate.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The new voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_System_Int32_VoxelPlayground_Engine_PointDataV2__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local(System.Int32,VoxelPlayground.Engine.PointDataV2@)">
+  SetData_local(int, ref PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the voxel data at a specific index without boundary checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData_local(int index, ref PointDataV2 data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd><p>The linear index.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The new voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_local_UnityEngine_Vector3Int_VoxelPlayground_Engine_PointDataV2__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_local(UnityEngine.Vector3Int,VoxelPlayground.Engine.PointDataV2@)">
+  SetData_local(Vector3Int, ref PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the voxel data at a specific local position with boundary checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData_local(Vector3Int localpos, ref PointDataV2 data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localpos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd><p>Local position.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The new voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_world_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_world*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetData_world_UnityEngine_Vector3_VoxelPlayground_Engine_PointDataV2__" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetData_world(UnityEngine.Vector3,VoxelPlayground.Engine.PointDataV2@)">
+  SetData_world(Vector3, ref PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the voxel data at a specific world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData_world(Vector3 worldPos, ref PointDataV2 data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldPos</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The new voxel data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_SetupMarchingCubeGrid_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetupMarchingCubeGrid*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_SetupMarchingCubeGrid" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.SetupMarchingCubeGrid">
+  SetupMarchingCubeGrid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets up grid dimensions based on chunk counts and size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupMarchingCubeGrid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_TransformBoundsToLocal_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.TransformBoundsToLocal*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_TransformBoundsToLocal_UnityEngine_Bounds_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.TransformBoundsToLocal(UnityEngine.Bounds)">
+  TransformBoundsToLocal(Bounds)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transforms world bounds to local bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds TransformBoundsToLocal(Bounds worldBounds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldBounds</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd><p>The world bounds.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Bounds.html">Bounds</a></dt>
+    <dd><p>The local bounds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_WorldPosToLocalPos_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.WorldPosToLocalPos*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_WorldPosToLocalPos_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.WorldPosToLocalPos(UnityEngine.Vector3)">
+  WorldPosToLocalPos(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a world position to a local position relative to the volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldPosToLocalPos(Vector3 world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The local position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_VoxelVolumeBase_WorldPosToLocalPosInt_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.WorldPosToLocalPosInt*"></a>
+
+  <h3 id="VoxelPlayground_Engine_VoxelVolumeBase_WorldPosToLocalPosInt_UnityEngine_Vector3_" data-uid="VoxelPlayground.Engine.VoxelVolumeBase.WorldPosToLocalPosInt(UnityEngine.Vector3)">
+  WorldPosToLocalPosInt(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a world position to a rounded integer local position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int WorldPosToLocalPosInt(Vector3 world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd><p>The world position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3Int.html">Vector3Int</a></dt>
+    <dd><p>The integer local position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

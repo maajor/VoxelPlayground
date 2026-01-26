@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct PointDataV2 | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct PointDataV2 | Voxel Playground Mod API Reference ">
+      
+      <meta name="description" content="Represents the data of a single voxel point.">
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Engine.PointDataV2">
+
+
+
+  <h1 id="VoxelPlayground_Engine_PointDataV2" data-uid="VoxelPlayground.Engine.PointDataV2" class="text-break">
+Struct PointDataV2  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Engine.html">Engine</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VoxEngineCore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the data of a single voxel point.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct PointDataV2</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2__ctor_" data-uid="VoxelPlayground.Engine.PointDataV2.#ctor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2__ctor_VoxelPlayground_Engine_PointData_" data-uid="VoxelPlayground.Engine.PointDataV2.#ctor(VoxelPlayground.Engine.PointData)">
+  PointDataV2(PointData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor from legacy PointData.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2(PointData other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <span class="xref">PointData</span></dt>
+    <dd><p>Legacy point data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2__ctor_" data-uid="VoxelPlayground.Engine.PointDataV2.#ctor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2__ctor_VoxelPlayground_Engine_PointDataV2_" data-uid="VoxelPlayground.Engine.PointDataV2.#ctor(VoxelPlayground.Engine.PointDataV2)">
+  PointDataV2(PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copy constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointDataV2(PointDataV2 other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>Source point data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_color" data-uid="VoxelPlayground.Engine.PointDataV2.color">
+  color
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current color in RGB565 format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public ushort color</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ushort</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_HardnessCap_Bullet" data-uid="VoxelPlayground.Engine.PointDataV2.HardnessCap_Bullet">
+  HardnessCap_Bullet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hardness cap for bullet attacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HardnessCap_Bullet = 8</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_HardnessCap_Explosion" data-uid="VoxelPlayground.Engine.PointDataV2.HardnessCap_Explosion">
+  HardnessCap_Explosion
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hardness cap for explosions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HardnessCap_Explosion = 10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_HardnessCap_Fist" data-uid="VoxelPlayground.Engine.PointDataV2.HardnessCap_Fist">
+  HardnessCap_Fist
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hardness cap for fist attacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HardnessCap_Fist = 6</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_HardnessCap_Sword" data-uid="VoxelPlayground.Engine.PointDataV2.HardnessCap_Sword">
+  HardnessCap_Sword
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hardness cap for sword attacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HardnessCap_Sword = 7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_EMPTY" data-uid="VoxelPlayground.Engine.PointDataV2.ID_EMPTY">
+  ID_EMPTY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ID for empty space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint ID_EMPTY = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_GLASS" data-uid="VoxelPlayground.Engine.PointDataV2.ID_GLASS">
+  ID_GLASS
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Standard IDs for common materials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly uint ID_GLASS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_GLOW" data-uid="VoxelPlayground.Engine.PointDataV2.ID_GLOW">
+  ID_GLOW
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Standard IDs for common materials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly uint ID_GLOW</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_METAL" data-uid="VoxelPlayground.Engine.PointDataV2.ID_METAL">
+  ID_METAL
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Standard IDs for common materials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly uint ID_METAL</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_SKIN" data-uid="VoxelPlayground.Engine.PointDataV2.ID_SKIN">
+  ID_SKIN
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Standard IDs for common materials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly uint ID_SKIN</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID_STONE" data-uid="VoxelPlayground.Engine.PointDataV2.ID_STONE">
+  ID_STONE
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Standard IDs for common materials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly uint ID_STONE</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_MAX_HARDNESS" data-uid="VoxelPlayground.Engine.PointDataV2.MAX_HARDNESS">
+  MAX_HARDNESS
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum hardness value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint MAX_HARDNESS = 15</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_NORMAL_HARDNESS" data-uid="VoxelPlayground.Engine.PointDataV2.NORMAL_HARDNESS">
+  NORMAL_HARDNESS
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default hardness value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint NORMAL_HARDNESS = 3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_NORMAL_TEMPERATURE" data-uid="VoxelPlayground.Engine.PointDataV2.NORMAL_TEMPERATURE">
+  NORMAL_TEMPERATURE
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default temperature value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint NORMAL_TEMPERATURE = 3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_originalColor" data-uid="VoxelPlayground.Engine.PointDataV2.originalColor">
+  originalColor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The original color in RGB565 format, used for restoration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public ushort originalColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ushort</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_properties" data-uid="VoxelPlayground.Engine.PointDataV2.properties">
+  properties
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Packed properties of the voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public uint properties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_PROPERTY_MAX_VALUE" data-uid="VoxelPlayground.Engine.PointDataV2.PROPERTY_MAX_VALUE">
+  PROPERTY_MAX_VALUE
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum property value (3 bits).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint PROPERTY_MAX_VALUE = 7</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_PROPERTY_Min_VALUE" data-uid="VoxelPlayground.Engine.PointDataV2.PROPERTY_Min_VALUE">
+  PROPERTY_Min_VALUE
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint PROPERTY_Min_VALUE = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_Color_" data-uid="VoxelPlayground.Engine.PointDataV2.Color*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_Color" data-uid="VoxelPlayground.Engine.PointDataV2.Color">
+  Color
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the color of the voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_ColorRaw_" data-uid="VoxelPlayground.Engine.PointDataV2.ColorRaw*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ColorRaw" data-uid="VoxelPlayground.Engine.PointDataV2.ColorRaw">
+  ColorRaw
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the raw packed color value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ColorRaw { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ushort</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_ID_" data-uid="VoxelPlayground.Engine.PointDataV2.ID*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ID" data-uid="VoxelPlayground.Engine.PointDataV2.ID">
+  ID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the material ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_Value_" data-uid="VoxelPlayground.Engine.PointDataV2.Value*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_Value" data-uid="VoxelPlayground.Engine.PointDataV2.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the normalized value associated with the voxel (e.g. damage level).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_Weights_" data-uid="VoxelPlayground.Engine.PointDataV2.Weights*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_Weights" data-uid="VoxelPlayground.Engine.PointDataV2.Weights">
+  Weights
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the weight value (legacy for character body parts).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Weights { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_CalcHardness2IntensityMlp_" data-uid="VoxelPlayground.Engine.PointDataV2.CalcHardness2IntensityMlp*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_CalcHardness2IntensityMlp_System_Single_System_Single_" data-uid="VoxelPlayground.Engine.PointDataV2.CalcHardness2IntensityMlp(System.Single,System.Single)">
+  CalcHardness2IntensityMlp(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the intensity multiplier based on hardness difference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CalcHardness2IntensityMlp(float hardnessCap, float selfHardness)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hardnessCap</code> <span class="xref">float</span></dt>
+    <dd><p>The hardness of the attacker.</p>
+</dd>
+    <dt><code>selfHardness</code> <span class="xref">float</span></dt>
+    <dd><p>The hardness of the target.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>The intensity multiplier (0-1).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_CloneFrom_" data-uid="VoxelPlayground.Engine.PointDataV2.CloneFrom*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_CloneFrom_VoxelPlayground_Engine_PointDataV2_" data-uid="VoxelPlayground.Engine.PointDataV2.CloneFrom(VoxelPlayground.Engine.PointDataV2)">
+  CloneFrom(PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clones data from another point data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloneFrom(PointDataV2 other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>Source point data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_CopyColor_" data-uid="VoxelPlayground.Engine.PointDataV2.CopyColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_CopyColor_VoxelPlayground_Engine_PointDataV2_" data-uid="VoxelPlayground.Engine.PointDataV2.CopyColor(VoxelPlayground.Engine.PointDataV2)">
+  CopyColor(PointDataV2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies color and original color from another point data, and marks for restoration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyColor(PointDataV2 otherData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherData</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>The source point data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_EmptyPoint_" data-uid="VoxelPlayground.Engine.PointDataV2.EmptyPoint*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_EmptyPoint" data-uid="VoxelPlayground.Engine.PointDataV2.EmptyPoint">
+  EmptyPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty point data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PointDataV2 EmptyPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a></dt>
+    <dd><p>Empty point data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetColor_" data-uid="VoxelPlayground.Engine.PointDataV2.GetColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetColor" data-uid="VoxelPlayground.Engine.PointDataV2.GetColor">
+  GetColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the color of the voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Color.html">Color</a></dt>
+    <dd><p>The color.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetHardness_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardness*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetHardness" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardness">
+  GetHardness()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hardness of the current voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetHardness()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd><p>The hardness value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetHardnessAffectSize_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessAffectSize*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetHardnessAffectSize_System_Single_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessAffectSize(System.Single)">
+  GetHardnessAffectSize(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the size affect based on hardness.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetHardnessAffectSize(float hardness)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hardness</code> <span class="xref">float</span></dt>
+    <dd><p>The hardness value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>The size affect multiplier.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetHardnessById_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessById*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetHardnessById_System_UInt32_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessById(System.UInt32)">
+  GetHardnessById(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hardness for a specific material ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetHardnessById(uint id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">uint</span></dt>
+    <dd><p>The material ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd><p>The hardness value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetHardnessNormalize_" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessNormalize*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetHardnessNormalize" data-uid="VoxelPlayground.Engine.PointDataV2.GetHardnessNormalize">
+  GetHardnessNormalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the normalized hardness of the current voxel (0-1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHardnessNormalize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>The normalized hardness.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetNumber_" data-uid="VoxelPlayground.Engine.PointDataV2.GetNumber*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetNumber_VoxelPlayground_Engine_PointDataV2_Property_" data-uid="VoxelPlayground.Engine.PointDataV2.GetNumber(VoxelPlayground.Engine.PointDataV2.Property)">
+  GetNumber(Property)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a numeric property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetNumber(PointDataV2.Property property)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.<a class="xref" href="VoxelPlayground.Engine.PointDataV2.Property.html">Property</a></dt>
+    <dd><p>The property to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd><p>The value of the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetPropertyValueNormalized_" data-uid="VoxelPlayground.Engine.PointDataV2.GetPropertyValueNormalized*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetPropertyValueNormalized_VoxelPlayground_Engine_PointDataV2_Property_" data-uid="VoxelPlayground.Engine.PointDataV2.GetPropertyValueNormalized(VoxelPlayground.Engine.PointDataV2.Property)">
+  GetPropertyValueNormalized(Property)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a normalized property value (0-1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPropertyValueNormalized(PointDataV2.Property property)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.<a class="xref" href="VoxelPlayground.Engine.PointDataV2.Property.html">Property</a></dt>
+    <dd><p>The property to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd><p>The normalized value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_GetSize_" data-uid="VoxelPlayground.Engine.PointDataV2.GetSize*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_GetSize" data-uid="VoxelPlayground.Engine.PointDataV2.GetSize">
+  GetSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the size of the struct in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd><p>The size in bytes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_InitDefaultValue_" data-uid="VoxelPlayground.Engine.PointDataV2.InitDefaultValue*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_InitDefaultValue" data-uid="VoxelPlayground.Engine.PointDataV2.InitDefaultValue">
+  InitDefaultValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes default property values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitDefaultValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_IsSolid_" data-uid="VoxelPlayground.Engine.PointDataV2.IsSolid*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_IsSolid" data-uid="VoxelPlayground.Engine.PointDataV2.IsSolid">
+  IsSolid()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the voxel is solid (non-empty).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSolid()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if solid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_IsUnyielding_" data-uid="VoxelPlayground.Engine.PointDataV2.IsUnyielding*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_IsUnyielding" data-uid="VoxelPlayground.Engine.PointDataV2.IsUnyielding">
+  IsUnyielding()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the voxel is unyielding (indestructible).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnyielding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True if unyielding.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_PackColor_" data-uid="VoxelPlayground.Engine.PointDataV2.PackColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_PackColor_System_Single_System_Single_System_Single_System_UInt16__" data-uid="VoxelPlayground.Engine.PointDataV2.PackColor(System.Single,System.Single,System.Single,System.UInt16@)">
+  PackColor(float, float, float, ref ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Packs RGB float values into a ushort RGB565 format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PackColor(float r, float g, float b, ref ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <span class="xref">float</span></dt>
+    <dd><p>Red component (0-1).</p>
+</dd>
+    <dt><code>g</code> <span class="xref">float</span></dt>
+    <dd><p>Green component (0-1).</p>
+</dd>
+    <dt><code>b</code> <span class="xref">float</span></dt>
+    <dd><p>Blue component (0-1).</p>
+</dd>
+    <dt><code>value</code> <span class="xref">ushort</span></dt>
+    <dd><p>The reference to store the packed value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_ProgressivelyRestoreOriginalColor_" data-uid="VoxelPlayground.Engine.PointDataV2.ProgressivelyRestoreOriginalColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_ProgressivelyRestoreOriginalColor" data-uid="VoxelPlayground.Engine.PointDataV2.ProgressivelyRestoreOriginalColor">
+  ProgressivelyRestoreOriginalColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Progressively restores the color towards the original color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProgressivelyRestoreOriginalColor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_RestoreOriginalColor_" data-uid="VoxelPlayground.Engine.PointDataV2.RestoreOriginalColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_RestoreOriginalColor" data-uid="VoxelPlayground.Engine.PointDataV2.RestoreOriginalColor">
+  RestoreOriginalColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Immediately restores the original color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreOriginalColor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_SetColor_" data-uid="VoxelPlayground.Engine.PointDataV2.SetColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_SetColor_Unity_Mathematics_float3_" data-uid="VoxelPlayground.Engine.PointDataV2.SetColor(Unity.Mathematics.float3)">
+  SetColor(float3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the color of the voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(float3 color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">float3</span></dt>
+    <dd><p>The color as float3.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_SetHardnessTable_" data-uid="VoxelPlayground.Engine.PointDataV2.SetHardnessTable*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_SetHardnessTable_System_UInt32___" data-uid="VoxelPlayground.Engine.PointDataV2.SetHardnessTable(System.UInt32[])">
+  SetHardnessTable(uint[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the global hardness table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetHardnessTable(uint[] hardness)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hardness</code> <span class="xref">uint</span>[]</dt>
+    <dd><p>Array of hardness values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_SetNumber_" data-uid="VoxelPlayground.Engine.PointDataV2.SetNumber*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_SetNumber_VoxelPlayground_Engine_PointDataV2_Property_System_UInt32_" data-uid="VoxelPlayground.Engine.PointDataV2.SetNumber(VoxelPlayground.Engine.PointDataV2.Property,System.UInt32)">
+  SetNumber(Property, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a numeric property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumber(PointDataV2.Property property, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="VoxelPlayground.Engine.PointDataV2.html">PointDataV2</a>.<a class="xref" href="VoxelPlayground.Engine.PointDataV2.Property.html">Property</a></dt>
+    <dd><p>The property to set.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">uint</span></dt>
+    <dd><p>The value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_SetUnyielding_" data-uid="VoxelPlayground.Engine.PointDataV2.SetUnyielding*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_SetUnyielding_System_Boolean_" data-uid="VoxelPlayground.Engine.PointDataV2.SetUnyielding(System.Boolean)">
+  SetUnyielding(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the unyielding state of the voxel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUnyielding(bool yes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>yes</code> <span class="xref">bool</span></dt>
+    <dd><p>True to make unyielding.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_StoreOriginalColor_" data-uid="VoxelPlayground.Engine.PointDataV2.StoreOriginalColor*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_StoreOriginalColor" data-uid="VoxelPlayground.Engine.PointDataV2.StoreOriginalColor">
+  StoreOriginalColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores the current color as the original color for future restoration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StoreOriginalColor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_UnpackColor565ToF3_" data-uid="VoxelPlayground.Engine.PointDataV2.UnpackColor565ToF3*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_UnpackColor565ToF3_System_UInt16_" data-uid="VoxelPlayground.Engine.PointDataV2.UnpackColor565ToF3(System.UInt16)">
+  UnpackColor565ToF3(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unpacks a ushort RGB565 value into a float3 RGB vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 UnpackColor565ToF3(ushort packedColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packedColor</code> <span class="xref">ushort</span></dt>
+    <dd><p>The packed color value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float3</span></dt>
+    <dd><p>The unpacked color as float3.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Engine_PointDataV2_UnpackIDFromInteger_" data-uid="VoxelPlayground.Engine.PointDataV2.UnpackIDFromInteger*"></a>
+
+  <h3 id="VoxelPlayground_Engine_PointDataV2_UnpackIDFromInteger_System_UInt32_" data-uid="VoxelPlayground.Engine.PointDataV2.UnpackIDFromInteger(System.UInt32)">
+  UnpackIDFromInteger(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unpacks the ID from the integer property value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint UnpackIDFromInteger(uint intValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intValue</code> <span class="xref">uint</span></dt>
+    <dd><p>The integer property value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">uint</span></dt>
+    <dd><p>The unpacked ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

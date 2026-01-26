@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvoxel_playground=self.webpackChunkvoxel_playground||[]).push([[241],{1686(e,r,u){u.r(r),u.d(r,{default:()=>n});u(6540);var a=u(6347),l=u(4848);function n(){return(0,l.jsx)(a.rd,{to:"/privacy"})}}}]);

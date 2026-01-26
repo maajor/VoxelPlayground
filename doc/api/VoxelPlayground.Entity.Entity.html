@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Entity | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Entity | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Entity.Entity">
+
+
+
+  <h1 id="VoxelPlayground_Entity_Entity" data-uid="VoxelPlayground.Entity.Entity" class="text-break">
+Class Entity  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Entity.html">Entity</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Entity : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">Entity</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityArmor.html">EntityArmor</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityBuilding.html">EntityBuilding</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityCalibration.html">EntityCalibration</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityCharacter.html">EntityCharacter</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityEnvironment.html">EntityEnvironment</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityItem.html">EntityItem</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityLavaBucket.html">EntityLavaBucket</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntitySpawnPoint.html">EntitySpawnPoint</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.EntityTitle.html">EntityTitle</a></div>
+      <div><a class="xref" href="VoxelPlayground.Entity.RecyclableEntity.html">RecyclableEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity__rigidbodies" data-uid="VoxelPlayground.Entity.Entity._rigidbodies">
+  _rigidbodies
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rigidbody[] _rigidbodies</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_CanHighlight" data-uid="VoxelPlayground.Entity.Entity.CanHighlight">
+  CanHighlight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public bool CanHighlight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_connectedEntity" data-uid="VoxelPlayground.Entity.Entity.connectedEntity">
+  connectedEntity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Entity&gt; connectedEntity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_disableVoxelDestructionUntil" data-uid="VoxelPlayground.Entity.Entity.disableVoxelDestructionUntil">
+  disableVoxelDestructionUntil
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float disableVoxelDestructionUntil</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_dontDestroyOnSceneClear" data-uid="VoxelPlayground.Entity.Entity.dontDestroyOnSceneClear">
+  dontDestroyOnSceneClear
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public bool dontDestroyOnSceneClear</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_dysfunctional" data-uid="VoxelPlayground.Entity.Entity.dysfunctional">
+  dysfunctional
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dysfunctional</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_enableFreeze" data-uid="VoxelPlayground.Entity.Entity.enableFreeze">
+  enableFreeze
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public bool enableFreeze</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_entityId" data-uid="VoxelPlayground.Entity.Entity.entityId">
+  entityId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public int entityId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_freezeState" data-uid="VoxelPlayground.Entity.Entity.freezeState">
+  freezeState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public Entity.FreezeState freezeState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>.<a class="xref" href="VoxelPlayground.Entity.Entity.FreezeState.html">FreezeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_GRIP_POINT_STR" data-uid="VoxelPlayground.Entity.Entity.GRIP_POINT_STR">
+  GRIP_POINT_STR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GRIP_POINT_STR = &quot;GripPoint&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_gripPoint" data-uid="VoxelPlayground.Entity.Entity.gripPoint">
+  gripPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public Transform gripPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_isActivated" data-uid="VoxelPlayground.Entity.Entity.isActivated">
+  isActivated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isActivated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_isPin" data-uid="VoxelPlayground.Entity.Entity.isPin">
+  isPin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public bool isPin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_needUseGravity" data-uid="VoxelPlayground.Entity.Entity.needUseGravity">
+  needUseGravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TabGroup(&quot;Interaction&quot;, false, 0)]
+public bool needUseGravity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_notifier" data-uid="VoxelPlayground.Entity.Entity.notifier">
+  notifier
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntityNotifier notifier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">EntityNotifier</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_PositionIterationOnGrab" data-uid="VoxelPlayground.Entity.Entity.PositionIterationOnGrab">
+  PositionIterationOnGrab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PositionIterationOnGrab = 14</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_registryId" data-uid="VoxelPlayground.Entity.Entity.registryId">
+  registryId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public string registryId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_sfxGain" data-uid="VoxelPlayground.Entity.Entity.sfxGain">
+  sfxGain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[ShowInInspector]
+public float sfxGain</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_soundTag" data-uid="VoxelPlayground.Entity.Entity.soundTag">
+  soundTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundTag soundTag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Sound.SoundTag.html">SoundTag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_teamFlag" data-uid="VoxelPlayground.Entity.Entity.teamFlag">
+  teamFlag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity.TeamFlag teamFlag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>.<a class="xref" href="VoxelPlayground.Entity.Entity.TeamFlag.html">TeamFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_VelocityIterationOnGrab" data-uid="VoxelPlayground.Entity.Entity.VelocityIterationOnGrab">
+  VelocityIterationOnGrab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int VelocityIterationOnGrab = 10</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_voxelData" data-uid="VoxelPlayground.Entity.Entity.voxelData">
+  voxelData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VoxelVolume voxelData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Entity_Entity_voxelDestructor" data-uid="VoxelPlayground.Entity.Entity.voxelDestructor">
+  voxelDestructor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VoxelDestructor voxelDestructor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoxelPlayground_Entity_Entity_Dysfunctional_" data-uid="VoxelPlayground.Entity.Entity.Dysfunctional*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Dysfunctional" data-uid="VoxelPlayground.Entity.Entity.Dysfunctional">
+  Dysfunctional
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Dysfunctional { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_IsGrabbed_" data-uid="VoxelPlayground.Entity.Entity.IsGrabbed*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_IsGrabbed" data-uid="VoxelPlayground.Entity.Entity.IsGrabbed">
+  IsGrabbed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGrabbed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_isGrabbedIndirect_" data-uid="VoxelPlayground.Entity.Entity.isGrabbedIndirect*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_isGrabbedIndirect" data-uid="VoxelPlayground.Entity.Entity.isGrabbedIndirect">
+  isGrabbedIndirect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isGrabbedIndirect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_itemName_" data-uid="VoxelPlayground.Entity.Entity.itemName*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_itemName" data-uid="VoxelPlayground.Entity.Entity.itemName">
+  itemName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string itemName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_MainRigidbody_" data-uid="VoxelPlayground.Entity.Entity.MainRigidbody*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_MainRigidbody" data-uid="VoxelPlayground.Entity.Entity.MainRigidbody">
+  MainRigidbody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody MainRigidbody { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Rigidbodies_" data-uid="VoxelPlayground.Entity.Entity.Rigidbodies*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Rigidbodies" data-uid="VoxelPlayground.Entity.Entity.Rigidbodies">
+  Rigidbodies
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody[] Rigidbodies { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_stillTimer_" data-uid="VoxelPlayground.Entity.Entity.stillTimer*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_stillTimer" data-uid="VoxelPlayground.Entity.Entity.stillTimer">
+  stillTimer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public float stillTimer { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_trans_" data-uid="VoxelPlayground.Entity.Entity.trans*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_trans" data-uid="VoxelPlayground.Entity.Entity.trans">
+  trans
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform trans { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Entity_Entity_Activate_" data-uid="VoxelPlayground.Entity.Entity.Activate*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Activate" data-uid="VoxelPlayground.Entity.Entity.Activate">
+  Activate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void Activate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_AddVoxelDestructor_" data-uid="VoxelPlayground.Entity.Entity.AddVoxelDestructor*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_AddVoxelDestructor_VoxelPlayground_Destruction_VoxelDestructor_" data-uid="VoxelPlayground.Entity.Entity.AddVoxelDestructor(VoxelPlayground.Destruction.VoxelDestructor)">
+  AddVoxelDestructor(VoxelDestructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVoxelDestructor(VoxelDestructor destructor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destructor</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Awake_" data-uid="VoxelPlayground.Entity.Entity.Awake*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Awake" data-uid="VoxelPlayground.Entity.Entity.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_CancelFreeze_" data-uid="VoxelPlayground.Entity.Entity.CancelFreeze*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_CancelFreeze" data-uid="VoxelPlayground.Entity.Entity.CancelFreeze">
+  CancelFreeze()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelFreeze()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_ControlledUpdate_" data-uid="VoxelPlayground.Entity.Entity.ControlledUpdate*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_ControlledUpdate_System_Single_" data-uid="VoxelPlayground.Entity.Entity.ControlledUpdate(System.Single)">
+  ControlledUpdate(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ControlledUpdate(float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Deactivate_" data-uid="VoxelPlayground.Entity.Entity.Deactivate*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Deactivate" data-uid="VoxelPlayground.Entity.Entity.Deactivate">
+  Deactivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual void Deactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Equals_" data-uid="VoxelPlayground.Entity.Entity.Equals*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Equals_System_Object_" data-uid="VoxelPlayground.Entity.Entity.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Equals_" data-uid="VoxelPlayground.Entity.Entity.Equals*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Equals_VoxelPlayground_Entity_Entity_" data-uid="VoxelPlayground.Entity.Entity.Equals(VoxelPlayground.Entity.Entity)">
+  Equals(Entity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Entity other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_FixedUpdateSleepingTime_" data-uid="VoxelPlayground.Entity.Entity.FixedUpdateSleepingTime*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_FixedUpdateSleepingTime_System_Single_" data-uid="VoxelPlayground.Entity.Entity.FixedUpdateSleepingTime(System.Single)">
+  FixedUpdateSleepingTime(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FixedUpdateSleepingTime(float deltaTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deltaTime</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Freeze_" data-uid="VoxelPlayground.Entity.Entity.Freeze*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Freeze_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.Freeze(System.Boolean)">
+  Freeze(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Freeze(bool temp = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>temp</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetConnectedEntity_" data-uid="VoxelPlayground.Entity.Entity.GetConnectedEntity*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetConnectedEntity" data-uid="VoxelPlayground.Entity.Entity.GetConnectedEntity">
+  GetConnectedEntity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public virtual List&lt;Entity&gt; GetConnectedEntity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetHashCode_" data-uid="VoxelPlayground.Entity.Entity.GetHashCode*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetHashCode" data-uid="VoxelPlayground.Entity.Entity.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetNeighborJoints_" data-uid="VoxelPlayground.Entity.Entity.GetNeighborJoints*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetNeighborJoints_UnityEngine_Rigidbody_" data-uid="VoxelPlayground.Entity.Entity.GetNeighborJoints(UnityEngine.Rigidbody)">
+  GetNeighborJoints(Rigidbody)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ConfigurableJoint&gt; GetNeighborJoints(Rigidbody rigidbody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rigidbody</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ConfigurableJoint.html">ConfigurableJoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetPinchCenterPoint_" data-uid="VoxelPlayground.Entity.Entity.GetPinchCenterPoint*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetPinchCenterPoint_UnityEngine_Rigidbody_" data-uid="VoxelPlayground.Entity.Entity.GetPinchCenterPoint(UnityEngine.Rigidbody)">
+  GetPinchCenterPoint(Rigidbody)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 GetPinchCenterPoint(Rigidbody hitRb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitRb</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.html">Rigidbody</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetScaledSize_" data-uid="VoxelPlayground.Entity.Entity.GetScaledSize*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetScaledSize" data-uid="VoxelPlayground.Entity.Entity.GetScaledSize">
+  GetScaledSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetScaledSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetSolidBlockCount_" data-uid="VoxelPlayground.Entity.Entity.GetSolidBlockCount*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetSolidBlockCount" data-uid="VoxelPlayground.Entity.Entity.GetSolidBlockCount">
+  GetSolidBlockCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSolidBlockCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetTotalMass_" data-uid="VoxelPlayground.Entity.Entity.GetTotalMass*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetTotalMass" data-uid="VoxelPlayground.Entity.Entity.GetTotalMass">
+  GetTotalMass()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTotalMass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetVoxelData_" data-uid="VoxelPlayground.Entity.Entity.GetVoxelData*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetVoxelData" data-uid="VoxelPlayground.Entity.Entity.GetVoxelData">
+  GetVoxelData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoxelVolume GetVoxelData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Engine.VoxelVolume.html">VoxelVolume</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetVoxelDataCenterPoint_" data-uid="VoxelPlayground.Entity.Entity.GetVoxelDataCenterPoint*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetVoxelDataCenterPoint" data-uid="VoxelPlayground.Entity.Entity.GetVoxelDataCenterPoint">
+  GetVoxelDataCenterPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetVoxelDataCenterPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_GetVoxelDestructor_" data-uid="VoxelPlayground.Entity.Entity.GetVoxelDestructor*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_GetVoxelDestructor" data-uid="VoxelPlayground.Entity.Entity.GetVoxelDestructor">
+  GetVoxelDestructor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoxelDestructor GetVoxelDestructor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_IgnoreEntityCollision_" data-uid="VoxelPlayground.Entity.Entity.IgnoreEntityCollision*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_IgnoreEntityCollision_VoxelPlayground_Entity_Entity_System_Boolean_System_Collections_Generic_List_UnityEngine_Collider__" data-uid="VoxelPlayground.Entity.Entity.IgnoreEntityCollision(VoxelPlayground.Entity.Entity,System.Boolean,System.Collections.Generic.List{UnityEngine.Collider})">
+  IgnoreEntityCollision(Entity, bool, List&lt;Collider&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IgnoreEntityCollision(Entity otherEntity, bool doIgnore, List&lt;Collider&gt; extraColliders = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherEntity</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>doIgnore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>extraColliders</code> <span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Initialize_" data-uid="VoxelPlayground.Entity.Entity.Initialize*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Initialize_EntityNotifier_EntityManager_" data-uid="VoxelPlayground.Entity.Entity.Initialize(EntityNotifier,EntityManager)">
+  Initialize(EntityNotifier, EntityManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(EntityNotifier notifier, EntityManager entityManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notifier</code> <span class="xref">EntityNotifier</span></dt>
+    <dd></dd>
+    <dt><code>entityManager</code> <span class="xref">EntityManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_IsActivated_" data-uid="VoxelPlayground.Entity.Entity.IsActivated*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_IsActivated" data-uid="VoxelPlayground.Entity.Entity.IsActivated">
+  IsActivated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActivated()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_IsEnemyFaction_" data-uid="VoxelPlayground.Entity.Entity.IsEnemyFaction*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_IsEnemyFaction" data-uid="VoxelPlayground.Entity.Entity.IsEnemyFaction">
+  IsEnemyFaction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnemyFaction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_IsPlayerFaction_" data-uid="VoxelPlayground.Entity.Entity.IsPlayerFaction*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_IsPlayerFaction" data-uid="VoxelPlayground.Entity.Entity.IsPlayerFaction">
+  IsPlayerFaction()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerFaction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_ModifyLocalScale_" data-uid="VoxelPlayground.Entity.Entity.ModifyLocalScale*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_ModifyLocalScale_System_Single_" data-uid="VoxelPlayground.Entity.Entity.ModifyLocalScale(System.Single)">
+  ModifyLocalScale(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ModifyLocalScale(float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Notify_" data-uid="VoxelPlayground.Entity.Entity.Notify*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Notify_VoxelEvent_System_Int32_System_Object___" data-uid="VoxelPlayground.Entity.Entity.Notify(VoxelEvent,System.Int32,System.Object[])">
+  Notify(VoxelEvent, int, params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify(VoxelEvent voxelEvent, int affectedVoxelCount, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelEvent</code> <span class="xref">VoxelEvent</span></dt>
+    <dd></dd>
+    <dt><code>affectedVoxelCount</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>args</code> <span class="xref">object</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_OnBeStabbed_" data-uid="VoxelPlayground.Entity.Entity.OnBeStabbed*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_OnBeStabbed_VoxelPlayground_Entity_Entity_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.OnBeStabbed(VoxelPlayground.Entity.Entity,System.Boolean)">
+  OnBeStabbed(Entity, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeStabbed(Entity stabber, bool isStabbed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stabber</code> <a class="xref" href="VoxelPlayground.Entity.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>isStabbed</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_OnDestroy_" data-uid="VoxelPlayground.Entity.Entity.OnDestroy*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_OnDestroy" data-uid="VoxelPlayground.Entity.Entity.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_OnIgnite_" data-uid="VoxelPlayground.Entity.Entity.OnIgnite*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_OnIgnite_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Entity.Entity.OnIgnite(UnityEngine.Vector3,System.Single)">
+  OnIgnite(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnIgnite(Vector3 center, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_OnReset_" data-uid="VoxelPlayground.Entity.Entity.OnReset*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_OnReset" data-uid="VoxelPlayground.Entity.Entity.OnReset">
+  OnReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Pin_" data-uid="VoxelPlayground.Entity.Entity.Pin*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Pin" data-uid="VoxelPlayground.Entity.Entity.Pin">
+  Pin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_RecoverLocalScale_" data-uid="VoxelPlayground.Entity.Entity.RecoverLocalScale*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_RecoverLocalScale" data-uid="VoxelPlayground.Entity.Entity.RecoverLocalScale">
+  RecoverLocalScale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecoverLocalScale()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_RefreshRigidbodiesRefs_" data-uid="VoxelPlayground.Entity.Entity.RefreshRigidbodiesRefs*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_RefreshRigidbodiesRefs" data-uid="VoxelPlayground.Entity.Entity.RefreshRigidbodiesRefs">
+  RefreshRigidbodiesRefs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshRigidbodiesRefs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_RemoveUnFreezeSchedule_" data-uid="VoxelPlayground.Entity.Entity.RemoveUnFreezeSchedule*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_RemoveUnFreezeSchedule" data-uid="VoxelPlayground.Entity.Entity.RemoveUnFreezeSchedule">
+  RemoveUnFreezeSchedule()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnFreezeSchedule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_RemoveVoxelDestructors_" data-uid="VoxelPlayground.Entity.Entity.RemoveVoxelDestructors*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_RemoveVoxelDestructors_VoxelPlayground_Destruction_VoxelDestructor___" data-uid="VoxelPlayground.Entity.Entity.RemoveVoxelDestructors(VoxelPlayground.Destruction.VoxelDestructor[])">
+  RemoveVoxelDestructors(VoxelDestructor[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVoxelDestructors(VoxelDestructor[] destructorsToRemove)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destructorsToRemove</code> <a class="xref" href="VoxelPlayground.Destruction.VoxelDestructor.html">VoxelDestructor</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_RestoreRigidbodiesDrags_" data-uid="VoxelPlayground.Entity.Entity.RestoreRigidbodiesDrags*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_RestoreRigidbodiesDrags" data-uid="VoxelPlayground.Entity.Entity.RestoreRigidbodiesDrags">
+  RestoreRigidbodiesDrags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreRigidbodiesDrags()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetActivate_" data-uid="VoxelPlayground.Entity.Entity.SetActivate*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetActivate_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetActivate(System.Boolean)">
+  SetActivate(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActivate(bool activate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activate</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetActivateForConnected_" data-uid="VoxelPlayground.Entity.Entity.SetActivateForConnected*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetActivateForConnected_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetActivateForConnected(System.Boolean)">
+  SetActivateForConnected(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SetActivateForConnected(bool activate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activate</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetGravityEnable_" data-uid="VoxelPlayground.Entity.Entity.SetGravityEnable*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetGravityEnable_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetGravityEnable(System.Boolean)">
+  SetGravityEnable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetGravityEnable(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetHighlight_" data-uid="VoxelPlayground.Entity.Entity.SetHighlight*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetHighlight_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetHighlight(System.Boolean)">
+  SetHighlight(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SetHighlight(bool toHighlight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toHighlight</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetIsKinematic_" data-uid="VoxelPlayground.Entity.Entity.SetIsKinematic*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetIsKinematic_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetIsKinematic(System.Boolean)">
+  SetIsKinematic(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsKinematic(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetRigidbodiesDragsFreeze_" data-uid="VoxelPlayground.Entity.Entity.SetRigidbodiesDragsFreeze*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetRigidbodiesDragsFreeze" data-uid="VoxelPlayground.Entity.Entity.SetRigidbodiesDragsFreeze">
+  SetRigidbodiesDragsFreeze()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRigidbodiesDragsFreeze()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetTargetColliderAndNeighborsIgnore_" data-uid="VoxelPlayground.Entity.Entity.SetTargetColliderAndNeighborsIgnore*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetTargetColliderAndNeighborsIgnore_UnityEngine_Collider_UnityEngine_Collider_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetTargetColliderAndNeighborsIgnore(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)">
+  SetTargetColliderAndNeighborsIgnore(Collider, Collider, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetColliderAndNeighborsIgnore(Collider attackerCollider, Collider hitCollider, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attackerCollider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>hitCollider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetVisible_" data-uid="VoxelPlayground.Entity.Entity.SetVisible*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetVisible_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetVisible(System.Boolean)">
+  SetVisible(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void SetVisible(bool visible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>visible</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_SetVoxelColliderIgnore_" data-uid="VoxelPlayground.Entity.Entity.SetVoxelColliderIgnore*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_SetVoxelColliderIgnore_UnityEngine_Collider_System_Boolean_" data-uid="VoxelPlayground.Entity.Entity.SetVoxelColliderIgnore(UnityEngine.Collider,System.Boolean)">
+  SetVoxelColliderIgnore(Collider, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVoxelColliderIgnore(Collider collider, bool ignore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collider</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.html">Collider</a></dt>
+    <dd></dd>
+    <dt><code>ignore</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Start_" data-uid="VoxelPlayground.Entity.Entity.Start*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Start" data-uid="VoxelPlayground.Entity.Entity.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_Teleport_" data-uid="VoxelPlayground.Entity.Entity.Teleport*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_Teleport_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="VoxelPlayground.Entity.Entity.Teleport(UnityEngine.Vector3,UnityEngine.Quaternion)">
+  Teleport(Vector3, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Teleport(Vector3 position, Quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_ToggleActivate_" data-uid="VoxelPlayground.Entity.Entity.ToggleActivate*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_ToggleActivate" data-uid="VoxelPlayground.Entity.Entity.ToggleActivate">
+  ToggleActivate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleActivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_TogglePin_" data-uid="VoxelPlayground.Entity.Entity.TogglePin*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_TogglePin" data-uid="VoxelPlayground.Entity.Entity.TogglePin">
+  TogglePin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TogglePin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_TryRemoveVelocity_" data-uid="VoxelPlayground.Entity.Entity.TryRemoveVelocity*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_TryRemoveVelocity" data-uid="VoxelPlayground.Entity.Entity.TryRemoveVelocity">
+  TryRemoveVelocity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryRemoveVelocity()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_UnPin_" data-uid="VoxelPlayground.Entity.Entity.UnPin*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_UnPin" data-uid="VoxelPlayground.Entity.Entity.UnPin">
+  UnPin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnPin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Entity_Entity_UpdatePhysGravityKinematic_" data-uid="VoxelPlayground.Entity.Entity.UpdatePhysGravityKinematic*"></a>
+
+  <h3 id="VoxelPlayground_Entity_Entity_UpdatePhysGravityKinematic" data-uid="VoxelPlayground.Entity.Entity.UpdatePhysGravityKinematic">
+  UpdatePhysGravityKinematic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePhysGravityKinematic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

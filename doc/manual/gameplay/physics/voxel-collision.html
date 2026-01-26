@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Voxel Collision | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Voxel Collision | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="voxel-collision">Voxel Collision</h1>
+
+<p>This page details how collision works for voxel objects in <strong>Voxel Playground</strong>, including setup, penetration mechanics, and advanced configuration.</p>
+<h2 id="1-voxel-object-collision-setup">1. Voxel Object Collision Setup</h2>
+<p>For voxel-based objects, collision handling depends on the level of control you need:</p>
+<h3 id="automatic-handling-simple">Automatic Handling (Simple)</h3>
+<p>For most voxel objects, you should use the <code>VoxelObjectProxy</code> component.</p>
+<ul>
+<li>It automatically handles mesh generation and collision setup.</li>
+<li>You do <strong>not</strong> need to manually add collision components; <code>VoxelObjectProxy</code> takes care of it.</li>
+</ul>
+<h3 id="manual-control-advanced">Manual Control (Advanced)</h3>
+<p>If you need finer control over the collision behavior (e.g., specific layers, mass density, or destructibility settings), you should decouple the components:</p>
+<ol>
+<li>Use <code>VoxelVolume</code> for the voxel data and mesh.</li>
+<li>Add <code>PxVoxelColliderGenerator</code> to handle the collision generation.</li>
+<li>Remove <code>VoxelObjectProxy</code>.</li>
+</ol>
+<p>This manual approach allows you to tweak settings on <code>PxVoxelColliderGenerator</code> such as:</p>
+<ul>
+<li><code>massDensity</code></li>
+<li><code>useMassFromActor</code></li>
+<li><code>includeLayers</code> / <code>excludeLayers</code></li>
+<li><code>ManualAttach</code> (for attaching to specific rigidbodies)</li>
+</ul>
+<h2 id="2-penetration-mechanics">2. Penetration Mechanics</h2>
+<p>Voxel Playground uses a custom physics to simulate object penetration based on material hardness and velocity. This allows harder objects to penetrate softer ones (e.g., a metal ball going through wood, or a car crashing through a brick wall).</p>
+<h3 id="core-properties">Core Properties</h3>
+<p>On the <code>PxVoxelColliderGenerator</code> component:</p>
+<ul>
+<li><strong><code>useKinematicPenetrate</code></strong>: Enables the hardness-based penetration system. If disabled, voxels behave like standard solid rigidbodies.</li>
+<li><strong><code>easyKinematicPenetration</code></strong>: Allows for easier penetration even at lower velocities. This is often used for sharp objects or super-strength interactions where high velocity shouldn't be a strict requirement for damage/penetration.</li>
+</ul>
+<h3 id="how-it-works">How It Works</h3>
+<p>The system compares the <strong>Hardness</strong> of the two colliding objects (see <a href="../voxel/material-id-visual.html">Material ID and Visual</a> for hardness values).</p>
+<ol>
+<li><strong>Hardness Check</strong>: The system calculates the difference in hardness between the two objects.
+<ul>
+<li>If the difference is small, standard physics apply (objects bounce or stop).</li>
+<li>If the difference is significant, the system calculates a &quot;decay&quot; factor. In this scenario, the relative velocity of the two objects is <strong>not</strong> resolved to zero, so they continue to move and penetrate each other.</li>
+</ul>
+</li>
+<li><strong>Velocity Check</strong>:
+<ul>
+<li>Generally, higher relative velocity enables deeper/easier penetration.</li>
+<li>If <code>easyKinematicPenetration</code> is enabled (and conditions are met), the minimum velocity threshold is removed, allowing &quot;pushing&quot; through soft materials.</li>
+</ul>
+</li>
+<li><strong>Resolution</strong>:
+<ul>
+<li>The &quot;Harder&quot; object penetrates the &quot;Softer&quot; object.</li>
+<li>The &quot;Softer&quot; object offers resistance based on the hardness difference.</li>
+<li><strong>Indestructible</strong> objects are protected from penetration unless specific conditions are met.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>: This logic is handled internally by the physics engine. You mainly control it by assigning appropriate Material IDs to your voxels and toggling <code>useKinematicPenetrate</code>.</p>
+</blockquote>
+<h2 id="3-infinite-sides">3. Infinite Sides</h2>
+<p>The <code>PxVoxelColliderGenerator</code> has an <code>InfiniteSide</code> property, which is an array of 6 booleans corresponding to the 6 directions of the voxel volume:
+<code>{ &quot;X Positive&quot;, &quot;X Negative&quot;, &quot;Y Positive&quot;, &quot;Y Negative&quot;, &quot;Z Positive&quot;, &quot;Z Negative&quot; }</code></p>
+<ul>
+<li><strong>Usage</strong>: When set to <code>true</code>, that side of the voxel volume is treated as an &quot;infinite&quot; boundary.</li>
+<li><strong>Use Case</strong>: This is primarily used for world boundaries or &quot;ground&quot; to prevent objects from falling out of the map or to seal the edges of a level.</li>
+</ul>
+<h2 id="4-voxel-object-types--auto-configuration">4. Voxel Object Types &amp; Auto-Configuration</h2>
+<p>When using <code>VoxelObjectProxy</code>, the <code>VoxelObjectProxyType</code> determines how the underlying components (<code>VoxelVolume</code>, <code>PxVoxelColliderGenerator</code>, <code>VoxelDestructor</code>) are configured. You usually don't need to touch these manually.</p>
+<p>Here is a summary of how different types configure the object:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Proxy Type</th>
+<th style="text-align: left;">Connectivity Check</th>
+<th style="text-align: left;">Chemistry Effect</th>
+<th style="text-align: left;">Layer</th>
+<th style="text-align: left;">Destructible</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>WeaponItem</strong></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;"><strong>No</strong> (Indestructible)</td>
+<td style="text-align: left;">Used for handheld weapons. Doesn't break apart.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BuildingItem</strong></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: left;">Standard prop/item that can break.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SceneStatic</strong></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;"><code>false</code></td>
+<td style="text-align: left;">Building</td>
+<td style="text-align: left;"><strong>No</strong> (Indestructible/Unyielding)</td>
+<td style="text-align: left;">Static level geometry. Unyielding means it won't be pushed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SceneDynamic</strong></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: left;">Dynamic level objects (crates, etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SceneConnected</strong></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;"><code>true</code></td>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;"><strong>Yes</strong></td>
+<td style="text-align: left;">(Weak/Strong) Connected structures.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Connectivity Check</strong>: Whether the object checks if parts of it are floating/disconnected (and should fall off).</li>
+<li><strong>Chemistry Effect</strong>: Whether the voxel chemetry simulation updates (fire, water, poison).</li>
+<li><strong>Layer</strong>: The Unity/Physics layer assigned (<code>Item</code> vs <code>Building</code>).</li>
+<li><strong>Destructible</strong>: Controlled by <code>VoxelDestructor</code>. <code>SceneStatic</code> is generally set to Indestructible.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

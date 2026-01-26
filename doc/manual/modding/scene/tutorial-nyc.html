@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Tutorial: NYC | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Tutorial: NYC | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../../resources/logo.svg">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="tutorial-nyc">Tutorial: NYC</h1>
+
+<p>This tutorial demonstrates how to create a destructible city environment mod, similar to the <strong>NYC</strong> sample scene.</p>
+<p><strong>Path in Mod Toolkit</strong>: <code>Assets/Samples/NYC</code></p>
+<p><a href="https://mod.io/g/voxelplayground/m/nyc1#description">NYC Mod on mod.io</a></p>
+<h2 id="step-1-modeling-in-magicavoxel">Step 1: Modeling in MagicaVoxel</h2>
+<p>Create your city buildings and environment in MagicaVoxel.</p>
+<h3 id="scaling-and-limits">Scaling and Limits</h3>
+<p>MagicaVoxel has a size limit (usually 256x256x256 per object). City buildings can often exceed this size.</p>
+<ul>
+<li><strong>Strategy</strong>: Model your buildings at <strong>half scale (0.5x)</strong> in MagicaVoxel.</li>
+<li><strong>Naming</strong>: You can append <code>_x2</code> to the object name as a reminder to scale it back up by <strong>2x</strong> in the Unity Editor later.</li>
+</ul>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>For destructible buildings that need to stay rooted to the ground until their base is destroyed, use the <strong><code>C_</code></strong> prefix.</p>
+<ul>
+<li><strong><code>C_</code> (Strong Connected)</strong>: Objects with this prefix are imported as destructible items but include an <code>UnyieldingArea</code> component. This component keeps the object &quot;kinematic&quot; (immovable) as long as the unyielding area overlaps with a static object (like the ground).
+<ul>
+<li><em>Example</em>: <code>C_BuildingA</code>, <code>C_Skyscraper</code></li>
+</ul>
+</li>
+</ul>
+<p>Refer to the <a href="../../tools/voxel-authoring/magica-voxel.html#naming-for-scene">Scene Naming Guide</a> for more details.</p>
+<img src="../../../resources/ModNYC.jpg" style="max-width: 720px;">
+<h2 id="step-2-import-and-setup">Step 2: Import and Setup</h2>
+<h3 id="1-import-voxel-models">1. Import Voxel Models</h3>
+<ol>
+<li>Import your <code>.vox</code> file using the <strong>Asset Processor</strong>.</li>
+<li>Set the <strong>Type</strong> to <strong>Scene</strong> (if importing a full scene assembly) or <strong>Object</strong> (if assembling manually).</li>
+<li><strong>Convert</strong> to generate prefabs.</li>
+</ol>
+<h3 id="2-scene-assembly-in-unity">2. Scene Assembly in Unity</h3>
+<ol>
+<li>Place your building prefabs into the scene.</li>
+<li><strong>Rescale</strong>: If you modeled at half scale, set the <strong>Scale</strong> of your building transforms to <code>(2, 2, 2)</code>.</li>
+</ol>
+<h3 id="3-add-ground-heightmap">3. Add Ground (Heightmap)</h3>
+<p>To create a large, solid ground for the city, use the <strong>HeightmapVoxels</strong> system. This is more efficient than building a massive floor in MagicaVoxel.</p>
+<ol>
+<li>Create an empty GameObject.</li>
+<li>Add the <code>HeightmapVoxels</code> component.</li>
+<li>Assign your <strong>Heightmap</strong> and <strong>Colormap</strong> textures.
+<ul>
+<li>Ensure textures are <strong>Read/Write Enabled</strong>.</li>
+<li>See <a href="../../gameplay/voxel/heightmap-voxel.html">Heightmap Voxels</a> for detailed setup.</li>
+</ul>
+</li>
+</ol>
+<img src="../../../resources/PrefabNYC.jpg" style="max-width: 720px;">
+<h3 id="4-configure-unyielding-area">4. Configure Unyielding Area</h3>
+<p>For your <code>C_</code> buildings to stand upright:</p>
+<ol>
+<li>Select the building prefab in the scene.</li>
+<li>Locate the <code>UnyieldingArea</code> component (automatically added by the <code>C_</code> prefix).</li>
+<li>Adjust the <strong>Center</strong> and <strong>Size</strong> of the unyielding area box.</li>
+<li><strong>Crucial</strong>: Ensure this box <strong>overlaps</strong> with the ground voxels (the Heightmap terrain).
+<ul>
+<li>The system checks for voxel connectivity within this box. If it finds the static ground, the building remains stable.</li>
+<li>If the connection to the ground is severed (e.g., player destroys the bottom of the building), the building will become dynamic and collapse.</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-3-configure-mod-manifest">Step 3: Configure Mod Manifest</h2>
+<p>Register your scene in the <code>ModManifest</code>.</p>
+<ol>
+<li>Open your <code>ModManifest</code> asset.</li>
+<li>Add the Scene Prefab to the <strong>Export Prefabs</strong> list.</li>
+<li>Ensure the mod type and details are correct.</li>
+</ol>
+<p>See <a href="../../quick-start/create-mod.html#step-3-configure-mod-manifest">Configure Mod Manifest</a>.</p>
+<h2 id="step-4-test-and-publish">Step 4: Test and Publish</h2>
+<p>Build and test your city scene.</p>
+<ul>
+<li><a href="../../quick-start/test-mod.html">Testing your Mod</a></li>
+<li><a href="../../quick-start/publish-mod.html">Publishing your Mod</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MotionDetector | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MotionDetector | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Ragdoll.MotionDetector">
+
+
+
+  <h1 id="VoxelPlayground_Ragdoll_MotionDetector" data-uid="VoxelPlayground.Ragdoll.MotionDetector" class="text-break">
+Class MotionDetector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Ragdoll.html">Ragdoll</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MotionDetector : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">MotionDetector</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_animationController" data-uid="VoxelPlayground.Ragdoll.MotionDetector.animationController">
+  animationController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationBase animationController</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.AnimationBase.html">AnimationBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_balanceSenstiveVectorThreshold" data-uid="VoxelPlayground.Ragdoll.MotionDetector.balanceSenstiveVectorThreshold">
+  balanceSenstiveVectorThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float balanceSenstiveVectorThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_balanceVectorThreshold" data-uid="VoxelPlayground.Ragdoll.MotionDetector.balanceVectorThreshold">
+  balanceVectorThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float balanceVectorThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_canStandup" data-uid="VoxelPlayground.Ragdoll.MotionDetector.canStandup">
+  canStandup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool canStandup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_characterController" data-uid="VoxelPlayground.Ragdoll.MotionDetector.characterController">
+  characterController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocomotionBase characterController</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.LocomotionBase.html">LocomotionBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_disableBalanceFeature" data-uid="VoxelPlayground.Ragdoll.MotionDetector.disableBalanceFeature">
+  disableBalanceFeature
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool disableBalanceFeature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_disableMotionFeature" data-uid="VoxelPlayground.Ragdoll.MotionDetector.disableMotionFeature">
+  disableMotionFeature
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool disableMotionFeature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_enableMotionFunction" data-uid="VoxelPlayground.Ragdoll.MotionDetector.enableMotionFunction">
+  enableMotionFunction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool enableMotionFunction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_getupAfterGroundTime" data-uid="VoxelPlayground.Ragdoll.MotionDetector.getupAfterGroundTime">
+  getupAfterGroundTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getupAfterGroundTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_getupBlendTime" data-uid="VoxelPlayground.Ragdoll.MotionDetector.getupBlendTime">
+  getupBlendTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getupBlendTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_headMu" data-uid="VoxelPlayground.Ragdoll.MotionDetector.headMu">
+  headMu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RagdollMuscle headMu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollMuscle.html">RagdollMuscle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_headMuscle" data-uid="VoxelPlayground.Ragdoll.MotionDetector.headMuscle">
+  headMuscle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform headMuscle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_knockoutAccThreshold" data-uid="VoxelPlayground.Ragdoll.MotionDetector.knockoutAccThreshold">
+  knockoutAccThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float knockoutAccThreshold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_knockoutMuscles" data-uid="VoxelPlayground.Ragdoll.MotionDetector.knockoutMuscles">
+  knockoutMuscles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MotionDetector.KnockoutData[] knockoutMuscles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.KnockoutData.html">KnockoutData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_leftFootMu" data-uid="VoxelPlayground.Ragdoll.MotionDetector.leftFootMu">
+  leftFootMu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RagdollMuscle leftFootMu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollMuscle.html">RagdollMuscle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_leftFootMuscle" data-uid="VoxelPlayground.Ragdoll.MotionDetector.leftFootMuscle">
+  leftFootMuscle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform leftFootMuscle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_ra" data-uid="VoxelPlayground.Ragdoll.MotionDetector.ra">
+  ra
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RagdollAnim ra</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollAnim.html">RagdollAnim</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_rightFootMu" data-uid="VoxelPlayground.Ragdoll.MotionDetector.rightFootMu">
+  rightFootMu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RagdollMuscle rightFootMu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollMuscle.html">RagdollMuscle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_rightFootMuscle" data-uid="VoxelPlayground.Ragdoll.MotionDetector.rightFootMuscle">
+  rightFootMuscle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform rightFootMuscle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_spineMu" data-uid="VoxelPlayground.Ragdoll.MotionDetector.spineMu">
+  spineMu
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RagdollMuscle spineMu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.RagdollMuscle.html">RagdollMuscle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_splineMuscle" data-uid="VoxelPlayground.Ragdoll.MotionDetector.splineMuscle">
+  splineMuscle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform splineMuscle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_unknockoutable" data-uid="VoxelPlayground.Ragdoll.MotionDetector.unknockoutable">
+  unknockoutable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool unknockoutable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_AddForceToKeyPart_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.AddForceToKeyPart*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_AddForceToKeyPart_UnityEngine_Vector3_UnityEngine_ForceMode_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.AddForceToKeyPart(UnityEngine.Vector3,UnityEngine.ForceMode)">
+  AddForceToKeyPart(Vector3, ForceMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddForceToKeyPart(Vector3 force, ForceMode fm = ForceMode.VelocityChange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>force</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>fm</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ForceMode.html">ForceMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_DisableMotionForAWhile_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.DisableMotionForAWhile*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_DisableMotionForAWhile_System_Single_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.DisableMotionForAWhile(System.Single)">
+  DisableMotionForAWhile(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableMotionForAWhile(float sec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sec</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_EnableMotionFunction_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.EnableMotionFunction*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_EnableMotionFunction_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.EnableMotionFunction(System.Boolean)">
+  EnableMotionFunction(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableMotionFunction(bool e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_GetFeetCenterPos_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.GetFeetCenterPos*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_GetFeetCenterPos" data-uid="VoxelPlayground.Ragdoll.MotionDetector.GetFeetCenterPos">
+  GetFeetCenterPos()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetFeetCenterPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_GetStandState_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.GetStandState*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_GetStandState" data-uid="VoxelPlayground.Ragdoll.MotionDetector.GetStandState">
+  GetStandState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MotionDetector.StandState GetStandState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.html">MotionDetector</a>.<a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.StandState.html">StandState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_IsGettingUp_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsGettingUp*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_IsGettingUp" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsGettingUp">
+  IsGettingUp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGettingUp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_IsKnockout_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsKnockout*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_IsKnockout" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsKnockout">
+  IsKnockout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKnockout()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_IsKnockoutDown_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsKnockoutDown*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_IsKnockoutDown" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsKnockoutDown">
+  IsKnockoutDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKnockoutDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_IsUnBalance_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsUnBalance*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_IsUnBalance_UnityEngine_Vector3__" data-uid="VoxelPlayground.Ragdoll.MotionDetector.IsUnBalance(UnityEngine.Vector3@)">
+  IsUnBalance(out Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnBalance(out Vector3 pushDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pushDir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_Knockout_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Knockout*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_Knockout" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Knockout">
+  Knockout()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void Knockout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_KnockoutWithForce_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.KnockoutWithForce*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_KnockoutWithForce_VoxelPlayground_Ragdoll_RagdollMuscle_UnityEngine_Vector3_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.KnockoutWithForce(VoxelPlayground.Ragdoll.RagdollMuscle,UnityEngine.Vector3)">
+  KnockoutWithForce(RagdollMuscle, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KnockoutWithForce(RagdollMuscle mu, Vector3 forceDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mu</code> <a class="xref" href="VoxelPlayground.Ragdoll.RagdollMuscle.html">RagdollMuscle</a></dt>
+    <dd></dd>
+    <dt><code>forceDir</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_ProtectMotionFunctionForAWhile_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.ProtectMotionFunctionForAWhile*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_ProtectMotionFunctionForAWhile_System_Single_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.ProtectMotionFunctionForAWhile(System.Single)">
+  ProtectMotionFunctionForAWhile(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProtectMotionFunctionForAWhile(float sec = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sec</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_PullMuscle_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.PullMuscle*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_PullMuscle" data-uid="VoxelPlayground.Ragdoll.MotionDetector.PullMuscle">
+  PullMuscle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PullMuscle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_RawSetStandState_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.RawSetStandState*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_RawSetStandState_VoxelPlayground_Ragdoll_MotionDetector_StandState_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.RawSetStandState(VoxelPlayground.Ragdoll.MotionDetector.StandState)">
+  RawSetStandState(StandState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RawSetStandState(MotionDetector.StandState ss)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ss</code> <a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.html">MotionDetector</a>.<a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.StandState.html">StandState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_SetBalanceMlp_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetBalanceMlp*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_SetBalanceMlp_System_Single_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetBalanceMlp(System.Single)">
+  SetBalanceMlp(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBalanceMlp(float bm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bm</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_SetBalanceState_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetBalanceState*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_SetBalanceState_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetBalanceState(System.Boolean)">
+  SetBalanceState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBalanceState(bool senstive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>senstive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_SetKnockMlp_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetKnockMlp*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_SetKnockMlp_System_Single_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetKnockMlp(System.Single)">
+  SetKnockMlp(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKnockMlp(float mlp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mlp</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_SetRagdollAnimControlEnable_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetRagdollAnimControlEnable*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_SetRagdollAnimControlEnable_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.SetRagdollAnimControlEnable(System.Boolean)">
+  SetRagdollAnimControlEnable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRagdollAnimControlEnable(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_Standing_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standing*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_Standing" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standing">
+  Standing()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Standing()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_Standup_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standup*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_Standup" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standup">
+  Standup()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void Standup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_Standup_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standup*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_Standup_System_Boolean_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.Standup(System.Boolean)">
+  Standup(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Standup(bool faceDown)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>faceDown</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_StandupImmediatly_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.StandupImmediatly*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_StandupImmediatly" data-uid="VoxelPlayground.Ragdoll.MotionDetector.StandupImmediatly">
+  StandupImmediatly()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StandupImmediatly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_MotionDetector_UpdateMotion_" data-uid="VoxelPlayground.Ragdoll.MotionDetector.UpdateMotion*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_UpdateMotion" data-uid="VoxelPlayground.Ragdoll.MotionDetector.UpdateMotion">
+  UpdateMotion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMotion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_KnockoutForLongTimeEvent" data-uid="VoxelPlayground.Ragdoll.MotionDetector.KnockoutForLongTimeEvent">
+  KnockoutForLongTimeEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action KnockoutForLongTimeEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_StandChangedEvent" data-uid="VoxelPlayground.Ragdoll.MotionDetector.StandChangedEvent">
+  StandChangedEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; StandChangedEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<span class="xref">bool</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Ragdoll_MotionDetector_StandStateChangedEvent" data-uid="VoxelPlayground.Ragdoll.MotionDetector.StandStateChangedEvent">
+  StandStateChangedEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;MotionDetector.StandState&gt; StandStateChangedEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Action</span>&lt;<a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.html">MotionDetector</a>.<a class="xref" href="VoxelPlayground.Ragdoll.MotionDetector.StandState.html">StandState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

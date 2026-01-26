@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Builtin Entities Preview | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Builtin Entities Preview | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../../resources/logo.svg">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="builtin-entities-preview">Builtin Entities Preview</h1>
+
+<p>The <strong>Builtin Entities Preview</strong> tool allows modders to easily place the game's builtin entities (such as weapons, items, vehicles, and props) into their mod scenes. This is particularly useful for creating level mods or testing interactions with standard game content.</p>
+<p><img src="../../resources/BulitInEntities.jpg" alt="Builtin Entities Preview"></p>
+<h2 id="accessing-the-tool">Accessing the Tool</h2>
+<p>To open the tool, navigate to the Unity menu:</p>
+<p><strong>Vox Mod Tools &gt; Builtin Entities Preview</strong></p>
+<h2 id="ui-overview">UI Overview</h2>
+<p>The window provides a categorized visual list of all available builtin entities:</p>
+<ul>
+<li><strong>Search Bar</strong>: Quickly find specific entities by name.</li>
+<li><strong>Button Size</strong>: A slider to adjust the size of the preview icons.</li>
+<li><strong>Categories</strong>: Entities are grouped for easy navigation:
+<ul>
+<li><strong>Items/Attachable</strong>: Props like barrels, landmines, and thrusters.</li>
+<li><strong>Items/Guns</strong>: Ranged weapons including rifles, pistols, and sci-fi guns.</li>
+<li><strong>Items/MeleeWeapons</strong>: Melee tools and weapons like swords, axes, and hammers.</li>
+<li><strong>Vehicles</strong>: Drivable cars and other vehicles.</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Open the <strong>Builtin Entities Preview</strong> window.</li>
+<li>Find the desired entity in the list.</li>
+<li><strong>Drag and drop</strong> the entity's icon directly into the <strong>Scene View</strong>.</li>
+</ol>
+<p>This action creates a new GameObject in your scene with the <a href="file:///Assets/Scripts/Gameplay/Entities/BuiltinEntityProxy.cs">BuiltinEntityProxy</a> component attached.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>When you drag an entity into the scene, it does not place the actual full entity prefab immediately. Instead, it places a lightweight <strong>Proxy</strong>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

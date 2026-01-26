@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VoxelSceneRacingGame | Voxel Playground Mod API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VoxelSceneRacingGame | Voxel Playground Mod API Reference ">
+      
+      
+      <link rel="icon" href="../resources/logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoxelPlayground.Level.VoxelSceneRacingGame">
+
+
+
+  <h1 id="VoxelPlayground_Level_VoxelSceneRacingGame" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame" class="text-break">
+Class VoxelSceneRacingGame  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">VoxelPlayground</span>.<a class="xref" href="VoxelPlayground.Level.html">Level</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GamePlay.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VoxelSceneRacingGame : SerializedMonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Object.html">Object</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Component.html">Component</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+      <div><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+      <div><span class="xref">SerializedMonoBehaviour</span></div>
+      <div><span class="xref">VoxelSceneRacingGame</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_TryDestroy_UnityEngine_Object_">GameUtilities.TryDestroy(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_CopyAllProperties__1___0___0_">GameUtilities.CopyAllProperties&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_OrNull__1___0_">GameUtilities.OrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VoxelPlayground.Utility.GameUtilities.html#VoxelPlayground_Utility_GameUtilities_RequiresActiveOrNull__1___0_">GameUtilities.RequiresActiveOrNull&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_carPrefabs" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.carPrefabs">
+  carPrefabs
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] carPrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.html">GameObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_directStartRacing" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.directStartRacing">
+  directStartRacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool directStartRacing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_FIRST_WAYPOINT_INDEX" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.FIRST_WAYPOINT_INDEX">
+  FIRST_WAYPOINT_INDEX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int FIRST_WAYPOINT_INDEX = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_LAST_WAYPOINT_INDEX" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.LAST_WAYPOINT_INDEX">
+  LAST_WAYPOINT_INDEX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LAST_WAYPOINT_INDEX = 19</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_spawnedCars" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.spawnedCars">
+  spawnedCars
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityCar&gt; spawnedCars</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Entity.EntityCar.html">EntityCar</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_spawnPointParent" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.spawnPointParent">
+  spawnPointParent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform spawnPointParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_spawnPoints" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.spawnPoints">
+  spawnPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transform&gt; spawnPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_wayPointParent" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.wayPointParent">
+  wayPointParent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform wayPointParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.html">Transform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_wayPointsDic" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.wayPointsDic">
+  wayPointsDic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public Dictionary&lt;int, WayPoint&gt; wayPointsDic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<span class="xref">int</span>, <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_AddConnection_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.AddConnection*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_AddConnection_System_Int32_System_Int32_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.AddConnection(System.Int32,System.Int32)">
+  AddConnection(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddConnection(int fromID, int toID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromID</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>toID</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_AddWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.AddWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_AddWayPoint_VoxelPlayground_Level_WayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.AddWayPoint(VoxelPlayground.Level.WayPoint)">
+  AddWayPoint(WayPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddWayPoint(WayPoint waypoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>waypoint</code> <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GenerateSpawnPoints_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GenerateSpawnPoints*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GenerateSpawnPoints" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GenerateSpawnPoints">
+  GenerateSpawnPoints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void GenerateSpawnPoints()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GenerateWayPointGraph_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GenerateWayPointGraph*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GenerateWayPointGraph" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GenerateWayPointGraph">
+  GenerateWayPointGraph()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void GenerateWayPointGraph()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetFirstWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetFirstWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetFirstWayPoint" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetFirstWayPoint">
+  GetFirstWayPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WayPoint GetFirstWayPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetLastWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetLastWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetLastWayPoint" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetLastWayPoint">
+  GetLastWayPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WayPoint GetLastWayPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetNextWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetNextWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetNextWayPoint_VoxelPlayground_Level_WayPoint_System_Boolean_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetNextWayPoint(VoxelPlayground.Level.WayPoint,System.Boolean)">
+  GetNextWayPoint(WayPoint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WayPoint GetNextWayPoint(WayPoint currentWayPoint, bool forceShortCut = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentWayPoint</code> <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+    <dt><code>forceShortCut</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetPreviousWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetPreviousWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetPreviousWayPoint_VoxelPlayground_Level_WayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetPreviousWayPoint(VoxelPlayground.Level.WayPoint)">
+  GetPreviousWayPoint(WayPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WayPoint GetPreviousWayPoint(WayPoint currentWayPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentWayPoint</code> <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetRecommandedAccelerationScale_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetRecommandedAccelerationScale*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetRecommandedAccelerationScale_VoxelPlayground_Level_WayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetRecommandedAccelerationScale(VoxelPlayground.Level.WayPoint)">
+  GetRecommandedAccelerationScale(WayPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetRecommandedAccelerationScale(WayPoint wayPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wayPoint</code> <a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_GetWayPointsArray_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetWayPointsArray*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_GetWayPointsArray" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.GetWayPointsArray">
+  GetWayPointsArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WayPoint&gt; GetWayPointsArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="VoxelPlayground.Level.WayPoint.html">WayPoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_ReGenerateWayPoints_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.ReGenerateWayPoints*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_ReGenerateWayPoints_System_Single_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.ReGenerateWayPoints(System.Single)">
+  ReGenerateWayPoints(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void ReGenerateWayPoints(float width = 8)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_RemoveWayPoint_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.RemoveWayPoint*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_RemoveWayPoint_System_Int32_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.RemoveWayPoint(System.Int32)">
+  RemoveWayPoint(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveWayPoint(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_ReSpawnCars_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.ReSpawnCars*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_ReSpawnCars_System_Int32_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.ReSpawnCars(System.Int32)">
+  ReSpawnCars(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReSpawnCars(int numCars = 4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numCars</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Level_VoxelSceneRacingGame_StartAIDrive_" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.StartAIDrive*"></a>
+
+  <h3 id="VoxelPlayground_Level_VoxelSceneRacingGame_StartAIDrive" data-uid="VoxelPlayground.Level.VoxelSceneRacingGame.StartAIDrive">
+  StartAIDrive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAIDrive()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Voxel Playground
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
