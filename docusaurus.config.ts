@@ -13,7 +13,7 @@ const config: Config = {
   onBrokenAnchors: 'ignore',
 
   url: 'https://maajor.github.io',
-  baseUrl: '/',
+  baseUrl: '/VoxelPlayground/',
   organizationName: 'maajor', // Usually your GitHub org/user name.
   projectName: 'VoxelPlayground', // Usually your repo name.
   trailingSlash: false, // Recommended for GitHub Pages
