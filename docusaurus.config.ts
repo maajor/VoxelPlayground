@@ -6,15 +6,13 @@ const config: Config = {
   tagline: 'Grab-and-rip micro-voxel destruction in VR',
   favicon: 'img/vlcsnap-2025-09-03-15h39m23s266.png',
 
-  // url: 'https://voxelplayground.com',
-  // baseUrl: '/',
+  url: 'https://voxelplayground.com',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   onBrokenAnchors: 'ignore',
 
-  url: 'https://maajor.github.io',
-  baseUrl: '/VoxelPlayground/',
-  organizationName: 'maajor', // Usually your GitHub org/user name.
+  organizationName: 'fonzieyang', // Usually your GitHub org/user name.
   projectName: 'VoxelPlayground', // Usually your repo name.
   trailingSlash: false, // Recommended for GitHub Pages
 
