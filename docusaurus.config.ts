@@ -100,7 +100,7 @@ const config: Config = {
       links: [
         {
           title: 'Voxel Playground',
-          items: [{label: 'Touch-first micro-voxel destruction in VR', to: '/'}],
+          items: [{label: 'cutting-edge micro-voxel destruction in VR', to: '/'}],
         },
         {
           title: 'Links',

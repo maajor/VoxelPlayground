@@ -254,8 +254,7 @@ export default function Home(): React.ReactElement {
           <div className="mx-auto max-w-6xl px-5">
             <h2 className="text-center text-4xl font-semibold">About</h2>
             <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-gray-300">
-              Voxel Playground is a hands‑on VR sandbox where anything you build can be torn apart—brick by brick, chunk by chunk,
-              moment by moment.
+            The world reacts, collapses, and explodes exactly as you’d expect—whether you’re building, driving, fighting, or just messing around. Creatures, structures, vehicles, weapons… even you are fully physics-driven.
             </p>
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {features.map((feature, i) => (
