@@ -2766,6 +2766,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VoxelPlayground.Entity.HitTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VoxelPlayground.Entity.HitTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VoxelPlayground.Entity.HitTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VoxelPlayground.Entity.HydraulicPressTrigger.yml",
       "output": {
         ".html": {
@@ -6784,6 +6798,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VoxelPlayground.Utility.Args.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VoxelPlayground.Utility.Args.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VoxelPlayground.Utility.Args",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VoxelPlayground.Utility.BenchMark.yml",
       "output": {
         ".html": {
@@ -7453,6 +7481,20 @@
       "IsMRef": true,
       "Title": "VoxelPlayground.Utility.TransformExtensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VoxelPlayground.Utility.UIFocusStateTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VoxelPlayground.Utility.UIFocusStateTracker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VoxelPlayground.Utility.UIFocusStateTracker",
+      "Summary": "<p sourcefile=\"api/VoxelPlayground.Utility.UIFocusStateTracker.yml\" sourcestartlinenumber=\"2\">Tracks UI focus-related states in VR / Pointer-based interaction.\nDesigned for XR Ray, mouse, and controller input.</p>\n"
     },
     {
       "type": "ManagedReference",

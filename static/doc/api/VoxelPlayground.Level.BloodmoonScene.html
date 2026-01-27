@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -151,9 +158,6 @@ Class BloodmoonScene
     </div>
     <div>
       <a class="xref" href="VoxelPlayground.Level.VoxelScene.html#VoxelPlayground_Level_VoxelScene_SwitchSceneConfig_System_Int32_">VoxelScene.SwitchSceneConfig(int)</a>
-    </div>
-    <div>
-      <a class="xref" href="VoxelPlayground.Level.VoxelScene.html#VoxelPlayground_Level_VoxelScene_voxelSceneData">VoxelScene.voxelSceneData</a>
     </div>
     <div>
       <a class="xref" href="VoxelPlayground.Level.VoxelScene.html#VoxelPlayground_Level_VoxelScene_GetCenterPoint">VoxelScene.GetCenterPoint()</a>

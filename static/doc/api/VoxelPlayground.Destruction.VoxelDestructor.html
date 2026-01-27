@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -707,7 +714,7 @@ public bool invincibleCollision</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[InfoBox(&quot;registerFragmentEvents让碎裂产生碎块，大物体使用&quot;, InfoMessageType.Info, null)]
+    <pre><code class="lang-csharp hljs">[InfoBox(&quot;Use for non-character big object&quot;, InfoMessageType.Info, null)]
 public bool registerFragmentEvents</code></pre>
   </div>
 

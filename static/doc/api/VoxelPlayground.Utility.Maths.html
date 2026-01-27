@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -458,6 +465,44 @@ Class Maths
     <dt><code>max</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
     <dd></dd>
     <dt><code>point</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Utility_Maths_DominantAxis_" data-uid="VoxelPlayground.Utility.Maths.DominantAxis*"></a>
+
+  <h3 id="VoxelPlayground_Utility_Maths_DominantAxis_UnityEngine_Vector3_" data-uid="VoxelPlayground.Utility.Maths.DominantAxis(UnityEngine.Vector3)">
+  DominantAxis(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将向量对齐到绝对值最大的轴方向（轴对齐）
+例如 (3, 1, -2) -&gt; (1, 0, 0), (-1, 5, 2) -&gt; (0, 1, 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 DominantAxis(this Vector3 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
     <dd></dd>
   </dl>
 

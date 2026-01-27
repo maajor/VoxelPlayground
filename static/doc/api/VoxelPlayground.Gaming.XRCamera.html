@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -1751,6 +1758,66 @@ public Vector3[] handIKsFollowTargetsPos</code></pre>
 
 
 
+  <h3 id="VoxelPlayground_Gaming_XRCamera_hapticL" data-uid="VoxelPlayground.Gaming.XRCamera.hapticL">
+  hapticL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HapticImpulsePlayer hapticL</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HapticImpulsePlayer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_hapticR" data-uid="VoxelPlayground.Gaming.XRCamera.hapticR">
+  hapticR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HapticImpulsePlayer hapticR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HapticImpulsePlayer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="VoxelPlayground_Gaming_XRCamera_inFastTravelMode" data-uid="VoxelPlayground.Gaming.XRCamera.inFastTravelMode">
   inFastTravelMode
   
@@ -2045,6 +2112,66 @@ public static Vector3 lhandThumbstick</code></pre>
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_nearFarInteractorL" data-uid="VoxelPlayground.Gaming.XRCamera.nearFarInteractorL">
+  nearFarInteractorL
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NearFarInteractor nearFarInteractorL</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">NearFarInteractor</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_nearFarInteractorR" data-uid="VoxelPlayground.Gaming.XRCamera.nearFarInteractorR">
+  nearFarInteractorR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NearFarInteractor nearFarInteractorR</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">NearFarInteractor</span></dt>
     <dd></dd>
   </dl>
 
@@ -2710,6 +2837,42 @@ public void AddLocalRotationAlongY(float change, float deltaTime)</code></pre>
 
 
 
+  <a id="VoxelPlayground_Gaming_XRCamera_Haptic_" data-uid="VoxelPlayground.Gaming.XRCamera.Haptic*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_Haptic_System_Boolean_System_Single_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.Haptic(System.Boolean,System.Single,System.Single)">
+  Haptic(bool, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Button]
+public void Haptic(bool isLeft, float amplitude, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isLeft</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>amplitude</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>duration</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="VoxelPlayground_Gaming_XRCamera_IsValidCameraDirection_" data-uid="VoxelPlayground.Gaming.XRCamera.IsValidCameraDirection*"></a>
 
   <h3 id="VoxelPlayground_Gaming_XRCamera_IsValidCameraDirection_UnityEngine_Vector3_System_Single_" data-uid="VoxelPlayground.Gaming.XRCamera.IsValidCameraDirection(UnityEngine.Vector3,System.Single)">
@@ -3097,6 +3260,32 @@ current usage
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateSlowMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Gaming_XRCamera_UpdateVRMode_" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateVRMode*"></a>
+
+  <h3 id="VoxelPlayground_Gaming_XRCamera_UpdateVRMode" data-uid="VoxelPlayground.Gaming.XRCamera.UpdateVRMode">
+  UpdateVRMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVRMode()</code></pre>
   </div>
 
 
