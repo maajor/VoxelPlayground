@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -327,6 +334,38 @@ public float angularVelocityMag { get; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoxelPlayground_Ragdoll_PrefabHelper_detectCollisions_" data-uid="VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions*"></a>
+
+  <h3 id="VoxelPlayground_Ragdoll_PrefabHelper_detectCollisions" data-uid="VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions">
+  detectCollisions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public bool detectCollisions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
     <dd></dd>
   </dl>
 

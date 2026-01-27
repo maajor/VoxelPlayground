@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -101,8 +108,7 @@ Class BuildingDestructionBuilder
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HelpURL(&quot;https://zzttcbh5sf.feishu.cn/docx/Th2FdZd7FoTqQlxZM9kcjnklnVb&quot;)]
-public class BuildingDestructionBuilder : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class BuildingDestructionBuilder : MonoBehaviour</code></pre>
   </div>
 
 

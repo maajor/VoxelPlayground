@@ -1287,6 +1287,19 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.AI.AttackAction_Zombie.OnExitActoin
   nameWithType: AttackAction_Zombie.OnExitActoin
+- uid: VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer(VoxelPlayground.AI.AIController)
+  name: PrepareExplodeForBoomer(AIController)
+  href: api/VoxelPlayground.AI.AttackAction_Zombie.html#VoxelPlayground_AI_AttackAction_Zombie_PrepareExplodeForBoomer_VoxelPlayground_AI_AIController_
+  commentId: M:VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer(VoxelPlayground.AI.AIController)
+  fullName: VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer(VoxelPlayground.AI.AIController)
+  nameWithType: AttackAction_Zombie.PrepareExplodeForBoomer(AIController)
+- uid: VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer*
+  name: PrepareExplodeForBoomer
+  href: api/VoxelPlayground.AI.AttackAction_Zombie.html#VoxelPlayground_AI_AttackAction_Zombie_PrepareExplodeForBoomer_
+  commentId: Overload:VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer
+  isSpec: "True"
+  fullName: VoxelPlayground.AI.AttackAction_Zombie.PrepareExplodeForBoomer
+  nameWithType: AttackAction_Zombie.PrepareExplodeForBoomer
 - uid: VoxelPlayground.AI.AttackAction_Zombie.SelfExplodeAttack(VoxelPlayground.Entity.EntityCharacter,System.Boolean,System.Single)
   name: SelfExplodeAttack(EntityCharacter, bool, float)
   href: api/VoxelPlayground.AI.AttackAction_Zombie.html#VoxelPlayground_AI_AttackAction_Zombie_SelfExplodeAttack_VoxelPlayground_Entity_EntityCharacter_System_Boolean_System_Single_
@@ -13708,15 +13721,15 @@ references:
   commentId: F:VoxelPlayground.Entity.EntityBuildingElement.PlacementOverlapResult.overlappedKernelEntity
   fullName: VoxelPlayground.Entity.EntityBuildingElement.PlacementOverlapResult.overlappedKernelEntity
   nameWithType: EntityBuildingElement.PlacementOverlapResult.overlappedKernelEntity
-- uid: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,VoxelPlayground.Entity.EntityBuildingElement,System.Collections.Generic.List{VoxelPlayground.Entity.EntityBuildingElement},System.Boolean,System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Quaternion},System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Vector3},System.Action{VoxelPlayground.Entity.EntityBuildingElement})
-  name: SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List<EntityBuildingElement>, bool, Vector3?, Quaternion?, Vector3?, Vector3?, Action<EntityBuildingElement>)
-  href: api/VoxelPlayground.Entity.EntityBuildingElement.html#VoxelPlayground_Entity_EntityBuildingElement_SpawnAndPlace_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_VoxelPlayground_Entity_EntityBuildingElement_System_Collections_Generic_List_VoxelPlayground_Entity_EntityBuildingElement__System_Boolean_System_Nullable_UnityEngine_Vector3__System_Nullable_UnityEngine_Quaternion__System_Nullable_UnityEngine_Vector3__System_Nullable_UnityEngine_Vector3__System_Action_VoxelPlayground_Entity_EntityBuildingElement__
-  commentId: M:VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,VoxelPlayground.Entity.EntityBuildingElement,System.Collections.Generic.List{VoxelPlayground.Entity.EntityBuildingElement},System.Boolean,System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Quaternion},System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Vector3},System.Action{VoxelPlayground.Entity.EntityBuildingElement})
-  name.vb: SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List(Of EntityBuildingElement), Boolean, Vector3?, Quaternion?, Vector3?, Vector3?, Action(Of EntityBuildingElement))
-  fullName: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject, UnityEngine.Vector3, UnityEngine.Quaternion, VoxelPlayground.Entity.EntityBuildingElement, System.Collections.Generic.List<VoxelPlayground.Entity.EntityBuildingElement>, bool, UnityEngine.Vector3?, UnityEngine.Quaternion?, UnityEngine.Vector3?, UnityEngine.Vector3?, System.Action<VoxelPlayground.Entity.EntityBuildingElement>)
-  fullName.vb: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject, UnityEngine.Vector3, UnityEngine.Quaternion, VoxelPlayground.Entity.EntityBuildingElement, System.Collections.Generic.List(Of VoxelPlayground.Entity.EntityBuildingElement), Boolean, UnityEngine.Vector3?, UnityEngine.Quaternion?, UnityEngine.Vector3?, UnityEngine.Vector3?, System.Action(Of VoxelPlayground.Entity.EntityBuildingElement))
-  nameWithType: EntityBuildingElement.SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List<EntityBuildingElement>, bool, Vector3?, Quaternion?, Vector3?, Vector3?, Action<EntityBuildingElement>)
-  nameWithType.vb: EntityBuildingElement.SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List(Of EntityBuildingElement), Boolean, Vector3?, Quaternion?, Vector3?, Vector3?, Action(Of EntityBuildingElement))
+- uid: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,VoxelPlayground.Entity.EntityBuildingElement,System.Collections.Generic.List{VoxelPlayground.Entity.EntityBuildingElement},System.Boolean,System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Quaternion},System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Vector3},System.Action{VoxelPlayground.Entity.EntityBuildingElement},System.UInt32)
+  name: SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List<EntityBuildingElement>, bool, Vector3?, Quaternion?, Vector3?, Vector3?, Action<EntityBuildingElement>, uint)
+  href: api/VoxelPlayground.Entity.EntityBuildingElement.html#VoxelPlayground_Entity_EntityBuildingElement_SpawnAndPlace_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_VoxelPlayground_Entity_EntityBuildingElement_System_Collections_Generic_List_VoxelPlayground_Entity_EntityBuildingElement__System_Boolean_System_Nullable_UnityEngine_Vector3__System_Nullable_UnityEngine_Quaternion__System_Nullable_UnityEngine_Vector3__System_Nullable_UnityEngine_Vector3__System_Action_VoxelPlayground_Entity_EntityBuildingElement__System_UInt32_
+  commentId: M:VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,VoxelPlayground.Entity.EntityBuildingElement,System.Collections.Generic.List{VoxelPlayground.Entity.EntityBuildingElement},System.Boolean,System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Quaternion},System.Nullable{UnityEngine.Vector3},System.Nullable{UnityEngine.Vector3},System.Action{VoxelPlayground.Entity.EntityBuildingElement},System.UInt32)
+  name.vb: SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List(Of EntityBuildingElement), Boolean, Vector3?, Quaternion?, Vector3?, Vector3?, Action(Of EntityBuildingElement), UInteger)
+  fullName: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject, UnityEngine.Vector3, UnityEngine.Quaternion, VoxelPlayground.Entity.EntityBuildingElement, System.Collections.Generic.List<VoxelPlayground.Entity.EntityBuildingElement>, bool, UnityEngine.Vector3?, UnityEngine.Quaternion?, UnityEngine.Vector3?, UnityEngine.Vector3?, System.Action<VoxelPlayground.Entity.EntityBuildingElement>, uint)
+  fullName.vb: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace(UnityEngine.GameObject, UnityEngine.Vector3, UnityEngine.Quaternion, VoxelPlayground.Entity.EntityBuildingElement, System.Collections.Generic.List(Of VoxelPlayground.Entity.EntityBuildingElement), Boolean, UnityEngine.Vector3?, UnityEngine.Quaternion?, UnityEngine.Vector3?, UnityEngine.Vector3?, System.Action(Of VoxelPlayground.Entity.EntityBuildingElement), UInteger)
+  nameWithType: EntityBuildingElement.SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List<EntityBuildingElement>, bool, Vector3?, Quaternion?, Vector3?, Vector3?, Action<EntityBuildingElement>, uint)
+  nameWithType.vb: EntityBuildingElement.SpawnAndPlace(GameObject, Vector3, Quaternion, EntityBuildingElement, List(Of EntityBuildingElement), Boolean, Vector3?, Quaternion?, Vector3?, Vector3?, Action(Of EntityBuildingElement), UInteger)
 - uid: VoxelPlayground.Entity.EntityBuildingElement.SpawnAndPlace*
   name: SpawnAndPlace
   href: api/VoxelPlayground.Entity.EntityBuildingElement.html#VoxelPlayground_Entity_EntityBuildingElement_SpawnAndPlace_
@@ -16822,6 +16835,19 @@ references:
   commentId: F:VoxelPlayground.Entity.EntityCharacter.vrControllerOffset
   fullName: VoxelPlayground.Entity.EntityCharacter.vrControllerOffset
   nameWithType: EntityCharacter.vrControllerOffset
+- uid: VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier
+  name: walkSpeedMultiplier
+  href: api/VoxelPlayground.Entity.EntityCharacter.html#VoxelPlayground_Entity_EntityCharacter_walkSpeedMultiplier
+  commentId: P:VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier
+  fullName: VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier
+  nameWithType: EntityCharacter.walkSpeedMultiplier
+- uid: VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier*
+  name: walkSpeedMultiplier
+  href: api/VoxelPlayground.Entity.EntityCharacter.html#VoxelPlayground_Entity_EntityCharacter_walkSpeedMultiplier_
+  commentId: Overload:VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier
+  isSpec: "True"
+  fullName: VoxelPlayground.Entity.EntityCharacter.walkSpeedMultiplier
+  nameWithType: EntityCharacter.walkSpeedMultiplier
 - uid: VoxelPlayground.Entity.EntityCharacter.walkingAnimSpeedScale
   name: walkingAnimSpeedScale
   href: api/VoxelPlayground.Entity.EntityCharacter.html#VoxelPlayground_Entity_EntityCharacter_walkingAnimSpeedScale
@@ -21537,6 +21563,18 @@ references:
   commentId: F:VoxelPlayground.Entity.HitInfo.stabDirection
   fullName: VoxelPlayground.Entity.HitInfo.stabDirection
   nameWithType: HitInfo.stabDirection
+- uid: VoxelPlayground.Entity.HitTrigger
+  name: HitTrigger
+  href: api/VoxelPlayground.Entity.HitTrigger.html
+  commentId: T:VoxelPlayground.Entity.HitTrigger
+  fullName: VoxelPlayground.Entity.HitTrigger
+  nameWithType: HitTrigger
+- uid: VoxelPlayground.Entity.HitTrigger.hitCD
+  name: hitCD
+  href: api/VoxelPlayground.Entity.HitTrigger.html#VoxelPlayground_Entity_HitTrigger_hitCD
+  commentId: F:VoxelPlayground.Entity.HitTrigger.hitCD
+  fullName: VoxelPlayground.Entity.HitTrigger.hitCD
+  nameWithType: HitTrigger.hitCD
 - uid: VoxelPlayground.Entity.HydraulicPressTrigger
   name: HydraulicPressTrigger
   href: api/VoxelPlayground.Entity.HydraulicPressTrigger.html
@@ -29114,6 +29152,22 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Gaming.XRCamera.GetHeadsetPhysicalHeight
   nameWithType: XRCamera.GetHeadsetPhysicalHeight
+- uid: VoxelPlayground.Gaming.XRCamera.Haptic(System.Boolean,System.Single,System.Single)
+  name: Haptic(bool, float, float)
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_Haptic_System_Boolean_System_Single_System_Single_
+  commentId: M:VoxelPlayground.Gaming.XRCamera.Haptic(System.Boolean,System.Single,System.Single)
+  name.vb: Haptic(Boolean, Single, Single)
+  fullName: VoxelPlayground.Gaming.XRCamera.Haptic(bool, float, float)
+  fullName.vb: VoxelPlayground.Gaming.XRCamera.Haptic(Boolean, Single, Single)
+  nameWithType: XRCamera.Haptic(bool, float, float)
+  nameWithType.vb: XRCamera.Haptic(Boolean, Single, Single)
+- uid: VoxelPlayground.Gaming.XRCamera.Haptic*
+  name: Haptic
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_Haptic_
+  commentId: Overload:VoxelPlayground.Gaming.XRCamera.Haptic
+  isSpec: "True"
+  fullName: VoxelPlayground.Gaming.XRCamera.Haptic
+  nameWithType: XRCamera.Haptic
 - uid: VoxelPlayground.Gaming.XRCamera.IsCurHeadPosValid
   name: IsCurHeadPosValid
   href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_IsCurHeadPosValid
@@ -29317,6 +29371,19 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Gaming.XRCamera.UpdateSlowMode
   nameWithType: XRCamera.UpdateSlowMode
+- uid: VoxelPlayground.Gaming.XRCamera.UpdateVRMode
+  name: UpdateVRMode()
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_UpdateVRMode
+  commentId: M:VoxelPlayground.Gaming.XRCamera.UpdateVRMode
+  fullName: VoxelPlayground.Gaming.XRCamera.UpdateVRMode()
+  nameWithType: XRCamera.UpdateVRMode()
+- uid: VoxelPlayground.Gaming.XRCamera.UpdateVRMode*
+  name: UpdateVRMode
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_UpdateVRMode_
+  commentId: Overload:VoxelPlayground.Gaming.XRCamera.UpdateVRMode
+  isSpec: "True"
+  fullName: VoxelPlayground.Gaming.XRCamera.UpdateVRMode
+  nameWithType: XRCamera.UpdateVRMode
 - uid: VoxelPlayground.Gaming.XRCamera.camToHip
   name: camToHip
   href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_camToHip
@@ -29629,6 +29696,18 @@ references:
   commentId: F:VoxelPlayground.Gaming.XRCamera.handThumbstickYRange
   fullName: VoxelPlayground.Gaming.XRCamera.handThumbstickYRange
   nameWithType: XRCamera.handThumbstickYRange
+- uid: VoxelPlayground.Gaming.XRCamera.hapticL
+  name: hapticL
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_hapticL
+  commentId: F:VoxelPlayground.Gaming.XRCamera.hapticL
+  fullName: VoxelPlayground.Gaming.XRCamera.hapticL
+  nameWithType: XRCamera.hapticL
+- uid: VoxelPlayground.Gaming.XRCamera.hapticR
+  name: hapticR
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_hapticR
+  commentId: F:VoxelPlayground.Gaming.XRCamera.hapticR
+  fullName: VoxelPlayground.Gaming.XRCamera.hapticR
+  nameWithType: XRCamera.hapticR
 - uid: VoxelPlayground.Gaming.XRCamera.inFastTravelMode
   name: inFastTravelMode
   href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_inFastTravelMode
@@ -29689,6 +29768,18 @@ references:
   commentId: F:VoxelPlayground.Gaming.XRCamera.lhandThumbstick
   fullName: VoxelPlayground.Gaming.XRCamera.lhandThumbstick
   nameWithType: XRCamera.lhandThumbstick
+- uid: VoxelPlayground.Gaming.XRCamera.nearFarInteractorL
+  name: nearFarInteractorL
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_nearFarInteractorL
+  commentId: F:VoxelPlayground.Gaming.XRCamera.nearFarInteractorL
+  fullName: VoxelPlayground.Gaming.XRCamera.nearFarInteractorL
+  nameWithType: XRCamera.nearFarInteractorL
+- uid: VoxelPlayground.Gaming.XRCamera.nearFarInteractorR
+  name: nearFarInteractorR
+  href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_nearFarInteractorR
+  commentId: F:VoxelPlayground.Gaming.XRCamera.nearFarInteractorR
+  fullName: VoxelPlayground.Gaming.XRCamera.nearFarInteractorR
+  nameWithType: XRCamera.nearFarInteractorR
 - uid: VoxelPlayground.Gaming.XRCamera.playerhandRotToIk
   name: playerhandRotToIk
   href: api/VoxelPlayground.Gaming.XRCamera.html#VoxelPlayground_Gaming_XRCamera_playerhandRotToIk
@@ -29822,12 +29913,12 @@ references:
   commentId: T:VoxelPlayground.Gaming.XRManager.RigType
   fullName: VoxelPlayground.Gaming.XRManager.RigType
   nameWithType: XRManager.RigType
-- uid: VoxelPlayground.Gaming.XRManager.RigType.FirstPersonPC
-  name: FirstPersonPC
-  href: api/VoxelPlayground.Gaming.XRManager.RigType.html#VoxelPlayground_Gaming_XRManager_RigType_FirstPersonPC
-  commentId: F:VoxelPlayground.Gaming.XRManager.RigType.FirstPersonPC
-  fullName: VoxelPlayground.Gaming.XRManager.RigType.FirstPersonPC
-  nameWithType: XRManager.RigType.FirstPersonPC
+- uid: VoxelPlayground.Gaming.XRManager.RigType.Flatscreen
+  name: Flatscreen
+  href: api/VoxelPlayground.Gaming.XRManager.RigType.html#VoxelPlayground_Gaming_XRManager_RigType_Flatscreen
+  commentId: F:VoxelPlayground.Gaming.XRManager.RigType.Flatscreen
+  fullName: VoxelPlayground.Gaming.XRManager.RigType.Flatscreen
+  nameWithType: XRManager.RigType.Flatscreen
 - uid: VoxelPlayground.Gaming.XRManager.RigType.FreeCam
   name: FreeCam
   href: api/VoxelPlayground.Gaming.XRManager.RigType.html#VoxelPlayground_Gaming_XRManager_RigType_FreeCam
@@ -34853,12 +34944,6 @@ references:
   commentId: F:VoxelPlayground.Level.VoxelScene.spawnPoint
   fullName: VoxelPlayground.Level.VoxelScene.spawnPoint
   nameWithType: VoxelScene.spawnPoint
-- uid: VoxelPlayground.Level.VoxelScene.voxelSceneData
-  name: voxelSceneData
-  href: api/VoxelPlayground.Level.VoxelScene.html#VoxelPlayground_Level_VoxelScene_voxelSceneData
-  commentId: F:VoxelPlayground.Level.VoxelScene.voxelSceneData
-  fullName: VoxelPlayground.Level.VoxelScene.voxelSceneData
-  nameWithType: VoxelScene.voxelSceneData
 - uid: VoxelPlayground.Level.VoxelScene.voxelizeCenterTransform
   name: voxelizeCenterTransform
   href: api/VoxelPlayground.Level.VoxelScene.html#VoxelPlayground_Level_VoxelScene_voxelizeCenterTransform
@@ -36534,6 +36619,12 @@ references:
   commentId: F:VoxelPlayground.Mod.CharacterSizePreset.Large
   fullName: VoxelPlayground.Mod.CharacterSizePreset.Large
   nameWithType: CharacterSizePreset.Large
+- uid: VoxelPlayground.Mod.CharacterSizePreset.Massive
+  name: Massive
+  href: api/VoxelPlayground.Mod.CharacterSizePreset.html#VoxelPlayground_Mod_CharacterSizePreset_Massive
+  commentId: F:VoxelPlayground.Mod.CharacterSizePreset.Massive
+  fullName: VoxelPlayground.Mod.CharacterSizePreset.Massive
+  nameWithType: CharacterSizePreset.Massive
 - uid: VoxelPlayground.Mod.CharacterSizePreset.Standard
   name: Standard
   href: api/VoxelPlayground.Mod.CharacterSizePreset.html#VoxelPlayground_Mod_CharacterSizePreset_Standard
@@ -38036,12 +38127,6 @@ references:
   commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.bloomThreshold
   fullName: VoxelPlayground.Mod.SceneRenderingSettings.bloomThreshold
   nameWithType: SceneRenderingSettings.bloomThreshold
-- uid: VoxelPlayground.Mod.SceneRenderingSettings.cascadeCount
-  name: cascadeCount
-  href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_cascadeCount
-  commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.cascadeCount
-  fullName: VoxelPlayground.Mod.SceneRenderingSettings.cascadeCount
-  nameWithType: SceneRenderingSettings.cascadeCount
 - uid: VoxelPlayground.Mod.SceneRenderingSettings.cloudColor1Gradient
   name: cloudColor1Gradient
   href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_cloudColor1Gradient
@@ -38138,24 +38223,6 @@ references:
   commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.lutTexture
   fullName: VoxelPlayground.Mod.SceneRenderingSettings.lutTexture
   nameWithType: SceneRenderingSettings.lutTexture
-- uid: VoxelPlayground.Mod.SceneRenderingSettings.occlusionCulling
-  name: occlusionCulling
-  href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_occlusionCulling
-  commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.occlusionCulling
-  fullName: VoxelPlayground.Mod.SceneRenderingSettings.occlusionCulling
-  nameWithType: SceneRenderingSettings.occlusionCulling
-- uid: VoxelPlayground.Mod.SceneRenderingSettings.shadowCascadeSplits
-  name: shadowCascadeSplits
-  href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_shadowCascadeSplits
-  commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.shadowCascadeSplits
-  fullName: VoxelPlayground.Mod.SceneRenderingSettings.shadowCascadeSplits
-  nameWithType: SceneRenderingSettings.shadowCascadeSplits
-- uid: VoxelPlayground.Mod.SceneRenderingSettings.shadowDistance
-  name: shadowDistance
-  href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_shadowDistance
-  commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.shadowDistance
-  fullName: VoxelPlayground.Mod.SceneRenderingSettings.shadowDistance
-  nameWithType: SceneRenderingSettings.shadowDistance
 - uid: VoxelPlayground.Mod.SceneRenderingSettings.skyBottomColorGradient
   name: skyBottomColorGradient
   href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_skyBottomColorGradient
@@ -38228,12 +38295,6 @@ references:
   commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.tonemappingMode
   fullName: VoxelPlayground.Mod.SceneRenderingSettings.tonemappingMode
   nameWithType: SceneRenderingSettings.tonemappingMode
-- uid: VoxelPlayground.Mod.SceneRenderingSettings.topdownShadow
-  name: topdownShadow
-  href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_topdownShadow
-  commentId: F:VoxelPlayground.Mod.SceneRenderingSettings.topdownShadow
-  fullName: VoxelPlayground.Mod.SceneRenderingSettings.topdownShadow
-  nameWithType: SceneRenderingSettings.topdownShadow
 - uid: VoxelPlayground.Mod.SceneRenderingSettings.transitionDuration
   name: transitionDuration
   href: api/VoxelPlayground.Mod.SceneRenderingSettings.html#VoxelPlayground_Mod_SceneRenderingSettings_transitionDuration
@@ -38386,12 +38447,6 @@ references:
   commentId: F:VoxelPlayground.Mod.VoxelSceneData.bgm
   fullName: VoxelPlayground.Mod.VoxelSceneData.bgm
   nameWithType: VoxelSceneData.bgm
-- uid: VoxelPlayground.Mod.VoxelSceneData.defeatedMusic
-  name: defeatedMusic
-  href: api/VoxelPlayground.Mod.VoxelSceneData.html#VoxelPlayground_Mod_VoxelSceneData_defeatedMusic
-  commentId: F:VoxelPlayground.Mod.VoxelSceneData.defeatedMusic
-  fullName: VoxelPlayground.Mod.VoxelSceneData.defeatedMusic
-  nameWithType: VoxelSceneData.defeatedMusic
 - uid: VoxelPlayground.Mod.VoxelSceneData.icon
   name: icon
   href: api/VoxelPlayground.Mod.VoxelSceneData.html#VoxelPlayground_Mod_VoxelSceneData_icon
@@ -38446,12 +38501,6 @@ references:
   commentId: F:VoxelPlayground.Mod.VoxelSceneData.sceneName
   fullName: VoxelPlayground.Mod.VoxelSceneData.sceneName
   nameWithType: VoxelSceneData.sceneName
-- uid: VoxelPlayground.Mod.VoxelSceneData.victoryMusic
-  name: victoryMusic
-  href: api/VoxelPlayground.Mod.VoxelSceneData.html#VoxelPlayground_Mod_VoxelSceneData_victoryMusic
-  commentId: F:VoxelPlayground.Mod.VoxelSceneData.victoryMusic
-  fullName: VoxelPlayground.Mod.VoxelSceneData.victoryMusic
-  nameWithType: VoxelSceneData.victoryMusic
 - uid: VoxelPlayground.Mod.VoxelSceneData.viewOffset
   name: viewOffset
   href: api/VoxelPlayground.Mod.VoxelSceneData.html#VoxelPlayground_Mod_VoxelSceneData_viewOffset
@@ -43169,6 +43218,19 @@ references:
   commentId: F:VoxelPlayground.Ragdoll.PrefabHelper.comment
   fullName: VoxelPlayground.Ragdoll.PrefabHelper.comment
   nameWithType: PrefabHelper.comment
+- uid: VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions
+  name: detectCollisions
+  href: api/VoxelPlayground.Ragdoll.PrefabHelper.html#VoxelPlayground_Ragdoll_PrefabHelper_detectCollisions
+  commentId: P:VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions
+  fullName: VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions
+  nameWithType: PrefabHelper.detectCollisions
+- uid: VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions*
+  name: detectCollisions
+  href: api/VoxelPlayground.Ragdoll.PrefabHelper.html#VoxelPlayground_Ragdoll_PrefabHelper_detectCollisions_
+  commentId: Overload:VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions
+  isSpec: "True"
+  fullName: VoxelPlayground.Ragdoll.PrefabHelper.detectCollisions
+  nameWithType: PrefabHelper.detectCollisions
 - uid: VoxelPlayground.Ragdoll.PrefabHelper.initMaxVelocity
   name: initMaxVelocity
   href: api/VoxelPlayground.Ragdoll.PrefabHelper.html#VoxelPlayground_Ragdoll_PrefabHelper_initMaxVelocity
@@ -47431,6 +47493,12 @@ references:
   commentId: T:VoxelPlayground.Sound.SoundsCollection
   fullName: VoxelPlayground.Sound.SoundsCollection
   nameWithType: SoundsCollection
+- uid: VoxelPlayground.Sound.SoundsCollection.acidAttack
+  name: acidAttack
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_acidAttack
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.acidAttack
+  fullName: VoxelPlayground.Sound.SoundsCollection.acidAttack
+  nameWithType: SoundsCollection.acidAttack
 - uid: VoxelPlayground.Sound.SoundsCollection.backpackPut
   name: backpackPut
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_backpackPut
@@ -47449,6 +47517,12 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.battleVictory
   fullName: VoxelPlayground.Sound.SoundsCollection.battleVictory
   nameWithType: SoundsCollection.battleVictory
+- uid: VoxelPlayground.Sound.SoundsCollection.boomerAttack
+  name: boomerAttack
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_boomerAttack
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.boomerAttack
+  fullName: VoxelPlayground.Sound.SoundsCollection.boomerAttack
+  nameWithType: SoundsCollection.boomerAttack
 - uid: VoxelPlayground.Sound.SoundsCollection.bowReload
   name: bowReload
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_bowReload
@@ -47527,12 +47601,24 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.countdownFinal
   fullName: VoxelPlayground.Sound.SoundsCollection.countdownFinal
   nameWithType: SoundsCollection.countdownFinal
+- uid: VoxelPlayground.Sound.SoundsCollection.defeatedMusic
+  name: defeatedMusic
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_defeatedMusic
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.defeatedMusic
+  fullName: VoxelPlayground.Sound.SoundsCollection.defeatedMusic
+  nameWithType: SoundsCollection.defeatedMusic
 - uid: VoxelPlayground.Sound.SoundsCollection.finishBell
   name: finishBell
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_finishBell
   commentId: F:VoxelPlayground.Sound.SoundsCollection.finishBell
   fullName: VoxelPlayground.Sound.SoundsCollection.finishBell
   nameWithType: SoundsCollection.finishBell
+- uid: VoxelPlayground.Sound.SoundsCollection.giantAttack
+  name: giantAttack
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_giantAttack
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.giantAttack
+  fullName: VoxelPlayground.Sound.SoundsCollection.giantAttack
+  nameWithType: SoundsCollection.giantAttack
 - uid: VoxelPlayground.Sound.SoundsCollection.giantFootstep
   name: giantFootstep
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_giantFootstep
@@ -47599,6 +47685,12 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.mutantFootstep
   fullName: VoxelPlayground.Sound.SoundsCollection.mutantFootstep
   nameWithType: SoundsCollection.mutantFootstep
+- uid: VoxelPlayground.Sound.SoundsCollection.mutantRoar
+  name: mutantRoar
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_mutantRoar
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.mutantRoar
+  fullName: VoxelPlayground.Sound.SoundsCollection.mutantRoar
+  nameWithType: SoundsCollection.mutantRoar
 - uid: VoxelPlayground.Sound.SoundsCollection.pickup
   name: pickup
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_pickup
@@ -47623,6 +47715,12 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.ropeWhoosh
   fullName: VoxelPlayground.Sound.SoundsCollection.ropeWhoosh
   nameWithType: SoundsCollection.ropeWhoosh
+- uid: VoxelPlayground.Sound.SoundsCollection.runnerAttack
+  name: runnerAttack
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_runnerAttack
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.runnerAttack
+  fullName: VoxelPlayground.Sound.SoundsCollection.runnerAttack
+  nameWithType: SoundsCollection.runnerAttack
 - uid: VoxelPlayground.Sound.SoundsCollection.silent
   name: silent
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_silent
@@ -47671,6 +47769,12 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.titlePortal
   fullName: VoxelPlayground.Sound.SoundsCollection.titlePortal
   nameWithType: SoundsCollection.titlePortal
+- uid: VoxelPlayground.Sound.SoundsCollection.victoryMusic
+  name: victoryMusic
+  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_victoryMusic
+  commentId: F:VoxelPlayground.Sound.SoundsCollection.victoryMusic
+  fullName: VoxelPlayground.Sound.SoundsCollection.victoryMusic
+  nameWithType: SoundsCollection.victoryMusic
 - uid: VoxelPlayground.Sound.SoundsCollection.waterLarge
   name: waterLarge
   href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_waterLarge
@@ -47689,12 +47793,6 @@ references:
   commentId: F:VoxelPlayground.Sound.SoundsCollection.windWhoosh
   fullName: VoxelPlayground.Sound.SoundsCollection.windWhoosh
   nameWithType: SoundsCollection.windWhoosh
-- uid: VoxelPlayground.Sound.SoundsCollection.zombieRoar
-  name: zombieRoar
-  href: api/VoxelPlayground.Sound.SoundsCollection.html#VoxelPlayground_Sound_SoundsCollection_zombieRoar
-  commentId: F:VoxelPlayground.Sound.SoundsCollection.zombieRoar
-  fullName: VoxelPlayground.Sound.SoundsCollection.zombieRoar
-  nameWithType: SoundsCollection.zombieRoar
 - uid: VoxelPlayground.Sound.VoxelFragmentSound
   name: VoxelFragmentSound
   href: api/VoxelPlayground.Sound.VoxelFragmentSound.html
@@ -47756,6 +47854,19 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Utility.App.CameraForwardAngle
   nameWithType: App.CameraForwardAngle
+- uid: VoxelPlayground.Utility.App.ExitScene
+  name: ExitScene()
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_ExitScene
+  commentId: M:VoxelPlayground.Utility.App.ExitScene
+  fullName: VoxelPlayground.Utility.App.ExitScene()
+  nameWithType: App.ExitScene()
+- uid: VoxelPlayground.Utility.App.ExitScene*
+  name: ExitScene
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_ExitScene_
+  commentId: Overload:VoxelPlayground.Utility.App.ExitScene
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.App.ExitScene
+  nameWithType: App.ExitScene
 - uid: VoxelPlayground.Utility.App.HUD
   name: HUD
   href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_HUD
@@ -47778,6 +47889,35 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Utility.App.InCameraDistance
   nameWithType: App.InCameraDistance
+- uid: VoxelPlayground.Utility.App.ReloadScene
+  name: ReloadScene()
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_ReloadScene
+  commentId: M:VoxelPlayground.Utility.App.ReloadScene
+  fullName: VoxelPlayground.Utility.App.ReloadScene()
+  nameWithType: App.ReloadScene()
+- uid: VoxelPlayground.Utility.App.ReloadScene*
+  name: ReloadScene
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_ReloadScene_
+  commentId: Overload:VoxelPlayground.Utility.App.ReloadScene
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.App.ReloadScene
+  nameWithType: App.ReloadScene
+- uid: VoxelPlayground.Utility.App.Vibrate(System.Boolean,System.Single,System.Single,System.Single)
+  name: Vibrate(bool, float, float, float)
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_Vibrate_System_Boolean_System_Single_System_Single_System_Single_
+  commentId: M:VoxelPlayground.Utility.App.Vibrate(System.Boolean,System.Single,System.Single,System.Single)
+  name.vb: Vibrate(Boolean, Single, Single, Single)
+  fullName: VoxelPlayground.Utility.App.Vibrate(bool, float, float, float)
+  fullName.vb: VoxelPlayground.Utility.App.Vibrate(Boolean, Single, Single, Single)
+  nameWithType: App.Vibrate(bool, float, float, float)
+  nameWithType.vb: App.Vibrate(Boolean, Single, Single, Single)
+- uid: VoxelPlayground.Utility.App.Vibrate*
+  name: Vibrate
+  href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_Vibrate_
+  commentId: Overload:VoxelPlayground.Utility.App.Vibrate
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.App.Vibrate
+  nameWithType: App.Vibrate
 - uid: VoxelPlayground.Utility.App.camT
   name: camT
   href: api/VoxelPlayground.Utility.App.html#VoxelPlayground_Utility_App_camT
@@ -47855,6 +47995,18 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Utility.App.mainCamera
   nameWithType: App.mainCamera
+- uid: VoxelPlayground.Utility.Args
+  name: Args
+  href: api/VoxelPlayground.Utility.Args.html
+  commentId: T:VoxelPlayground.Utility.Args
+  fullName: VoxelPlayground.Utility.Args
+  nameWithType: Args
+- uid: VoxelPlayground.Utility.Args.debugDelayFrames
+  name: debugDelayFrames
+  href: api/VoxelPlayground.Utility.Args.html#VoxelPlayground_Utility_Args_debugDelayFrames
+  commentId: F:VoxelPlayground.Utility.Args.debugDelayFrames
+  fullName: VoxelPlayground.Utility.Args.debugDelayFrames
+  nameWithType: Args.debugDelayFrames
 - uid: VoxelPlayground.Utility.BenchMark
   name: BenchMark
   href: api/VoxelPlayground.Utility.BenchMark.html
@@ -50576,6 +50728,19 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Utility.Maths.ClampToAABB
   nameWithType: Maths.ClampToAABB
+- uid: VoxelPlayground.Utility.Maths.DominantAxis(UnityEngine.Vector3)
+  name: DominantAxis(Vector3)
+  href: api/VoxelPlayground.Utility.Maths.html#VoxelPlayground_Utility_Maths_DominantAxis_UnityEngine_Vector3_
+  commentId: M:VoxelPlayground.Utility.Maths.DominantAxis(UnityEngine.Vector3)
+  fullName: VoxelPlayground.Utility.Maths.DominantAxis(UnityEngine.Vector3)
+  nameWithType: Maths.DominantAxis(Vector3)
+- uid: VoxelPlayground.Utility.Maths.DominantAxis*
+  name: DominantAxis
+  href: api/VoxelPlayground.Utility.Maths.html#VoxelPlayground_Utility_Maths_DominantAxis_
+  commentId: Overload:VoxelPlayground.Utility.Maths.DominantAxis
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.Maths.DominantAxis
+  nameWithType: Maths.DominantAxis
 - uid: VoxelPlayground.Utility.Maths.FuzzyEquals(System.Single,System.Single,System.Single)
   name: FuzzyEquals(float, float, float)
   href: api/VoxelPlayground.Utility.Maths.html#VoxelPlayground_Utility_Maths_FuzzyEquals_System_Single_System_Single_System_Single_
@@ -54280,6 +54445,142 @@ references:
   isSpec: "True"
   fullName: VoxelPlayground.Utility.TransformExtensions.AttachAndReset
   nameWithType: TransformExtensions.AttachAndReset
+- uid: VoxelPlayground.Utility.UIFocusStateTracker
+  name: UIFocusStateTracker
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html
+  commentId: T:VoxelPlayground.Utility.UIFocusStateTracker
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker
+  nameWithType: UIFocusStateTracker
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused
+  name: IsAnyFocused
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsAnyFocused
+  commentId: P:VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused
+  nameWithType: UIFocusStateTracker.IsAnyFocused
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused*
+  name: IsAnyFocused
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsAnyFocused_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsAnyFocused
+  nameWithType: UIFocusStateTracker.IsAnyFocused
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsHovered
+  name: IsHovered
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsHovered
+  commentId: P:VoxelPlayground.Utility.UIFocusStateTracker.IsHovered
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsHovered
+  nameWithType: UIFocusStateTracker.IsHovered
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsHovered*
+  name: IsHovered
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsHovered_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.IsHovered
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsHovered
+  nameWithType: UIFocusStateTracker.IsHovered
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsPressed
+  name: IsPressed
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsPressed
+  commentId: P:VoxelPlayground.Utility.UIFocusStateTracker.IsPressed
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsPressed
+  nameWithType: UIFocusStateTracker.IsPressed
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsPressed*
+  name: IsPressed
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsPressed_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.IsPressed
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsPressed
+  nameWithType: UIFocusStateTracker.IsPressed
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsSelected
+  name: IsSelected
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsSelected
+  commentId: P:VoxelPlayground.Utility.UIFocusStateTracker.IsSelected
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsSelected
+  nameWithType: UIFocusStateTracker.IsSelected
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.IsSelected*
+  name: IsSelected
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_IsSelected_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.IsSelected
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.IsSelected
+  nameWithType: UIFocusStateTracker.IsSelected
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  name: OnDeselect(BaseEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnDeselect_UnityEngine_EventSystems_BaseEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  nameWithType: UIFocusStateTracker.OnDeselect(BaseEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect*
+  name: OnDeselect
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnDeselect_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnDeselect
+  nameWithType: UIFocusStateTracker.OnDeselect
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerDown(PointerEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerDown_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: UIFocusStateTracker.OnPointerDown(PointerEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown*
+  name: OnPointerDown
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerDown_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerDown
+  nameWithType: UIFocusStateTracker.OnPointerDown
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerEnter(PointerEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: UIFocusStateTracker.OnPointerEnter(PointerEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter*
+  name: OnPointerEnter
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerEnter_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerEnter
+  nameWithType: UIFocusStateTracker.OnPointerEnter
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerExit(PointerEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerExit_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: UIFocusStateTracker.OnPointerExit(PointerEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit*
+  name: OnPointerExit
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerExit_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerExit
+  nameWithType: UIFocusStateTracker.OnPointerExit
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerUp(PointerEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerUp_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: UIFocusStateTracker.OnPointerUp(PointerEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp*
+  name: OnPointerUp
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnPointerUp_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnPointerUp
+  nameWithType: UIFocusStateTracker.OnPointerUp
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  name: OnSelect(BaseEventData)
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnSelect_UnityEngine_EventSystems_BaseEventData_
+  commentId: M:VoxelPlayground.Utility.UIFocusStateTracker.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  nameWithType: UIFocusStateTracker.OnSelect(BaseEventData)
+- uid: VoxelPlayground.Utility.UIFocusStateTracker.OnSelect*
+  name: OnSelect
+  href: api/VoxelPlayground.Utility.UIFocusStateTracker.html#VoxelPlayground_Utility_UIFocusStateTracker_OnSelect_
+  commentId: Overload:VoxelPlayground.Utility.UIFocusStateTracker.OnSelect
+  isSpec: "True"
+  fullName: VoxelPlayground.Utility.UIFocusStateTracker.OnSelect
+  nameWithType: UIFocusStateTracker.OnSelect
 - uid: VoxelPlayground.Utility.VirtualBounds
   name: VirtualBounds
   href: api/VoxelPlayground.Utility.VirtualBounds.html

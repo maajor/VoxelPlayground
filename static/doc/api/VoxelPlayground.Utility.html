@@ -37,6 +37,13 @@
         document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
       </script>
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F55SYBBGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6F55SYBBGC');
+      </script>
   </head>
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -96,6 +103,10 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="VoxelPlayground.Utility.App.html">App</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VoxelPlayground.Utility.Args.html">Args</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -250,6 +261,12 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="VoxelPlayground.Utility.TransformExtensions.html">TransformExtensions</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VoxelPlayground.Utility.UIFocusStateTracker.html">UIFocusStateTracker</a></dt>
+      <dd><p>Tracks UI focus-related states in VR / Pointer-based interaction.
+Designed for XR Ray, mouse, and controller input.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="VoxelPlayground.Utility.VirtualBounds.html">VirtualBounds</a></dt>
