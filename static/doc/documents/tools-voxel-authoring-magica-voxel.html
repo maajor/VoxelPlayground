@@ -1,0 +1,210 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>tools-voxel-authoring-magica-voxel | Voxel Playground Mod Documentation - v0.4.0</title><meta name="description" content="Documentation for Voxel Playground Mod Documentation"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom-nav.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script defer src="../assets/custom-nav.js"></script></head><body><script>document.documentElement.dataset.theme="light";try{localStorage.setItem("tsd-theme","light")}catch{}document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">Voxel Playground Mod Documentation - v0.4.0</a><div id="tsd-toolbar-links"><a href="../documents/manual.html">Manual</a><a href="../documents/api-overview.html">API Reference</a></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">tools-voxel-authoring-magica-voxel</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="magicavoxel" class="tsd-anchor-link">MagicaVoxel<a href="#magicavoxel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p><strong>MagicaVoxel</strong> is a free, lightweight 8-bit voxel art editor and interactive path tracing renderer. It is the primary tool used for creating voxel models for Voxel Playground.</p>
+<h2 id="download" class="tsd-anchor-link">Download<a href="#download" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>You can download MagicaVoxel from the official website:
+<a href="https://ephtracy.github.io/">https://ephtracy.github.io/</a></p>
+<h2 id="usage" class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Use MagicaVoxel to create your 3D models and save them as <code>.vox</code> files. These files are used as the source for voxel data in your mods.</p>
+<h2 id="material-id-mapping" class="tsd-anchor-link">Material ID Mapping<a href="#material-id-mapping" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>In Voxel Playground, the physical properties of a voxel (such as hardness, flammability, and visual type) are determined by its <strong>Material ID</strong>. When you create a model in MagicaVoxel, the game uses the <strong>Color Palette Index</strong> of each voxel to assign its Material ID.</p>
+<h3 id="mapping-logic" class="tsd-anchor-link">Mapping Logic<a href="#mapping-logic" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p><img src="/resources/MagicaVoxelId.jpg" alt="Magica Voxel Id"></p>
+<p>The mapping divides the palette into groups of 8. Every <strong>8 colors</strong> in the MagicaVoxel palette correspond to <strong>1 Material ID</strong>.</p>
+<p>The formula used by the game is:
+<code>Material ID = Ceil(Palette Index / 8)</code></p>
+<ul>
+<li><strong>Palette Indices 1-8</strong> $\rightarrow$ <strong>Material ID 1</strong></li>
+<li><strong>Palette Indices 9-16</strong> $\rightarrow$ <strong>Material ID 2</strong></li>
+<li><strong>Palette Indices 17-24</strong> $\rightarrow$ <strong>Material ID 3</strong></li>
+<li>...and so on.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: The maximum supported Material ID is <strong>31</strong>. Any palette index that maps to a value higher than 31 will be clamped to ID 31.</p>
+</blockquote>
+<h3 id="editing-ids-in-unity" class="tsd-anchor-link">Editing IDs in Unity<a href="#editing-ids-in-unity" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>If you need to adjust Material IDs after importing—for example, to fix mapping errors or batch-replace materials—you can use the <a href="../documents/tools-voxel-authoring-voxel-data-editor.html">Voxel Data Editor</a>. It allows you to visualize and reassign IDs directly in Unity without modifying the original MagicaVoxel file.</p>
+<h3 id="quick-reference" class="tsd-anchor-link">Quick Reference<a href="#quick-reference" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>Below is a quick reference for the first few ranges. For the complete list of Material IDs and their specific properties (Hardness, Metallic, etc.), please consult the <a href="../documents/gameplay-voxel-material-id-visual.html">Material ID and Visual</a> documentation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Palette Index Range</th>
+<th style="text-align:left">Material ID</th>
+<th style="text-align:left">Material Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1 - 8</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Wood</td>
+</tr>
+<tr>
+<td style="text-align:left">9 - 16</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Grass</td>
+</tr>
+<tr>
+<td style="text-align:left">17 - 24</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">Plastic</td>
+</tr>
+<tr>
+<td style="text-align:left">25 - 32</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Bone</td>
+</tr>
+<tr>
+<td style="text-align:left">33 - 40</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Skin</td>
+</tr>
+<tr>
+<td style="text-align:left">41 - 48</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Dirt</td>
+</tr>
+<tr>
+<td style="text-align:left">49 - 56</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Stone</td>
+</tr>
+<tr>
+<td style="text-align:left">57 - 64</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">Brick</td>
+</tr>
+<tr>
+<td style="text-align:left">65 - 72</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Concrete</td>
+</tr>
+<tr>
+<td style="text-align:left">73 - 80</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">Asphalt</td>
+</tr>
+<tr>
+<td style="text-align:left">81 - 88</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">Crust</td>
+</tr>
+<tr>
+<td style="text-align:left">89 - 96</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">Metal</td>
+</tr>
+<tr>
+<td style="text-align:left">97 - 104</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">Glow</td>
+</tr>
+<tr>
+<td style="text-align:left">105 - 112</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">Glass</td>
+</tr>
+<tr>
+<td style="text-align:left">113 - 120</td>
+<td style="text-align:left">15</td>
+<td style="text-align:left">HarderSkin</td>
+</tr>
+<tr>
+<td style="text-align:left">121 - 128</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">HardSkin</td>
+</tr>
+<tr>
+<td style="text-align:left">129 - 136</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">FistSkin</td>
+</tr>
+<tr>
+<td style="text-align:left">137 - 144</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Armor</td>
+</tr>
+<tr>
+<td style="text-align:left">145 - 152</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Water</td>
+</tr>
+<tr>
+<td style="text-align:left">153 - 160</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">EnergyShield</td>
+</tr>
+<tr>
+<td style="text-align:left">161 - 168</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">PierceBullet</td>
+</tr>
+<tr>
+<td style="text-align:left">169 - 176</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">CarbonSteel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="import-into-editor" class="tsd-anchor-link">Import Into Editor<a href="#import-into-editor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Once you have created your <code>.vox</code> models, you need to import them into the ModToolkit Editor to use them in your mods. This process involves the <strong>Asset Processor</strong>.</p>
+<ol>
+<li>Open the <strong>Asset Processor</strong>.</li>
+<li>Import your <code>.vox</code> files.</li>
+<li>Click <strong>Convert</strong> to generate the prefabs.</li>
+</ol>
+<img src="/resources/ImportVox.png" alt="Importing vox files via Asset Processor" style="max-width: 720px;" />
+<h3 id="post-import-configuration" class="tsd-anchor-link">Post-Import Configuration<a href="#post-import-configuration" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>After conversion, the system generates a prefab for your model. This prefab will typically have a <strong>VoxelObjectProxy</strong> component attached, which handles rendering, physics, and persistence.</p>
+<h2 id="naming-for-scene" class="tsd-anchor-link">Naming for scene<a href="#naming-for-scene" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>When creating a complex scene file in MagicaVoxel that contains multiple objects, you can control how each object is imported into the game by adding specific prefixes to their names in the MagicaVoxel &quot;World&quot; editor.</p>
+<p>The importer checks these prefixes to assign the correct physical properties, collision layers, and behaviors.</p>
+<h3 id="prefix-rules" class="tsd-anchor-link">Prefix Rules<a href="#prefix-rules" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Prefix</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong><code>A_</code></strong></td>
+<td style="text-align:left"><strong>Static Environment</strong></td>
+<td style="text-align:left">Used for the main static geometry like floors, walls, and terrain.</td>
+<td style="text-align:left">• <strong>Layer</strong>: Building<br>• <strong>Tag</strong>: &quot;Floor&quot;<br>• <strong>Physics</strong>: Kinematic (Immovable)<br>• <strong>Destructible</strong>: No</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><code>B_</code></strong></td>
+<td style="text-align:left"><strong>Dynamic Prop</strong></td>
+<td style="text-align:left">Used for free-moving objects like crates, barrels, or debris.</td>
+<td style="text-align:left">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic (Affected by gravity)<br>• <strong>Destructible</strong>: Yes</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><code>C_</code></strong></td>
+<td style="text-align:left"><strong>Strong Connected</strong></td>
+<td style="text-align:left">Used for objects that need to be firmly anchored to the world (e.g., fixtures).</td>
+<td style="text-align:left">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>UnyieldingArea</code> component with a large collider to stabilize connection.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><code>D_</code></strong></td>
+<td style="text-align:left"><strong>Weak Connected</strong></td>
+<td style="text-align:left">Used for hanging or jointed objects (e.g., lamps, signs).</td>
+<td style="text-align:left">• <strong>Layer</strong>: Item<br>• <strong>Physics</strong>: Dynamic<br>• <strong>Destructible</strong>: Yes<br>• <strong>Special</strong>: Adds an <code>AttachmentPoint</code> (facing down) and configures a joint.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="default-behavior" class="tsd-anchor-link">Default Behavior<a href="#default-behavior" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>If an object name does not start with any of the specific prefixes (e.g., <code>MyTable</code>, <code>Chair</code>):</p>
+<ul>
+<li><strong>Type</strong>: Static Prop</li>
+<li><strong>Layer</strong>: Item</li>
+<li><strong>Physics</strong>: Kinematic (Immovable)</li>
+<li><strong>Destructible</strong>: No</li>
+</ul>
+<blockquote>
+<p><strong>Recommendation</strong>: Always use <strong><code>A_</code></strong> for ground and structural elements to ensure they are recognized as &quot;Floor&quot; for navigation and physics interactions. Use <strong><code>B_</code></strong> for any object you want the player to interact with physically.</p>
+</blockquote>
+</div></div><div class="col-sidebar"><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">VoxelPlayground Mod Documentation v0.4.0</a><ul class="custom-nav-root tsd-small-nested-navigation" id="tsd-nav-container"><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/manual.html" class="custom-nav-link">Manual</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/quick-start.html" class="custom-nav-link">Quick Start Guide</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-create-mod.html" class="custom-nav-link">Creating Your First Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-publish-mod.html" class="custom-nav-link">Publishing Your Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-test-mod.html" class="custom-nav-link">Test Mod</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/modding.html" class="custom-nav-link">Modding Overview</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Avatar</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-avatar-tutorial-spiderman.html" class="custom-nav-link">Tutorial: SpiderMan</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-character-tutorial-character.html" class="custom-nav-link">Tutorial: Configuring a Character</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Item</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-asteroid-wand.html" class="custom-nav-link">Tutorial: Asteroid Wand</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-katana.html" class="custom-nav-link">Tutorial: Katana</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Scene</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-homelander.html" class="custom-nav-link">Tutorial: Homelander</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-nyc.html" class="custom-nav-link">Tutorial: NYC</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-sample-building.html" class="custom-nav-link">Tutorial: Sample Building</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-track.html" class="custom-nav-link">Tutorial: Track</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Vehicle</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-vehicle-tutorial-helicopter.html" class="custom-nav-link">Tutorial: Helicopter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/gameplay.html" class="custom-nav-link">Gameplay System</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Building</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-building-connect-building.html" class="custom-nav-link">Connect a Building</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character Ai</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-ai-actions.html" class="custom-nav-link">AI Actions</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-character-proxy.html" class="custom-nav-link">Character Proxy</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-spawner.html" class="custom-nav-link">Spawner</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Physics</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-builtin-vs-px5.html" class="custom-nav-link">Builtin Physics vs Px5</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-voxel-collision.html" class="custom-nav-link">Voxel Collision</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-data-layout-property.html" class="custom-nav-link">Data Layout and Property</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-heightmap-voxel.html" class="custom-nav-link">Heightmap Voxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-material-id-visual.html" class="custom-nav-link">Material ID and Visual</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-modify-voxels.html" class="custom-nav-link">Modify Voxels</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-custom-interaction.html" class="custom-nav-link">Custom Interaction</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-entity.html" class="custom-nav-link">Entity System</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-scene-rendering-settings.html" class="custom-nav-link">Scene Rendering Settings</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Tools</span></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel Authoring</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-magica-voxel.html" class="custom-nav-link current">MagicaVoxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-voxel-data-editor.html" class="custom-nav-link">Voxel Data Editor</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-builtin-entity.html" class="custom-nav-link">Builtin Entities Preview</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-mod-exporter.html" class="custom-nav-link">Mod Exporter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/api-overview.html" class="custom-nav-link">API Reference</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Engine.PointDataV2.html" class="custom-nav-link">CS.VoxelPlayground.Engine.PointDataV2</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Engine.Utils.html" class="custom-nav-link">CS.VoxelPlayground.Engine.Utils</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.JsComponentProxy.html" class="custom-nav-link">CS.VoxelPlayground.Mod.JsComponentProxy</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.JsProperties.html" class="custom-nav-link">CS.VoxelPlayground.Mod.JsProperties</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.ModAPI.html" class="custom-nav-link">CS.VoxelPlayground.Mod.ModAPI</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.ModAPI.Input.html" class="custom-nav-link">CS.VoxelPlayground.Mod.ModAPI.Input</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Utility.Giz.html" class="custom-nav-link">CS.VoxelPlayground.Utility.Giz</a></li></ul></details></li></ul></nav></div><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#magicavoxel"><span>Magica<wbr/>Voxel</span></a><ul><li><a href="#download"><span>Download</span></a></li><li><a href="#usage"><span>Usage</span></a></li><li><a href="#material-id-mapping"><span>Material <wbr/>ID <wbr/>Mapping</span></a></li><li><ul><li><a href="#mapping-logic"><span>Mapping <wbr/>Logic</span></a></li><li><a href="#editing-ids-in-unity"><span>Editing <wbr/>I<wbr/>Ds in <wbr/>Unity</span></a></li><li><a href="#quick-reference"><span>Quick <wbr/>Reference</span></a></li></ul></li><li><a href="#import-into-editor"><span>Import <wbr/>Into <wbr/>Editor</span></a></li><li><ul><li><a href="#post-import-configuration"><span>Post-<wbr/>Import <wbr/>Configuration</span></a></li></ul></li><li><a href="#naming-for-scene"><span>Naming for scene</span></a></li><li><ul><li><a href="#prefix-rules"><span>Prefix <wbr/>Rules</span></a></li><li><a href="#default-behavior"><span>Default <wbr/>Behavior</span></a></li></ul></li></ul></div></details></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

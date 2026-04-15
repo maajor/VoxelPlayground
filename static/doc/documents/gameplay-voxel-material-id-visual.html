@@ -1,0 +1,239 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>gameplay-voxel-material-id-visual | Voxel Playground Mod Documentation - v0.4.0</title><meta name="description" content="Documentation for Voxel Playground Mod Documentation"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom-nav.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script defer src="../assets/custom-nav.js"></script></head><body><script>document.documentElement.dataset.theme="light";try{localStorage.setItem("tsd-theme","light")}catch{}document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">Voxel Playground Mod Documentation - v0.4.0</a><div id="tsd-toolbar-links"><a href="../documents/manual.html">Manual</a><a href="../documents/api-overview.html">API Reference</a></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">gameplay-voxel-material-id-visual</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="material-id-and-visual" class="tsd-anchor-link">Material ID and Visual<a href="#material-id-and-visual" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>In the Ragdoll engine, a voxel's <strong>Material ID</strong> is its &quot;DNA.&quot; It tells the engine what that voxel is made of and how it should behave in the physical world.</p>
+<h2 id="modding-restriction" class="tsd-anchor-link">Modding Restriction<a href="#modding-restriction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<blockquote>
+<p><strong>Note</strong>: Modders <strong>cannot</strong> create new Material IDs. You are limited to modifying the properties of the existing IDs (0-31) to suit your needs.</p>
+</blockquote>
+<h2 id="material-id-table" class="tsd-anchor-link">Material ID Table<a href="#material-id-table" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Below is a simplified reference for all defined Material IDs. Use this to choose the best base material for your modded blocks.</p>
+<h3 id="legend" class="tsd-anchor-link">Legend<a href="#legend" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul>
+<li><strong>Hardness</strong>: How hard the block is (Higher number = Harder to destroy).</li>
+<li><strong>Metallic</strong>: Visual material type (Metal or Non-Metal).</li>
+<li><strong>Reflectivity</strong>: How shiny the surface is (High, Medium, Low).</li>
+<li><strong>Flammability</strong>: How easily it catches fire (Flammable, Resistant, Fireproof).</li>
+<li><strong>Poisonable</strong>: Whether it can be affected by poison/acid (Yes, No).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ID</th>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Hardness</th>
+<th style="text-align:left">Metallic</th>
+<th style="text-align:left">Reflectivity</th>
+<th style="text-align:left">Flammability</th>
+<th style="text-align:left">Poisonable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">Air</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Flammable</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Wood</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Flammable</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Grass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Flammable</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">Plastic</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">High</td>
+<td style="text-align:left">Flammable</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Bone</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Skin</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Flammable</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Dirt</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Stone</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">Brick</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Concrete</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">High</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">Asphalt</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">High</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">Crust</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">Glow</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">Glass</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">HarderSkin</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">HardSkin</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">FistSkin</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Armor</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Water</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">EnergyShield</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">Non-Metal</td>
+<td style="text-align:left">Medium</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">PierceBullet</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Resistant</td>
+<td style="text-align:left">Yes</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">CarbonSteel</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">Metal</td>
+<td style="text-align:left">Low</td>
+<td style="text-align:left">Fireproof</td>
+<td style="text-align:left">Yes</td>
+</tr>
+</tbody>
+</table>
+</div></div><div class="col-sidebar"><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">VoxelPlayground Mod Documentation v0.4.0</a><ul class="custom-nav-root tsd-small-nested-navigation" id="tsd-nav-container"><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/manual.html" class="custom-nav-link">Manual</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/quick-start.html" class="custom-nav-link">Quick Start Guide</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-create-mod.html" class="custom-nav-link">Creating Your First Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-publish-mod.html" class="custom-nav-link">Publishing Your Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-test-mod.html" class="custom-nav-link">Test Mod</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/modding.html" class="custom-nav-link">Modding Overview</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Avatar</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-avatar-tutorial-spiderman.html" class="custom-nav-link">Tutorial: SpiderMan</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-character-tutorial-character.html" class="custom-nav-link">Tutorial: Configuring a Character</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Item</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-asteroid-wand.html" class="custom-nav-link">Tutorial: Asteroid Wand</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-katana.html" class="custom-nav-link">Tutorial: Katana</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Scene</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-homelander.html" class="custom-nav-link">Tutorial: Homelander</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-nyc.html" class="custom-nav-link">Tutorial: NYC</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-sample-building.html" class="custom-nav-link">Tutorial: Sample Building</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-track.html" class="custom-nav-link">Tutorial: Track</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Vehicle</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-vehicle-tutorial-helicopter.html" class="custom-nav-link">Tutorial: Helicopter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/gameplay.html" class="custom-nav-link">Gameplay System</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Building</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-building-connect-building.html" class="custom-nav-link">Connect a Building</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character Ai</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-ai-actions.html" class="custom-nav-link">AI Actions</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-character-proxy.html" class="custom-nav-link">Character Proxy</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-spawner.html" class="custom-nav-link">Spawner</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Physics</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-builtin-vs-px5.html" class="custom-nav-link">Builtin Physics vs Px5</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-voxel-collision.html" class="custom-nav-link">Voxel Collision</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-data-layout-property.html" class="custom-nav-link">Data Layout and Property</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-heightmap-voxel.html" class="custom-nav-link">Heightmap Voxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-material-id-visual.html" class="custom-nav-link current">Material ID and Visual</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-modify-voxels.html" class="custom-nav-link">Modify Voxels</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-custom-interaction.html" class="custom-nav-link">Custom Interaction</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-entity.html" class="custom-nav-link">Entity System</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-scene-rendering-settings.html" class="custom-nav-link">Scene Rendering Settings</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Tools</span></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel Authoring</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-magica-voxel.html" class="custom-nav-link">MagicaVoxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-voxel-data-editor.html" class="custom-nav-link">Voxel Data Editor</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-builtin-entity.html" class="custom-nav-link">Builtin Entities Preview</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-mod-exporter.html" class="custom-nav-link">Mod Exporter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/api-overview.html" class="custom-nav-link">API Reference</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Engine.PointDataV2.html" class="custom-nav-link">CS.VoxelPlayground.Engine.PointDataV2</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Engine.Utils.html" class="custom-nav-link">CS.VoxelPlayground.Engine.Utils</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.JsComponentProxy.html" class="custom-nav-link">CS.VoxelPlayground.Mod.JsComponentProxy</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.JsProperties.html" class="custom-nav-link">CS.VoxelPlayground.Mod.JsProperties</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.ModAPI.html" class="custom-nav-link">CS.VoxelPlayground.Mod.ModAPI</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Mod.ModAPI.Input.html" class="custom-nav-link">CS.VoxelPlayground.Mod.ModAPI.Input</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.CS.VoxelPlayground.Utility.Giz.html" class="custom-nav-link">CS.VoxelPlayground.Utility.Giz</a></li></ul></details></li></ul></nav></div><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#material-id-and-visual"><span>Material <wbr/>ID and <wbr/>Visual</span></a><ul><li><a href="#modding-restriction"><span>Modding <wbr/>Restriction</span></a></li><li><a href="#material-id-table"><span>Material <wbr/>ID <wbr/>Table</span></a></li><li><ul><li><a href="#legend"><span>Legend</span></a></li></ul></li></ul></div></details></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>
