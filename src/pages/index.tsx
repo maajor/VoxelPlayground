@@ -53,7 +53,7 @@ function InView<T extends React.ElementType = 'div'>({
       }}
       className={clsx(
         className,
-        'transition-all duration-700 will-change-transform',
+        'transition-[opacity,transform] duration-700',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
       )}
       style={{transitionDelay: delayMs ? `${delayMs}ms` : undefined}}
@@ -65,15 +65,14 @@ function InView<T extends React.ElementType = 'div'>({
 }
 
 type SocialLink = {
-  platform: 'Discord' | 'YouTube' | 'TikTok' | 'Quest';
+  platform: 'Discord' | 'YouTube' | 'TikTok' | 'Quest' | 'Steam';
   href: string;
   label: string;
-  kind: 'discord' | 'youtube' | 'tiktok' | 'quest';
+  kind: 'discord' | 'youtube' | 'tiktok' | 'quest' | 'steam';
   icon: React.ReactNode;
 };
 
 function trackSocialClick(platform: SocialLink['platform']) {
-  console.log(`用户点击了${platform}按钮`);
   const gtag = (window as unknown as {gtag?: (...args: unknown[]) => void}).gtag;
   if (typeof gtag === 'function') {
     gtag('event', 'click', {
@@ -97,17 +96,6 @@ export default function Home(): React.ReactElement {
   const heroPlayerRef = useRef<HTMLDivElement>(null);
   const playerInstanceRef = useRef<{destroy: () => void} | null>(null);
   const setHeroLoadedRef = useRef<React.Dispatch<React.SetStateAction<boolean>>>(() => {});
-
-  useEffect(() => {
-    document.body.classList.add('loaded');
-
-    const onError = (e: ErrorEvent) => {
-      console.error('页面错误:', e.error);
-    };
-
-    window.addEventListener('error', onError);
-    return () => window.removeEventListener('error', onError);
-  }, []);
 
   useEffect(() => {
     setHeroLoadedRef.current = setIsHeroVideoLoaded;
@@ -167,7 +155,7 @@ export default function Home(): React.ReactElement {
         label: 'Discord',
         kind: 'discord',
         icon: (
-          <svg className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
           </svg>
         ),
@@ -178,7 +166,7 @@ export default function Home(): React.ReactElement {
         label: 'YouTube',
         kind: 'youtube',
         icon: (
-          <svg className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
           </svg>
         ),
@@ -189,8 +177,19 @@ export default function Home(): React.ReactElement {
         label: 'TikTok',
         kind: 'tiktok',
         icon: (
-          <svg className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+          </svg>
+        ),
+      },
+      {
+        platform: 'Steam',
+        href: 'https://store.steampowered.com/app/4350620/Voxel_Playground/',
+        label: 'Steam',
+        kind: 'steam',
+        icon: (
+          <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z" />
           </svg>
         ),
       },
@@ -199,7 +198,7 @@ export default function Home(): React.ReactElement {
         href: 'https://www.meta.com/experiences/voxel-playground/9926748747373800/',
         label: 'Quest Store',
         kind: 'quest',
-        icon: <i className="fa-brands fa-meta text-3xl transition-transform duration-300 group-hover:scale-110" />,
+        icon: <i className="fa-brands fa-meta text-3xl" />,
       },
     ],
     [],
@@ -220,7 +219,7 @@ export default function Home(): React.ReactElement {
       <main className="bg-black text-white">
         <section
           id="home"
-          className="relative flex min-h-[calc(100vh-var(--ifm-navbar-height))] scroll-mt-[var(--ifm-navbar-height)] items-center overflow-hidden"
+          className="relative flex min-h-[calc(100svh-var(--ifm-navbar-height))] scroll-mt-[var(--ifm-navbar-height)] items-center overflow-hidden"
         >
           <div className="absolute inset-0">
             <img
@@ -241,14 +240,6 @@ export default function Home(): React.ReactElement {
             </div>
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50" />
-            <div
-              className="pointer-events-none absolute inset-0 opacity-25 mix-blend-overlay"
-              style={{
-                backgroundImage:
-                  'repeating-linear-gradient(to bottom, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 2px, transparent 6px)',
-              }}
-            />
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(56,189,248,0.20),transparent_55%)]" />
           </div>
 
           <div className="relative mx-auto w-full max-w-5xl px-5 py-16 text-center">
@@ -268,7 +259,7 @@ export default function Home(): React.ReactElement {
               <p className="mt-4 text-lg font-normal text-gray-200 drop-shadow-md md:text-xl">
                 Grab. Break. Build. Survive. Micro‑voxel mayhem you can touch in VR.
               </p>
-              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <div className="mt-10 flex flex-col items-center gap-4">
                 <a
                   href="https://www.meta.com/experiences/voxel-playground/9926748747373800/"
                   target="_blank"
@@ -277,16 +268,29 @@ export default function Home(): React.ReactElement {
                 >
                   <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(220,38,38,0.8),transparent_70%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <span className="relative flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
+                    <span className="h-2 w-2 rounded-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
                     Get it on Meta Quest
                   </span>
                 </a>
-                <a
-                  href="/doc/index.html"
-                  className="inline-flex items-center justify-center border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white backdrop-blur transition-colors hover:border-white/50 hover:bg-white/15"
-                >
-                  Read the Modding Docs
-                </a>
+                <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                  <a
+                    href="https://store.steampowered.com/app/4350620/Voxel_Playground/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white backdrop-blur transition-colors hover:border-white/50 hover:bg-white/15"
+                  >
+                    <span className="flex items-center gap-2">
+                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0z" /></svg>
+                      Get it on Steam
+                    </span>
+                  </a>
+                  <a
+                    href="/doc/documents/manual.html"
+                    className="inline-flex items-center justify-center border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white backdrop-blur transition-colors hover:border-white/50 hover:bg-white/15"
+                  >
+                    Read the Modding Docs
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -294,53 +298,71 @@ export default function Home(): React.ReactElement {
 
         <section id="about" className="scroll-mt-[var(--ifm-navbar-height)] bg-zinc-900 py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-center text-4xl font-semibold">About</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-gray-300">
-            The world reacts, collapses, and explodes exactly as you’d expect—whether you’re building, driving, fighting, or just messing around. Creatures, structures, vehicles, weapons… even you are fully physics-driven.
+            <h2 className="text-4xl font-semibold">Everything Reacts. Everything Breaks.</h2>
+            <p className="mt-4 max-w-3xl text-lg text-gray-300">
+            The world reacts, collapses, and explodes exactly as you'd expect—whether you're building, driving, fighting, or just messing around. Creatures, structures, vehicles, weapons—even you are fully physics-driven.
             </p>
-            <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {features.map((feature, i) => (
+            <InView className="mt-12 rounded-lg border border-zinc-700 bg-zinc-800 p-8 md:p-12 shadow-[0_10px_30px_rgba(0,0,0,0.3)]">
+              <h3 className="text-2xl md:text-3xl font-semibold">{features[0].title}</h3>
+              <p className="mt-4 text-base md:text-lg leading-7 text-gray-300 max-w-2xl">{features[0].description}</p>
+            </InView>
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+              {features.slice(1).map((feature, i) => (
                 <InView
                   key={feature.title}
-                  className="border border-zinc-700 bg-zinc-800 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
-                  delayMs={i * 100}
+                  className="rounded-lg border border-zinc-700 bg-zinc-800 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+                  delayMs={(i + 1) * 100}
                 >
                   <h3 className="text-xl font-semibold">{feature.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-gray-300">{feature.description}</p>
                 </InView>
-              ))}
+  ))}
             </div>
           </div>
         </section>
 
-        <section className="bg-zinc-900 py-20 text-center">
+        <section className="bg-black py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="text-4xl font-semibold">Join Our Community</h2>
+            <h2 className="text-4xl font-semibold">Find Other Players. Share the Chaos.</h2>
             <p className="mt-4 text-lg text-gray-300">
-              Stay updated with the latest news, connect with other players, and get game update information
+              Join other players, share destruction clips, and help shape what gets built next.
             </p>
-            <div className="mt-12 flex flex-col items-center justify-center gap-6 md:flex-row md:flex-wrap">
-              {socialLinks.map((link, i) => (
-                <InView
-                  key={link.platform}
-                  as="a"
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackSocialClick(link.platform)}
-                  delayMs={i * 100}
-                  className={clsx(
-                    'group social-btn flex w-full max-w-sm flex-col items-center border-2 border-white/20 bg-white/10 px-8 py-6 text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/40 hover:bg-white/20 md:w-auto md:min-w-[160px]',
-                    link.kind === 'discord' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
-                    link.kind === 'youtube' && 'hover:border-[#ff0000] hover:bg-[#ff0000]/20',
-                    link.kind === 'tiktok' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
-                    link.kind === 'quest' && 'hover:border-[#dc2626] hover:bg-[#dc2626]/20',
-                  )}
-                >
-                  {link.icon}
-                  <span className="mt-2 text-sm font-semibold">{link.label}</span>
-                </InView>
-              ))}
+            <div className="mt-12 flex flex-col items-center gap-8">
+              <InView
+                as="a"
+                href={socialLinks[0].href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackSocialClick(socialLinks[0].platform)}
+                className="group social-btn flex w-full flex-col items-center border-2 border-white/20 bg-white/10 px-12 py-10 text-white backdrop-blur-md transition-colors duration-300 hover:border-red-600 hover:bg-red-600/20 md:max-w-md"
+              >
+                {socialLinks[0].icon}
+                <span className="mt-3 text-lg font-semibold">{socialLinks[0].label}</span>
+                <span className="mt-1 text-sm text-gray-300">Join the community</span>
+              </InView>
+              <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:flex-wrap">
+                {socialLinks.slice(1).map((link, i) => (
+                  <InView
+                    key={link.platform}
+                    as="a"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackSocialClick(link.platform)}
+                    delayMs={(i + 1) * 100}
+                    className={clsx(
+                      'group social-btn flex w-full max-w-sm flex-col items-center border-2 border-white/20 bg-white/10 px-8 py-6 text-white backdrop-blur-md transition-colors duration-300 hover:border-white/40 hover:bg-white/20 md:w-auto md:min-w-[160px]',
+                      link.kind === 'youtube' && 'hover:border-red-600 hover:bg-red-600/20',
+                      link.kind === 'tiktok' && 'hover:border-red-600 hover:bg-red-600/20',
+                      link.kind === 'steam' && 'hover:border-red-600 hover:bg-red-600/20',
+                      link.kind === 'quest' && 'hover:border-red-600 hover:bg-red-600/20',
+                    )}
+                  >
+                    {link.icon}
+                    <span className="mt-2 text-sm font-semibold">{link.label}</span>
+                  </InView>
+                ))}
+              </div>
             </div>
           </div>
         </section>

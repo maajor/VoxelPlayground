@@ -1,0 +1,183 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>gameplay-character-ai-spawner | Voxel Playground Mod Documentation - v0.4.0</title><meta name="description" content="Documentation for Voxel Playground Mod Documentation"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom-nav.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script defer src="../assets/custom-nav.js"></script><link rel="icon" type="image/svg+xml" href="../resources/logo.svg"/></head><body><script>document.documentElement.dataset.theme="light";try{localStorage.setItem("tsd-theme","light")}catch{}document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">Voxel Playground Mod Documentation - v0.4.0</a><div id="tsd-toolbar-links"><a href="../documents/manual.html">Manual</a><a href="../documents/api-overview.html">API Reference</a></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">gameplay-character-ai-spawner</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="spawner" class="tsd-anchor-link">Spawner<a href="#spawner" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>Use <code>SpawnerProxy</code> when you want a scene prefab to spawn AI characters in waves. The proxy copies its settings into an <code>ArenaSpawner</code> at runtime, so mod authors usually configure the proxy and a pair of ScriptableObject assets instead of adding <code>ArenaSpawner</code> manually.</p>
+<h2 id="authoring-workflow" class="tsd-anchor-link">Authoring workflow<a href="#authoring-workflow" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<ol>
+<li>Add <code>SpawnerProxy</code> to the scene prefab or spawner object.</li>
+<li>Create a <strong><code>SpawnerCharacterPool</code></strong> asset.</li>
+<li>Add one or more <code>EquipmentsData</code> entries to that character pool. Each entry describes one spawnable character loadout.</li>
+<li>Create a <strong><code>SpawnerWavePool</code></strong> asset.</li>
+<li>Add wave entries to the wave pool and assign the <code>SpawnerCharacterPool</code> to each wave that should use it.</li>
+<li>Assign the <code>SpawnerWavePool</code> to <code>SpawnerProxy.waves</code>.</li>
+<li>Assign <code>SpawnerProxy.spawnPoints</code> with one or more transforms in the scene.</li>
+<li>Export the spawner prefab and the referenced character prefabs/assets with your mod.</li>
+</ol>
+<h2 id="required-assets" class="tsd-anchor-link">Required assets<a href="#required-assets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<h3 id="_" class="tsd-anchor-link"><code>SpawnerProxy</code><a href="#_" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p><code>SpawnerProxy</code> is the component you place in the scene. On <code>Start()</code>, it creates or reuses <code>ArenaSpawner</code> and copies these fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>waves</code></td>
+<td>The <code>SpawnerWavePool</code> asset containing all wave definitions.</td>
+</tr>
+<tr>
+<td><code>currentWaveIndex</code></td>
+<td>Starting wave index. Usually keep this at <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>suspendSpawningInDaytime</code></td>
+<td>If enabled, wave spawning pauses during daytime and resumes at night.</td>
+</tr>
+<tr>
+<td><code>defaultSpawnCharacter</code></td>
+<td>Fallback <code>EquipmentsData</code> used when a wave has no <code>characterPool</code> or the pool is empty.</td>
+</tr>
+<tr>
+<td><code>spawnPoints</code></td>
+<td>Candidate spawn transforms. The spawner prefers points outside the camera frustum and not too close to the player.</td>
+</tr>
+<tr>
+<td><code>spawnPointFindNearbyFreeSpaceRange</code></td>
+<td>Radius used to nudge the final spawn position toward nearby free space.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_-1" class="tsd-anchor-link"><code>SpawnerCharacterPool</code><a href="#_-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p><code>SpawnerCharacterPool</code> is a ScriptableObject list of <code>EquipmentsData</code> entries:</p>
+<ul>
+<li><code>characters</code>: the actual candidate spawn entries.</li>
+<li><code>concats</code>: optional other character pools to merge into this one.</li>
+</ul>
+<p>Each <code>EquipmentsData</code> entry can define:</p>
+<ul>
+<li><code>characterId</code>: which character prefab to spawn.</li>
+<li>optional equipment and armor ids for the spawned character.</li>
+</ul>
+<h3 id="_-2" class="tsd-anchor-link"><code>SpawnerWavePool</code><a href="#_-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p><code>SpawnerWavePool</code> is a ScriptableObject list of <code>SpawnerWave</code> entries:</p>
+<ul>
+<li><code>entries</code>: the waves the spawner will run in order.</li>
+<li><code>concats</code>: optional other wave pools to merge into this one.</li>
+<li><code>sinceDay</code>: editor-side helper used when concatenating pools.</li>
+</ul>
+<p>Each <code>SpawnerWave</code> decides when a wave can start, how many characters it spawns, and which pool it pulls from.</p>
+<h2 id="character-reference-format" class="tsd-anchor-link">Character reference format<a href="#character-reference-format" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Spawner characters are resolved from <code>EquipmentsData.characterId</code>.</p>
+<p>For mod characters, use this format:</p>
+<pre><code class="text">js:modId/characterName
+</code><button type="button">Copy</button></pre>
+
+<p>Examples:</p>
+<pre><code class="text">js:com.studio.cityraid/BossBrute
+</code><button type="button">Copy</button></pre>
+
+<p>For built-in characters, use this format:</p>
+<pre><code class="text">Characters/CharacterName
+</code><button type="button">Copy</button></pre>
+
+<p>Examples:</p>
+<pre><code class="text">Characters/Zombie Normal 1
+Characters/Runner Zombie
+Characters/Giant Zombie
+Characters/Uniform Soldier
+</code><button type="button">Copy</button></pre>
+
+<p>If a wave does not assign a <code>characterPool</code>, or the pool has no entries, the spawner falls back to <code>SpawnerProxy.defaultSpawnCharacter</code>.</p>
+<h2 id="common-wave-parameters" class="tsd-anchor-link">Common wave parameters<a href="#common-wave-parameters" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>The most-used wave fields come from <code>SpawnerWave</code> and are enforced in <code>ArenaSpawner.RunWave</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+<th>Runtime behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>characterPool</code></td>
+<td>Character pool used by this wave.</td>
+<td>If set and non-empty, the spawner picks from <code>characterPool.characters</code>. Otherwise it uses <code>defaultSpawnCharacter</code>.</td>
+</tr>
+<tr>
+<td><code>spawnCount</code></td>
+<td>Total number of characters to create in this wave.</td>
+<td>The wave loops this many times.</td>
+</tr>
+<tr>
+<td><code>pickMode</code></td>
+<td>How the wave selects entries from the pool.</td>
+<td><code>Random</code> picks randomly. <code>OrderedRepeat</code> walks the pool in order and repeats when needed.</td>
+</tr>
+<tr>
+<td><code>sinceDay</code></td>
+<td>Earliest game day this wave is allowed to start.</td>
+<td>The wave waits until <code>currentDay &gt;= sinceDay</code>. Earlier waves can still run on later days.</td>
+</tr>
+<tr>
+<td><code>maxAlive</code></td>
+<td>Global alive gate before the wave is allowed to begin.</td>
+<td>The wave will not start until current alive count is below this value.</td>
+</tr>
+<tr>
+<td><code>delay</code></td>
+<td>Delay after the wave becomes eligible.</td>
+<td>The spawner waits this long before starting individual spawns for the wave.</td>
+</tr>
+<tr>
+<td><code>spawnInterval</code></td>
+<td>Delay between each individual spawn in this wave.</td>
+<td>Applied after each spawned character.</td>
+</tr>
+<tr>
+<td><code>spawnMaxAlive</code></td>
+<td>Per-wave alive cap during spawning.</td>
+<td>If alive count reaches this value, the wave pauses until enough spawned enemies die.</td>
+</tr>
+<tr>
+<td><code>blocking</code></td>
+<td>Whether the next wave must wait for this one to finish spawning.</td>
+<td>If <code>true</code>, the next wave starts only after this wave completes its <code>spawnCount</code>. If <code>false</code>, later waves can overlap.</td>
+</tr>
+<tr>
+<td><code>subspawnPickRandomOrOrderedRepeat</code></td>
+<td>Legacy inspector bool mirrored into <code>pickMode</code>.</td>
+<td><code>true</code> becomes <code>Random</code>, <code>false</code> becomes <code>OrderedRepeat</code> during validation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-setup-example" class="tsd-anchor-link">Practical setup example<a href="#practical-setup-example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>A typical mod setup looks like this:</p>
+<ol>
+<li>Create a character prefab and configure it as described in <a href="../documents/gameplay-character-ai-character-proxy.html">Character Proxy</a>.</li>
+<li>Create a <code>SpawnerCharacterPool</code> asset named for example <code>ZombiePool</code>.</li>
+<li>Add entries such as:
+<ul>
+<li><code>js:com.studio.zombie/ZombiePolice</code></li>
+<li><code>js:com.studio.zombie/ZombieWorker</code></li>
+<li><code>Characters/Runner Zombie</code></li>
+</ul>
+</li>
+<li>Create a <code>SpawnerWavePool</code> asset.</li>
+<li>Add waves such as:
+<ul>
+<li>Wave 1: <code>spawnCount=4</code>, <code>spawnInterval=1.5</code>, <code>spawnMaxAlive=2</code>, <code>characterPool=ZombiePool</code></li>
+<li>Wave 2: <code>spawnCount=8</code>, <code>spawnInterval=0.8</code>, <code>spawnMaxAlive=4</code>, <code>maxAlive=1</code>, <code>delay=5</code></li>
+</ul>
+</li>
+<li>Add <code>SpawnerProxy</code> to your scene prefab, assign the wave pool, and set multiple spawn point transforms around the map.</li>
+</ol>
+<h2 id="notes" class="tsd-anchor-link">Notes<a href="#notes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<ul>
+<li><code>spawnPoints</code> should contain at least one transform. If none are assigned, the spawner falls back to its own transform.</li>
+<li>Spawn positions are adjusted with <code>FindFreeSpace</code>, so the final position can move slightly away from the spawn point.</li>
+<li>If <code>suspendSpawningInDaytime</code> is enabled, a wave can be mid-progress and still pause until night before continuing.</li>
+<li><code>blocking=false</code> is useful for overlapping waves, but it also makes pacing harder to reason about. Start with blocking waves unless you need layered encounters.</li>
+</ul>
+</div></div><div class="col-sidebar"><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">VoxelPlayground Mod Documentation v0.4.0</a><ul class="custom-nav-root tsd-small-nested-navigation" id="tsd-nav-container"><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/manual.html" class="custom-nav-link">Manual</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/quick-start.html" class="custom-nav-link">Quick Start Guide</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-create-mod.html" class="custom-nav-link">Creating Your First Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-publish-mod.html" class="custom-nav-link">Publishing Your Mod</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/quick-start-test-mod.html" class="custom-nav-link">Test Mod</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/modding.html" class="custom-nav-link">Modding Overview</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Avatar</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-avatar-tutorial-spiderman.html" class="custom-nav-link">Tutorial: SpiderMan</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-character-tutorial-character.html" class="custom-nav-link">Tutorial: Configuring a Character</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Item</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-asteroid-wand.html" class="custom-nav-link">Tutorial: Asteroid Wand</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-flamesword.html" class="custom-nav-link">Tutorial: FlameSword</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-item-tutorial-katana.html" class="custom-nav-link">Tutorial: Katana</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Scene</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-homelander.html" class="custom-nav-link">Tutorial: Homelander</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-nyc.html" class="custom-nav-link">Tutorial: NYC</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-sample-building.html" class="custom-nav-link">Tutorial: Sample Building</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-scene-tutorial-track.html" class="custom-nav-link">Tutorial: Track</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Vehicle</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/modding-vehicle-tutorial-helicopter.html" class="custom-nav-link">Tutorial: Helicopter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/gameplay.html" class="custom-nav-link">Gameplay System</a></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Building</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-building-connect-building.html" class="custom-nav-link">Connect a Building</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group" open><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Character Ai</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-ai-actions.html" class="custom-nav-link">AI Actions</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-character-proxy.html" class="custom-nav-link">Character Proxy</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-character-ai-spawner.html" class="custom-nav-link current">Spawner</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Physics</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-builtin-vs-px5.html" class="custom-nav-link">Builtin Physics vs Px5</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-physics-voxel-collision.html" class="custom-nav-link">Voxel Collision</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-data-layout-property.html" class="custom-nav-link">Data Layout and Property</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-heightmap-voxel.html" class="custom-nav-link">Heightmap Voxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-material-id-visual.html" class="custom-nav-link">Material ID and Visual</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/gameplay-voxel-modify-voxels.html" class="custom-nav-link">Modify Voxels</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-custom-interaction.html" class="custom-nav-link">Custom Interaction</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-entity.html" class="custom-nav-link">Entity System</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/gameplay-scene-rendering-settings.html" class="custom-nav-link">Scene Rendering Settings</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-1"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Tools</span></summary><ul><li class="custom-nav-item custom-nav-level-2"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><span class="custom-nav-link">Voxel Authoring</span></summary><ul><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-magica-voxel.html" class="custom-nav-link">MagicaVoxel</a></li><li class="custom-nav-item custom-nav-level-3"><a href="../documents/tools-voxel-authoring-voxel-data-editor.html" class="custom-nav-link">Voxel Data Editor</a></li></ul></details></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-builtin-entity.html" class="custom-nav-link">Builtin Entities Preview</a></li><li class="custom-nav-item custom-nav-level-2"><a href="../documents/tools-mod-exporter.html" class="custom-nav-link">Mod Exporter</a></li></ul></details></li></ul></details></li><li class="custom-nav-item custom-nav-level-0"><details class="custom-nav-group"><summary class="custom-nav-summary"><svg class="custom-nav-summary-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><a href="../documents/api-overview.html" class="custom-nav-link">API Reference</a></summary><ul><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Engine.PointDataV2.html" class="custom-nav-link">VX.Engine.PointDataV2</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Engine.Utils.html" class="custom-nav-link">VX.Engine.Utils</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Mod.JsComponentProxy.html" class="custom-nav-link">VX.Mod.JsComponentProxy</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Mod.JsProperties.html" class="custom-nav-link">VX.Mod.JsProperties</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Mod.ModAPI.html" class="custom-nav-link">VX.Mod.ModAPI</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Mod.ModAPI.Input.html" class="custom-nav-link">VX.Mod.ModAPI.Input</a></li><li class="custom-nav-item custom-nav-level-1"><a href="../classes/modapi.api.VX.Utility.Giz.html" class="custom-nav-link">VX.Utility.Giz</a></li></ul></details></li></ul></nav></div><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#spawner"><span>Spawner</span></a><ul><li><a href="#authoring-workflow"><span>Authoring workflow</span></a></li><li><a href="#required-assets"><span>Required assets</span></a></li><li><ul><li><a href="#_"><span></span></a></li><li><a href="#_-1"><span></span></a></li><li><a href="#_-2"><span></span></a></li></ul></li><li><a href="#character-reference-format"><span>Character reference format</span></a></li><li><a href="#common-wave-parameters"><span>Common wave parameters</span></a></li><li><a href="#practical-setup-example"><span>Practical setup example</span></a></li><li><a href="#notes"><span>Notes</span></a></li></ul></div></details></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

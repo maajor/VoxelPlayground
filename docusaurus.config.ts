@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Voxel Playground',
   tagline: 'Grab-and-rip micro-voxel destruction in VR',
-  favicon: 'img/vlcsnap-2025-09-03-15h39m23s266.png',
+  favicon: 'img/favicon.svg',
 
   url: 'https://voxelplayground.com',
   baseUrl: '/',
