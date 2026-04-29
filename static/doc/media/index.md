@@ -23,6 +23,12 @@ The fastest path from idea to playable mod is:
 
 Before you begin:
 
+* Clone the **Voxel Playground Modding Toolkit** project from [ModTK on GitHub](https://github.com/Cydream-Tech/VoxModTK):
+
+```cmd
+git clone https://github.com/Cydream-Tech/VoxModTK.git
+```
+
 * Use the current **Voxel Playground Modding Toolkit** project.
 * Use the Unity version required by the toolkit project.
 * Install [Node.js](https://nodejs.org/en/), the runtime environment for JavaScript, which includes `npm`.
