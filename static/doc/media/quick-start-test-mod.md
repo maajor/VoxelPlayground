@@ -81,11 +81,7 @@ If you are testing without VR, use the player log:
 
 ## 5. Use flatscreen mode for fast iteration
 
-You can launch the game with `--flatscreen` for faster desktop testing:
-
-```cmd
-Voxel Playground.exe --flatscreen
-```
+![Mod Exporter](../resources/flatscreen.png)
 
 Common controls:
 

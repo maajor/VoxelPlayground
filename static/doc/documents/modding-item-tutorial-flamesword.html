@@ -19,7 +19,6 @@
 <li>A child <strong><code>blade</code></strong> used as the blade trigger volume.</li>
 </ul>
 <p>The important part is the <strong><code>blade</code></strong> child object. It needs a <strong><code>BoxCollider</code></strong> configured as a trigger so the weapon can detect cuts along the blade volume.</p>
-<p>If your toolkit version exposes a <strong>Hit Detection Box</strong> field on <code>BladeTrigger</code>, assign the blade collider there. In the sample prefab, the blade child itself is already present and used as the blade collision source, so make sure that child object and trigger collider are kept intact.</p>
 <p><img src="../media/flamesword.png" alt="FlameSword prefab hierarchy and component setup"></p>
 <h2 id="step-3-configure-the-built-in-weapon-components" class="tsd-anchor-link">Step 3: Configure the built-in weapon components<a href="#step-3-configure-the-built-in-weapon-components" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>On the root weapon prefab, keep the standard engine-side item components:</p>
@@ -32,10 +31,14 @@
 <p>Typical <code>BladeTrigger</code> configuration in the sample:</p>
 <ul>
 <li><code>Shadow Go</code> points to the <code>blade</code> child.</li>
-<li><code>Damage Voxel</code> is enabled.</li>
+<li><code>BoxCollider</code> on <code>Shadow Go</code> to cover the blade exactly, is used to detect contact along the sword edge.</li>
+<li><code>Damage Voxel</code> is disabled.</li>
+<li><code>Attach On Penetration</code> is enabled.</li>
 <li><code>Enable Slice Out</code> is enabled.</li>
-<li>The blade collider is used to detect contact along the sword edge.</li>
+<li><code>Enable Dirs</code> has correct directions selected.</li>
 </ul>
+<p>After config BoxCollider, you should see some gizmo voxel denoting shape voxels.
+<img src="../media/blade.png" alt="FlameSword Blade Gizmo"></p>
 <p>Without the blade trigger collider, the sword may appear correctly in hand but will not detect blade contact reliably.</p>
 <h2 id="step-4-add-the-typescript-component" class="tsd-anchor-link">Step 4: Add the TypeScript component<a href="#step-4-add-the-typescript-component" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>The sample does not rely on a custom C# gameplay subclass. Instead:</p>
